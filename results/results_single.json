@@ -1,0 +1,1430 @@
+[
+  {
+    "input": {
+      "id": "258ce28b-a3cd-5c99-a64f-1887b0f5ea2e",
+      "intent_name": "BlueToothOnOff",
+      "intent_description": "用于识别用户想要控制设备蓝牙功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的蓝牙操作需求，包括但不限于打开蓝牙、关闭蓝牙、启用蓝牙连接、禁用蓝牙等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型：Boolean，取值范围：True|False，用途：True--打开蓝牙，False--关闭蓝牙"
+        }
+      ],
+      "category_Level1": "蓝牙管理",
+      "category_Level2": "网络与连接管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把蓝牙打开一下，谢谢"
+        },
+        {
+          "role": "assistant",
+          "content": "BlueToothOnOff(ActionType=True)"
+        }
+      ]
+    },
+    "output": "BlueToothOnOff(ActionType=True)"
+  },
+  {
+    "input": {
+      "id": "a821fcef-72df-5791-86f5-90fee33fddc7",
+      "intent_name": "SearchBlueTooth",
+      "intent_description": "用于识别用户想要搜索、查找或扫描附近可用蓝牙设备的语音指令。该意图能够理解用户通过自然语言表达的蓝牙设备发现需求，包括搜索蓝牙设备、扫描蓝牙、查找可连接设备等相关操作指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|ALL（默认值）...，用途： 指定要搜索的蓝牙设备类型或具体名称，ALL表示搜索所有类型的蓝牙设备"
+        }
+      ],
+      "category_Level1": "蓝牙管理",
+      "category_Level2": "网络与连接管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我看看周围有没有能连的蓝牙音箱"
+        },
+        {
+          "role": "assistant",
+          "content": "SearchBlueTooth(DeviceType=\"音箱\")"
+        }
+      ]
+    },
+    "output": "SearchBlueTooth(DeviceType=\"音箱\")"
+  },
+  {
+    "input": {
+      "id": "fa805c06-1ef7-5ce8-90db-bbbb3c0b418a",
+      "intent_name": "ConnectBlueTooth",
+      "intent_description": "用于识别用户想要连接或断开特定蓝牙设备的语音指令。该意图能够理解用户通过自然语言表达的蓝牙设备连接需求，包括连接蓝牙设备、断开蓝牙连接、配对设备等相关操作指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|车载|打印机...，用途： 指定要连接或断开的蓝牙设备类型或具体名称"
+        },
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--连接蓝牙设备，False--断开蓝牙设备"
+        }
+      ],
+      "category_Level1": "蓝牙管理",
+      "category_Level2": "网络与连接管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把车载蓝牙断开一下，谢谢"
+        },
+        {
+          "role": "assistant",
+          "content": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
+        }
+      ]
+    },
+    "output": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
+  },
+  {
+    "input": {
+      "id": "2f9290a3-8c58-51ff-856f-e9fee92fce6f",
+      "intent_name": "WlanOnOff",
+      "intent_description": "用于识别用户想要控制设备WLAN（无线局域网）功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的WiFi操作需求，包括打开WiFi、关闭WiFi、启用无线网络、禁用WLAN等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--打开WLAN，False--关闭WLAN"
+        }
+      ],
+      "category_Level1": "网络控制",
+      "category_Level2": "网络与连接管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "把WiFi关了"
+        },
+        {
+          "role": "assistant",
+          "content": "WlanOnOff(ActionType=False)"
+        }
+      ]
+    },
+    "output": "WlanOnOff(ActionType=False)"
+  },
+  {
+    "input": {
+      "id": "b15c090c-0a2a-5d2b-84c4-c3c23fe80b27",
+      "intent_name": "SearchWlan",
+      "intent_description": "用于识别用户想要搜索、查找或扫描附近可用WLAN（无线局域网）网络的语音指令。该意图能够理解用户通过自然语言表达的WiFi网络发现需求，包括搜索WiFi、扫描无线网络、查找可连接热点等相关操作指令。",
+      "slots": [],
+      "category_Level1": "网络控制",
+      "category_Level2": "网络与连接管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我看看周围有什么WiFi能用"
+        },
+        {
+          "role": "assistant",
+          "content": "SearchWlan()"
+        }
+      ]
+    },
+    "output": "SearchWlan()"
+  },
+  {
+    "input": {
+      "id": "19eb77d3-eef6-5f79-a1de-6d7408edeae7",
+      "intent_name": "MobileDataOnOff",
+      "intent_description": "用于识别用户想要控制设备移动数据网络功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的移动网络操作需求，包括打开移动数据、关闭蜂窝数据、启用4G/5G网络、禁用流量等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--打开移动数据，False--关闭移动数据"
+        }
+      ],
+      "category_Level1": "网络控制",
+      "category_Level2": "网络与连接管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "我手机快没流量了，帮我把移动网络关掉吧"
+        },
+        {
+          "role": "assistant",
+          "content": "MobileDataOnOff(ActionType=False)"
+        }
+      ]
+    },
+    "output": "MobileDataOnOff(ActionType=False)"
+  },
+  {
+    "input": {
+      "id": "b825a584-3416-5bca-a45a-ec65147a5b28",
+      "intent_name": "HotShotOnOff",
+      "intent_description": "用于识别用户想要控制设备热点（WiFi热点/个人热点）功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的热点分享操作需求，包括打开热点、关闭热点、启用WiFi共享、禁用个人热点等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--打开热点，False--关闭热点"
+        }
+      ],
+      "category_Level1": "网络控制",
+      "category_Level2": "网络与连接管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我打开手机的热点功能，朋友要用我流量"
+        },
+        {
+          "role": "assistant",
+          "content": "HotShotOnOff(ActionType=True)"
+        }
+      ]
+    },
+    "output": "HotShotOnOff(ActionType=True)"
+  },
+  {
+    "input": {
+      "id": "c4da59cf-b344-5319-9fba-646df73ab5c0",
+      "intent_name": "CheckBatteryLevel",
+      "intent_description": "用于识别用户想要查询设备电池电量状态的语音指令。该意图能够理解用户通过自然语言表达的电池信息查询需求，包括查看电池电量、询问剩余电量、检查电池状态、了解续航时间等相关查询指令。",
+      "slots": [],
+      "category_Level1": "电池状态查看",
+      "category_Level2": "电源与电池管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "手机快没电了，帮我看看还剩多少电量？"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckBatteryLevel()"
+        }
+      ]
+    },
+    "output": "CheckBatteryLevel()"
+  },
+  {
+    "input": {
+      "id": "4d674371-3801-51b9-8c0b-d6d20917e1a0",
+      "intent_name": "CheckBatteryConsumptionRank",
+      "intent_description": "用于识别用户想要查询设备电池消耗排名和耗电分析的语音指令。该意图能够理解用户通过自然语言表达的电池使用情况分析需求，包括查看应用耗电排行、分析电池消耗趋势、检测异常耗电、对比不同时间段的电池使用情况等相关查询指令。",
+      "slots": [
+        {
+          "TimeRange": "数据类型： String，取值范围： 今天|昨天|本周|上周|本月|上月|最近7天|最近30天|自定义时间段...，用途： 指定查询电池消耗数据的时间范围"
+        },
+        {
+          "AnomalyDetection": "数据类型： Boolean，取值范围： True|False，用途： True--检测异常耗电情况，False--不进行异常检测"
+        },
+        {
+          "SortBy": "数据类型： String，取值范围： \"DESC\"|\"ASC\"，用途： DESC--降序，ASC--升序，默认DESC"
+        }
+      ],
+      "category_Level1": "电池状态查看",
+      "category_Level2": "电源与电池管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我查一下最近7天哪些APP最耗电，要按从高到低排序"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=False, SortBy=\"DESC\")"
+        }
+      ]
+    },
+    "output": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")"
+  },
+  {
+    "input": {
+      "id": "bfc7a323-afe7-5167-b4a6-9c58c20665f0",
+      "intent_name": "BatterySavingMode",
+      "intent_description": "用于识别用户想要控制设备省电模式功能的语音指令。该意图能够理解用户通过自然语言表达的电池节能操作需求，包括开启省电模式、关闭节能模式、启用低电量模式、设置电池优化等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--开启省电模式，False--关闭省电模式"
+        }
+      ],
+      "category_Level1": "省电模式设置",
+      "category_Level2": "电源与电池管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "手机快没电了，帮我打开省电模式"
+        },
+        {
+          "role": "assistant",
+          "content": "BatterySavingMode(ActionType=True)"
+        }
+      ]
+    },
+    "output": "BatterySavingMode(ActionType=True)"
+  },
+  {
+    "input": {
+      "id": "c7eeb89e-ef79-58f6-9d9e-b343a54a0744",
+      "intent_name": "Reboot",
+      "intent_description": "用于识别用户想要重启设备的语音指令。该意图能够理解用户通过自然语言表达的设备重启需求，包括重启手机、重新启动、系统重启、关机重启等相关操作指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|车载|打印机...，用途： 指定要重启的设备类型或具体名称"
+        }
+      ],
+      "category_Level1": "设备电源操作",
+      "category_Level2": "电源与电池管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "手机卡死了，帮我强制重启一下"
+        },
+        {
+          "role": "assistant",
+          "content": "Reboot(DeviceType=\"手机\")"
+        }
+      ]
+    },
+    "output": "Reboot(DeviceType=\"手机\")"
+  },
+  {
+    "input": {
+      "id": "e16f68a6-6b22-55aa-8bee-5ae5bbae4216",
+      "intent_name": "ShutDown",
+      "intent_description": "用于识别用户想要关闭设备的语音指令。该意图能够理解用户通过自然语言表达的设备关机需求，包括关机、关闭手机、系统关机、电源关闭等相关操作指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|车载|打印机...，用途： 指定要关机的设备类型或具体名称"
+        }
+      ],
+      "category_Level1": "设备电源操作",
+      "category_Level2": "电源与电池管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "小艺小艺，麻烦帮我把家里的智能音箱关掉"
+        },
+        {
+          "role": "assistant",
+          "content": "ShutDown(DeviceType=\"音箱\")"
+        }
+      ]
+    },
+    "output": "ShutDown(DeviceType=\"音箱\")"
+  },
+  {
+    "input": {
+      "id": "4c9e36dd-98a8-5687-a937-a60dd9c32589",
+      "intent_name": "Sleep",
+      "intent_description": "用于识别用户想要让设备进入睡眠或待机状态的语音指令。该意图能够理解用户通过自然语言表达的设备休眠需求，包括进入睡眠模式、待机、休眠、锁屏待机等相关操作指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|车载|打印机...，用途： 指定要休眠的设备类型或具体名称"
+        }
+      ],
+      "category_Level1": "设备电源操作",
+      "category_Level2": "电源与电池管理",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "小艺小艺，我的手机屏幕一直亮着太费电了，能不能帮我锁屏休息一会儿？"
+        },
+        {
+          "role": "assistant",
+          "content": "Sleep(DeviceType=\"手机\")"
+        }
+      ]
+    },
+    "output": "Sleep(DeviceType=\"手机\")"
+  },
+  {
+    "input": {
+      "id": "bc7f6756-2e41-59de-ba53-5fb4230c3899",
+      "intent_name": "ControlSound",
+      "intent_description": "用于识别用户想要控制设备音量的语音指令。该意图能够理解用户通过自然语言表达的音量调节需求，包括调节系统音量、媒体音量、通话音量、闹钟音量等不同类型的音量控制操作指令。",
+      "slots": [
+        {
+          "VolumeType": "数据类型： String，取值范围： 系统音量|媒体音量|通话音量|闹钟音量|通知音量|铃声音量|...，用途： 指定要调节的音量类型"
+        },
+        {
+          "ActionType": "数据类型： String，取值范围： 增加|减少|调到|设置为|最大|最小|自动，用途： 指定音量调节的操作类型"
+        },
+        {
+          "Percentage": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标音量百分比数值"
+        }
+      ],
+      "category_Level1": "音量控制",
+      "category_Level2": "声音与通知设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "能不能帮我把手机通话音量调高一点？"
+        },
+        {
+          "role": "assistant",
+          "content": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=15)"
+        }
+      ]
+    },
+    "output": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=\"10\")"
+  },
+  {
+    "input": {
+      "id": "e6ec6359-cfc2-51e8-a070-6cf4bceb1290",
+      "intent_name": "VibrationModeOnOff",
+      "intent_description": "用于识别用户想要控制设备振动模式开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的振动功能操作需求，包括开启振动、关闭震动、启用震动模式、禁用振动提醒等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--开启振动模式，False--关闭振动模式"
+        }
+      ],
+      "category_Level1": "声音模式切换",
+      "category_Level2": "声音与通知设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "手机震动太吵了，帮我关掉振动模式吧"
+        },
+        {
+          "role": "assistant",
+          "content": "VibrationModeOnOff(ActionType=False)"
+        }
+      ]
+    },
+    "output": "VibrationModeOnOff(ActionType=False)"
+  },
+  {
+    "input": {
+      "id": "e47baa33-40ca-509d-9257-99fbb6f38370",
+      "intent_name": "QuietModeOnOff",
+      "intent_description": "用于识别用户想要控制设备勿扰模式（静音模式）开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的勿扰功能操作需求，包括开启勿扰模式、关闭静音模式、启用免打扰、禁用勿扰等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--开启勿扰模式，False--关闭勿扰模式"
+        }
+      ],
+      "category_Level1": "声音模式切换",
+      "category_Level2": "声音与通知设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我打开勿扰模式，谢谢！"
+        },
+        {
+          "role": "assistant",
+          "content": "QuietModeOnOff(ActionType=True)"
+        }
+      ]
+    },
+    "output": "QuietModeOnOff(ActionType=\"开启\")"
+  },
+  {
+    "input": {
+      "id": "c2706715-2312-5688-b41e-c9a68760e159",
+      "intent_name": "CheckLuminance",
+      "intent_description": "用于识别用户想要查询设备当前屏幕亮度的语音指令。该意图能够理解用户通过自然语言表达的亮度查询需求，包括查看当前亮度、检查屏幕亮度、显示亮度等级、查询亮度设置等相关查询指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|...，用途： 指定查询亮度的设备类型或具体名称"
+        }
+      ],
+      "category_Level1": "显示参数调节",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我看下平板的屏幕亮度现在是多少？"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckLuminance(DeviceType=\"平板屏幕\")"
+        }
+      ]
+    },
+    "output": "CheckLuminance(DeviceType=\"平板屏幕\")"
+  },
+  {
+    "input": {
+      "id": "a15e5465-d29b-59eb-9602-6e7bf788d0af",
+      "intent_name": "ControlLuminance",
+      "intent_description": "用于识别用户想要控制设备屏幕亮度的语音指令。该意图能够理解用户通过自然语言表达的亮度调节需求，包括调节屏幕亮度、增加/减少亮度、设置亮度百分比、调整显示器亮度等相关操作指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|...，用途： 指定要调节亮度的设备类型"
+        },
+        {
+          "ActionType": "数据类型： String，取值范围： 增加|减少|调到|设置为|最大|最小|自动，用途： 指定亮度调节的操作类型"
+        },
+        {
+          "Percentage": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标亮度百分比数值"
+        }
+      ],
+      "category_Level1": "显示参数调节",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把平板屏幕的亮度调到60%吧，有点刺眼"
+        },
+        {
+          "role": "assistant",
+          "content": "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=60)"
+        }
+      ]
+    },
+    "output": "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=\"60\")"
+  },
+  {
+    "input": {
+      "id": "5e70a667-5313-563d-a30b-c1053a9c0e50",
+      "intent_name": "AutoLuminanceOnOff",
+      "intent_description": "用于识别用户想要控制设备自动亮度调节功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的自动亮度功能操作需求，包括开启自动亮度、关闭自适应亮度、启用智能亮度调节、禁用自动亮度等相关操作指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|ALL|...，用途： 指定要控制自动亮度功能的设备类型"
+        },
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--开启自动亮度，False--关闭自动亮度"
+        }
+      ],
+      "category_Level1": "显示参数调节",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把手机的自动亮度调节关掉，现在太亮了"
+        },
+        {
+          "role": "assistant",
+          "content": "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)"
+        }
+      ]
+    },
+    "output": "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)"
+  },
+  {
+    "input": {
+      "id": "3f96cf79-4b93-5fb2-b6c6-b2c2fb6549c4",
+      "intent_name": "CheckContrast",
+      "intent_description": "用于识别用户想要查询设备当前屏幕对比度的语音指令。该意图能够理解用户通过自然语言表达的对比度查询需求，包括查看当前对比度、检查屏幕对比度、显示对比度等级、查询对比度设置等相关查询指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|ALL|...，用途： 指定要查询屏幕的设备类型"
+        }
+      ],
+      "category_Level1": "显示参数调节",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我看下显示器现在的对比度是多少？"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckContrast(DeviceType=\"显示器\")"
+        }
+      ]
+    },
+    "output": "CheckContrast(DeviceType=\"屏幕\")"
+  },
+  {
+    "input": {
+      "id": "1e113efe-5595-5758-84f3-1a08ad50afcd",
+      "intent_name": "SwitchContrast",
+      "intent_description": "用于识别用户想要切换设备屏幕对比度模式的语音指令。该意图能够理解用户通过自然语言表达的对比度模式切换需求，包括切换到高对比度、标准对比度、低对比度、护眼模式等不同对比度模式的操作指令。",
+      "slots": [
+        {
+          "DeviceType": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|ALL|...，用途： 指定要切换对比度模式的设备类型"
+        },
+        {
+          "ActionType": "数据类型： String，取值范围： 高对比度|标准对比度|低对比度|护眼模式|夜间模式|增强|降低，用途： 指定要切换到的对比度模式类型"
+        },
+        {
+          "Percentage": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标屏幕对比度百分比数值"
+        }
+      ],
+      "category_Level1": "显示参数调节",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把电脑显示器的对比度调到60%"
+        },
+        {
+          "role": "assistant",
+          "content": "SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"增强\", Percentage=60)"
+        }
+      ]
+    },
+    "output": "SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"调到\", Percentage=\"60\")"
+  },
+  {
+    "input": {
+      "id": "ebe635d5-3119-52f4-8667-24fc4052cc92",
+      "intent_name": "SetSystemTheme",
+      "intent_description": "用于识别用户想要设置系统主题的语音指令。该意图能够理解用户通过自然语言表达的主题切换需求，包括切换深色模式、浅色模式、自动模式，以及设置个性化主题等操作。",
+      "slots": [
+        {
+          "ThemeType": "数据类型： String，取值范围： 深色模式|暗色模式|夜间模式|黑色主题|浅色模式|亮色模式|白天模式|白色主题|自动模式|跟随系统|默认主题等，用途： 指定要设置的主题类型"
+        }
+      ],
+      "category_Level1": "主题与壁纸设置",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把手机主题改成暗色的，晚上看太刺眼了"
+        },
+        {
+          "role": "assistant",
+          "content": "SetSystemTheme(ThemeType=\"暗色模式\")"
+        }
+      ]
+    },
+    "output": "SetSystemTheme(ThemeType=\"暗色模式\")"
+  },
+  {
+    "input": {
+      "id": "81dc1d5f-527d-58fa-9d17-fe2038a50486",
+      "intent_name": "CheckFont",
+      "intent_description": "用于识别用户想要查看或检查字体设置的语音指令。该意图能够理解用户通过自然语言表达的字体查询需求，包括查看当前字体、字体大小、字体样式等信息。",
+      "slots": [],
+      "category_Level1": "字体设置",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我看看现在用的是啥字体啊？"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckFont()"
+        }
+      ]
+    },
+    "output": "CheckFont()"
+  },
+  {
+    "input": {
+      "id": "965be042-2fa8-5ab0-a9f2-289bef95d44a",
+      "intent_name": "SwitchFontSize",
+      "intent_description": "用于识别用户想要调整字体大小的语音指令。该意图能够理解用户通过自然语言表达的字体大小调整需求，包括放大、缩小、设置特定大小等操作。",
+      "slots": [
+        {
+          "ActionType": "数据类型： String，取值范围： 放大|增大|调大|缩小|减小|调小|设置|调整|恢复默认|重置等，用途： 指定对字体大小的操作类型"
+        },
+        {
+          "AdjustLevel": "数据类型： String，取值范围： 一级|两级|三级|最大|最小等，用途： 指定字体大小调整的幅度"
+        },
+        {
+          "AppName": "数据类型： String，取值范围： 系统|当前应用|微信|QQ|浏览器|阅读器|全局|所有应用等，用途： 指定字体大小调整的应用范围"
+        },
+        {
+          "FontSize": "数据类型： String，取值范围： 12号|14号|16号|18号|20号|22号|24号等，用途： 指定具体的字体大小值"
+        }
+      ],
+      "category_Level1": "字体设置",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把微信的字体调到最大号，看着清楚点"
+        },
+        {
+          "role": "assistant",
+          "content": "SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"微信\")"
+        }
+      ]
+    },
+    "output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\", FontSize=\"24号\")"
+  },
+  {
+    "input": {
+      "id": "c987f3b6-6d8a-5a40-b1e6-470f6ded7fe9",
+      "intent_name": "SwitchFontWeight",
+      "intent_description": "用于识别用户想要调整字体粗细的语音指令。该意图能够理解用户通过自然语言表达的字体粗细调整需求，包括设置粗体、细体、正常粗细等操作。",
+      "slots": [
+        {
+          "ActionType": "数据类型： String，取值范围： 设置|调整|切换|开启|关闭|启用|禁用|恢复默认|重置等，用途： 指定对字体粗细的操作类型"
+        },
+        {
+          "FontWeight": "数据类型： String，取值范围： 粗体|加粗|细体|正常|中等|半粗|超粗等，用途： 指定具体的字体粗细级别"
+        },
+        {
+          "AppName": "数据类型： String，取值范围： 微信|QQ|支付宝|浏览器|阅读器|文档|编辑器|系统|全局|当前应用等，用途： 指定要切换字体粗细的应用程序"
+        }
+      ],
+      "category_Level1": "字体设置",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "能把微信的字体调粗一点吗？看起来更醒目些"
+        },
+        {
+          "role": "assistant",
+          "content": "SwitchFontWeight(ActionType=\"调整\", FontWeight=\"粗体\", AppName=\"微信\")"
+        }
+      ]
+    },
+    "output": "SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")"
+  },
+  {
+    "input": {
+      "id": "f8ac8e46-a371-546a-a588-caf0fdd17f87",
+      "intent_name": "ControlFontType",
+      "intent_description": "用于识别用户想要控制字体类型或输入法字体的语音指令。该意图能够理解用户通过自然语言表达的字体类型切换需求，包括更换系统字体、应用字体、输入法字体等操作。",
+      "slots": [
+        {
+          "FontType": "数据类型： String，取值范围： 宋体|黑体|楷体|仿宋|微软雅黑|苹方|思源黑体|华文细黑|Arial|Times|Helvetica|等线|方正|华康等，用途： 指定要设置的字体类型"
+        },
+        {
+          "ActionType": "数据类型： String，取值范围： 设置|更换|切换|应用|恢复|重置|预览|选择等，用途： 指定对字体类型的操作"
+        },
+        {
+          "AppName": "数据类型： String，取值范围： 微信|QQ|支付宝|浏览器|阅读器|文档|编辑器|系统|全局|当前应用等，用途： 指定要控制字体的应用程序"
+        }
+      ],
+      "category_Level1": "字体设置",
+      "category_Level2": "显示与外观设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "能把微信聊天的字体换成楷体吗？感觉现在的看起来不太舒服"
+        },
+        {
+          "role": "assistant",
+          "content": "ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"微信\")"
+        }
+      ]
+    },
+    "output": "SwitchFontType(FontType=\"楷体\", ActionType=\"设置\", AppName=\"微信\")"
+  },
+  {
+    "input": {
+      "id": "6034ec2f-403f-596e-999d-b24e1d670796",
+      "intent_name": "CheckInputMethod",
+      "intent_description": "用于识别用户想要查看或检查输入法设置的语音指令。该意图能够理解用户通过自然语言表达的输入法查询需求，包括查看当前输入法、输入法设置、输入法列表、输入法状态等信息。",
+      "slots": [],
+      "category_Level1": "语言与输入法设置",
+      "category_Level2": "系统核心设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我看看现在用的什么输入法"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckInputMethod()"
+        }
+      ]
+    },
+    "output": "CheckInputMethod()"
+  },
+  {
+    "input": {
+      "id": "e53da40c-4c74-5e37-9adf-1a0ab373404b",
+      "intent_name": "SwitchInputMethod",
+      "intent_description": "用于识别用户想要切换输入法的语音指令。该意图能够理解用户通过自然语言表达的输入法切换需求，包括切换到特定输入法、在应用中切换输入法、设置默认输入法等操作。",
+      "slots": [
+        {
+          "AppName": "数据类型： String，取值范围： 系统|微信|QQ|支付宝|浏览器|文档|编辑器|记事本|邮件|搜索|当前应用|全局等，用途： 指定要切换输入法的应用程序或系统范围"
+        },
+        {
+          "InputMethodName": "数据类型： String，取值范围： 搜狗输入法|百度输入法|讯飞输入法|QQ输入法|微软输入法|谷歌输入法|系统输入法|拼音输入法|五笔输入法|手写输入法|语音输入法|九宫格输入法|英文输入法|数字输入法等，用途： 指定要切换到的目标输入法"
+        },
+        {
+          "ActionType": "数据类型： String，取值范围： 切换|设置|更换|启用|禁用|激活|关闭|恢复|重置|临时切换|设为默认等，用途： 指定对输入法的操作类型"
+        }
+      ],
+      "category_Level1": "语言与输入法设置",
+      "category_Level2": "系统核心设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "能不能帮我把微信里的输入法改成百度输入法？现在用的是系统自带的，打字不太顺手。"
+        },
+        {
+          "role": "assistant",
+          "content": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")"
+        }
+      ]
+    },
+    "output": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")"
+  },
+  {
+    "input": {
+      "id": "7c0bb589-3eb7-57ab-83d9-6bdcd6f1a70f",
+      "intent_name": "SwitchLanguage",
+      "intent_description": "用于识别用户想要切换语言设置的语音指令。该意图能够理解用户通过自然语言表达的语言切换需求，包括切换系统语言、应用语言、输入法语言等操作。",
+      "slots": [
+        {
+          "AppName": "数据类型： String，取值范围： 系统|微信|QQ|支付宝|浏览器|游戏|翻译|输入法|当前应用|全局等，用途： 指定要切换语言的应用程序或系统范围"
+        },
+        {
+          "LanguageType": "数据类型： String，取值范围： 中文|简体中文|繁体中文|英文|英语|日文|日语|韩文|韩语|法语|德语|西班牙语|俄语|阿拉伯语|泰语|越南语|意大利语|葡萄牙语等，用途： 指定要切换到的目标语言"
+        },
+        {
+          "ActionType": "数据类型： String，取值范围： 切换|设置|更改|调整|恢复|重置|临时切换|永久设置等，用途： 指定语言切换的操作类型"
+        }
+      ],
+      "category_Level1": "语言与输入法设置",
+      "category_Level2": "系统核心设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "把微信的语言设置改成英文吧，我朋友看不懂中文"
+        },
+        {
+          "role": "assistant",
+          "content": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")"
+        }
+      ]
+    },
+    "output": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"切换\")"
+  },
+  {
+    "input": {
+      "id": "6853b86f-2842-5958-ad07-586f78c57b50",
+      "intent_name": "AirplaneModeOnOff",
+      "intent_description": "用于识别用户想要控制飞行模式开关的语音指令。该意图能够理解用户通过自然语言表达的飞行模式控制需求，包括开启、关闭、切换飞行模式等操作。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--打开飞行模式，False--关闭飞行模式"
+        }
+      ],
+      "category_Level1": "飞行模式开关",
+      "category_Level2": "系统核心设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "我的手机需要开启飞行模式了，麻烦帮我处理一下"
+        },
+        {
+          "role": "assistant",
+          "content": "AirplaneModeOnOff(ActionType=True)"
+        }
+      ]
+    },
+    "output": "AirplaneModeOnOff(ActionType=True)"
+  },
+  {
+    "input": {
+      "id": "7176070d-6c52-5b14-baad-5190f8cf0660",
+      "intent_name": "CheckSystemUpdate",
+      "intent_description": "用于识别用户想要检查系统更新的语音指令。该意图能够理解用户通过自然语言表达的系统更新查询需求，包括检查系统更新、查看更新状态、查询更新历史等操作。",
+      "slots": [],
+      "category_Level1": "系统更新管理",
+      "category_Level2": "系统核心设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我看看电脑有没有可用的系统更新，谢谢！"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckSystemUpdate()"
+        }
+      ]
+    },
+    "output": "CheckSystemUpdate()"
+  },
+  {
+    "input": {
+      "id": "15c757b4-d111-55ab-970b-0e674a2f24d9",
+      "intent_name": "SystemUpdate",
+      "intent_description": "用于识别用户想要执行系统更新的语音指令。该意图能够理解用户通过自然语言表达的系统更新执行需求，包括下载更新、安装更新、暂停更新、取消更新等操作。",
+      "slots": [
+        {
+          "ActionType": "数据类型： String，取值范围： 更新|升级|下载|安装|开始|暂停|继续|取消|重启|延迟|立即更新|自动更新等，用途： 指定系统更新的操作类型"
+        }
+      ],
+      "category_Level1": "系统更新管理",
+      "category_Level2": "系统核心设置",
+      "category_Level3": "系统操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "电脑最近有点卡，能帮我看看系统有没有可用的升级？"
+        },
+        {
+          "role": "assistant",
+          "content": "SystemUpdate(ActionType=\"升级\")"
+        }
+      ]
+    },
+    "output": "CheckSystemUpdate()"
+  },
+  {
+    "input": {
+      "id": "c2d18e15-f99e-5bbb-87e1-97f85b5100be",
+      "intent_name": "SwitchApp",
+      "intent_description": "用于识别用户想要切换或打开应用程序的语音指令。该意图能够理解用户通过自然语言表达的应用切换需求，包括打开特定应用、在应用间切换等操作。",
+      "slots": [
+        {
+          "AppName": "数据类型： String，取值范围： 微信|QQ|支付宝|淘宝|抖音|快手|百度|高德地图|腾讯地图|音乐|网易云音乐|QQ音乐|相机|相册|设置|电话|短信|浏览器|Chrome|Safari|钉钉|企业微信|飞书|美团|饿了么|京东|拼多多|今日头条|微博|知乎|B站|爱奇艺|优酷|腾讯视频|游戏|王者荣耀|和平精英|原神|计算器|日历|时钟|天气|备忘录|文件管理|应用商店|App Store|Google Play等，用途： 指定要切换到的目标应用程序名称"
+        }
+      ],
+      "category_Level1": "应用切换",
+      "category_Level2": "应用基础操作",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "小张我想听周杰伦的歌，帮我开一下音乐软件吧"
+        },
+        {
+          "role": "assistant",
+          "content": "SwitchApp(AppName=\"QQ音乐\")"
+        }
+      ]
+    },
+    "output": "SwitchApp(AppName=\"QQ音乐\")"
+  },
+  {
+    "input": {
+      "id": "a75b888d-ecd0-51b5-ae93-b4083794e0a6",
+      "intent_name": "Call",
+      "intent_description": "用于识别用户想要拨打电话的语音指令。该意图能够理解用户通过自然语言表达的拨打电话需求，包括拨打给指定联系人、拨打特定号码、选择手机卡、设置通话模式等操作。",
+      "slots": [
+        {
+          "AppName": "数据类型： String，取值范围： 微信|QQ|钉钉|短信|飞书|企业微信|Telegram|WhatsApp|Line|陌陌|探探等，用途： 指定用于打电话的应用程序"
+        },
+        {
+          "Contact": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定打电话的对象的联系人姓名"
+        },
+        {
+          "PhoneNumber": "数据类型： String，取值范围： 有效的手机号码格式（如：13812345678、+86-138-1234-5678等），用途： 指定打电话的对象的手机号码"
+        },
+        {
+          "Mode": "数据类型： String，取值范围： 免提|扬声器|耳机|蓝牙|静音|正常等，用途： 指定打电话的模式"
+        },
+        {
+          "PhoneCard": "数据类型： String，取值范围： 卡1|卡2|主卡|副卡|移动卡|联通卡|电信卡|工作卡|生活卡等，用途： 指定打电话使用的手机卡"
+        }
+      ],
+      "category_Level1": "电话操作",
+      "category_Level2": "通讯应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我用微信给李经理打个电话，用卡1，开免提模式"
+        },
+        {
+          "role": "assistant",
+          "content": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneCard=\"卡1\", Mode=\"免提\")"
+        }
+      ]
+    },
+    "output": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneNumber=\"13812345678\", Mode=\"免提\", PhoneCard=\"卡1\")"
+  },
+  {
+    "input": {
+      "id": "58610658-42af-5f27-b268-41014e0932b3",
+      "intent_name": "CheckContact",
+      "intent_description": "用于识别用户想要查看或搜索联系人信息的语音指令。该意图能够理解用户通过自然语言表达的联系人查询需求，包括查找特定联系人、查看联系人详细信息、搜索联系人列表、查询联系人的电话号码或其他信息等操作。",
+      "slots": [
+        {
+          "Contact": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定查看联系人的姓名"
+        }
+      ],
+      "category_Level1": "电话操作",
+      "category_Level2": "通讯应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我查一下王总的联系方式"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckContact(Contact=\"王总\")"
+        }
+      ]
+    },
+    "output": "CheckContact(Contact=\"王总\")"
+  },
+  {
+    "input": {
+      "id": "dae77761-73b9-5d2d-a929-f6070c127a22",
+      "intent_name": "AnswerCall",
+      "intent_description": "用于识别用户想要接听电话的语音指令。该意图能够理解用户通过自然语言表达的接听电话需求，包括直接接听来电、使用免提模式接听、拒绝接听或挂断电话等操作。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： 指定对来电的具体操作动作"
+        },
+        {
+          "Mode": "数据类型： String，取值范围： 免提|扬声器|耳机|蓝牙|静音|正常等，用途： 指定接听电话的模式"
+        },
+        {
+          "Response": "数据类型： String，取值范围： 预设回复内容（如：稍后回电、正在开会、马上到等），用途： 指定拒绝接听时发送的自动回复消息"
+        }
+      ],
+      "category_Level1": "电话操作",
+      "category_Level2": "通讯应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "“帮我用免提接一下这个电话”"
+        },
+        {
+          "role": "assistant",
+          "content": "AnswerCall(ActionType=True, Mode=\"免提\")"
+        }
+      ]
+    },
+    "output": "AnswerCall(ActionType=True, Mode=\"免提\", Response=\"\")"
+  },
+  {
+    "input": {
+      "id": "161f1b6a-c04f-54fe-9813-d8fcd99bb9ed",
+      "intent_name": "SendMessage",
+      "intent_description": "用于识别用户想要发送消息的语音指令。该意图能够理解用户通过自然语言表达的消息发送需求，包括在指定应用中发送消息、选择联系人、输入手机号码、选择手机卡以及编写消息内容等操作。",
+      "slots": [
+        {
+          "AppName": "数据类型： String，取值范围： 微信|QQ|钉钉|短信|飞书|企业微信|Telegram|WhatsApp|Line|陌陌|探探等，用途： 指定用于发送消息的应用程序"
+        },
+        {
+          "Contact": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定邮件收件人的联系人姓名"
+        },
+        {
+          "PhoneNumber": "数据类型： String，取值范围： 有效的手机号码格式（如：13812345678、+86-138-1234-5678等），用途： 指定消息接收人的手机号码"
+        },
+        {
+          "PhoneCard": "数据类型： String，取值范围： 卡1|卡2|主卡|副卡|移动卡|联通卡|电信卡|工作卡|生活卡等，用途： 指定发送消息使用的手机卡"
+        },
+        {
+          "Content": "数据类型： String，取值范围： 任意文本内容，用途： 指定要发送的消息内容"
+        }
+      ],
+      "category_Level1": "信息操作",
+      "category_Level2": "通讯应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我给王总发个微信，说下午的会议改到3点了，用我工作卡发"
+        },
+        {
+          "role": "assistant",
+          "content": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点\")"
+        }
+      ]
+    },
+    "output": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneNumber=\"工作卡\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点了。\")"
+  },
+  {
+    "input": {
+      "id": "d1ec4179-b4a9-59a6-ba32-6745c45ba536",
+      "intent_name": "SendEmail",
+      "intent_description": "用于识别用户想要发送邮件的语音指令。该意图能够理解用户通过自然语言表达的邮件发送需求，包括在指定邮件应用中发送邮件、选择收件人联系人、输入邮箱地址以及编写邮件内容等操作。",
+      "slots": [
+        {
+          "AppName": "数据类型： String，取值范围： Outlook|Gmail|QQ邮箱|网易邮箱|163邮箱|126邮箱|新浪邮箱|腾讯企业邮箱|钉钉邮箱|Foxmail等，用途： 指定用于发送邮件的应用程序"
+        },
+        {
+          "Contact": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定邮件收件人的联系人姓名"
+        },
+        {
+          "EmailAddress": "数据类型： String，取值范围： 有效的邮箱地址格式（如：user@example.com），用途： 指定邮件收件人的具体邮箱地址"
+        },
+        {
+          "Content": "数据类型： String，取值范围： 任意文本内容（包括邮件主题和正文），用途： 指定邮件的内容，可能包含主题和正文"
+        }
+      ],
+      "category_Level1": "邮件操作",
+      "category_Level2": "通讯应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我用网易邮箱给客户经理李总发封邮件，内容是\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\""
+        },
+        {
+          "role": "assistant",
+          "content": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
+        }
+      ]
+    },
+    "output": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", EmailAddress=\"lizong@company.com\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
+  },
+  {
+    "input": {
+      "id": "80fe524a-2ea2-52bc-b8f4-0a22342680b8",
+      "intent_name": "CheckEmail",
+      "intent_description": "用于识别用户想要查看或检查邮件的语音指令。该意图能够理解用户通过自然语言表达的邮件查询需求，包括在指定邮件应用中查看邮件、按文件夹分类查看、按发件人筛选、按内容搜索以及按时间范围查询等操作。",
+      "slots": [
+        {
+          "AppName": "数据类型： String，取值范围： Outlook|Gmail|QQ邮箱|网易邮箱|163邮箱|126邮箱|新浪邮箱|腾讯企业邮箱|钉钉邮箱|Foxmail等，用途： 指定用于查看邮件的应用程序"
+        },
+        {
+          "Folder": "数据类型： String，取值范围： 收件箱|发件箱|草稿箱|垃圾邮件|已删除|重要邮件|未读邮件|已读邮件|星标邮件|归档等，用途： 指定要查看的邮件文件夹或分类"
+        },
+        {
+          "Sender": "数据类型： String，取值范围： 邮箱地址或发件人姓名，用途： 指定要查看的邮件发件人"
+        },
+        {
+          "Content": "数据类型： String，取值范围： 任意文本内容（邮件主题或正文关键词），用途： 指定要搜索的邮件内容关键词"
+        },
+        {
+          "TimeRange": "数据类型： String，取值范围： 今天|昨天|本周|上周|本月|上月|最近7天|最近30天|指定日期范围等，用途： 指定查看邮件的时间范围"
+        }
+      ],
+      "category_Level1": "邮件操作",
+      "category_Level2": "通讯应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我在Outlook里看看昨天收到的标星邮件"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"昨天\")"
+        }
+      ]
+    },
+    "output": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"昨天\", State=\"已开启\")"
+  },
+  {
+    "input": {
+      "id": "7951d325-8ca7-5406-ac56-e3a1528f65e4",
+      "intent_name": "CreateAlarm",
+      "intent_description": "用于识别用户想要创建或设置闹钟的语音指令。该意图能够理解用户通过自然语言表达的闹钟创建需求，包括设置特定时间的闹钟、为特定事件创建提醒、设置重复闹钟以及配置闹钟的各种属性等操作。",
+      "slots": [
+        {
+          "Time": "数据类型： DateTime，取值范围： 具体时间点（如：早上7点、下午3点30分、18:00等），用途： 指定要创建的闹钟时间"
+        },
+        {
+          "Content": "数据类型： String，取值范围： 任意事件描述（如：起床、开会、吃药、锻炼、上班等），用途： 指定要创建的闹钟的内容"
+        }
+      ],
+      "category_Level1": "闹钟操作",
+      "category_Level2": "工具应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "明早8点记得提醒我开项目例会"
+        },
+        {
+          "role": "assistant",
+          "content": "CreateAlarm(Time=\"明天早上8点\", Content=\"项目例会\")"
+        }
+      ]
+    },
+    "output": "CreateAlarm(Time=\"08:00\", Content=\"开项目例会\")"
+  },
+  {
+    "input": {
+      "id": "71d1acad-3d9f-5a56-848b-5ddde6206d54",
+      "intent_name": "CheckAlarm",
+      "intent_description": "用于识别用户想要查看或检查闹钟状态的语音指令。该意图能够理解用户通过自然语言表达的查询闹钟需求，包括查看所有闹钟、检查特定时间的闹钟、查询特定事件的提醒、查看闹钟状态等操作。",
+      "slots": [
+        {
+          "Time": "数据类型： DateTime，取值范围： 具体时间点（如：早上7点、下午3点30分、18:00等），用途： 指定要查看的闹钟时间"
+        },
+        {
+          "Content": "数据类型： String，取值范围： 任意事件描述（如：起床、开会、吃药、锻炼、上班等），用途： 指定要查看的闹钟关联的事件或备注"
+        },
+        {
+          "RangeType": "数据类型： String，取值范围： 全部|今天|明天|本周|下周|工作日|周末|单次|重复|指定日期等，用途： 指定查看闹钟的时间范围或类型"
+        },
+        {
+          "State": "数据类型： String，取值范围： 已开启|已关闭|已过期|活跃|暂停等，用途： 指定要查看的闹钟的当前状态"
+        }
+      ],
+      "category_Level1": "闹钟操作",
+      "category_Level2": "工具应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我看看明天上午9点叫我开会的闹钟开了没有"
+        },
+        {
+          "role": "assistant",
+          "content": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")"
+        }
+      ]
+    },
+    "output": "CheckAlarm(Time=\"9点\", Content=\"开会\", RangeType=\"今天\", State=\"已开启\")"
+  },
+  {
+    "input": {
+      "id": "ef6ebf81-29d5-5a30-8c89-26d42c7ae751",
+      "intent_name": "DeleteAlarm",
+      "intent_description": "用于识别用户想要删除闹钟或提醒的语音指令。该意图能够理解用户通过自然语言表达的删除闹钟需求，包括删除特定时间的闹钟、删除特定事件的提醒、批量删除闹钟以及删除特定状态的闹钟等操作。",
+      "slots": [
+        {
+          "Time": "数据类型： DateTime，取值范围： 具体时间点（如：早上7点、下午3点30分、18:00等），用途： 指定要删除的闹钟时间"
+        },
+        {
+          "Content": "数据类型： String，取值范围： 任意事件描述（如：起床、开会、吃药、锻炼、上班等），用途： 指定要删除的闹钟关联的事件或备注"
+        },
+        {
+          "RangeType": "数据类型： String，取值范围： 全部|今天|明天|本周|下周|工作日|周末|单次|重复|指定日期等，用途： 指定删除闹钟的时间范围或类型"
+        },
+        {
+          "State": "数据类型： String，取值范围： 已开启|已关闭|已过期|活跃|暂停等，用途： 指定要删除的闹钟的当前状态"
+        }
+      ],
+      "category_Level1": "闹钟操作",
+      "category_Level2": "工具应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我取消明天早上8点的会议提醒"
+        },
+        {
+          "role": "assistant",
+          "content": "DeleteAlarm(Time=\"明天8:00\", Content=\"会议\", RangeType=\"明天\")"
+        }
+      ]
+    },
+    "output": "DeleteAlarm(Time=\"早上8点\", Content=\"会议\", RangeType=\"明天\", State=\"已开启\")"
+  },
+  {
+    "input": {
+      "id": "00b21a1f-921a-5b6e-9776-fcd438cfb85c",
+      "intent_name": "CreateNote",
+      "intent_description": "用于识别用户想要创建笔记或备忘录的语音指令。该意图能够理解用户通过自然语言表达的笔记创建需求，包括在指定应用中创建笔记、设置笔记标题和内容、指定笔记类型以及设置提醒时间等操作。",
+      "slots": [
+        {
+          "AppName": "数据类型： String，取值范围： 记事本|便签|OneNote|印象笔记|有道云笔记|为知笔记|石墨文档|腾讯文档|WPS|Word等，用途： 指定用于创建笔记的应用程序"
+        },
+        {
+          "Title": "数据类型： String，取值范围： 任意文本内容，用途： 指定笔记的标题"
+        },
+        {
+          "Content": "数据类型： String，取值范围： 任意文本内容，用途： 指定笔记的具体内容"
+        },
+        {
+          "Type": "数据类型： String，取值范围： 普通笔记|待办事项|会议记录|学习笔记|工作笔记|个人日记|购物清单|提醒事项等，用途： 指定笔记的类型或分类"
+        },
+        {
+          "ReminderTime": "数据类型： DateTime，取值范围： 具体时间点或相对时间，用途： 设置笔记的提醒时间"
+        }
+      ],
+      "category_Level1": "系统工具操作",
+      "category_Level2": "工具应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "早上开会时老板布置了几个新任务，能帮我在WPS里创建一份标题为\"Q3项目计划\"的工作笔记吗？内容就写\"1.市场调研 2.竞品分析 3.方案设计\"，最好能在明天下午三点提醒我查看"
+        },
+        {
+          "role": "assistant",
+          "content": "CreateNote(AppName=\"WPS\", Title=\"Q3项目计划\", Content=\"1.市场调研 2.竞品分析 3.方案设计\", Type=\"工作笔记\", ReminderTime=\"明天15:00\")"
+        }
+      ]
+    },
+    "output": "CreateNote(AppName=\"WPS\", Title=\"Q3项目计划\", Content=\"1.市场调研 2.竞品分析 3.方案设计\", Type=\"工作笔记\", ReminderTime=\"明天15:00\")"
+  },
+  {
+    "input": {
+      "id": "9f4fdb0b-a49f-5b77-8aaf-5092ddecde20",
+      "intent_name": "Translate",
+      "intent_description": "用于识别用户想要进行翻译操作的语音指令。该意图能够理解用户通过自然语言表达的翻译需求，包括文本翻译、语言转换、多语言互译等各种翻译相关的操作指令。",
+      "slots": [
+        {
+          "Content": "数据类型： String，取值范围： 任意文本内容，用途： 指定要翻译的文本内容"
+        },
+        {
+          "SourceLanguage": "数据类型： String，取值范围： 中文|英文|日文|韩文|法文|德文|西班牙文|俄文|阿拉伯文|意大利文|葡萄牙文|泰文|越南文|自动检测等，用途： 指定源语言类型"
+        },
+        {
+          "TargetLanguage": "数据类型： String，取值范围： 中文|英文|日文|韩文|法文|德文|西班牙文|俄文|阿拉伯文|意大利文|葡萄牙文|泰文|越南文等，用途： 指定目标翻译语言"
+        }
+      ],
+      "category_Level1": "实际应用",
+      "category_Level2": "工具应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "把这段中文翻译成英文：\"今天的天气真好，适合外出散步。\""
+        },
+        {
+          "role": "assistant",
+          "content": "Translate(Content=\"今天的天气真好，适合外出散步。\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")"
+        }
+      ]
+    },
+    "output": "Translate(Content=\"今天的天气真好，适合外出散步。\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")"
+  },
+  {
+    "input": {
+      "id": "61bd1f34-79c4-5f11-8f59-29397c33ef87",
+      "intent_name": "CaptureScreenshot",
+      "intent_description": "用于识别用户想要进行静态屏幕截图的语音指令。该意图能够理解用户通过自然语言表达的截图需求，包括全屏截图、区域截图、窗口截图等各种屏幕捕获操作，并支持指定截图区域和保存路径。",
+      "slots": [
+        {
+          "CaptureArea": "数据类型： String，取值范围： 全屏|当前窗口|选定区域|活动窗口|桌面|指定区域，用途： 指定要截图的区域范围"
+        },
+        {
+          "SavePath": "数据类型： String，取值范围： 任意有效的文件路径或文件夹路径，用途： 指定截图文件的保存位置"
+        }
+      ],
+      "category_Level1": "实际应用",
+      "category_Level2": "工具应用",
+      "category_Level3": "App操控",
+      "data": [
+        {
+          "role": "user",
+          "content": "您好，麻烦帮我截取当前正在使用的浏览器窗口画面，并保存在桌面\"工作资料\"文件夹里，谢谢！"
+        },
+        {
+          "role": "assistant",
+          "content": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"~/Desktop/工作资料\")"
+        }
+      ]
+    },
+    "output": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"桌面/工作资料\")"
+  },
+  {
+    "input": {
+      "id": "bc147a7f-9f42-5865-8f4c-c4f91731e009",
+      "intent_name": "Refresh",
+      "intent_description": "用于识别用户想要执行刷新操作的语音指令。该意图能够理解用户通过自然语言表达的刷新需求，包括刷新页面、更新内容、重新加载、刷新桌面、刷新文件夹等各种刷新相关的操作指令。",
+      "slots": [],
+      "category_Level1": "界面刷新",
+      "category_Level2": "窗口与元素操作",
+      "category_Level3": "界面交互",
+      "data": [
+        {
+          "role": "user",
+          "content": "电脑有点卡，能帮我刷新下桌面吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "Refresh()"
+        }
+      ]
+    },
+    "output": "Refresh()"
+  },
+  {
+    "input": {
+      "id": "5487e07c-1bcc-5e6c-bd74-a9d787cb6aed",
+      "intent_name": "TaskManagerOnOff",
+      "intent_description": "用于识别用户想要控制任务管理器开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的任务管理器操作需求，包括打开任务管理器、关闭任务管理器、启动进程管理器、退出系统监视器等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--开启多窗口模式，False--关闭多窗口模式"
+        }
+      ],
+      "category_Level1": "多任务视图",
+      "category_Level2": "视图控制",
+      "category_Level3": "界面交互",
+      "data": [
+        {
+          "role": "user",
+          "content": "可以麻烦你帮我把任务管理器调出来吗？我需要查一下后台进程"
+        },
+        {
+          "role": "assistant",
+          "content": "TaskManagerOnOff(ActionType=True)"
+        }
+      ]
+    },
+    "output": "TaskManagerOnOff(ActionType=True)"
+  },
+  {
+    "input": {
+      "id": "61784233-5e6f-5504-af66-229e0f0f03bb",
+      "intent_name": "MultipleWindowModeOnOff",
+      "intent_description": "用于识别用户想要控制多窗口模式开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的多窗口功能操作需求，包括开启分屏模式、关闭多窗口显示、启用窗口并排显示、禁用分割屏幕等相关操作指令。",
+      "slots": [
+        {
+          "ActionType": "数据类型： Boolean，取值范围： True|False，用途： True--开启多窗口模式，False--关闭多窗口模式"
+        }
+      ],
+      "category_Level1": "多任务视图",
+      "category_Level2": "视图控制",
+      "category_Level3": "界面交互",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把手机的分屏模式打开吧，我需要同时看两个应用"
+        },
+        {
+          "role": "assistant",
+          "content": "MultipleWindowModeOnOff(ActionType=True)"
+        }
+      ]
+    },
+    "output": "MultipleWindowModeOnOff(ActionType=True)"
+  },
+  {
+    "input": {
+      "id": "64c5f7c3-28bd-5b86-a322-33e905a80665",
+      "intent_name": "EmptyBin",
+      "intent_description": "用于识别用户想要清空回收站或垃圾箱的语音指令。该意图能够理解用户通过自然语言表达的清空垃圾箱需求，包括清空回收站、删除垃圾文件、清理废纸篓、永久删除回收站文件等相关操作指令。",
+      "slots": [],
+      "category_Level1": "回收站操作",
+      "category_Level2": "文件与桌面管理",
+      "category_Level3": "界面交互",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我把电脑的回收站彻底清空一下"
+        },
+        {
+          "role": "assistant",
+          "content": "EmptyBin()"
+        }
+      ]
+    },
+    "output": "EmptyBin()"
+  },
+  {
+    "input": {
+      "id": "0a0c8b48-c3b7-56c3-8e06-6c2ac4277a31",
+      "intent_name": "Search",
+      "intent_description": "用于识别用户想要进行搜索操作的语音指令。该意图能够理解用户通过自然语言表达的搜索需求，包括网络搜索、本地搜索、应用内搜索、文件搜索等各种搜索相关的操作指令。",
+      "slots": [
+        {
+          "Content": "数据类型： String，取值范围： 任意文本内容，用途： 指定要搜索的关键词、短语或具体内容"
+        }
+      ],
+      "category_Level1": "搜索操作",
+      "category_Level2": "文件与桌面管理",
+      "category_Level3": "界面交互",
+      "data": [
+        {
+          "role": "user",
+          "content": "帮我查一下明天北京的天气预报"
+        },
+        {
+          "role": "assistant",
+          "content": "Search(Content=\"明天 北京 天气预报\")"
+        }
+      ]
+    },
+    "output": "Search(Content=\"明天北京天气预报\")"
+  }
+]
