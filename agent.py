@@ -24,6 +24,7 @@ class BaseLLM(ABC):
             model_name,
             trust_remote_code=True,
             device_map="auto" if not IS_NPU else {"": "npu"},
+            dtype = "bfloat16"
         )
 
     def generate(self, messages, max_new_tokens=1024, **kwargs):
@@ -48,7 +49,8 @@ class CustomAgent(BaseLLM):
         super().__init__(model_name)
         self.tool_file="prompts/tools_v0.json"
         self.tool_list=self.convert_tools_from_file(input_file=self.tool_file)
-        self.tool_docs="\n\n".join(self.tool_list)
+        # self.tool_docs="\n\n".join(self.tool_list)
+        self.tool_docs = "\n".join(json.dumps(tool, ensure_ascii=False) for tool in self.tool_list)
 
         self.system_prompt = f"""
                         你是一个智能助手，需要根据用户的指令选择合适的工具进行调用。
@@ -62,9 +64,10 @@ class CustomAgent(BaseLLM):
                            - Boolean 类型用 True 或 False 表示（首字母大写）。
                            - 数值类型直接写数字。
                         5. 参数顺序必须严格按照工具信息中的顺序填写。
-                        6. 所有必填参数(required)都必须真实填写，不能省略或留空。
-                        7. 如果工具没有参数，则直接写 ToolName()。
-                        8. 如果用户的要求确实无法匹配任何提供的工具，请直接用自然语言回答，不调用工具。
+                        6. 所有工具所不可缺（即没有这个参数工具不能正常工作）的参数都必须真实填写，不能省略或留空。
+                        7. 请仔细阅读用户（user）指令，参数的提取请尽量参照用户的指令，即若指令中包含参数的内容，请严格按照它，不要乱编乱改，不要无中生有。
+                        8. 如果工具没有参数，则直接写 ToolName()。
+                        9. 如果用户的要求确实无法匹配任何提供的工具，请直接用自然语言回答，不调用工具。
 
                         工具选择规则：
                         1. 如果用户需要翻译某句话，不要直接翻译，请调用工具。
@@ -170,7 +173,7 @@ class CustomAgent(BaseLLM):
                                 param_property["enum"] = enum_values
 
                     function_def["parameters"]["properties"][param["name"]] = param_property
-                    function_def["parameters"]["required"].append(param["name"])
+                    # function_def["parameters"]["required"].append(param["name"])
 
             openai_tools.append({
                 "type": "function",
