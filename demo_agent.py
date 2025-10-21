@@ -108,14 +108,24 @@ class HierarchicalAgent:
             levels_info.append(f"- {level}")
         levels_info = "\n".join(levels_info)
 
-        level_prompt = f"""你是一个智能助手，需要根据用户的指令选择合适的工具类别进行调用。工具类别列表如下:\n{levels_info}\n请按照<level></level>标签包裹工具类别名称，即工具类别名称必须符合以下格式：<level>字体设置</level>，例如 <level>数学运算</level>，<level>字符串处理</level>，如果用户的指令不需要调用工具，请直接给出回答"""
+        level_prompt = f"""你是一个智能助手，需要根据用户的指令选择合适的工具类别进行调用。请注意，你必须根据指令认真选择一个类别。
+        工具类别列表如下:\n{levels_info}\n请按照<level></level>标签包裹工具类别名称，即工具类别名称必须符合以下格式：
+        <level>字体设置</level>，例如 <level>数学运算</level>，<level>字符串处理</level>，
+        如果用户的指令不需要调用工具，请直接给出回答"""
 
         self.level_system_prompt = level_prompt
 
         self.tool_system_prompt = {}
         for level, tool_info_list in tools_level_info.items():
             tools_info = "\n\n".join(tool_info_list)
-            tool_prompt = f"""你是一个智能助手，需要根据用户的指令选择合适的工具进行调用。工具的调用格式与python函数一致，为ToolName(param1=value1, param2=value2)。工具列表如下:\n{tools_info}\n请按照<tool></tool>标签包裹工具调用代码，即工具调用代码必须符合以下格式：<tool>函数名(参数1=值1, 参数2=值2)</tool>，对于String类型数值必须用""包裹，参数顺序严格遵守提供的顺序。例如 <tool>Add(num1=1, num2=2)</tool>，<tool>Concat(str1="hello", str2="world")</tool>，如果工具没有参数，则直接写函数名即可，如<tool>GetTime()</tool>。如果用户的指令不需要调用工具，请直接给出回答"""
+            tool_prompt = f"""你是一个智能助手，需要根据用户的指令选择合适的工具进行调用。
+            工具的调用格式与python函数一致，为ToolName(param1=value1, param2=value2)。
+            工具列表如下:\n{tools_info}\n请按照<tool></tool>标签包裹工具调用代码，
+            即工具调用代码必须符合以下格式：<tool>函数名(参数1=值1, 参数2=值2)</tool>，
+            对于String类型数值必须用""包裹，参数顺序严格遵守提供的顺序。
+            例如 <tool>Add(num1=1, num2=2)</tool>，<tool>Concat(str1="hello", str2="world")</tool>，
+            如果工具没有参数，则直接写函数名即可，如<tool>GetTime()</tool>。
+            如果用户的指令不需要调用工具，请直接给出回答"""
             self.tool_system_prompt[level] = tool_prompt
 
     def run(self, input_messages) -> str:
