@@ -172,10 +172,10 @@ class CustomAgent(BaseLLM):
                     function_def["parameters"]["properties"][param["name"]] = param_property
                     function_def["parameters"]["required"].append(param["name"])
 
-            openai_tools.append({
+            openai_tools.append(str({
                 "type": "function",
                 "function": function_def
-            })
+            }))
 
         return openai_tools
 
