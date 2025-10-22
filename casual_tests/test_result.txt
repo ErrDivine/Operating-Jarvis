@@ -1,0 +1,169 @@
+restart**************************************************
+
+Agent output:CheckBatteryConsumptionRank(TimeRange="最近7天", AnomalyDetection=True, SortBy="DESC")
+Correct answer:CheckBatteryConsumptionRank(TimeRange="最近7天", AnomalyDetection=False, SortBy="DESC")****************************************************************************************************
+
+Agent output:ControlSound(VolumeType="通话音量", ActionType="增加", Percentage="10")
+Correct answer:ControlSound(VolumeType="通话音量", ActionType="增加", Percentage=15)****************************************************************************************************
+
+Agent output:QuietModeOnOff(ActionType="开启")
+Correct answer:QuietModeOnOff(ActionType=True)****************************************************************************************************
+
+Agent output:ControlLuminance(DeviceType="平板屏幕", ActionType="调到", Percentage="60")
+Correct answer:ControlLuminance(DeviceType="平板屏幕", ActionType="调到", Percentage=60)****************************************************************************************************
+
+Agent output:CheckContrast(DeviceType="屏幕")
+Correct answer:CheckContrast(DeviceType="显示器")****************************************************************************************************
+
+Agent output:SwitchContrast(DeviceType="电脑屏幕", ActionType="调到", Percentage="60")
+Correct answer:SwitchContrast(DeviceType="电脑屏幕", ActionType="增强", Percentage=60)****************************************************************************************************
+
+Agent output:SwitchFontSize(ActionType="调大", AdjustLevel="最大", AppName="微信", FontSize="24号")
+Correct answer:SwitchFontSize(ActionType="设置", AdjustLevel="最大", AppName="微信")****************************************************************************************************
+
+Agent output:SwitchFontWeight(ActionType="设置", FontWeight="粗体", AppName="微信")
+Correct answer:SwitchFontWeight(ActionType="调整", FontWeight="粗体", AppName="微信")****************************************************************************************************
+
+Agent output:SwitchFontType(FontType="楷体", ActionType="设置", AppName="微信")
+Correct answer:ControlFontType(FontType="楷体", ActionType="更换", AppName="微信")****************************************************************************************************
+
+Agent output:SwitchLanguage(AppName="微信", LanguageType="英文", ActionType="切换")
+Correct answer:SwitchLanguage(AppName="微信", LanguageType="英文", ActionType="更改")****************************************************************************************************
+
+Agent output:CheckSystemUpdate()
+Correct answer:SystemUpdate(ActionType="升级")****************************************************************************************************
+
+Agent output:Call(AppName="微信", Contact="李经理", PhoneNumber="13812345678", Mode="免提", PhoneCard="卡1")
+Correct answer:Call(AppName="微信", Contact="李经理", PhoneCard="卡1", Mode="免提")****************************************************************************************************
+
+Agent output:AnswerCall(ActionType=True, Mode="免提", Response="")
+Correct answer:AnswerCall(ActionType=True, Mode="免提")****************************************************************************************************
+
+Agent output:SendMessage(AppName="微信", Contact="王总", PhoneNumber="工作卡", PhoneCard="工作卡", Content="下午的会议改到3点了。")
+Correct answer:SendMessage(AppName="微信", Contact="王总", PhoneCard="工作卡", Content="下午的会议改到3点")****************************************************************************************************
+
+Agent output:SendEmail(AppName="网易邮箱", Contact="李总", EmailAddress="lizong@company.com", Content="关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见")
+Correct answer:SendEmail(AppName="网易邮箱", Contact="李总", Content="关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见")****************************************************************************************************
+
+Agent output:CheckEmail(AppName="Outlook", Folder="星标邮件", TimeRange="昨天", State="已开启")
+Correct answer:CheckEmail(AppName="Outlook", Folder="星标邮件", TimeRange="昨天")****************************************************************************************************
+
+Agent output:CreateAlarm(Time="08:00", Content="开项目例会")
+Correct answer:CreateAlarm(Time="明天早上8点", Content="项目例会")****************************************************************************************************
+
+Agent output:CheckAlarm(Time="9点", Content="开会", RangeType="今天", State="已开启")
+Correct answer:CheckAlarm(Time="明天上午9点", Content="开会", RangeType="明天", State="已开启")****************************************************************************************************
+
+Agent output:DeleteAlarm(Time="早上8点", Content="会议", RangeType="明天", State="已开启")
+Correct answer:DeleteAlarm(Time="明天8:00", Content="会议", RangeType="明天")****************************************************************************************************
+
+Agent output:CaptureScreenshot(CaptureArea="当前窗口", SavePath="桌面/工作资料")
+Correct answer:CaptureScreenshot(CaptureArea="当前窗口", SavePath="~/Desktop/工作资料")****************************************************************************************************
+
+Agent output:Search(Content="明天北京天气预报")
+Correct answer:Search(Content="明天 北京 天气预报")****************************************************************************************************
+
+Agent output:CheckSystemUpdate()
+Correct answer:BlueToothOnOff(ActionType=True)****************************************************************************************************
+
+Agent output:SearchBlueTooth(DeviceType="耳机")
+Correct answer:[SearchBlueTooth(DeviceType="耳机")]****************************************************************************************************
+
+Agent output:SearchWlan()
+Correct answer:WlanOnOff(ActionType=True)****************************************************************************************************
+
+Agent output:BatterySavingMode(ActionType=True)
+Correct answer:ShutDown(DeviceType="手机")****************************************************************************************************
+
+Agent output:ControlSound(VolumeType="铃声音量", ActionType="减少", Percentage="10")
+Correct answer:ControlSound(VolumeType="铃声音量", ActionType="设置为", Percentage=50)****************************************************************************************************
+
+Agent output:<vibration_mode_off/>
+Correct answer:VibrationModeOnOff(ActionType=False)****************************************************************************************************
+
+Agent output:QuietModeOnOff(ActionType="开启")
+Correct answer:QuietModeOnOff(ActionType=True)****************************************************************************************************
+
+Agent output:CheckLuminance(DeviceType="屏幕")
+Correct answer:CheckLuminance(DeviceType="显示器")****************************************************************************************************
+
+Agent output:ControlLuminance(DeviceType="屏幕", ActionType="增加", Percentage="10")
+Correct answer:ControlLuminance(DeviceType="屏幕", ActionType="自动")****************************************************************************************************
+
+Agent output:AutoLuminanceOnOff(DeviceType="屏幕", ActionType=True)
+Correct answer:AutoLuminanceOnOff(DeviceType="平板屏幕", ActionType=True)****************************************************************************************************
+
+Agent output:CheckContrast()
+Correct answer:CheckContrast(DeviceType="显示器")****************************************************************************************************
+
+Agent output:SwitchContrast(DeviceType="屏幕", ActionType="护眼模式", Percentage="50")
+Correct answer:SwitchContrast(DeviceType="显示器",ActionType="护眼模式")****************************************************************************************************
+
+Agent output:ControlLuminance(DeviceType="手机屏幕", ActionType="减少", Percentage="20")
+Correct answer:SetSystemTheme(ThemeType="深色模式")****************************************************************************************************
+
+Agent output:SwitchFontSize(ActionType="放大", AdjustLevel="一级", AppName="阅读器", FontSize="18号")
+Correct answer:SwitchFontSize(ActionType="调大", AdjustLevel="两级", AppName="阅读器")****************************************************************************************************
+
+Agent output:SwitchFontWeight()
+Correct answer:SwitchFontWeight(ActionType="设置", FontWeight="粗体", AppName="文档")****************************************************************************************************
+
+Agent output:SwitchFontType(FontType="微软雅黑", ActionType="设置", AppName="浏览器")
+Correct answer:ControlFontType(FontType="微软雅黑", ActionType="设置", AppName="浏览器")****************************************************************************************************
+
+Agent output:SwitchInputMethod(AppName="微信", InputMethodName="搜狗输入法", ActionType="切换")
+Correct answer:SwitchInputMethod(AppName="微信", InputMethodName="搜狗输入法", ActionType="设为默认")****************************************************************************************************
+
+Agent output:SwitchApp(AppName="游戏")
+Correct answer:SwitchLanguage(AppName="游戏", LanguageType="中文", ActionType="切换")****************************************************************************************************
+
+Agent output:HotShotOnOff(ActionType=True)
+Correct answer:AirplaneModeOnOff(ActionType=True)****************************************************************************************************
+
+Agent output:CheckSystemUpdate()
+Correct answer:SystemUpdate(ActionType="立即更新")SystemUpdate(ActionType="自动更新")****************************************************************************************************
+
+Agent output:SwitchApp(AppName="微信")
+Correct answer:SwitchApp(AppName="网易云音乐")****************************************************************************************************
+
+Agent output:Call(AppName="微信", Contact="李经理", PhoneNumber="13812345678", Mode="免提", PhoneCard="主卡")
+Correct answer:Call(AppName="微信", Contact="李经理", Mode="免提", PhoneCard="工作卡")****************************************************************************************************
+
+Agent output:AnswerCall(ActionType=True, Mode="免提", Response="")
+Correct answer:AnswerCall(ActionType=False)****************************************************************************************************
+
+Agent output:SendMessage(AppName="微信", Contact="张经理", PhoneNumber="", PhoneCard="", Content="会议改到明天下午三点。")
+Correct answer:SendMessage(AppName="微信", Contact="张经理", Content="会议改到明天下午三点，请准时参加")****************************************************************************************************
+
+Agent output:SendEmail(AppName="QQ邮箱", Contact="张总", EmailAddress="zhangzong@example.com", Content="尊敬的张总：项目第一阶段已顺利完成，详细报告见附件。请您查收。")
+Correct answer:完全正确，直接发送就可以****************************************************************************************************
+
+Agent output:CheckEmail(AppName="QQ邮箱", Folder="重要邮件", TimeRange="昨天", State="已开启")
+Correct answer:CheckEmail(AppName="QQ邮箱",Folder="重要邮件",TimeRange="昨天")****************************************************************************************************
+
+Agent output:CreateNote(AppName="记事本", Title="明天早上重要会议", Content="明天早上有一个重要会议，需要提前准备相关材料和演示内容。", Type="会议记录", ReminderTime="明天早上8:00")
+Correct answer:CreateAlarm(Time="08:45", Content="重要会议提醒")****************************************************************************************************
+
+Agent output:CheckAlarm(Time="早上7点", Content="重要会议", RangeType="明天", State="已开启")
+Correct answer:CheckAlarm(Time="明天9:00", Content="会议", RangeType="明天")****************************************************************************************************
+
+Agent output:DeleteAlarm(Time="早上6点", Content="起床", RangeType="今天", State="已开启")
+Correct answer:DeleteAlarm(State="已过期")****************************************************************************************************
+
+Agent output:CreateNote(AppName="WPS", Title="会议要点", Content="会议讨论了项目进度、预算分配和团队分工。需要在下周内完成初步方案。", Type="会议记录", ReminderTime="18:00")
+Correct answer:CreateNote(AppName="WPS", Title="季度项目复盘", Type="会议记录", ReminderTime="2023-11-15 15:00")****************************************************************************************************
+
+Agent output:Translate(Content="帮我把这段中文翻译成英文", SourceLanguage="中文", TargetLanguage="英文")
+Correct answer:Translate(Content="人工智能正在改变世界", SourceLanguage="中文", TargetLanguage="英文")****************************************************************************************************
+
+Agent output:MultipleWindowModeOnOff(ActionType=False)
+Correct answer:Refresh()****************************************************************************************************
+
+Agent output:TaskManagerOnOff(ActionType=True)
+Correct answer:TaskManagerOnOff(ActionType=False)****************************************************************************************************
+
+Agent output:MultipleWindowModeOnOff(ActionType=True)
+Correct answer:MultipleWindowModeOnOff(ActionType=False)****************************************************************************************************
+
+Agent output:Search(Content="明天从北京飞上海的航班")
+Correct answer:Search(Content="北京飞上海 明天 上午10点到12点 航班")**************************************************
