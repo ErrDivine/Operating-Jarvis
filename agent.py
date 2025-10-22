@@ -50,56 +50,90 @@ class CustomAgent(BaseLLM):
         self.tool_file="prompts/tools_v0.json"
         self.tool_list=self.convert_tools_from_file(input_file=self.tool_file)
         # self.tool_docs="\n\n".join(self.tool_list)
-        self.tool_docs = "\n".join(json.dumps(tool, ensure_ascii=False) for tool in self.tool_list)
-
-        self.system_prompt = f"""
-                        你是一个智能助手，需要根据用户的指令选择合适的工具进行调用。
-
-                        工具调用必须遵守：
-                        1. 只能调用下方提供的工具列表中的函数名，不能创造或修改函数名。
-                        2. 工具调用格式与 Python 函数一致：ToolName(param1=value1, param2=value2)。
-                        3. 工具名和参数名必须与提供的工具信息中的名称完全一致（区分大小写）。
-                        4. 参数类型必须符合要求：
-                           - String 类型用英文双引号包裹: param="值"
-                           - Boolean 类型用 True 或 False 表示（首字母大写）。
-                           - 数值类型直接写数字。
-                        5. 参数顺序必须严格按照工具信息中的顺序填写。
-                        6. 所有工具所不可缺（即没有这个参数工具不能正常工作）的参数都必须真实填写，不能省略或留空。
-                        7. 请仔细阅读用户（user）指令，参数的提取请尽量参照用户的指令，即若指令中包含参数的内容，请严格按照它，不要乱编乱改，不要无中生有。
-                        8. 如果工具没有参数，则直接写 ToolName()。
-                        9. 如果用户的要求确实无法匹配任何提供的工具，请直接用自然语言回答，不调用工具。
-
-                        工具选择规则：
-                        1. 如果用户需要翻译某句话，不要直接翻译，请调用工具。
-                        2. 如果用户的要求无法匹配任何提供的工具，但属于信息查询类（例如查询天气、新闻、百科、价格、路线、赛事结果、人物信息、事件背景等），且这些信息可以通过在网络搜索获取，则必须调用 Search 工具，其中 Search 的 Content 参数为用户的原始查询内容（去掉礼貌用语，保留核心搜索关键词），不能留空。
-                        3. - SwitchApp(AppName) 使用规则：
-                              1. 如果 Prompt 中包含了关于用户需求与应用对应关系的知识（例如周杰伦的歌 → QQ音乐），则直接选择正确的 AppName；否则，按逻辑选择。
-                              3. 不要随意使用笼统类 AppName（如 "音乐"、"视频" 等）代替具体 AppName。
+        # self.tool_docs = "\n".join(json.dumps(tool, ensure_ascii=False) for tool in self.tool_list)
 
 
-                        工具区分规则：
-                        * CheckSystemUpdate：仅用于查询系统更新状态或历史信息，不会改变系统的更新状态。例如“检查是否有系统更新”、“查看更新记录”、“查询最新版本”。
-                        * SystemUpdate：用于执行系统更新的实际操作，会改变系统更新状态。例如“下载更新”、“安装更新”、“暂停更新”、“继续更新”、“取消更新”、“重启后更新”等。
-                        模型在判断时应优先根据用户的意图是否是查询（只获取信息）还是操作（执行更新命令）来选择对应的工具。如果用户明确提出了自己面临的问题，优先选择操作。
+        # >>>   test use   >>>
+        with open("casual_tests/test_level1_json.json", 'r', encoding='utf-8') as f:
+            tools_data = json.load(f)
+        self.tool_docs = str(tools_data)
 
-                        SwitchApp 特殊决策规则：
-                        - 音乐播放类：
-                          * 周杰伦、林俊杰、五月天等版权主要在 QQ音乐 平台，不能返回 "音乐"，应返回 "QQ音乐"
-                          * Taylor Swift、Adele 等国外歌手，支持 Spotify（若无Spotify则用 网易云音乐 或 QQ音乐）
-                        - 视频播放类：
-                          * 腾讯系独家剧集 → 腾讯视频
-                          * 爱奇艺独家剧集 → 爱奇艺
-                          * 优酷独家剧集 → 优酷
+        # <<<   test use   <<<
 
-                        工具列表如下（请根据用户需求选择唯一最合适的工具）：
-                        {self.tool_docs}
+        # self.system_prompt = f"""
+        #                 你是一个智能助手，需要根据用户的指令选择合适的工具进行调用。
+        #
+        #                 工具调用必须遵守：
+        #                 1. 只能调用下方提供的工具列表中的函数名，不能创造或修改函数名。
+        #                 2. 工具调用格式与 Python 函数一致：ToolName(param1=value1, param2=value2)。
+        #                 3. 工具名和参数名必须与提供的工具信息中的名称完全一致（区分大小写）。
+        #                 4. 参数类型必须符合要求：
+        #                    - String 类型用英文双引号包裹: param="值"
+        #                    - Boolean 类型用 True 或 False 表示（首字母大写）。
+        #                    - 数值类型直接写数字。
+        #                 5. 参数顺序必须严格按照工具信息中的顺序填写。
+        #                 6. 所有工具所不可缺（即没有这个参数工具不能正常工作）的参数都必须真实填写，不能省略或留空。
+        #                 7. 请仔细阅读用户（user）指令，参数的提取请尽量参照用户的指令，即若指令中包含参数的内容，请严格按照它，不要乱编乱改，不要无中生有。
+        #                 8. 如果工具没有参数，则直接写 ToolName()。
+        #                 9. 如果用户的要求确实无法匹配任何提供的工具，请直接用自然语言回答，不调用工具。
+        #
+        #                 工具选择规则：
+        #                 1. 如果用户需要翻译某句话，不要直接翻译，请调用工具。
+        #                 2. 如果用户的要求无法匹配任何提供的工具，但属于信息查询类（例如查询天气、新闻、百科、价格、路线、赛事结果、人物信息、事件背景等），且这些信息可以通过在网络搜索获取，则必须调用 Search 工具，其中 Search 的 Content 参数为用户的原始查询内容（去掉礼貌用语，保留核心搜索关键词），不能留空。
+        #                 3. - SwitchApp(AppName) 使用规则：
+        #                       1. 如果 Prompt 中包含了关于用户需求与应用对应关系的知识（例如周杰伦的歌 → QQ音乐），则直接选择正确的 AppName；否则，按逻辑选择。
+        #                       3. 不要随意使用笼统类 AppName（如 "音乐"、"视频" 等）代替具体 AppName。
+        #
+        #
+        #                 工具区分规则：
+        #                 * CheckSystemUpdate：仅用于查询系统更新状态或历史信息，不会改变系统的更新状态。例如“检查是否有系统更新”、“查看更新记录”、“查询最新版本”。
+        #                 * SystemUpdate：用于执行系统更新的实际操作，会改变系统更新状态。例如“下载更新”、“安装更新”、“暂停更新”、“继续更新”、“取消更新”、“重启后更新”等。
+        #                 模型在判断时应优先根据用户的意图是否是查询（只获取信息）还是操作（执行更新命令）来选择对应的工具。如果用户明确提出了自己面临的问题，优先选择操作。
+        #
+        #                 SwitchApp 特殊决策规则：
+        #                 - 音乐播放类：
+        #                   * 周杰伦、林俊杰、五月天等版权主要在 QQ音乐 平台，不能返回 "音乐"，应返回 "QQ音乐"
+        #                   * Taylor Swift、Adele 等国外歌手，支持 Spotify（若无Spotify则用 网易云音乐 或 QQ音乐）
+        #                 - 视频播放类：
+        #                   * 腾讯系独家剧集 → 腾讯视频
+        #                   * 爱奇艺独家剧集 → 爱奇艺
+        #                   * 优酷独家剧集 → 优酷
+        #
+        #                 工具列表如下（请根据用户需求选择唯一最合适的工具）：
+        #                 {self.tool_docs}
+        #
+        #                 输出规范：
+        #                 - 将工具调用代码用 <tool></tool> 标签包裹，例如：
+        #                   <tool>Add(num1=1, num2=2)</tool>
+        #                   <tool>Concat(str1="hello", str2="world")</tool>
+        #                 - 不要在 <tool></tool> 标签外输出多余的工具调用代码。
+        #                 """
 
-                        输出规范：
-                        - 将工具调用代码用 <tool></tool> 标签包裹，例如：
-                          <tool>Add(num1=1, num2=2)</tool>
-                          <tool>Concat(str1="hello", str2="world")</tool>
-                        - 不要在 <tool></tool> 标签外输出多余的工具调用代码。
-                        """
+        # >>>   test use   >>>
+        self.system_prompt=f"""你是一个小型工具路由器。任务：从用户话语中选出唯一最合适的工具及其唯一一个布尔子意图参数，并输出一行 JSON。
+输出规范：
+       - 将工具调用代码用 <tool></tool> 标签包裹，例如：
+       - 不要在 <tool></tool> 标签外输出多余的工具调用代码。
+输出格式（仅此一行）：
+"<tool><function name>(<function parameter>=True)</tool>"
+硬性规则
+只从提供的工具清单中选择；工具名与参数名必须完全匹配（区分大小写）。
+所有参数类型均为 Boolean；仅输出一个参数，并设为 True（其余不出现，视为 False）。
+只能选择一个工具；不得并列或降级为笼统意图。
+判定要点
+纯“查询/查看”语义 → 选该工具下的查询类参数（如 Check*、Search*、CheckBatteryLevel 等）。
+明确“执行/切换/开启/关闭/连接/发送/创建”等操作 → 选对应操作参数（如 SystemUpdate、BlueToothOnOff、ControlLuminance、CreateNote 等）。
+优先选择更专用的工具；仅当确为信息检索时才考虑通用搜索类工具。
+若用户已点名具体对象（如 Wi-Fi/蓝牙/飞行模式/系统更新/电源/回收站），优先选对应工具而非搜索。
+示例（示范格式，勿照抄内容）：
+"<tool>manageBluetooth(BlueToothOnOff=True)</tool>"
+"<tool>manageSystemUpdates(SystemUpdate=True)</tool>"
+工具列表：\n{self.tool_docs}
+"""
+
+        # <<<   test use   <<<
+
+
     def run(self, input_messages) -> str:
         # TODO: Implement your Agent logic here
         messages = [
@@ -116,6 +150,7 @@ class CustomAgent(BaseLLM):
         else:
             response_content = response_content.strip()
         return response_content
+
 
     def convert_tools_to_openai_format(self,tools_data):
         """
