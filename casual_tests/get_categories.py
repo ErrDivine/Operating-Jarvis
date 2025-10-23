@@ -27,7 +27,7 @@ level1_descriptions = {
     "toggleSoundMode": "切换振动与勿扰/静音模式",
 }
 
-
+# category list of level1 names
 cat_list = ['placeCall', 'runSystemUtility', 'setVolume', 'setFont', 'performSearch',
                 'setThemeAndWallpaper', 'manageMessages', 'manageBluetooth', 'manageSystemUpdates',
                 'setLanguageAndInput', 'setPowerSavingMode', 'adjustDisplay', 'getBatteryStatus',
@@ -95,10 +95,13 @@ def get_categoried_tools():
 
     # Fill
     for tool in tools_jsons:
+        # English name of the tool's level1 name
         level1 = mapping[tool["level1"]]
+
+        # add tools in the list 
         res[level1].append(tool["name"])
 
-    print(res)
+    # print(res)
     return res
 
 
@@ -145,9 +148,9 @@ def construct_cat_openai_json():
 
 if __name__ == '__main__':
 
-    print(len(read_tool_json()))
-    list = map_to_list(mapping)
-    print(len(list))
+    # print(len(read_tool_json()))
+    # list = map_to_list(mapping)
+    # print(len(list))
 
     cat_tools = get_categoried_tools()
     cnt = 0
@@ -155,8 +158,8 @@ if __name__ == '__main__':
         cnt += len(value)
         print(key, ":",value)
 
-    cons = construct_cat_openai_json()
-    with open("test_level1_json.json", "w", encoding="utf-8") as f:
-        json.dump(cons, f,ensure_ascii=False, indent=2)
+    # cons = construct_cat_openai_json()
+    # with open("test_level1_json.json", "w", encoding="utf-8") as f:
+    #     json.dump(cons, f,ensure_ascii=False, indent=2)
 
-    print(cons)
+    # print(cons)
