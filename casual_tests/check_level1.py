@@ -19,7 +19,7 @@ def load_data(data_path):
         raise ValueError("Only json and jsonl files are supported")
 
 
-def _compare_categories(res):
+def _compare_categories(res):  # don't print if everything is correct
     map = get_categoried_tools()
     for item in res:
         answer = item["input"]["data"][-1]["content"]
@@ -38,19 +38,25 @@ def _compare_categories(res):
             print(answer, ret)
 
         try:
-            if answer not in map[ret]:
+            if answer not in map[ret]:  # if the category is wrong, go into this branch
                 for key, value in map.items():
                     if answer in value:
                         answer_cat = key
                         break
                 print(answer, answer_cat, ret, map[ret], '\n\n')
+                '''
+                answer: correct tool name
+                answer_cat: correct category name
+                ret: model output category name
+                map[ret]: tools to be chosen of a category
+                '''
         except:
             print(ret, '\n')
 
 
 def compare_categories():
-    res_single = load_data("../results_single.json")
-    res_multi = load_data("../results_multiple.json")
+    res_single = load_data("result_category_single.json")
+    res_multi = load_data("result_category_multiple.json")
 
     _compare_categories(res_single)
     _compare_categories(res_multi)
