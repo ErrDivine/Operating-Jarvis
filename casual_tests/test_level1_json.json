@@ -2,6 +2,31 @@
   {
     "type": "function",
     "function": {
+      "name": "powerDevice",
+      "description": "重启/关闭/锁屏/休眠设备",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "Reboot": {
+            "type": "Boolean",
+            "description": "用于识别用户想要重启设备的语音指令。该意图能够理解用户通过自然语言表达的设备重启需求，包括重启手机、重新启动、系统重启、关机重启等相关操作指令。"
+          },
+          "ShutDown": {
+            "type": "Boolean",
+            "description": "用于识别用户想要关闭设备的语音指令。该意图能够理解用户通过自然语言表达的设备关机需求，包括关机、关闭手机、系统关机、电源关闭等相关操作指令。"
+          },
+          "Sleep": {
+            "type": "Boolean",
+            "description": "用于识别用户想要让设备进入睡眠或待机状态的语音指令。该意图能够理解用户通过自然语言表达的设备休眠需求，包括进入睡眠模式、待机、休眠、锁屏待机等相关操作指令。"
+          }
+        },
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
       "name": "placeCall",
       "description": "拨打/接听电话并查询联系人",
       "parameters": {
@@ -91,7 +116,7 @@
     "type": "function",
     "function": {
       "name": "performSearch",
-      "description": "系统内搜索内容或应用",
+      "description": "系统内搜索，查询内容",
       "parameters": {
         "type": "object",
         "properties": {
@@ -108,7 +133,7 @@
     "type": "function",
     "function": {
       "name": "setThemeAndWallpaper",
-      "description": "切换深浅色或设置系统主题",
+      "description": "设置主题/壁纸/模式",
       "parameters": {
         "type": "object",
         "properties": {
@@ -230,7 +255,7 @@
     "type": "function",
     "function": {
       "name": "adjustDisplay",
-      "description": "查询/调节亮度、对比度与自动亮度",
+      "description": "查询/调节亮度或对比度或自动亮度",
       "parameters": {
         "type": "object",
         "properties": {
@@ -284,7 +309,7 @@
     "type": "function",
     "function": {
       "name": "refreshUI",
-      "description": "刷新界面视图",
+      "description": "界面刷新/刷新界面视图",
       "parameters": {
         "type": "object",
         "properties": {
@@ -301,7 +326,7 @@
     "type": "function",
     "function": {
       "name": "toggleAirplaneMode",
-      "description": "开启或关闭飞行模式",
+      "description": "开启/关闭/切换飞行模式",
       "parameters": {
         "type": "object",
         "properties": {
@@ -367,31 +392,6 @@
   {
     "type": "function",
     "function": {
-      "name": "powerDevice",
-      "description": "重启、关机或休眠设备",
-      "parameters": {
-        "type": "object",
-        "properties": {
-          "Reboot": {
-            "type": "Boolean",
-            "description": "用于识别用户想要重启设备的语音指令。该意图能够理解用户通过自然语言表达的设备重启需求，包括重启手机、重新启动、系统重启、关机重启等相关操作指令。"
-          },
-          "ShutDown": {
-            "type": "Boolean",
-            "description": "用于识别用户想要关闭设备的语音指令。该意图能够理解用户通过自然语言表达的设备关机需求，包括关机、关闭手机、系统关机、电源关闭等相关操作指令。"
-          },
-          "Sleep": {
-            "type": "Boolean",
-            "description": "用于识别用户想要让设备进入睡眠或待机状态的语音指令。该意图能够理解用户通过自然语言表达的设备休眠需求，包括进入睡眠模式、待机、休眠、锁屏待机等相关操作指令。"
-          }
-        },
-        "required": []
-      }
-    }
-  },
-  {
-    "type": "function",
-    "function": {
       "name": "manageRecycleBin",
       "description": "清空回收站/废纸篓",
       "parameters": {
@@ -410,7 +410,7 @@
     "type": "function",
     "function": {
       "name": "switchApp",
-      "description": "在前台应用之间切换",
+      "description": "打开某应用或软件/在前台应用或软件之间切换",
       "parameters": {
         "type": "object",
         "properties": {
@@ -494,7 +494,7 @@
     "type": "function",
     "function": {
       "name": "toggleSoundMode",
-      "description": "切换振动与勿扰/静音模式",
+      "description": "切换振动/勿扰/静音模式",
       "parameters": {
         "type": "object",
         "properties": {
