@@ -43,7 +43,7 @@ class BaseLLM(ABC):
 
 
 class CustomAgent(BaseLLM):
-    def __init__(self,model_name):
+    def __init__(self,model_name="models/Qwen3-4B-Instruct-2507"):
         # TODO: Initialize your Agent here
         self.model_name = model_name
         super().__init__(model_name)
