@@ -3,10 +3,10 @@ import json
 mode = input("Please input your checking mode(json/text):")
 
 if mode == "json":
-    json_path = "results_cust_4.json"
+    json_path = "casual_tests/result_multiple.json"
     with open(json_path,"r",encoding='utf-8') as f:
         result = json.load(f)
-    judge_path = "data/单轮-冒烟测试集.json"
+    judge_path = "data/多轮-冒烟测试集.json"
     with open(judge_path,"r",encoding='utf-8') as f:
         corr_result = json.load(f)
     cnt = 0

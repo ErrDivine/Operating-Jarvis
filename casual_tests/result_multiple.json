@@ -864,7 +864,7 @@
         }
       ]
     },
-    "output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"一级\", AppName=\"阅读器\")"
+    "output": "SwitchFontSize(ActionType=\"调大\", AppName=\"阅读器\")"
   },
   {
     "input": {
@@ -1495,7 +1495,7 @@
         }
       ]
     },
-    "output": "SendEmail(AppName=\"QQ邮箱\", Contact=\"张总\", Content=\"尊敬的张总：项目第一阶段已顺利完成，详细报告见附件。请您查收。\")"
+    "output": "SendEmail(AppName=\"QQ邮箱\", Contact=\"张总\", Content=\"主题是项目进展汇报\\n尊敬的张总：项目第一阶段已顺利完成，详细报告见附件。请您查收。\")"
   },
   {
     "input": {
@@ -1812,7 +1812,7 @@
         }
       ]
     },
-    "output": "Refresh()"
+    "output": "CheckLuminance(DeviceType=\"电脑屏幕\")"
   },
   {
     "input": {

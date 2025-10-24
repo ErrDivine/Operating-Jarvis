@@ -204,11 +204,11 @@ class CustomAgent(BaseLLM):
         }
 
         # <<<   test use   <<<
-        with open("prompts/tools_v0.json", "r", encoding="utf-8") as f:
+        with open("prompts/tools_openai_format.json", "r", encoding="utf-8") as f:
             tools = json.load(f)
         level_tool = {}
         for tool in tools:
-            category = mapping[tool['level1'].strip()]
+            category = mapping[tool['function']['parameters']['level'].strip()]
             if category not in level_tool.keys():
                 level_tool[category] = []
             level_tool[category].append(str(tool))
@@ -219,7 +219,7 @@ class CustomAgent(BaseLLM):
             tool_prompt = f"""
             你是一个小型工具选择器。
 
-            任务：根据用户的自然语言指令，从下方提供的**工具列表（同一类别下）**中，选出最合适的一个工具，并按指定格式输出调用代码。
+            任务：根据用户的自然语言指令，从下方提供的**工具列表**中，选出最合适的一个工具，并按指定格式输出调用代码。
 
             【工具说明】
             1.工具列表中每个工具包含：
@@ -230,7 +230,7 @@ class CustomAgent(BaseLLM):
 
             【选择规则】
             1. 理解用户意图，匹配与 description 最贴近的工具。
-            2. 根据 parameters 的说明，为每个参数填入合适的值，若用户未指定则合理推断，如无法推断则不填，不要胡编乱造。
+            2. 根据 parameters 的说明，为每个参数填入合适的值，若用户指定，严格按照指令填写；若用户未指定则合理推断，如无法推断则不填，不要胡编乱造。
 
             【填写要求】
             - 只能选出列表中的一个工具，并输出一个函数调用。
