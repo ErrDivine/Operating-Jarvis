@@ -232,7 +232,7 @@
         }
       ]
     },
-    "output": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")"
+    "output": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", SortBy=\"DESC\")"
   },
   {
     "input": {
@@ -368,7 +368,7 @@
         }
       ]
     },
-    "output": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=\"10\")"
+    "output": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\")"
   },
   {
     "input": {
@@ -533,7 +533,7 @@
         }
       ]
     },
-    "output": "CheckContrast(DeviceType=\"屏幕\")"
+    "output": "CheckContrast(DeviceType=\"显示器\")"
   },
   {
     "input": {
@@ -591,7 +591,7 @@
         }
       ]
     },
-    "output": "SetSystemTheme(ThemeType=\"深色模式\")"
+    "output": "SetSystemTheme(ThemeType=\"暗色模式\")"
   },
   {
     "input": {
@@ -648,7 +648,7 @@
         }
       ]
     },
-    "output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\", FontSize=\"24号\")"
+    "output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\")"
   },
   {
     "input": {
@@ -712,7 +712,7 @@
         }
       ]
     },
-    "output": "SwitchFontType(FontType=\"楷体\", ActionType=\"设置\", AppName=\"微信\")"
+    "output": "SwitchFontType(FontType=\"楷体\", AppName=\"微信\", ActionType=\"设置\")"
   },
   {
     "input": {
@@ -936,7 +936,7 @@
         }
       ]
     },
-    "output": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneNumber=\"13812345678\", Mode=\"免提\", PhoneCard=\"卡1\")"
+    "output": "Call(AppName=\"微信\", Contact=\"李经理\", Mode=\"免提\", PhoneCard=\"卡1\")"
   },
   {
     "input": {
@@ -994,7 +994,7 @@
         }
       ]
     },
-    "output": "AnswerCall(ActionType=True, Mode=\"免提\", Response=\"\")"
+    "output": "AnswerCall(ActionType=True, Mode=\"免提\")"
   },
   {
     "input": {
@@ -1032,7 +1032,7 @@
         }
       ]
     },
-    "output": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneNumber=\"工作卡\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点了。\")"
+    "output": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点了。\")"
   },
   {
     "input": {
@@ -1067,7 +1067,7 @@
         }
       ]
     },
-    "output": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", EmailAddress=\"lizong@company.com\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
+    "output": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", EmailAddress=\"li.zong@company.com\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
   },
   {
     "input": {
@@ -1105,7 +1105,7 @@
         }
       ]
     },
-    "output": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"昨天\", State=\"已开启\")"
+    "output": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"昨天\")"
   },
   {
     "input": {
@@ -1134,7 +1134,7 @@
         }
       ]
     },
-    "output": "CreateAlarm(Time=\"08:00\", Content=\"开项目例会\")"
+    "output": "CreateAlarm(Time=\"8:00\", Content=\"开项目例会\")"
   },
   {
     "input": {
@@ -1169,7 +1169,7 @@
         }
       ]
     },
-    "output": "CheckAlarm(Time=\"9:00\", Content=\"开会\", RangeType=\"今天\", State=\"已开启\")"
+    "output": "CheckAlarm(Time=\"早上9点\", Content=\"开会\", RangeType=\"今天\")"
   },
   {
     "input": {
@@ -1204,7 +1204,7 @@
         }
       ]
     },
-    "output": "DeleteAlarm(Time=\"明天早上8点\", Content=\"会议\", RangeType=\"今天\", State=\"已开启\")"
+    "output": "DeleteAlarm(Time=\"明天早上8点\", Content=\"会议\")"
   },
   {
     "input": {

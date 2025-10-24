@@ -591,7 +591,7 @@
         }
       ]
     },
-    "output": "SetSystemTheme(ThemeType=\"深色模式\")"
+    "output": "SetSystemTheme(ThemeType=\"暗色模式\")"
   },
   {
     "input": {
@@ -648,7 +648,7 @@
         }
       ]
     },
-    "output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\")"
+    "output": "SwitchFontSize(AppName=微信, ActionType=调大, AdjustLevel=最大)"
   },
   {
     "input": {
@@ -1134,7 +1134,7 @@
         }
       ]
     },
-    "output": "CreateAlarm(Time=\"08:00\", Content=\"开项目例会\")"
+    "output": "CreateAlarm(Time=\"明天8:00\", Content=\"开项目例会\")"
   },
   {
     "input": {
@@ -1169,7 +1169,7 @@
         }
       ]
     },
-    "output": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")"
+    "output": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\")"
   },
   {
     "input": {
@@ -1274,7 +1274,7 @@
         }
       ]
     },
-    "output": "The weather today is wonderful, perfect for going out for a walk."
+    "output": "The weather today is really great, suitable for going out for a walk."
   },
   {
     "input": {
@@ -1425,6 +1425,6 @@
         }
       ]
     },
-    "output": "目前可用的工具无法提供天气预报信息。建议您通过天气应用或网站查询明天北京的天气情况。"
+    "output": "目前我无法提供具体的天气预报信息，建议您通过天气应用或网站查询明天北京的天气情况。"
   }
 ]

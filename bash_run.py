@@ -30,11 +30,11 @@ def load_data(data_path):
 
 
 if __name__ == "__main__":
-    data = load_data("data/单轮-冒烟测试集.jsonl")
-    # data = load_data("data/多轮-冒烟测试集.jsonl")
-    # agent = DirectAgent()
+    # data = load_data("data/单轮-冒烟测试集.jsonl")
+    data = load_data("data/多轮-冒烟测试集.jsonl")
+    agent = DirectAgent()
     # agent = HierarchicalAgent()
-    agent = CustomAgent("models/Qwen3-4B-Instruct-2507")
+    # agent = CustomAgent("models/Qwen3-4B-Instruct-2507")
 
     results = []
     for item in tqdm(data):
@@ -43,5 +43,5 @@ if __name__ == "__main__":
         # print("Input:", item)
         # print("Output:", response)
         # print("-" * 50)
-    with open("results_cust_4.json", "w", encoding="utf-8") as f:
+    with open("test_result/result_direct_multiple.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
