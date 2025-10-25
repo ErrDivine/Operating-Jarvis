@@ -216,6 +216,7 @@ class CustomAgent(BaseLLM):
         self.tool_system_prompt = {}
         for level,level_tool_list in level_tool.items():
             tools_info = "\n\n".join(level_tool_list)
+
             tool_prompt = f"""
             你是一个小型工具选择器。
 
@@ -229,7 +230,7 @@ class CustomAgent(BaseLLM):
             2.工具调用格式与 Python 函数一致：工具名(param1=value1, param2=value2, ...)
 
             【选择规则】
-            1. 理解用户意图，匹配与 description 最贴近的工具。
+            1. 理解用户(user)意图，匹配与 description 最贴近的工具；若出现assistant的轮次，也请仔细阅读，理解语义，匹配工具。
             2. 根据 parameters 的说明，为每个参数填入合适的值，若用户指定，严格按照指令填写；若用户未指定则合理推断，如无法推断则不填，不要胡编乱造。
 
             【填写要求】
@@ -252,8 +253,12 @@ class CustomAgent(BaseLLM):
 
             【可选工具列表】
             {tools_info}
-            """
 
+            【注意】
+            - 多轮对话时，"role"表示不同角色，会出现user与assistant，要关注所有对话内容(包括user和assistant)，不要断章取义。
+            - 选定工具输出前，请仔细检查其功能是否与用户指令要求匹配。
+            - 可以通过假设使用了你选择的工具，会有什么样的效果，是否会让用户满意，如果不是，请重新选择。
+            """
             self.tool_system_prompt[level] = tool_prompt
 
 

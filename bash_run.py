@@ -43,5 +43,5 @@ if __name__ == "__main__":
         # print("Input:", item)
         # print("Output:", response)
         # print("-" * 50)
-    with open("casual_tests/result_multiple.json", "w", encoding="utf-8") as f:
+    with open("casual_tests/result_multiple_2.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
