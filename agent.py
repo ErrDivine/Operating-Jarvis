@@ -47,10 +47,10 @@ class CustomAgent(BaseLLM):
         # TODO: Initialize your Agent here
         self.model_name = model_name
         super().__init__(model_name)
-        self.tool_file="prompts/tools_v0.json"
-        self.tool_list=self.convert_tools_from_file(input_file=self.tool_file)
-        self.tool_docs="\n\n".join(self.tool_list)
-        self.tool_docs = "\n".join(json.dumps(tool, ensure_ascii=False) for tool in self.tool_list)
+        # self.tool_file="prompts/tools_v0.json"
+        # self.tool_list=self.convert_tools_from_file(input_file=self.tool_file)
+        # self.tool_docs="\n\n".join(self.tool_list)
+        # self.tool_docs = "\n".join(json.dumps(tool, ensure_ascii=False) for tool in self.tool_list)
 
 
         level1_json_path = "models/test_level1_json.json"
@@ -199,8 +199,9 @@ class CustomAgent(BaseLLM):
         }
 
 
-        
-        with open("prompts/tools_openai_format.json", "r", encoding="utf-8") as f:
+        # Load tools
+        tools_json_path = "models/tools_openai_format.json"
+        with open(tools_json_path, "r", encoding="utf-8") as f:
             tools = json.load(f)
         level_tool = {}
         for tool in tools:

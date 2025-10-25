@@ -1,0 +1,1651 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "BlueToothOnOff",
+      "description": "用于识别用户想要控制设备蓝牙功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的蓝牙操作需求，包括但不限于打开蓝牙、关闭蓝牙、启用蓝牙连接、禁用蓝牙等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型：Boolean，取值范围：True|False，用途：True--打开蓝牙，False--关闭蓝牙"
+          }
+        },
+        "level": "蓝牙管理"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SearchBlueTooth",
+      "description": "用于识别用户想要搜索、查找或扫描附近可用蓝牙设备的语音指令。该意图能够理解用户通过自然语言表达的蓝牙设备发现需求，包括搜索蓝牙设备、扫描蓝牙、查找可连接设备等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|ALL（默认值）...，用途： 指定要搜索的蓝牙设备类型或具体名称，ALL表示搜索所有类型的蓝牙设备",
+            "enum": [
+              "手机",
+              "耳机",
+              "音箱",
+              "键盘",
+              "鼠标",
+              "ALL（默认值）..."
+            ]
+          }
+        },
+        "level": "蓝牙管理"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ConnectBlueTooth",
+      "description": "用于识别用户想要连接或断开特定蓝牙设备的语音指令。该意图能够理解用户通过自然语言表达的蓝牙设备连接需求，包括连接蓝牙设备、断开蓝牙连接、配对设备等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|车载|打印机...，用途： 指定要连接或断开的蓝牙设备类型或具体名称",
+            "enum": [
+              "手机",
+              "耳机",
+              "音箱",
+              "键盘",
+              "鼠标",
+              "车载",
+              "打印机..."
+            ]
+          },
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--连接蓝牙设备，False--断开蓝牙设备"
+          }
+        },
+        "level": "蓝牙管理"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "WlanOnOff",
+      "description": "用于识别用户想要控制设备WLAN（无线局域网）功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的WiFi操作需求，包括打开WiFi、关闭WiFi、启用无线网络、禁用WLAN等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--打开WLAN，False--关闭WLAN"
+          }
+        },
+        "level": "网络控制"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SearchWlan",
+      "description": "用于识别用户想要搜索、查找或扫描附近可用WLAN（无线局域网）网络的语音指令。该意图能够理解用户通过自然语言表达的WiFi网络发现需求，包括搜索WiFi、扫描无线网络、查找可连接热点等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "level": "网络控制"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "MobileDataOnOff",
+      "description": "用于识别用户想要控制设备移动数据网络功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的移动网络操作需求，包括打开移动数据、关闭蜂窝数据、启用4G/5G网络、禁用流量等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--打开移动数据，False--关闭移动数据"
+          }
+        },
+        "level": "网络控制"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "HotShotOnOff",
+      "description": "用于识别用户想要控制设备热点（WiFi热点/个人热点）功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的热点分享操作需求，包括打开热点、关闭热点、启用WiFi共享、禁用个人热点等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--打开热点，False--关闭热点"
+          }
+        },
+        "level": "网络控制"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckBatteryLevel",
+      "description": "用于识别用户想要查询设备电池电量状态的语音指令。该意图能够理解用户通过自然语言表达的电池信息查询需求，包括查看电池电量、询问剩余电量、检查电池状态、了解续航时间等相关查询指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "level": "电池状态查看"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckBatteryConsumptionRank",
+      "description": "用于识别用户想要查询设备电池消耗排名和耗电分析的语音指令。该意图能够理解用户通过自然语言表达的电池使用情况分析需求，包括查看应用耗电排行、分析电池消耗趋势、检测异常耗电、对比不同时间段的电池使用情况等相关查询指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "TimeRange": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 今天|昨天|本周|上周|本月|上月|最近7天|最近30天|自定义时间段...，用途： 指定查询电池消耗数据的时间范围",
+            "enum": [
+              "今天",
+              "昨天",
+              "本周",
+              "上周",
+              "本月",
+              "上月",
+              "最近7天",
+              "最近30天",
+              "自定义时间段..."
+            ]
+          },
+          "AnomalyDetection": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--检测异常耗电情况，False--不进行异常检测"
+          },
+          "SortBy": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： \"DESC\"|\"ASC\"，用途： DESC--降序，ASC--升序，默认DESC",
+            "enum": [
+              "\"DESC\"",
+              "\"ASC\""
+            ]
+          }
+        },
+        "level": "电池状态查看"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "BatterySavingMode",
+      "description": "用于识别用户想要控制设备省电模式功能的语音指令。该意图能够理解用户通过自然语言表达的电池节能操作需求，包括开启省电模式、关闭节能模式、启用低电量模式、设置电池优化等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启省电模式，False--关闭省电模式"
+          }
+        },
+        "level": "省电模式设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "Reboot",
+      "description": "用于识别用户想要重启设备的语音指令。该意图能够理解用户通过自然语言表达的设备重启需求，包括重启手机、重新启动、系统重启、关机重启等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|车载|打印机...，用途： 指定要重启的设备类型或具体名称",
+            "enum": [
+              "手机",
+              "耳机",
+              "音箱",
+              "键盘",
+              "鼠标",
+              "车载",
+              "打印机..."
+            ]
+          }
+        },
+        "level": "设备电源操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ShutDown",
+      "description": "用于识别用户想要关闭设备的语音指令。该意图能够理解用户通过自然语言表达的设备关机需求，包括关机、关闭手机、系统关机、电源关闭等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|车载|打印机...，用途： 指定要关机的设备类型或具体名称",
+            "enum": [
+              "手机",
+              "耳机",
+              "音箱",
+              "键盘",
+              "鼠标",
+              "车载",
+              "打印机..."
+            ]
+          }
+        },
+        "level": "设备电源操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "Sleep",
+      "description": "用于识别用户想要让设备进入睡眠或待机状态的语音指令。该意图能够理解用户通过自然语言表达的设备休眠需求，包括进入睡眠模式、待机、休眠、锁屏待机等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 手机|耳机|音箱|键盘|鼠标|车载|打印机...，用途： 指定要休眠的设备类型或具体名称",
+            "enum": [
+              "手机",
+              "耳机",
+              "音箱",
+              "键盘",
+              "鼠标",
+              "车载",
+              "打印机..."
+            ]
+          }
+        },
+        "level": "设备电源操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ControlSound",
+      "description": "用于识别用户想要控制设备音量的语音指令。该意图能够理解用户通过自然语言表达的音量调节需求，包括调节系统音量、媒体音量、通话音量、闹钟音量等不同类型的音量控制操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "VolumeType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 系统音量|媒体音量|通话音量|闹钟音量|通知音量|铃声音量|...，用途： 指定要调节的音量类型",
+            "enum": [
+              "系统音量",
+              "媒体音量",
+              "通话音量",
+              "闹钟音量",
+              "通知音量",
+              "铃声音量",
+              "..."
+            ]
+          },
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 增加|减少|调到|设置为|最大|最小|自动，用途： 指定音量调节的操作类型",
+            "enum": [
+              "增加",
+              "减少",
+              "调到",
+              "设置为",
+              "最大",
+              "最小",
+              "自动"
+            ]
+          },
+          "Percentage": {
+            "type": "string",
+            "description": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标音量百分比数值"
+          }
+        },
+        "level": "音量控制"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "VibrationModeOnOff",
+      "description": "用于识别用户想要控制设备振动模式开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的振动功能操作需求，包括开启振动、关闭震动、启用震动模式、禁用振动提醒等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启振动模式，False--关闭振动模式"
+          }
+        },
+        "level": "声音模式切换"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "QuietModeOnOff",
+      "description": "用于识别用户想要控制设备勿扰模式（静音模式）开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的勿扰功能操作需求，包括开启勿扰模式、关闭静音模式、启用免打扰、禁用勿扰等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 增加|减少|调到|设置为|最大|最小|自动，用途： 指定亮度调节的操作类型",
+            "enum": [
+              "增加",
+              "减少",
+              "调到",
+              "设置为",
+              "最大",
+              "最小",
+              "自动"
+            ]
+          }
+        },
+        "level": "声音模式切换"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckLuminance",
+      "description": "用于识别用户想要查询设备当前屏幕亮度的语音指令。该意图能够理解用户通过自然语言表达的亮度查询需求，包括查看当前亮度、检查屏幕亮度、显示亮度等级、查询亮度设置等相关查询指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|...，用途： 指定查询亮度的设备类型或具体名称",
+            "enum": [
+              "屏幕",
+              "显示器",
+              "手机屏幕",
+              "电脑屏幕",
+              "平板屏幕",
+              "..."
+            ]
+          }
+        },
+        "level": "显示参数调节"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ControlLuminance",
+      "description": "用于识别用户想要控制设备屏幕亮度的语音指令。该意图能够理解用户通过自然语言表达的亮度调节需求，包括调节屏幕亮度、增加/减少亮度、设置亮度百分比、调整显示器亮度等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|...，用途： 指定要调节亮度的设备类型",
+            "enum": [
+              "屏幕",
+              "显示器",
+              "手机屏幕",
+              "电脑屏幕",
+              "平板屏幕",
+              "..."
+            ]
+          },
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 增加|减少|调到|设置为|最大|最小|自动，用途： 指定亮度调节的操作类型",
+            "enum": [
+              "增加",
+              "减少",
+              "调到",
+              "设置为",
+              "最大",
+              "最小",
+              "自动"
+            ]
+          },
+          "Percentage": {
+            "type": "string",
+            "description": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标亮度百分比数值"
+          }
+        },
+        "level": "显示参数调节"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "AutoLuminanceOnOff",
+      "description": "用于识别用户想要控制设备自动亮度调节功能开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的自动亮度功能操作需求，包括开启自动亮度、关闭自适应亮度、启用智能亮度调节、禁用自动亮度等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|ALL|...，用途： 指定要控制自动亮度功能的设备类型",
+            "enum": [
+              "屏幕",
+              "显示器",
+              "手机屏幕",
+              "电脑屏幕",
+              "平板屏幕",
+              "ALL",
+              "..."
+            ]
+          },
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启自动亮度，False--关闭自动亮度"
+          }
+        },
+        "level": "显示参数调节"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckContrast",
+      "description": "用于识别用户想要查询设备当前屏幕对比度的语音指令。该意图能够理解用户通过自然语言表达的对比度查询需求，包括查看当前对比度、检查屏幕对比度、显示对比度等级、查询对比度设置等相关查询指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|ALL|...，用途： 指定要查询屏幕的设备类型",
+            "enum": [
+              "屏幕",
+              "显示器",
+              "手机屏幕",
+              "电脑屏幕",
+              "平板屏幕",
+              "ALL",
+              "..."
+            ]
+          }
+        },
+        "level": "显示参数调节"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SwitchContrast",
+      "description": "用于识别用户想要切换设备屏幕对比度模式的语音指令。该意图能够理解用户通过自然语言表达的对比度模式切换需求，包括切换到高对比度、标准对比度、低对比度、护眼模式等不同对比度模式的操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "DeviceType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 屏幕|显示器|手机屏幕|电脑屏幕|平板屏幕|ALL|...，用途： 指定要切换对比度模式的设备类型",
+            "enum": [
+              "屏幕",
+              "显示器",
+              "手机屏幕",
+              "电脑屏幕",
+              "平板屏幕",
+              "ALL",
+              "..."
+            ]
+          },
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 高对比度|标准对比度|低对比度|护眼模式|夜间模式|增强|降低，用途： 指定要切换到的对比度模式类型",
+            "enum": [
+              "高对比度",
+              "标准对比度",
+              "低对比度",
+              "护眼模式",
+              "夜间模式",
+              "增强",
+              "降低"
+            ]
+          },
+          "Percentage": {
+            "type": "string",
+            "description": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标屏幕对比度百分比数值"
+          }
+        },
+        "level": "显示参数调节"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SetSystemTheme",
+      "description": "用于识别用户想要设置系统主题的语音指令。该意图能够理解用户通过自然语言表达的主题切换需求，包括切换深色模式、浅色模式、自动模式，以及设置个性化主题等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ThemeType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 深色模式|暗色模式|夜间模式|黑色主题|浅色模式|亮色模式|白天模式|白色主题|自动模式|跟随系统|默认主题等，用途： 指定要设置的主题类型",
+            "enum": [
+              "深色模式",
+              "暗色模式",
+              "夜间模式",
+              "黑色主题",
+              "浅色模式",
+              "亮色模式",
+              "白天模式",
+              "白色主题",
+              "自动模式",
+              "跟随系统",
+              "默认主题等"
+            ]
+          }
+        },
+        "level": "主题与壁纸设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckFont",
+      "description": "用于识别用户想要查看或检查字体设置的语音指令。该意图能够理解用户通过自然语言表达的字体查询需求，包括查看当前字体、字体大小、字体样式等信息。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "level": "字体设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SwitchFontSize",
+      "description": "用于识别用户想要调整字体大小的语音指令。该意图能够理解用户通过自然语言表达的字体大小调整需求，包括放大、缩小、设置特定大小等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 放大|增大|调大|缩小|减小|调小|设置|调整|恢复默认|重置等，用途： 指定对字体大小的操作类型",
+            "enum": [
+              "放大",
+              "增大",
+              "调大",
+              "缩小",
+              "减小",
+              "调小",
+              "设置",
+              "调整",
+              "恢复默认",
+              "重置等"
+            ]
+          },
+          "AdjustLevel": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 一级|两级|三级|最大|最小等，用途： 指定字体大小调整的幅度",
+            "enum": [
+              "一级",
+              "两级",
+              "三级",
+              "最大",
+              "最小等"
+            ]
+          },
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 系统|当前应用|微信|QQ|浏览器|阅读器|全局|所有应用等，用途： 指定字体大小调整的应用范围",
+            "enum": [
+              "系统",
+              "当前应用",
+              "微信",
+              "QQ",
+              "浏览器",
+              "阅读器",
+              "全局",
+              "所有应用等"
+            ]
+          },
+          "FontSize": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 12号|14号|16号|18号|20号|22号|24号等，用途： 指定具体的字体大小值",
+            "enum": [
+              "12号",
+              "14号",
+              "16号",
+              "18号",
+              "20号",
+              "22号",
+              "24号等"
+            ]
+          }
+        },
+        "level": "字体设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SwitchFontWeight",
+      "description": "用于识别用户想要调整字体粗细的语音指令。该意图能够理解用户通过自然语言表达的字体粗细调整需求，包括设置粗体、细体、正常粗细等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 设置|调整|切换|开启|关闭|启用|禁用|恢复默认|重置等，用途： 指定对字体粗细的操作类型",
+            "enum": [
+              "设置",
+              "调整",
+              "切换",
+              "开启",
+              "关闭",
+              "启用",
+              "禁用",
+              "恢复默认",
+              "重置等"
+            ]
+          },
+          "FontWeight": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 粗体|加粗|细体|正常|中等|半粗|超粗等，用途： 指定具体的字体粗细级别",
+            "enum": [
+              "粗体",
+              "加粗",
+              "细体",
+              "正常",
+              "中等",
+              "半粗",
+              "超粗等"
+            ]
+          },
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 微信|QQ|支付宝|浏览器|阅读器|文档|编辑器|系统|全局|当前应用等，用途： 指定要切换字体粗细的应用程序",
+            "enum": [
+              "微信",
+              "QQ",
+              "支付宝",
+              "浏览器",
+              "阅读器",
+              "文档",
+              "编辑器",
+              "系统",
+              "全局",
+              "当前应用等"
+            ]
+          }
+        },
+        "level": "字体设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ControlFontType",
+      "description": "用于识别用户想要控制字体类型或输入法字体的语音指令。该意图能够理解用户通过自然语言表达的字体类型切换需求，包括更换系统字体、应用字体、输入法字体等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "FontType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 宋体|黑体|楷体|仿宋|微软雅黑|苹方|思源黑体|华文细黑|Arial|Times|Helvetica|等线|方正|华康等，用途： 指定要设置的字体类型",
+            "enum": [
+              "宋体",
+              "黑体",
+              "楷体",
+              "仿宋",
+              "微软雅黑",
+              "苹方",
+              "思源黑体",
+              "华文细黑",
+              "Arial",
+              "Times",
+              "Helvetica",
+              "等线",
+              "方正",
+              "华康等"
+            ]
+          },
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 设置|更换|切换|应用|恢复|重置|预览|选择等，用途： 指定对字体类型的操作",
+            "enum": [
+              "设置",
+              "更换",
+              "切换",
+              "应用",
+              "恢复",
+              "重置",
+              "预览",
+              "选择等"
+            ]
+          },
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 微信|QQ|支付宝|浏览器|阅读器|文档|编辑器|系统|全局|当前应用等，用途： 指定要控制字体的应用程序",
+            "enum": [
+              "微信",
+              "QQ",
+              "支付宝",
+              "浏览器",
+              "阅读器",
+              "文档",
+              "编辑器",
+              "系统",
+              "全局",
+              "当前应用等"
+            ]
+          }
+        },
+        "level": "字体设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckInputMethod",
+      "description": "用于识别用户想要查看或检查输入法设置的语音指令。该意图能够理解用户通过自然语言表达的输入法查询需求，包括查看当前输入法、输入法设置、输入法列表、输入法状态等信息。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "level": "语言与输入法设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SwitchInputMethod",
+      "description": "用于识别用户想要切换输入法的语音指令。该意图能够理解用户通过自然语言表达的输入法切换需求，包括切换到特定输入法、在应用中切换输入法、设置默认输入法等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 系统|微信|QQ|支付宝|浏览器|文档|编辑器|记事本|邮件|搜索|当前应用|全局等，用途： 指定要切换输入法的应用程序或系统范围",
+            "enum": [
+              "系统",
+              "微信",
+              "QQ",
+              "支付宝",
+              "浏览器",
+              "文档",
+              "编辑器",
+              "记事本",
+              "邮件",
+              "搜索",
+              "当前应用",
+              "全局等"
+            ]
+          },
+          "InputMethodName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 搜狗输入法|百度输入法|讯飞输入法|QQ输入法|微软输入法|谷歌输入法|系统输入法|拼音输入法|五笔输入法|手写输入法|语音输入法|九宫格输入法|英文输入法|数字输入法等，用途： 指定要切换到的目标输入法",
+            "enum": [
+              "搜狗输入法",
+              "百度输入法",
+              "讯飞输入法",
+              "QQ输入法",
+              "微软输入法",
+              "谷歌输入法",
+              "系统输入法",
+              "拼音输入法",
+              "五笔输入法",
+              "手写输入法",
+              "语音输入法",
+              "九宫格输入法",
+              "英文输入法",
+              "数字输入法等"
+            ]
+          },
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 切换|设置|更换|启用|禁用|激活|关闭|恢复|重置|临时切换|设为默认等，用途： 指定对输入法的操作类型",
+            "enum": [
+              "切换",
+              "设置",
+              "更换",
+              "启用",
+              "禁用",
+              "激活",
+              "关闭",
+              "恢复",
+              "重置",
+              "临时切换",
+              "设为默认等"
+            ]
+          }
+        },
+        "level": "语言与输入法设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SwitchLanguage",
+      "description": "用于识别用户想要切换语言设置的语音指令。该意图能够理解用户通过自然语言表达的语言切换需求，包括切换系统语言、应用语言、输入法语言等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 系统|微信|QQ|支付宝|浏览器|游戏|翻译|输入法|当前应用|全局等，用途： 指定要切换语言的应用程序或系统范围",
+            "enum": [
+              "系统",
+              "微信",
+              "QQ",
+              "支付宝",
+              "浏览器",
+              "游戏",
+              "翻译",
+              "输入法",
+              "当前应用",
+              "全局等"
+            ]
+          },
+          "LanguageType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 中文|简体中文|繁体中文|英文|英语|日文|日语|韩文|韩语|法语|德语|西班牙语|俄语|阿拉伯语|泰语|越南语|意大利语|葡萄牙语等，用途： 指定要切换到的目标语言",
+            "enum": [
+              "中文",
+              "简体中文",
+              "繁体中文",
+              "英文",
+              "英语",
+              "日文",
+              "日语",
+              "韩文",
+              "韩语",
+              "法语",
+              "德语",
+              "西班牙语",
+              "俄语",
+              "阿拉伯语",
+              "泰语",
+              "越南语",
+              "意大利语",
+              "葡萄牙语等"
+            ]
+          },
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 切换|设置|更改|调整|恢复|重置|临时切换|永久设置等，用途： 指定语言切换的操作类型",
+            "enum": [
+              "切换",
+              "设置",
+              "更改",
+              "调整",
+              "恢复",
+              "重置",
+              "临时切换",
+              "永久设置等"
+            ]
+          }
+        },
+        "level": "语言与输入法设置"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "AirplaneModeOnOff",
+      "description": "用于识别用户想要控制飞行模式开关的语音指令。该意图能够理解用户通过自然语言表达的飞行模式控制需求，包括开启、关闭、切换飞行模式等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： String，取值范围： True|False，用途： True--打开飞行模式，False--关闭飞行模式"
+          }
+        },
+        "level": "飞行模式开关"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckSystemUpdate",
+      "description": "用于识别用户想要检查系统更新的语音指令。该意图能够理解用户通过自然语言表达的系统更新查询需求，包括检查系统更新、查看更新状态、查询更新历史等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "level": "系统更新管理"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SystemUpdate",
+      "description": "用于识别用户想要执行系统更新的语音指令。该意图能够理解用户通过自然语言表达的系统更新执行需求，包括下载更新、安装更新、暂停更新、取消更新等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 更新|升级|下载|安装|开始|暂停|继续|取消|重启|延迟|立即更新|自动更新等，用途： 指定系统更新的操作类型",
+            "enum": [
+              "更新",
+              "升级",
+              "下载",
+              "安装",
+              "开始",
+              "暂停",
+              "继续",
+              "取消",
+              "重启",
+              "延迟",
+              "立即更新",
+              "自动更新等"
+            ]
+          }
+        },
+        "level": "系统更新管理"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SwitchApp",
+      "description": "用于识别用户想要切换或打开应用程序的语音指令。该意图能够理解用户通过自然语言表达的应用切换需求，包括打开特定应用、在应用间切换等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 微信|QQ|支付宝|淘宝|抖音|快手|百度|高德地图|腾讯地图|音乐|网易云音乐|QQ音乐|相机|相册|设置|电话|短信|浏览器|Chrome|Safari|钉钉|企业微信|飞书|美团|饿了么|京东|拼多多|今日头条|微博|知乎|B站|爱奇艺|优酷|腾讯视频|游戏|王者荣耀|和平精英|原神|计算器|日历|时钟|天气|备忘录|文件管理|应用商店|App Store|Google Play等，用途： 指定要切换到的目标应用程序名称",
+            "enum": [
+              "微信",
+              "QQ",
+              "支付宝",
+              "淘宝",
+              "抖音",
+              "快手",
+              "百度",
+              "高德地图",
+              "腾讯地图",
+              "音乐",
+              "网易云音乐",
+              "QQ音乐",
+              "相机",
+              "相册",
+              "设置",
+              "电话",
+              "短信",
+              "浏览器",
+              "Chrome",
+              "Safari",
+              "钉钉",
+              "企业微信",
+              "飞书",
+              "美团",
+              "饿了么",
+              "京东",
+              "拼多多",
+              "今日头条",
+              "微博",
+              "知乎",
+              "B站",
+              "爱奇艺",
+              "优酷",
+              "腾讯视频",
+              "游戏",
+              "王者荣耀",
+              "和平精英",
+              "原神",
+              "计算器",
+              "日历",
+              "时钟",
+              "天气",
+              "备忘录",
+              "文件管理",
+              "应用商店",
+              "App Store",
+              "Google Play等"
+            ]
+          }
+        },
+        "level": "应用切换"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "Call",
+      "description": "用于识别用户想要拨打电话的语音指令。该意图能够理解用户通过自然语言表达的拨打电话需求，包括拨打给指定联系人、拨打特定号码、选择手机卡、设置通话模式等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 微信|QQ|钉钉|短信|飞书|企业微信|Telegram|WhatsApp|Line|陌陌|探探等，用途： 指定用于打电话的应用程序",
+            "enum": [
+              "微信",
+              "QQ",
+              "钉钉",
+              "短信",
+              "飞书",
+              "企业微信",
+              "Telegram",
+              "WhatsApp",
+              "Line",
+              "陌陌",
+              "探探等"
+            ]
+          },
+          "Contact": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定打电话的对象的联系人姓名"
+          },
+          "PhoneNumber": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 有效的手机号码格式（如：13812345678、+86-138-1234-5678等），用途： 指定打电话的对象的手机号码"
+          },
+          "Mode": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 免提|扬声器|耳机|蓝牙|静音|正常等，用途： 指定打电话的模式",
+            "enum": [
+              "免提",
+              "扬声器",
+              "耳机",
+              "蓝牙",
+              "静音",
+              "正常等"
+            ]
+          },
+          "PhoneCard": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 卡1|卡2|主卡|副卡|移动卡|联通卡|电信卡|工作卡|生活卡等，用途： 指定打电话使用的手机卡",
+            "enum": [
+              "卡1",
+              "卡2",
+              "主卡",
+              "副卡",
+              "移动卡",
+              "联通卡",
+              "电信卡",
+              "工作卡",
+              "生活卡等"
+            ]
+          }
+        },
+        "level": "电话操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckContact",
+      "description": "用于识别用户想要查看或搜索联系人信息的语音指令。该意图能够理解用户通过自然语言表达的联系人查询需求，包括查找特定联系人、查看联系人详细信息、搜索联系人列表、查询联系人的电话号码或其他信息等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "Contact": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定查看联系人的姓名"
+          }
+        },
+        "level": "电话操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "AnswerCall",
+      "description": "用于识别用户想要接听电话的语音指令。该意图能够理解用户通过自然语言表达的接听电话需求，包括直接接听来电、使用免提模式接听、拒绝接听或挂断电话等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： 指定对来电的具体操作动作"
+          },
+          "Mode": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 免提|扬声器|耳机|蓝牙|静音|正常等，用途： 指定接听电话的模式",
+            "enum": [
+              "免提",
+              "扬声器",
+              "耳机",
+              "蓝牙",
+              "静音",
+              "正常等"
+            ]
+          },
+          "Response": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 预设回复内容（如：稍后回电、正在开会、马上到等），用途： 指定拒绝接听时发送的自动回复消息"
+          }
+        },
+        "level": "电话操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SendMessage",
+      "description": "用于识别用户想要发送消息的语音指令。该意图能够理解用户通过自然语言表达的消息发送需求，包括在指定应用中发送消息、选择联系人、输入手机号码、选择手机卡以及编写消息内容等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 微信|QQ|钉钉|短信|飞书|企业微信|Telegram|WhatsApp|Line|陌陌|探探等，用途： 指定用于发送消息的应用程序",
+            "enum": [
+              "微信",
+              "QQ",
+              "钉钉",
+              "短信",
+              "飞书",
+              "企业微信",
+              "Telegram",
+              "WhatsApp",
+              "Line",
+              "陌陌",
+              "探探等"
+            ]
+          },
+          "Contact": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定邮件收件人的联系人姓名"
+          },
+          "PhoneNumber": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 有效的手机号码格式（如：13812345678、+86-138-1234-5678等），用途： 指定消息接收人的手机号码"
+          },
+          "PhoneCard": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 卡1|卡2|主卡|副卡|移动卡|联通卡|电信卡|工作卡|生活卡等，用途： 指定发送消息使用的手机卡",
+            "enum": [
+              "卡1",
+              "卡2",
+              "主卡",
+              "副卡",
+              "移动卡",
+              "联通卡",
+              "电信卡",
+              "工作卡",
+              "生活卡等"
+            ]
+          },
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意文本内容，用途： 指定要发送的消息内容"
+          }
+        },
+        "level": "信息操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "SendEmail",
+      "description": "用于识别用户想要发送邮件的语音指令。该意图能够理解用户通过自然语言表达的邮件发送需求，包括在指定邮件应用中发送邮件、选择收件人联系人、输入邮箱地址以及编写邮件内容等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： Outlook|Gmail|QQ邮箱|网易邮箱|163邮箱|126邮箱|新浪邮箱|腾讯企业邮箱|钉钉邮箱|Foxmail等，用途： 指定用于发送邮件的应用程序",
+            "enum": [
+              "Outlook",
+              "Gmail",
+              "QQ邮箱",
+              "网易邮箱",
+              "163邮箱",
+              "126邮箱",
+              "新浪邮箱",
+              "腾讯企业邮箱",
+              "钉钉邮箱",
+              "Foxmail等"
+            ]
+          },
+          "Contact": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定邮件收件人的联系人姓名"
+          },
+          "EmailAddress": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 有效的邮箱地址格式（如：user@example.com），用途： 指定邮件收件人的具体邮箱地址"
+          },
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意文本内容（包括邮件主题和正文），用途： 指定邮件的内容，可能包含主题和正文"
+          }
+        },
+        "level": "邮件操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckEmail",
+      "description": "用于识别用户想要查看或检查邮件的语音指令。该意图能够理解用户通过自然语言表达的邮件查询需求，包括在指定邮件应用中查看邮件、按文件夹分类查看、按发件人筛选、按内容搜索以及按时间范围查询等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： Outlook|Gmail|QQ邮箱|网易邮箱|163邮箱|126邮箱|新浪邮箱|腾讯企业邮箱|钉钉邮箱|Foxmail等，用途： 指定用于查看邮件的应用程序",
+            "enum": [
+              "Outlook",
+              "Gmail",
+              "QQ邮箱",
+              "网易邮箱",
+              "163邮箱",
+              "126邮箱",
+              "新浪邮箱",
+              "腾讯企业邮箱",
+              "钉钉邮箱",
+              "Foxmail等"
+            ]
+          },
+          "Folder": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 收件箱|发件箱|草稿箱|垃圾邮件|已删除|重要邮件|未读邮件|已读邮件|星标邮件|归档等，用途： 指定要查看的邮件文件夹或分类",
+            "enum": [
+              "收件箱",
+              "发件箱",
+              "草稿箱",
+              "垃圾邮件",
+              "已删除",
+              "重要邮件",
+              "未读邮件",
+              "已读邮件",
+              "星标邮件",
+              "归档等"
+            ]
+          },
+          "Sender": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 邮箱地址或发件人姓名，用途： 指定要查看的邮件发件人"
+          },
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意文本内容（邮件主题或正文关键词），用途： 指定要搜索的邮件内容关键词"
+          },
+          "TimeRange": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 今天|昨天|本周|上周|本月|上月|最近7天|最近30天|指定日期范围等，用途： 指定查看邮件的时间范围",
+            "enum": [
+              "今天",
+              "昨天",
+              "本周",
+              "上周",
+              "本月",
+              "上月",
+              "最近7天",
+              "最近30天",
+              "指定日期范围等"
+            ]
+          }
+        },
+        "level": "邮件操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CreateAlarm",
+      "description": "用于识别用户想要创建或设置闹钟的语音指令。该意图能够理解用户通过自然语言表达的闹钟创建需求，包括设置特定时间的闹钟、为特定事件创建提醒、设置重复闹钟以及配置闹钟的各种属性等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "Time": {
+            "type": "string",
+            "description": "数据类型： DateTime，取值范围： 具体时间点（如：早上7点、下午3点30分、18:00等），用途： 指定要创建的闹钟时间"
+          },
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意事件描述（如：起床、开会、吃药、锻炼、上班等），用途： 指定要创建的闹钟的内容"
+          }
+        },
+        "level": "闹钟操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CheckAlarm",
+      "description": "用于识别用户想要查看或检查闹钟状态的语音指令。该意图能够理解用户通过自然语言表达的查询闹钟需求，包括查看所有闹钟、检查特定时间的闹钟、查询特定事件的提醒、查看闹钟状态等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "Time": {
+            "type": "string",
+            "description": "数据类型： DateTime，取值范围： 具体时间点（如：早上7点、下午3点30分、18:00等），用途： 指定要查看的闹钟时间"
+          },
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意事件描述（如：起床、开会、吃药、锻炼、上班等），用途： 指定要查看的闹钟关联的事件或备注"
+          },
+          "RangeType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 全部|今天|明天|本周|下周|工作日|周末|单次|重复|指定日期等，用途： 指定查看闹钟的时间范围或类型",
+            "enum": [
+              "全部",
+              "今天",
+              "明天",
+              "本周",
+              "下周",
+              "工作日",
+              "周末",
+              "单次",
+              "重复",
+              "指定日期等"
+            ]
+          },
+          "State": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 已开启|已关闭|已过期|活跃|暂停等，用途： 指定要查看的闹钟的当前状态",
+            "enum": [
+              "已开启",
+              "已关闭",
+              "已过期",
+              "活跃",
+              "暂停等"
+            ]
+          }
+        },
+        "level": "闹钟操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "DeleteAlarm",
+      "description": "用于识别用户想要删除闹钟或提醒的语音指令。该意图能够理解用户通过自然语言表达的删除闹钟需求，包括删除特定时间的闹钟、删除特定事件的提醒、批量删除闹钟以及删除特定状态的闹钟等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "Time": {
+            "type": "string",
+            "description": "数据类型： DateTime，取值范围： 具体时间点（如：早上7点、下午3点30分、18:00等），用途： 指定要删除的闹钟时间"
+          },
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意事件描述（如：起床、开会、吃药、锻炼、上班等），用途： 指定要删除的闹钟关联的事件或备注"
+          },
+          "RangeType": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 全部|今天|明天|本周|下周|工作日|周末|单次|重复|指定日期等，用途： 指定删除闹钟的时间范围或类型",
+            "enum": [
+              "全部",
+              "今天",
+              "明天",
+              "本周",
+              "下周",
+              "工作日",
+              "周末",
+              "单次",
+              "重复",
+              "指定日期等"
+            ]
+          },
+          "State": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 已开启|已关闭|已过期|活跃|暂停等，用途： 指定要删除的闹钟的当前状态",
+            "enum": [
+              "已开启",
+              "已关闭",
+              "已过期",
+              "活跃",
+              "暂停等"
+            ]
+          }
+        },
+        "level": "闹钟操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CreateNote",
+      "description": "用于识别用户想要创建笔记或备忘录的语音指令。该意图能够理解用户通过自然语言表达的笔记创建需求，包括在指定应用中创建笔记、设置笔记标题和内容、指定笔记类型以及设置提醒时间等操作。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "AppName": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 记事本|便签|OneNote|印象笔记|有道云笔记|为知笔记|石墨文档|腾讯文档|WPS|Word等，用途： 指定用于创建笔记的应用程序",
+            "enum": [
+              "记事本",
+              "便签",
+              "OneNote",
+              "印象笔记",
+              "有道云笔记",
+              "为知笔记",
+              "石墨文档",
+              "腾讯文档",
+              "WPS",
+              "Word等"
+            ]
+          },
+          "Title": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意文本内容，用途： 指定笔记的标题"
+          },
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意文本内容，用途： 指定笔记的具体内容"
+          },
+          "Type": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 普通笔记|待办事项|会议记录|学习笔记|工作笔记|个人日记|购物清单|提醒事项等，用途： 指定笔记的类型或分类",
+            "enum": [
+              "普通笔记",
+              "待办事项",
+              "会议记录",
+              "学习笔记",
+              "工作笔记",
+              "个人日记",
+              "购物清单",
+              "提醒事项等"
+            ]
+          },
+          "ReminderTime": {
+            "type": "string",
+            "description": "数据类型： DateTime，取值范围： 具体时间点或相对时间，用途： 设置笔记的提醒时间"
+          }
+        },
+        "level": "系统工具操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "Translate",
+      "description": "用于识别用户想要进行翻译操作的语音指令。该意图能够理解用户通过自然语言表达的翻译需求，包括文本翻译、语言转换、多语言互译等各种翻译相关的操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意文本内容，用途： 指定要翻译的文本内容"
+          },
+          "SourceLanguage": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 中文|英文|日文|韩文|法文|德文|西班牙文|俄文|阿拉伯文|意大利文|葡萄牙文|泰文|越南文|自动检测等，用途： 指定源语言类型",
+            "enum": [
+              "中文",
+              "英文",
+              "日文",
+              "韩文",
+              "法文",
+              "德文",
+              "西班牙文",
+              "俄文",
+              "阿拉伯文",
+              "意大利文",
+              "葡萄牙文",
+              "泰文",
+              "越南文",
+              "自动检测等"
+            ]
+          },
+          "TargetLanguage": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 中文|英文|日文|韩文|法文|德文|西班牙文|俄文|阿拉伯文|意大利文|葡萄牙文|泰文|越南文等，用途： 指定目标翻译语言",
+            "enum": [
+              "中文",
+              "英文",
+              "日文",
+              "韩文",
+              "法文",
+              "德文",
+              "西班牙文",
+              "俄文",
+              "阿拉伯文",
+              "意大利文",
+              "葡萄牙文",
+              "泰文",
+              "越南文等"
+            ]
+          }
+        },
+        "level": "实际应用"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "CaptureScreenshot",
+      "description": "用于识别用户想要进行静态屏幕截图的语音指令。该意图能够理解用户通过自然语言表达的截图需求，包括全屏截图、区域截图、窗口截图等各种屏幕捕获操作，并支持指定截图区域和保存路径。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "CaptureArea": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 全屏|当前窗口|选定区域|活动窗口|桌面|指定区域，用途： 指定要截图的区域范围",
+            "enum": [
+              "全屏",
+              "当前窗口",
+              "选定区域",
+              "活动窗口",
+              "桌面",
+              "指定区域"
+            ]
+          },
+          "SavePath": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意有效的文件路径或文件夹路径，用途： 指定截图文件的保存位置"
+          }
+        },
+        "level": "实际应用"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "Refresh",
+      "description": "用于识别用户想要执行刷新操作的语音指令。该意图能够理解用户通过自然语言表达的刷新需求，包括刷新页面、更新内容、重新加载、刷新桌面、刷新文件夹等各种刷新相关的操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "level": "界面刷新"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "TaskManagerOnOff",
+      "description": "用于识别用户想要控制任务管理器开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的任务管理器操作需求，包括打开任务管理器、关闭任务管理器、启动进程管理器、退出系统监视器等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启多窗口模式，False--关闭多窗口模式"
+          }
+        },
+        "level": "多任务视图"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "MultipleWindowModeOnOff",
+      "description": "用于识别用户想要控制多窗口模式开启或关闭的语音指令。该意图能够理解用户通过自然语言表达的多窗口功能操作需求，包括开启分屏模式、关闭多窗口显示、启用窗口并排显示、禁用分割屏幕等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ActionType": {
+            "type": "boolean",
+            "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启多窗口模式，False--关闭多窗口模式"
+          }
+        },
+        "level": "多任务视图"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "EmptyBin",
+      "description": "用于识别用户想要清空回收站或垃圾箱的语音指令。该意图能够理解用户通过自然语言表达的清空垃圾箱需求，包括清空回收站、删除垃圾文件、清理废纸篓、永久删除回收站文件等相关操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "level": "回收站操作"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "Search",
+      "description": "用于识别用户想要进行搜索操作的语音指令。该意图能够理解用户通过自然语言表达的搜索需求，包括网络搜索、本地搜索、应用内搜索、文件搜索等各种搜索相关的操作指令。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "Content": {
+            "type": "string",
+            "description": "数据类型： String，取值范围： 任意文本内容，用途： 指定要搜索的关键词、短语或具体内容"
+          }
+        },
+        "level": "搜索操作"
+      }
+    }
+  }
+]

@@ -39,14 +39,7 @@ def _compare_categories(res):
             print(ret,'\n\n')
 
 
-json_path = "../results/results_single.json"
-json_path_2 = "../results/results_multiple.json"
-result=load_data(json_path)
-result_2=load_data(json_path_2)
-judge_path = "../data/单轮-冒烟测试集.jsonl"
-corr_result = load_data(judge_path)
-judge_path_2="../data/多轮-冒烟测试集.jsonl"
-corr_result_2 = load_data(judge_path_2)
+
 
 def check(result,bench):
     num = 0
@@ -58,15 +51,24 @@ def check(result,bench):
             ans = benchmark["data"][-1]["content"]
             if res != ans:
                 print(f"{res} != {ans}\n")
-                f.write(f"{'*'*50}\n\nAgent output:{res}\nCorrect answer:{ans}{'*'*50}")
+                f.write(f"\n{'*'*50}\n\nAgent output:{res}\nCorrect answer:{ans}\n\n{'*'*50}\n")
                 num += 1
     return num
 
-with open("test_result.txt", "w", encoding="utf-8") as f:
-    f.write("restart")
-stat = 0
-stat += check(result,corr_result)
-stat += check(result_2,corr_result_2)
-print(f"Total:{len(result)+len(result_2)},mismatched:{stat}")
+if __name__=="__main__":
+    json_path = "../results/results_single.json"
+    json_path_2 = "../results/results_multiple.json"
+    result=load_data(json_path)
+    result_2=load_data(json_path_2)
+    judge_path = "../data/单轮-冒烟测试集.jsonl"
+    corr_result = load_data(judge_path)
+    judge_path_2="../data/多轮-冒烟测试集.jsonl"
+    corr_result_2 = load_data(judge_path_2)
+    with open("test_result.txt", "w", encoding="utf-8") as f:
+        f.write("restart")
+    stat = 0
+    stat += check(result,corr_result)
+    # stat += check(result_2,corr_result_2)
+    print(f"Total:{len(result)+len(result_2)},mismatched:{stat}")
 
 
