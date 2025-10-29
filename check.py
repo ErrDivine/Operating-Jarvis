@@ -3,7 +3,7 @@ import json
 mode = input("Please input your checking mode(json/text):")
 
 if mode == "json":
-    json_path = "test_result/result_single_teacher.json"
+    json_path = "casual_tests/result_category_single.json"
     with open(json_path,"r",encoding='utf-8') as f:
         result = json.load(f)
     judge_path = "data/单轮-冒烟测试集.json"

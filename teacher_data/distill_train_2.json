@@ -1,452 +1,452 @@
 [
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把蓝牙打开一下，谢谢"
       }
     ],
-    "output": "BlueToothOnOff(ActionType=True)"
+    "teacher_output": "BlueToothOnOff(ActionType=True)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我看看周围有没有能连的蓝牙音箱"
       }
     ],
-    "output": "SearchBlueTooth(DeviceType=\"音箱\")"
+    "teacher_output": "SearchBlueTooth(DeviceType=\"音箱\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把车载蓝牙断开一下，谢谢"
       }
     ],
-    "output": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
+    "teacher_output": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "把WiFi关了"
       }
     ],
-    "output": "WlanOnOff(ActionType=False)"
+    "teacher_output": "WlanOnOff(ActionType=False)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我看看周围有什么WiFi能用"
       }
     ],
-    "output": "SearchWlan()"
+    "teacher_output": "SearchWlan()"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "我手机快没流量了，帮我把移动网络关掉吧"
       }
     ],
-    "output": "MobileDataOnOff(ActionType=False)"
+    "teacher_output": "MobileDataOnOff(ActionType=False)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我打开手机的热点功能，朋友要用我流量"
       }
     ],
-    "output": "HotShotOnOff(ActionType=True)"
+    "teacher_output": "HotShotOnOff(ActionType=True)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "手机快没电了，帮我看看还剩多少电量？"
       }
     ],
-    "output": "CheckBatteryLevel()"
+    "teacher_output": "CheckBatteryLevel()"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我查一下最近7天哪些APP最耗电，要按从高到低排序"
       }
     ],
-    "output": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=False, SortBy=\"DESC\")"
+    "teacher_output": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", SortBy=\"DESC\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "手机快没电了，帮我打开省电模式"
       }
     ],
-    "output": "BatterySavingMode(ActionType=True)"
+    "teacher_output": "BatterySavingMode(ActionType=True)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "手机卡死了，帮我强制重启一下"
       }
     ],
-    "output": "Reboot(DeviceType=\"手机\")"
+    "teacher_output": "Reboot(DeviceType=\"手机\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "小艺小艺，麻烦帮我把家里的智能音箱关掉"
       }
     ],
-    "output": "AirplaneModeOnOff(ActionType=False)"
+    "teacher_output": "ShutDown(DeviceType=\"音箱\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "小艺小艺，我的手机屏幕一直亮着太费电了，能不能帮我锁屏休息一会儿？"
       }
     ],
-    "output": "Sleep(DeviceType=\"手机\")"
+    "teacher_output": "Sleep(DeviceType=\"手机\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "能不能帮我把手机通话音量调高一点？"
       }
     ],
-    "output": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=10)"
+    "teacher_output": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "手机震动太吵了，帮我关掉振动模式吧"
       }
     ],
-    "output": "VibrationModeOnOff(ActionType=False)"
+    "teacher_output": "VibrationModeOnOff(ActionType=False)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我打开勿扰模式，谢谢！"
       }
     ],
-    "output": "QuietModeOnOff(ActionType=True)"
+    "teacher_output": "QuietModeOnOff(ActionType=True)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我看下平板的屏幕亮度现在是多少？"
       }
     ],
-    "output": "CheckLuminance(DeviceType=\"平板屏幕\")"
+    "teacher_output": "CheckLuminance(DeviceType=\"平板屏幕\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把平板屏幕的亮度调到60%吧，有点刺眼"
       }
     ],
-    "output": "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=60)"
+    "teacher_output": "ControlLuminance(DeviceType='平板屏幕', ActionType='调到', Percentage=60)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把手机的自动亮度调节关掉，现在太亮了"
       }
     ],
-    "output": "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)"
+    "teacher_output": "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我看下显示器现在的对比度是多少？"
       }
     ],
-    "output": "CheckContrast(DeviceType=\"显示器\")"
+    "teacher_output": "CheckContrast(DeviceType=\"显示器\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把电脑显示器的对比度调到60%"
       }
     ],
-    "output": "SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"标准对比度\", Percentage=60)"
+    "teacher_output": "SwitchContrast(DeviceType=\"显示器\", ActionType=\"调到\", Percentage=60)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把手机主题改成暗色的，晚上看太刺眼了"
       }
     ],
-    "output": "SetSystemTheme(ThemeType=\"暗色模式\")"
+    "teacher_output": "SetSystemTheme(ThemeType=\"暗色模式\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我看看现在用的是啥字体啊？"
       }
     ],
-    "output": "CheckFont()"
+    "teacher_output": "CheckFont()"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把微信的字体调到最大号，看着清楚点"
       }
     ],
-    "output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\", FontSize=\"24号等\")"
+    "teacher_output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "能把微信的字体调粗一点吗？看起来更醒目些"
       }
     ],
-    "output": "SwitchFontWeight(ActionType=\"调整\", FontWeight=\"加粗\", AppName=\"微信\")"
+    "teacher_output": "SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "能把微信聊天的字体换成楷体吗？感觉现在的看起来不太舒服"
       }
     ],
-    "output": "ControlFontType(FontType=\"楷体\", ActionType=\"设置\", AppName=\"微信\")"
+    "teacher_output": "ControlFontType(FontType=\"楷体\", ActionType=\"设置\", AppName=\"微信\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我看看现在用的什么输入法"
       }
     ],
-    "output": "CheckInputMethod()"
+    "teacher_output": "CheckInputMethod()"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "能不能帮我把微信里的输入法改成百度输入法？现在用的是系统自带的，打字不太顺手。"
       }
     ],
-    "output": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")"
+    "teacher_output": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "把微信的语言设置改成英文吧，我朋友看不懂中文"
       }
     ],
-    "output": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"切换\")"
+    "teacher_output": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"设置\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "我的手机需要开启飞行模式了，麻烦帮我处理一下"
       }
     ],
-    "output": "AirplaneModeOnOff(ActionType=True)"
+    "teacher_output": "AirplaneModeOnOff(ActionType=True)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我看看电脑有没有可用的系统更新，谢谢！"
       }
     ],
-    "output": "CheckSystemUpdate()"
+    "teacher_output": "CheckSystemUpdate()"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "电脑最近有点卡，能帮我看看系统有没有可用的升级？"
       }
     ],
-    "output": "CheckSystemUpdate()"
+    "teacher_output": "CheckSystemUpdate()"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "小张我想听周杰伦的歌，帮我开一下音乐软件吧"
       }
     ],
-    "output": "SwitchApp(AppName=\"音乐\")"
+    "teacher_output": "SwitchApp(AppName=\"音乐\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我用微信给李经理打个电话，用卡1，开免提模式"
       }
     ],
-    "output": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneNumber=\"13812345678\", Mode=\"免提\", PhoneCard=\"卡1\")"
+    "teacher_output": "Call(AppName='微信', Contact='李经理', Mode='免提', PhoneCard='卡1')"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我查一下王总的联系方式"
       }
     ],
-    "output": "CheckContact(Contact=\"王总\")"
+    "teacher_output": "CheckContact(Contact=\"王总\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "“帮我用免提接一下这个电话”"
       }
     ],
-    "output": "AnswerCall(ActionType=True, Mode=\"免提\", Response=\"稍后回电\")"
+    "teacher_output": "AnswerCall(ActionType=True, Mode=\"免提\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我给王总发个微信，说下午的会议改到3点了，用我工作卡发"
       }
     ],
-    "output": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneNumber=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点了\")"
+    "teacher_output": "SendMessage(AppName=\"微信\", Contact=\"王总\", Content=\"下午的会议改到3点了\", PhoneCard=\"工作卡\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我用网易邮箱给客户经理李总发封邮件，内容是\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\""
       }
     ],
-    "output": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", EmailAddress=\"lizong@163.com\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
+    "teacher_output": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我在Outlook里看看昨天收到的标星邮件"
       }
     ],
-    "output": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", Sender=\"任意\", Content=\"任意\", TimeRange=\"昨天\")"
+    "teacher_output": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"昨天\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "明早8点记得提醒我开项目例会"
       }
     ],
-    "output": "CreateAlarm(Time=\"早上8点\", Content=\"开项目例会\")"
+    "teacher_output": "CreateAlarm(Time=\"早上8点\", Content=\"开项目例会\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我看看明天上午9点叫我开会的闹钟开了没有"
       }
     ],
-    "output": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")"
+    "teacher_output": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我取消明天早上8点的会议提醒"
       }
     ],
-    "output": "DeleteAlarm(Time=\"明天早上8点\", Content=\"会议\", RangeType=\"明天\", State=\"已开启\")"
+    "teacher_output": "DeleteAlarm(Time=\"早上8点\", Content=\"会议提醒\", RangeType=\"明天\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "早上开会时老板布置了几个新任务，能帮我在WPS里创建一份标题为\"Q3项目计划\"的工作笔记吗？内容就写\"1.市场调研 2.竞品分析 3.方案设计\"，最好能在明天下午三点提醒我查看"
       }
     ],
-    "output": "CreateNote(AppName=\"WPS\", Title=\"Q3项目计划\", Content=\"1.市场调研 2.竞品分析 3.方案设计\", Type=\"工作笔记\", ReminderTime=\"明天下午三点\")"
+    "teacher_output": "CreateNote(AppName=\"WPS\", Title=\"Q3项目计划\", Content=\"1.市场调研 2.竞品分析 3.方案设计\", ReminderTime=\"明天下午三点\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "把这段中文翻译成英文：\"今天的天气真好，适合外出散步。\""
       }
     ],
-    "output": "Translate(Content=\"今天的天气真好，适合外出散步。\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")"
+    "teacher_output": "Translate(Content=\"今天的天气真好，适合外出散步。\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "您好，麻烦帮我截取当前正在使用的浏览器窗口画面，并保存在桌面\"工作资料\"文件夹里，谢谢！"
       }
     ],
-    "output": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"桌面/工作资料\")"
+    "teacher_output": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"桌面/工作资料\")"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "电脑有点卡，能帮我刷新下桌面吗？"
       }
     ],
-    "output": "Refresh()"
+    "teacher_output": "Refresh()"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "可以麻烦你帮我把任务管理器调出来吗？我需要查一下后台进程"
       }
     ],
-    "output": "TaskManagerOnOff(ActionType=True)"
+    "teacher_output": "TaskManagerOnOff(ActionType=True)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把手机的分屏模式打开吧，我需要同时看两个应用"
       }
     ],
-    "output": "MultipleWindowModeOnOff(ActionType=True)"
+    "teacher_output": "MultipleWindowModeOnOff(ActionType=True)"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我把电脑的回收站彻底清空一下"
       }
     ],
-    "output": "EmptyBin()"
+    "teacher_output": "EmptyBin()"
   },
   {
-    "input": [
+    "prompt": [
       {
         "role": "user",
         "content": "帮我查一下明天北京的天气预报"
       }
     ],
-    "output": "Search(Content=\"明天北京的天气预报\")"
+    "teacher_output": "Search(Content=\"明天 北京 天气预报\")"
   }
 ]
