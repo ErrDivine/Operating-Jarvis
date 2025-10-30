@@ -26,7 +26,8 @@ lora_config = LoraConfig(
     task_type="CAUSAL_LM"
 )
 
-model = get_peft_model(model, lora_config)
+# 将模型转化为可LoRA微调版本
+model = get_peft_model(model, lora_config)  
 
 # 加载数据
 dataset = load_dataset("json", data_files=DATA_PATH)["train"]
@@ -50,15 +51,15 @@ loader = DataLoader(dataset, batch_size=1, collate_fn=collate_fn)
 # 简单训练循环
 optim = torch.optim.AdamW(model.parameters(), lr=1e-4)
 
-model.train()
+model.train()  # 启动训练模式
 for epoch in range(2): # 例子跑两轮
     for batch in loader:
-        batch = {k: v.to(model.device) for k,v in batch.items()}
-        optim.zero_grad()
-        outputs = model(**batch)
-        loss = outputs.loss
-        loss.backward()
-        optim.step()
+        batch = {k: v.to(model.device) for k,v in batch.items()}  # 把batch送到模型所在设备
+        optim.zero_grad()  # 梯度清零
+        outputs = model(**batch)  # 前向计算，且输入labels会自动计算loss
+        loss = outputs.loss  # 提取loss
+        loss.backward()  # 反向传播，根据loss计算梯度，并存储到每个可训练参数的.grad属性中
+        optim.step()  # 根据梯度信息和优化器策略，更新权重
         print(f"loss: {loss.item()}")
 
 model.save_pretrained("models/Qwen4B-distilled")

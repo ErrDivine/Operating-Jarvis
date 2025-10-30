@@ -78,7 +78,7 @@
         "content": "帮我查一下最近7天哪些APP最耗电，要按从高到低排序"
       }
     ],
-    "teacher_output": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", SortBy=\"DESC\")"
+    "teacher_output": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")"
   },
   {
     "prompt": [
@@ -123,7 +123,7 @@
         "content": "能不能帮我把手机通话音量调高一点？"
       }
     ],
-    "teacher_output": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\")"
+    "teacher_output": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=)"
   },
   {
     "prompt": [
@@ -159,7 +159,7 @@
         "content": "帮我把平板屏幕的亮度调到60%吧，有点刺眼"
       }
     ],
-    "teacher_output": "ControlLuminance(DeviceType='平板屏幕', ActionType='调到', Percentage=60)"
+    "teacher_output": "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=60)"
   },
   {
     "prompt": [
@@ -213,7 +213,7 @@
         "content": "帮我把微信的字体调到最大号，看着清楚点"
       }
     ],
-    "teacher_output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\")"
+    "teacher_output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\", FontSize=\"24号\")"
   },
   {
     "prompt": [
@@ -303,7 +303,7 @@
         "content": "帮我用微信给李经理打个电话，用卡1，开免提模式"
       }
     ],
-    "teacher_output": "Call(AppName='微信', Contact='李经理', Mode='免提', PhoneCard='卡1')"
+    "teacher_output": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneNumber=\"\", Mode=\"免提\", PhoneCard=\"卡1\")"
   },
   {
     "prompt": [
@@ -321,7 +321,7 @@
         "content": "“帮我用免提接一下这个电话”"
       }
     ],
-    "teacher_output": "AnswerCall(ActionType=True, Mode=\"免提\")"
+    "teacher_output": "AnswerCall(ActionType=True, Mode=\"免提\", Response=\"\")"
   },
   {
     "prompt": [
@@ -330,7 +330,7 @@
         "content": "帮我给王总发个微信，说下午的会议改到3点了，用我工作卡发"
       }
     ],
-    "teacher_output": "SendMessage(AppName=\"微信\", Contact=\"王总\", Content=\"下午的会议改到3点了\", PhoneCard=\"工作卡\")"
+    "teacher_output": "SendMessage(AppName='微信', Contact='王总', PhoneNumber='', PhoneCard='工作卡', Content='下午的会议改到3点了')"
   },
   {
     "prompt": [
@@ -339,7 +339,7 @@
         "content": "帮我用网易邮箱给客户经理李总发封邮件，内容是\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\""
       }
     ],
-    "teacher_output": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
+    "teacher_output": "SendEmail(AppName=网易邮箱, Contact=李总, EmailAddress=, Content=关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见)"
   },
   {
     "prompt": [
@@ -357,7 +357,7 @@
         "content": "明早8点记得提醒我开项目例会"
       }
     ],
-    "teacher_output": "CreateAlarm(Time=\"早上8点\", Content=\"开项目例会\")"
+    "teacher_output": "CreateAlarm(Time=\"明早8点\", Content=\"开项目例会\")"
   },
   {
     "prompt": [
@@ -366,7 +366,7 @@
         "content": "帮我看看明天上午9点叫我开会的闹钟开了没有"
       }
     ],
-    "teacher_output": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\")"
+    "teacher_output": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"指定日期\", State=\"已开启\")"
   },
   {
     "prompt": [
@@ -375,7 +375,7 @@
         "content": "帮我取消明天早上8点的会议提醒"
       }
     ],
-    "teacher_output": "DeleteAlarm(Time=\"早上8点\", Content=\"会议提醒\", RangeType=\"明天\")"
+    "teacher_output": "DeleteAlarm(Time=\"早上8点\", Content=\"会议\", RangeType=\"明天\", State=\"已开启\")"
   },
   {
     "prompt": [
@@ -384,7 +384,7 @@
         "content": "早上开会时老板布置了几个新任务，能帮我在WPS里创建一份标题为\"Q3项目计划\"的工作笔记吗？内容就写\"1.市场调研 2.竞品分析 3.方案设计\"，最好能在明天下午三点提醒我查看"
       }
     ],
-    "teacher_output": "CreateNote(AppName=\"WPS\", Title=\"Q3项目计划\", Content=\"1.市场调研 2.竞品分析 3.方案设计\", ReminderTime=\"明天下午三点\")"
+    "teacher_output": "CreateNote(AppName=WPS, Title=Q3项目计划, Content=1.市场调研 2.竞品分析 3.方案设计, Type=工作笔记, ReminderTime=明天下午三点)"
   },
   {
     "prompt": [

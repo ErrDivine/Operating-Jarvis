@@ -235,7 +235,7 @@
         "content": "降低到50%就好"
       }
     ],
-    "output": "ControlSound(VolumeType=\"铃声音量\", ActionType=\"调到\", Percentage=\"50\")"
+    "output": "ControlSound(VolumeType=\"铃声音量\", ActionType=\"调到\", Percentage=50)"
   },
   {
     "input": [
@@ -269,7 +269,7 @@
         "content": "对的，就是这个意思"
       }
     ],
-    "output": "QuietModeOnOff(ActionType=\"开启\")"
+    "output": "QuietModeOnOff(ActionType=True)"
   },
   {
     "input": [
@@ -378,7 +378,7 @@
         "content": "对，要护眼模式，谢谢"
       }
     ],
-    "output": "SwitchContrast(DeviceType=\"显示器\", ActionType=\"护眼模式\")"
+    "output": "SwitchContrast(DeviceType=\"显示器\", ActionType=\"护眼模式\", Percentage=50)"
   },
   {
     "input": [
@@ -463,7 +463,7 @@
         "content": "永久改所有内容，看着舒服点"
       }
     ],
-    "output": "ControlFontType(ActionType=\"设置\", FontType=\"微软雅黑\", AppName=\"浏览器\")"
+    "output": "ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"浏览器\")"
   },
   {
     "input": [
@@ -754,7 +754,7 @@
         "content": "对的，内容再加一句\"请准时参加\""
       }
     ],
-    "output": "SendMessage(AppName=\"微信\", Contact=\"张经理\", Content=\"会议改到明天下午三点，请准时参加\")"
+    "output": "SendMessage(AppName=\"微信\", Contact=\"张经理\", PhoneCard=\"主卡\", Content=\"会议改到明天下午三点，请准时参加\")"
   },
   {
     "input": [
@@ -801,7 +801,7 @@
         "content": "九点整，麻烦设个提前15分钟的闹钟"
       }
     ],
-    "output": "CreateAlarm(Time=\"早上9点\", Content=\"重要会议\", Time=\"早上8点30分\")"
+    "output": "CreateAlarm(Time=\"早上9点\", Content=\"重要会议\", TimeOffset=\"15分钟\")"
   },
   {
     "input": [
@@ -818,7 +818,7 @@
         "content": "对，就是明早9点的那个"
       }
     ],
-    "output": "CheckAlarm(Time=\"早上9点\", RangeType=\"明天\")"
+    "output": "CheckAlarm(Time=\"早上9点\", Content=\"重要会议\", RangeType=\"明天\", State=\"已开启\")"
   },
   {
     "input": [

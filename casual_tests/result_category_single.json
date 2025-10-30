@@ -213,7 +213,7 @@
         "content": "帮我把微信的字体调到最大号，看着清楚点"
       }
     ],
-    "output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\", FontSize=\"24号等\")"
+    "output": "SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"最大\", AppName=\"微信\")"
   },
   {
     "input": [
@@ -303,7 +303,7 @@
         "content": "帮我用微信给李经理打个电话，用卡1，开免提模式"
       }
     ],
-    "output": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneNumber=\"13812345678\", Mode=\"免提\", PhoneCard=\"卡1\")"
+    "output": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneCard=\"卡1\", Mode=\"免提\")"
   },
   {
     "input": [
@@ -321,7 +321,7 @@
         "content": "“帮我用免提接一下这个电话”"
       }
     ],
-    "output": "AnswerCall(ActionType=True, Mode=\"免提\", Response=\"稍后回电\")"
+    "output": "AnswerCall(ActionType=True, Mode=\"免提\")"
   },
   {
     "input": [
@@ -330,7 +330,7 @@
         "content": "帮我给王总发个微信，说下午的会议改到3点了，用我工作卡发"
       }
     ],
-    "output": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneNumber=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点了\")"
+    "output": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点了\")"
   },
   {
     "input": [
@@ -339,7 +339,7 @@
         "content": "帮我用网易邮箱给客户经理李总发封邮件，内容是\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\""
       }
     ],
-    "output": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", EmailAddress=\"lizong@163.com\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
+    "output": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
   },
   {
     "input": [
@@ -348,7 +348,7 @@
         "content": "帮我在Outlook里看看昨天收到的标星邮件"
       }
     ],
-    "output": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", Sender=\"任意\", Content=\"任意\", TimeRange=\"昨天\")"
+    "output": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"昨天\")"
   },
   {
     "input": [

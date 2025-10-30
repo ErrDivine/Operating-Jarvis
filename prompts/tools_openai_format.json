@@ -109,7 +109,9 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "required": [],
+        "required": [
+          ""
+        ],
         "level": "网络控制"
       }
     }
@@ -162,7 +164,9 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "required": [],
+        "required": [
+          ""
+        ],
         "level": "电池状态查看"
       }
     }
@@ -637,7 +641,9 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "required": [],
+        "required": [
+          ""
+        ],
         "level": "字体设置"
       }
     }
@@ -708,8 +714,7 @@
         "required": [
           "ActionType",
           "AdjustLevel",
-          "AppName",
-          "FontSize"
+          "AppName"
         ],
         "level": "字体设置"
       }
@@ -853,7 +858,9 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "required": [],
+        "required": [
+          ""
+        ],
         "level": "语言与输入法设置"
       }
     }
@@ -1031,7 +1038,9 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "required": [],
+        "required": [
+          ""
+        ],
         "level": "系统更新管理"
       }
     }
@@ -1209,9 +1218,8 @@
         "required": [
           "AppName",
           "Contact",
-          "PhoneNumber",
-          "Mode",
-          "PhoneCard"
+          "PhoneCard",
+          "Mode"
         ],
         "level": "电话操作"
       }
@@ -1274,8 +1282,7 @@
         },
         "required": [
           "ActionType",
-          "Mode",
-          "Response"
+          "Mode"
         ],
         "level": "电话操作"
       }
@@ -1346,7 +1353,6 @@
         "required": [
           "AppName",
           "Contact",
-          "PhoneNumber",
           "PhoneCard",
           "Content"
         ],
@@ -1403,7 +1409,6 @@
         "required": [
           "AppName",
           "Contact",
-          "EmailAddress",
           "Content"
         ],
         "level": "邮件操作"
@@ -1483,8 +1488,6 @@
         "required": [
           "AppName",
           "Folder",
-          "Sender",
-          "Content",
           "TimeRange"
         ],
         "level": "邮件操作"
@@ -1635,8 +1638,7 @@
         "required": [
           "Time",
           "Content",
-          "RangeType",
-          "State"
+          "RangeType"
         ],
         "level": "闹钟操作"
       }
@@ -1821,7 +1823,9 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "required": [],
+        "required": [
+          ""
+        ],
         "level": "界面刷新"
       }
     }
@@ -1874,7 +1878,9 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "required": [],
+        "required": [
+          ""
+        ],
         "level": "回收站操作"
       }
     }
