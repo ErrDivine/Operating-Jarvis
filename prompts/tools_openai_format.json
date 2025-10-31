@@ -12,7 +12,9 @@
             "description": "数据类型：Boolean，取值范围：True|False，用途：True--打开蓝牙，False--关闭蓝牙"
           }
         },
-        "level": "蓝牙管理"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -37,7 +39,9 @@
             ]
           }
         },
-        "level": "蓝牙管理"
+        "required": [
+          "DeviceType"
+        ]
       }
     }
   },
@@ -67,7 +71,10 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--连接蓝牙设备，False--断开蓝牙设备"
           }
         },
-        "level": "蓝牙管理"
+        "required": [
+          "DeviceType",
+          "ActionType"
+        ]
       }
     }
   },
@@ -84,7 +91,9 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--打开WLAN，False--关闭WLAN"
           }
         },
-        "level": "网络控制"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -96,7 +105,7 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "level": "网络控制"
+        "required": []
       }
     }
   },
@@ -113,7 +122,9 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--打开移动数据，False--关闭移动数据"
           }
         },
-        "level": "网络控制"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -130,7 +141,9 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--打开热点，False--关闭热点"
           }
         },
-        "level": "网络控制"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -142,7 +155,7 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "level": "电池状态查看"
+        "required": []
       }
     }
   },
@@ -182,7 +195,11 @@
             ]
           }
         },
-        "level": "电池状态查看"
+        "required": [
+          "TimeRange",
+          "AnomalyDetection",
+          "SortBy"
+        ]
       }
     }
   },
@@ -199,7 +216,9 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启省电模式，False--关闭省电模式"
           }
         },
-        "level": "省电模式设置"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -225,7 +244,9 @@
             ]
           }
         },
-        "level": "设备电源操作"
+        "required": [
+          "DeviceType"
+        ]
       }
     }
   },
@@ -251,7 +272,9 @@
             ]
           }
         },
-        "level": "设备电源操作"
+        "required": [
+          "DeviceType"
+        ]
       }
     }
   },
@@ -277,7 +300,9 @@
             ]
           }
         },
-        "level": "设备电源操作"
+        "required": [
+          "DeviceType"
+        ]
       }
     }
   },
@@ -320,7 +345,11 @@
             "description": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标音量百分比数值"
           }
         },
-        "level": "音量控制"
+        "required": [
+          "VolumeType",
+          "ActionType",
+          "Percentage"
+        ]
       }
     }
   },
@@ -337,7 +366,9 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启振动模式，False--关闭振动模式"
           }
         },
-        "level": "声音模式切换"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -363,7 +394,9 @@
             ]
           }
         },
-        "level": "声音模式切换"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -388,7 +421,9 @@
             ]
           }
         },
-        "level": "显示参数调节"
+        "required": [
+          "DeviceType"
+        ]
       }
     }
   },
@@ -430,7 +465,11 @@
             "description": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标亮度百分比数值"
           }
         },
-        "level": "显示参数调节"
+        "required": [
+          "DeviceType",
+          "ActionType",
+          "Percentage"
+        ]
       }
     }
   },
@@ -460,7 +499,10 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启自动亮度，False--关闭自动亮度"
           }
         },
-        "level": "显示参数调节"
+        "required": [
+          "DeviceType",
+          "ActionType"
+        ]
       }
     }
   },
@@ -486,7 +528,9 @@
             ]
           }
         },
-        "level": "显示参数调节"
+        "required": [
+          "DeviceType"
+        ]
       }
     }
   },
@@ -529,7 +573,11 @@
             "description": "数据类型： Integer，取值范围： [0,100]，用途： 指定目标屏幕对比度百分比数值"
           }
         },
-        "level": "显示参数调节"
+        "required": [
+          "DeviceType",
+          "ActionType",
+          "Percentage"
+        ]
       }
     }
   },
@@ -559,7 +607,9 @@
             ]
           }
         },
-        "level": "主题与壁纸设置"
+        "required": [
+          "ThemeType"
+        ]
       }
     }
   },
@@ -571,7 +621,7 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "level": "字体设置"
+        "required": []
       }
     }
   },
@@ -638,7 +688,12 @@
             ]
           }
         },
-        "level": "字体设置"
+        "required": [
+          "ActionType",
+          "AdjustLevel",
+          "AppName",
+          "FontSize"
+        ]
       }
     }
   },
@@ -695,7 +750,11 @@
             ]
           }
         },
-        "level": "字体设置"
+        "required": [
+          "ActionType",
+          "FontWeight",
+          "AppName"
+        ]
       }
     }
   },
@@ -758,7 +817,11 @@
             ]
           }
         },
-        "level": "字体设置"
+        "required": [
+          "FontType",
+          "ActionType",
+          "AppName"
+        ]
       }
     }
   },
@@ -770,7 +833,7 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "level": "语言与输入法设置"
+        "required": []
       }
     }
   },
@@ -838,7 +901,11 @@
             ]
           }
         },
-        "level": "语言与输入法设置"
+        "required": [
+          "AppName",
+          "InputMethodName",
+          "ActionType"
+        ]
       }
     }
   },
@@ -905,7 +972,11 @@
             ]
           }
         },
-        "level": "语言与输入法设置"
+        "required": [
+          "AppName",
+          "LanguageType",
+          "ActionType"
+        ]
       }
     }
   },
@@ -922,7 +993,9 @@
             "description": "数据类型： String，取值范围： True|False，用途： True--打开飞行模式，False--关闭飞行模式"
           }
         },
-        "level": "飞行模式开关"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -934,7 +1007,7 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "level": "系统更新管理"
+        "required": []
       }
     }
   },
@@ -965,7 +1038,9 @@
             ]
           }
         },
-        "level": "系统更新管理"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -1031,7 +1106,9 @@
             ]
           }
         },
-        "level": "应用切换"
+        "required": [
+          "AppName"
+        ]
       }
     }
   },
@@ -1096,7 +1173,13 @@
             ]
           }
         },
-        "level": "电话操作"
+        "required": [
+          "AppName",
+          "Contact",
+          "PhoneNumber",
+          "Mode",
+          "PhoneCard"
+        ]
       }
     }
   },
@@ -1113,7 +1196,9 @@
             "description": "数据类型： String，取值范围： 联系人姓名（如：张三、李经理、王总、小明等），用途： 指定查看联系人的姓名"
           }
         },
-        "level": "电话操作"
+        "required": [
+          "Contact"
+        ]
       }
     }
   },
@@ -1146,7 +1231,11 @@
             "description": "数据类型： String，取值范围： 预设回复内容（如：稍后回电、正在开会、马上到等），用途： 指定拒绝接听时发送的自动回复消息"
           }
         },
-        "level": "电话操作"
+        "required": [
+          "ActionType",
+          "Mode",
+          "Response"
+        ]
       }
     }
   },
@@ -1203,7 +1292,13 @@
             "description": "数据类型： String，取值范围： 任意文本内容，用途： 指定要发送的消息内容"
           }
         },
-        "level": "信息操作"
+        "required": [
+          "AppName",
+          "Contact",
+          "PhoneNumber",
+          "PhoneCard",
+          "Content"
+        ]
       }
     }
   },
@@ -1244,7 +1339,12 @@
             "description": "数据类型： String，取值范围： 任意文本内容（包括邮件主题和正文），用途： 指定邮件的内容，可能包含主题和正文"
           }
         },
-        "level": "邮件操作"
+        "required": [
+          "AppName",
+          "Contact",
+          "EmailAddress",
+          "Content"
+        ]
       }
     }
   },
@@ -1312,7 +1412,13 @@
             ]
           }
         },
-        "level": "邮件操作"
+        "required": [
+          "AppName",
+          "Folder",
+          "Sender",
+          "Content",
+          "TimeRange"
+        ]
       }
     }
   },
@@ -1333,7 +1439,10 @@
             "description": "数据类型： String，取值范围： 任意事件描述（如：起床、开会、吃药、锻炼、上班等），用途： 指定要创建的闹钟的内容"
           }
         },
-        "level": "闹钟操作"
+        "required": [
+          "Time",
+          "Content"
+        ]
       }
     }
   },
@@ -1381,7 +1490,12 @@
             ]
           }
         },
-        "level": "闹钟操作"
+        "required": [
+          "Time",
+          "Content",
+          "RangeType",
+          "State"
+        ]
       }
     }
   },
@@ -1429,7 +1543,12 @@
             ]
           }
         },
-        "level": "闹钟操作"
+        "required": [
+          "Time",
+          "Content",
+          "RangeType",
+          "State"
+        ]
       }
     }
   },
@@ -1484,7 +1603,13 @@
             "description": "数据类型： DateTime，取值范围： 具体时间点或相对时间，用途： 设置笔记的提醒时间"
           }
         },
-        "level": "系统工具操作"
+        "required": [
+          "AppName",
+          "Title",
+          "Content",
+          "Type",
+          "ReminderTime"
+        ]
       }
     }
   },
@@ -1540,7 +1665,11 @@
             ]
           }
         },
-        "level": "实际应用"
+        "required": [
+          "Content",
+          "SourceLanguage",
+          "TargetLanguage"
+        ]
       }
     }
   },
@@ -1569,7 +1698,10 @@
             "description": "数据类型： String，取值范围： 任意有效的文件路径或文件夹路径，用途： 指定截图文件的保存位置"
           }
         },
-        "level": "实际应用"
+        "required": [
+          "CaptureArea",
+          "SavePath"
+        ]
       }
     }
   },
@@ -1581,7 +1713,7 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "level": "界面刷新"
+        "required": []
       }
     }
   },
@@ -1598,7 +1730,9 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启多窗口模式，False--关闭多窗口模式"
           }
         },
-        "level": "多任务视图"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -1615,7 +1749,9 @@
             "description": "数据类型： Boolean，取值范围： True|False，用途： True--开启多窗口模式，False--关闭多窗口模式"
           }
         },
-        "level": "多任务视图"
+        "required": [
+          "ActionType"
+        ]
       }
     }
   },
@@ -1627,7 +1763,7 @@
       "parameters": {
         "type": "object",
         "properties": {},
-        "level": "回收站操作"
+        "required": []
       }
     }
   },
@@ -1644,7 +1780,9 @@
             "description": "数据类型： String，取值范围： 任意文本内容，用途： 指定要搜索的关键词、短语或具体内容"
           }
         },
-        "level": "搜索操作"
+        "required": [
+          "Content"
+        ]
       }
     }
   }
