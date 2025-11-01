@@ -35,7 +35,7 @@ def generate_dataset(prompt,result_path):
         print("JSON 解析失败：", e)
 
 if __name__ == "__main__":
-    for i in [3]:
+    for i in [0,3]:
         tools_partition = tools[10*i:10*(i+1)]
         system_prompt = f"""
             你是一个数据生成助手，任务是根据工具定义生成测试数据集。
@@ -85,4 +85,4 @@ if __name__ == "__main__":
             
             """
 
-        generate_dataset(system_prompt, "complex_test_dataset_2.json")
+        generate_dataset(system_prompt, "complex_multiple_test_dataset_2.json")
