@@ -52,7 +52,7 @@ class DataSet:
         return self.openai_y
     
     def get_openai_xy(self):
-        return self.openai_x,self.openai_y
+        return zip(self.openai_x,self.openai_y)
     
     
 

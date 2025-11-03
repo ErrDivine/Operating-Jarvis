@@ -1,6 +1,6 @@
 # Check qwen correctness
 import re
-
+from tqdm import tqdm 
 
 from train import DataSet
 from agent import CustomAgent
@@ -9,17 +9,20 @@ from agent import CustomAgent
 def level_run(self,level_messages):
         response_content = self.generate(level_messages)
         level_res = re.findall(r".*?(<level>.*?</level>).*?", response_content, re.DOTALL)
-        return level_res
+        return level_res[0]
 
 
 def main():
     CustomAgent.run = level_run
     agent = CustomAgent()
     data_set = DataSet("SFT/tests/tool_classification_lora_dataset.json")
-    for message, answer in data_set.get_openai_xy():
+    diff = ""
+    for message,answer in tqdm(data_set.get_openai_xy()):
         response = agent.run(message)
         if response != answer :
-            print('*'*20,f"\nres:{response}\ncor_res{answer}\n")
+            diff += '*'*20+f"\nres:{response}\ncor_res:{answer}\n"
+
+    print(diff)
 
 
 
