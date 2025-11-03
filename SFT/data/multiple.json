@@ -1,0 +1,950 @@
+[
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我今天早上起床的时候发现手机没电了，想重启一下看看能不能恢复正常。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启手机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是重启手机。"
+            }
+        ],
+        "output": "Reboot(DeviceType=手机)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我刚才用耳机听音乐的时候突然断开了，是不是需要关掉再重新连接？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭耳机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，关掉耳机然后重新打开。"
+            }
+        ],
+        "output": "ShutDown(DeviceType=耳机)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我的音箱最近总是自动关机，是不是该让它进入睡眠模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让音箱进入睡眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，让它休眠一下试试看。"
+            }
+        ],
+        "output": "Sleep(DeviceType=音箱)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我刚刚在开视频会议的时候，声音太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节系统音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，把系统音量调高点。"
+            }
+        ],
+        "output": "ControlSound(VolumeType=系统音量,ActionType=增加,Percentage=20)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我今天出门前感觉手机振动有点频繁，想关闭一下震动功能。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，关掉震动。"
+            }
+        ],
+        "output": "VibrationModeOnOff(ActionType=False)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我昨晚睡觉的时候不小心打开了手机的静音模式，现在想把它关掉。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，关掉静音模式。"
+            }
+        ],
+        "output": "QuietModeOnOff(ActionType=False)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我刚进办公室，发现屏幕亮度有点低，能查一下当前的屏幕亮度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看屏幕亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，检查一下当前亮度。"
+            }
+        ],
+        "output": "CheckLuminance(DeviceType=屏幕)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我现在在图书馆，觉得屏幕太亮了，想调低一点。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节屏幕亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调低一些。"
+            }
+        ],
+        "output": "ControlLuminance(DeviceType=屏幕,ActionType=减少,Percentage=30)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我之前设置的自动亮度好像失效了，想重新开启这个功能。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，开启自动亮度。"
+            }
+        ],
+        "output": "AutoLuminanceOnOff(DeviceType=屏幕,ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我想确认一下显示器的对比度是否正常，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询显示器的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，检查一下。"
+            }
+        ],
+        "output": "CheckContrast(DeviceType=显示器)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我刚从外面回来，眼睛有点累，手机屏幕的对比度是不是可以调低一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整手机屏幕的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是手机屏幕，再调低点，护眼模式应该也行"
+            }
+        ],
+        "output": "SwitchContrast(DeviceType=手机屏幕,ActionType=护眼模式,Percentage=30)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "今天开会的时候，电脑屏幕太亮了，能不能改成深色模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把电脑屏幕设置为深色模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，而且系统主题也要改，这样看起来舒服些"
+            }
+        ],
+        "output": "SetSystemTheme(ThemeType=深色模式)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么字体，有没有特别大的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前使用的字体设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还有字体大小，感觉有点小"
+            }
+        ],
+        "output": "CheckFont()"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我现在看小说有点吃力，能把阅读器里的字体调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将阅读器中的字体调大吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调大一级就行，不用太多"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要将阅读器中的字体调大一级吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就按这个操作"
+            }
+        ],
+        "output": "SwitchFontSize(ActionType=放大,AdjustLevel=一级,AppName=阅读器)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我最近在写论文，文档里的字有点细，能加粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将文档中的字体加粗吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要是全局应用，别只改当前文档"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要将系统中所有文档的字体设置为加粗吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的"
+            }
+        ],
+        "output": "SwitchFontWeight(ActionType=设置,FontWeight=加粗,AppName=全局)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我最近喜欢用思源黑体，能换一下系统字体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统字体更换为思源黑体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要应用到微信和浏览器里"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要将思源黑体设置为系统、微信和浏览器的字体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就按这个来"
+            }
+        ],
+        "output": "ControlFontType(FontType=思源黑体,ActionType=设置,AppName=系统)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我刚才用了拼音输入法，但不太习惯，能不能换成搜狗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将输入法切换为搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是在微信里用，不要太麻烦"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要在微信中切换为搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就按这个来"
+            }
+        ],
+        "output": "SwitchInputMethod(AppName=微信,InputMethodName=搜狗输入法,ActionType=切换)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我女儿说她看不懂英文界面，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统语言切换为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要包括微信和浏览器"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要将系统、微信和浏览器的语言设置为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就这样"
+            }
+        ],
+        "output": "SwitchLanguage(AppName=系统,LanguageType=中文,ActionType=切换)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "天气不错，但我的手机信号不太好，能开飞行模式试试吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先关掉所有连接，看看有没有改善"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要开启飞行模式以关闭所有无线连接吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就按这个来"
+            }
+        ],
+        "output": "AirplaneModeOnOff(ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我今天早上七点要起床，但不知道闹钟有没有设置好。另外，我昨天晚上睡得有点晚，可能明天会迟到。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看早上七点的闹钟状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是早上七点的闹钟，还有我想确认一下明天的闹钟是不是开启了。"
+            }
+        ],
+        "output": "CheckAlarm(Time=早上7点,Content=起床,RangeType=明天,State=已开启)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我之前设置了三个闹钟，分别是早上八点、下午三点和晚上十点，但好像其中一个被不小心关掉了。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除某个特定时间的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "不是，我是想确认这三个闹钟是否都还开着，特别是下午三点的那个。"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您检查这三个闹钟的状态。"
+            },
+            {
+                "role": "user",
+                "content": "确认一下早上八点、下午三点和晚上十点的闹钟状态。"
+            }
+        ],
+        "output": "CheckAlarm(Time=下午3点,Content=任意事件描述（如：起床、开会、吃药、锻炼、上班等）,RangeType=全部,State=已开启)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我需要创建一个待办事项笔记，标题是‘会议准备’，内容是‘准备好PPT并发送给团队’，提醒时间是明天上午九点。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想使用哪个笔记应用来创建这个待办事项？"
+            },
+            {
+                "role": "user",
+                "content": "用OneNote吧，我觉得它比较方便。"
+            }
+        ],
+        "output": "CreateNote(AppName=OneNote,Title=会议准备,Content=准备好PPT并发送给团队,Type=待办事项,ReminderTime=明天上午九点)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我想把这段中文翻译成英文，内容是‘我今天很忙，可能无法参加聚会’。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将这段中文翻译成英文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这句话。"
+            }
+        ],
+        "output": "Translate(Content=我今天很忙，可能无法参加聚会,SourceLanguage=中文,TargetLanguage=英文)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我要截图，把整个屏幕保存到D盘的图片文件夹里。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要进行全屏截图并保存到D盘的图片文件夹吗？"
+            },
+            {
+                "role": "user",
+                "content": "没错，就是全屏截图，路径是D:\\图片\\。"
+            }
+        ],
+        "output": "CaptureScreenshot(CaptureArea=全屏,SavePath=D:\\图片\\)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "请刷新一下网页，我刚刚看到内容没更新。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想刷新当前网页吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，刷新一下。"
+            }
+        ],
+        "output": "Refresh()"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我想打开任务管理器，看看有没有后台程序占用太多资源。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是打开任务管理器。"
+            }
+        ],
+        "output": "TaskManagerOnOff(ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我最近经常分屏使用电脑，但有时候觉得太乱了，想关闭多窗口模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭多窗口模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是关闭分屏显示。"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭多窗口模式。"
+            },
+            {
+                "role": "user",
+                "content": "关闭多窗口模式。"
+            }
+        ],
+        "output": "MultipleWindowModeOnOff(ActionType=False)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我的回收站有很多垃圾文件，可以帮我清空一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，清空回收站。"
+            }
+        ],
+        "output": "EmptyBin()"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我想搜索一下今天天气怎么样，还有最近的新闻。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想进行网络搜索吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，搜索今天的天气和最近的新闻。"
+            }
+        ],
+        "output": "Search(Content=今天的天气和最近的新闻)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我今天出门的时候发现手机的蓝牙好像没开，现在想连接一下耳机，但一直连不上。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开蓝牙然后连接耳机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是打开蓝牙然后连接耳机。"
+            }
+        ],
+        "output": "ConnectBlueTooth(DeviceType=\"耳机\",ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "家里音箱最近老是断开连接，我想看看是不是蓝牙设置有问题。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查蓝牙连接或者重新搜索设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "嗯，可能需要重新扫描一下附近的蓝牙设备。"
+            }
+        ],
+        "output": "SearchBlueTooth(DeviceType=\"音箱\")"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机之前一直能用，但今天突然连不上了，可能是没开吧？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先看看蓝牙有没有关。"
+            }
+        ],
+        "output": "BlueToothOnOff(ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我现在在办公室，想连接一下投影仪，但不知道怎么操作。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想通过蓝牙连接投影仪吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，投影仪应该支持蓝牙连接。"
+            }
+        ],
+        "output": "ConnectBlueTooth(DeviceType=\"投影仪\",ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我刚买的新音箱，想试试能不能和手机连接。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想连接音箱到手机的蓝牙吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先打开蓝牙再连接音箱。"
+            }
+        ],
+        "output": "ConnectBlueTooth(DeviceType=\"音箱\",ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "今天的天气真不错，适合出去走走，但我手机的WiFi好像没连上。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开WiFi吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我想连上WiFi。"
+            }
+        ],
+        "output": "WlanOnOff(ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我在家想连一下家里的无线网络，但是找不到信号。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索附近的WiFi网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先看看有没有可用的网络。"
+            }
+        ],
+        "output": "SearchWlan()"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我刚才用了好多流量，现在想关掉移动数据防止继续消耗。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭移动数据吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不需要用流量了。"
+            }
+        ],
+        "output": "MobileDataOnOff(ActionType=False)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我想分享一下手机的热点，让朋友也能上网。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开热点吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在马上打开。"
+            }
+        ],
+        "output": "HotShotOnOff(ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我今天电量快没了，想看看电池还有多少。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看电池电量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，想知道还剩多少电。"
+            }
+        ],
+        "output": "CheckBatteryLevel()"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "最近手机耗电特别快，我想查一下哪个应用最费电。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，查一下最近几天的应用耗电情况。"
+            }
+        ],
+        "output": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\",AnomalyDetection=True,SortBy=\"DESC\")"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我手机电量快没了，想开启省电模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启省电模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在就开启。"
+            }
+        ],
+        "output": "BatterySavingMode(ActionType=True)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我昨晚在手机上看到有个系统更新，但忘了点下载了，现在想看看有没有新的更新可以安装。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看是否有新的系统更新可以安装吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个意思，我之前没处理完，现在想继续处理。"
+            }
+        ],
+        "output": "SystemUpdate(ActionType=安装)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我刚刚打开手机发现系统提示要更新，但我不太确定是不是最新的版本，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查当前系统是否已经更新到最新版本吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个意思，我想确认一下有没有需要下载的更新。"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我来帮您检查系统更新状态。"
+            },
+            {
+                "role": "user",
+                "content": "系统显示有新的更新可用，我想下载下来。"
+            }
+        ],
+        "output": "SystemUpdate(ActionType=下载)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我最近换了个新手机，想看看能不能切换到微信，这样方便和朋友聊天。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到微信应用吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是微信，我想用它来跟朋友沟通。"
+            }
+        ],
+        "output": "SwitchApp(AppName=微信)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我今天要给李经理打电话，他一直用的是移动卡，我得选对号码才能打过去。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想使用移动卡拨打李经理的电话吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是移动卡，他的号码是13812345678。"
+            }
+        ],
+        "output": "Call(AppName=短信,Contact=李经理,PhoneCard=移动卡,Mode=正常)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我需要找一下王总的联系方式，他好像在公司通讯录里，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查找王总的联系信息吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是他，我记得他手机号码是13987654321。"
+            }
+        ],
+        "output": "CheckContact(Contact=王总)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "刚才有人打电话过来，但我正在开会，现在想接听，能帮我处理一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想接听来电吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在可以接听，但希望用免提模式。"
+            }
+        ],
+        "output": "AnswerCall(ActionType=True,Mode=免提)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我想发个消息给张三，告诉他今天下午三点开会，别迟到了。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想发送一条消息给张三吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是他，我要用短信发送内容。"
+            }
+        ],
+        "output": "SendMessage(AppName=短信,Contact=张三,PhoneCard=主卡,Content=今天下午三点开会，别迟到。)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我需要给李老师发一封邮件，说明今天课程调整的情况，麻烦帮我写一下。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想发送一封邮件给李老师吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是李老师，我要用QQ邮箱发送。"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我来帮您准备邮件内容。"
+            },
+            {
+                "role": "user",
+                "content": "邮件内容是：‘李老师您好，今天下午的课程调整为两点，请准时参加。’"
+            }
+        ],
+        "output": "SendEmail(AppName=QQ邮箱,Contact=李老师,Content=李老师您好，今天下午的课程调整为两点，请准时参加。)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我想看一下今天的邮件，特别是收件箱里的内容，可能有重要的通知。"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看收件箱里的邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是收件箱，我想看看有没有新的通知。"
+            }
+        ],
+        "output": "CheckEmail(AppName=QQ邮箱,Folder=收件箱,TimeRange=今天)"
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "我明天早上七点要起床，能设置一个闹钟提醒我吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个早上七点的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是七点，内容是‘起床’。"
+            }
+        ],
+        "output": "CreateAlarm(Time=早上7点,Content=起床)"
+    }
+]
+
