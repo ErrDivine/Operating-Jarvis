@@ -1,0 +1,64 @@
+restart
+
+
+
+18**************************************************常识：可以直接操控投影仪
+
+Agent output:AutoLuminanceOnOff(DeviceType="投影仪", Mode="开启")
+Correct answer:ControlLuminance(DeviceType="屏幕", ActionType="自动")
+
+**************************************************
+
+21**************************************************常识：护眼模式没有百分比
+
+Agent output:SwitchContrast(DeviceType="显示器", ActionType="护眼模式", Percentage=50)
+Correct answer:SwitchContrast(DeviceType="显示器",ActionType="护眼模式")
+
+**************************************************
+
+32**************************************************多工具
+
+Agent output:SystemUpdate(ActionType="安装", ActionType="自动更新")
+Correct answer:SystemUpdate(ActionType="立即更新")SystemUpdate(ActionType="自动更新")
+
+**************************************************
+
+
+37**************************************************unsettled：删除phonecard
+
+Agent output:SendMessage(AppName="微信", Contact="张经理", PhoneCard="主卡", Content="会议改到明天下午三点，请准时参加")
+Correct answer:SendMessage(AppName="微信", Contact="张经理", Content="会议改到明天下午三点，请准时参加")
+
+**************************************************
+
+
+40**************************************************｜？｜高估你了😘
+
+Agent output:CreateAlarm(Time="早上9点", Content="重要会议", Time="早上8点30分")
+Correct answer:CreateAlarm(Time="08:45", Content="重要会议提醒")
+
+**************************************************
+
+
+41**************************************************unsettled：删除State
+
+Agent output:CheckAlarm(Time="早上9点", Content="重要会议", RangeType="明天", State="已开启")
+Correct answer:CheckAlarm(Time="明天9:00", Content="会议", RangeType="明天")
+
+**************************************************
+
+42************************************************** ？ 训练合理填充不在required中的参数
+
+Agent output:DeleteAlarm(Expired=True)
+Correct answer:DeleteAlarm(State="已过期")
+
+**************************************************
+
+43************************************************** 常识：note可以设置提醒时间
+
+Agent output:CreateAlarm(Time="下午3点30分", Content="季度项目复盘")
+Correct answer:CreateNote(AppName="WPS", Title="季度项目复盘", Type="会议记录", ReminderTime="2023-11-15 15:00")
+
+**************************************************
+
+

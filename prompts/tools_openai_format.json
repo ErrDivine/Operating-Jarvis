@@ -1353,7 +1353,6 @@
         "required": [
           "AppName",
           "Contact",
-          "PhoneCard",
           "Content"
         ],
         "level": "信息操作"
@@ -1578,8 +1577,7 @@
         "required": [
           "Time",
           "Content",
-          "RangeType",
-          "State"
+          "RangeType"
         ],
         "level": "闹钟操作"
       }

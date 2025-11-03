@@ -1,1856 +1,2474 @@
 [
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我今天出门的时候发现蓝牙没开，能不能帮我打开一下？"
-            }
-        ],
-        "output": "BlueToothOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想关掉蓝牙，这样能省点电。"
-            }
-        ],
-        "output": "BlueToothOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "最近蓝牙连接总是断开，是不是需要重新扫描一下附近的设备？"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=ALL（默认值）)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想要搜索一下有没有新的耳机可以连接。"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=耳机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把手机的蓝牙连接取消掉，我现在要用耳机了。"
-            }
-        ],
-        "output": "ConnectBlueTooth(DeviceType=手机,ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "请帮我把音箱连上蓝牙，我准备放音乐了。"
-            }
-        ],
-        "output": "ConnectBlueTooth(DeviceType=音箱,ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "今天的WiFi好像不太稳定，能帮我打开一下吗？"
-            }
-        ],
-        "output": "WlanOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "别让手机自动连接别人的WiFi了，把它关掉吧。"
-            }
-        ],
-        "output": "WlanOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我要找一个可靠的WiFi网络，能帮我扫描一下吗？"
-            }
-        ],
-        "output": "SearchWlan()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "移动数据太贵了，我打算关闭它。"
-            }
-        ],
-        "output": "MobileDataOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "现在流量快用完了，能不能把移动数据关掉？"
-            }
-        ],
-        "output": "MobileDataOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想打开移动数据，这样就能上网了。"
-            }
-        ],
-        "output": "MobileDataOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "热点怎么关掉？我刚用完手机共享网络。"
-            }
-        ],
-        "output": "HotShotOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "能让我分享一下手机的网络吗？打开热点吧。"
-            }
-        ],
-        "output": "HotShotOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚刚用完热点，现在要关掉它。"
-            }
-        ],
-        "output": "HotShotOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我的手机电量还剩20%，能告诉我电池情况吗？"
-            }
-        ],
-        "output": "CheckBatteryLevel()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "看看我手机的电池状态，还有多久能用完？"
-            }
-        ],
-        "output": "CheckBatteryLevel()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我最近经常用手机，想知道哪些应用最耗电。"
-            }
-        ],
-        "output": "CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy=\"DESC\")"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "帮我查一下昨天的电池消耗情况，特别是耗电最多的应用。"
-            }
-        ],
-        "output": "CheckBatteryConsumptionRank(TimeRange=昨天,AnomalyDetection=True,SortBy=\"DESC\")"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看看最近一个月的电池使用情况，按耗电从高到低排。"
-            }
-        ],
-        "output": "CheckBatteryConsumptionRank(TimeRange=最近30天,AnomalyDetection=False,SortBy=\"DESC\")"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "开启省电模式，这样手机能多用一会儿。"
-            }
-        ],
-        "output": "BatterySavingMode(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "现在不需要省电模式了，可以关掉吗？"
-            }
-        ],
-        "output": "BatterySavingMode(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "如果电量低于20%，就自动开启省电模式吧。"
-            }
-        ],
-        "output": "BatterySavingMode(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我今天早上开机的时候发现手机有点卡，能不能帮我重启一下手机？"
-            }
-        ],
-        "output": "Reboot(DeviceType=手机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "这个音箱声音太小了，我把它关掉吧。"
-            }
-        ],
-        "output": "ShutDown(DeviceType=音箱)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我现在要出门了，把手机设置成睡眠模式吧。"
-            }
-        ],
-        "output": "Sleep(DeviceType=手机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想调高一下耳机的音量，现在有点小声。"
-            }
-        ],
-        "output": "ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=50)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "最近总是被电话打扰，能帮我关闭振动模式吗？"
-            }
-        ],
-        "output": "VibrationModeOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我要开会了，把手机的勿扰模式打开吧。"
-            }
-        ],
-        "output": "QuietModeOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想要查看一下电脑屏幕的亮度是多少。"
-            }
-        ],
-        "output": "CheckLuminance(DeviceType=电脑屏幕)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把平板屏幕的亮度调低一点，我现在觉得有点刺眼。"
-            }
-        ],
-        "output": "ControlLuminance(DeviceType=平板屏幕,ActionType=减少,Percentage=30)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我觉得手机屏幕的自动亮度功能不太合适，能不能关掉它？"
-            }
-        ],
-        "output": "AutoLuminanceOnOff(DeviceType=手机,ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看看显示器的对比度，你帮我查一下。"
-            }
-        ],
-        "output": "CheckContrast(DeviceType=显示器)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把手机屏幕的对比度调高一点，我现在看不清字。"
-            }
-        ],
-        "output": "SwitchContrast(DeviceType=手机屏幕,ActionType=高对比度,Percentage=80)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想把电脑屏幕的对比度改成低一点的，这样晚上看东西舒服些。"
-            }
-        ],
-        "output": "SwitchContrast(DeviceType=电脑屏幕,ActionType=低对比度,Percentage=30)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "能不能帮我把平板屏幕的对比度设置成护眼模式，我眼睛有点不舒服。"
-            }
-        ],
-        "output": "SwitchContrast(DeviceType=平板屏幕,ActionType=护眼模式,Percentage=50)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把系统主题换成深色模式吧，晚上用起来更舒服。"
-            }
-        ],
-        "output": "SetSystemTheme(ThemeType=深色模式)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "今天想试试浅色模式，感觉亮一点更容易集中注意力。"
-            }
-        ],
-        "output": "SetSystemTheme(ThemeType=浅色模式)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把主题改成自动模式，根据时间切换深浅色。"
-            }
-        ],
-        "output": "SetSystemTheme(ThemeType=自动模式)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看看现在用的是什么字体，能告诉我吗？"
-            }
-        ],
-        "output": "CheckFont()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "这个文档里的字体好像有点小，能不能调大点？"
-            }
-        ],
-        "output": "SwitchFontSize(ActionType=放大,AdjustLevel=一级,AppName=当前应用)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把微信里的字体调到最大，我看书的时候特别吃力。"
-            }
-        ],
-        "output": "SwitchFontSize(ActionType=设置,AdjustLevel=最大,AppName=微信)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把系统里的字体调小一点，太大会浪费屏幕空间。"
-            }
-        ],
-        "output": "SwitchFontSize(ActionType=缩小,AdjustLevel=一级,AppName=系统)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把浏览器里的字体设为加粗，这样看起来更清晰。"
-            }
-        ],
-        "output": "SwitchFontWeight(ActionType=设置,FontWeight=加粗,AppName=浏览器)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想要把QQ里的字体调成细一点的，看起来更舒服。"
-            }
-        ],
-        "output": "SwitchFontWeight(ActionType=设置,FontWeight=细体,AppName=QQ)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把文档里的字体改成黑体，看起来更有气势。"
-            }
-        ],
-        "output": "SwitchFontWeight(ActionType=设置,FontWeight=粗体,AppName=文档)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把输入法换成搜狗输入法，我习惯用它打字。"
-            }
-        ],
-        "output": "SwitchInputMethod(AppName=系统,InputMethodName=搜狗输入法,ActionType=切换)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "在微信里切换一下输入法，我现在用的是拼音输入法。"
-            }
-        ],
-        "output": "SwitchInputMethod(AppName=微信,InputMethodName=手写输入法,ActionType=切换)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把默认输入法换成谷歌输入法，我需要多语言支持。"
-            }
-        ],
-        "output": "SwitchInputMethod(AppName=系统,InputMethodName=谷歌输入法,ActionType=设置)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把系统语言换成英文，方便我学习。"
-            }
-        ],
-        "output": "SwitchLanguage(AppName=系统,LanguageType=英文,ActionType=切换)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想把微信的语言改成日文，这样可以练习日语。"
-            }
-        ],
-        "output": "SwitchLanguage(AppName=微信,LanguageType=日文,ActionType=切换)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把浏览器的语言设置成法语，我需要浏览一些法语网站。"
-            }
-        ],
-        "output": "SwitchLanguage(AppName=浏览器,LanguageType=法语,ActionType=设置)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "打开飞行模式，我要去飞机上不用手机了。"
-            }
-        ],
-        "output": "AirplaneModeOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "关掉飞行模式，我需要接收短信。"
-            }
-        ],
-        "output": "AirplaneModeOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "切换一下飞行模式，我刚进地铁站。"
-            }
-        ],
-        "output": "AirplaneModeOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我最近系统好像有点卡顿，能帮我看看有没有更新吗？"
-            }
-        ],
-        "output": "CheckSystemUpdate()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想知道我的手机系统是不是已经更新到最新版本了，可以查一下吗？"
-            }
-        ],
-        "output": "CheckSystemUpdate()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "今天早上收到通知说有系统更新，但我不确定是不是已经安装了，能帮我确认一下吗？"
-            }
-        ],
-        "output": "CheckSystemUpdate()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想要下载最新的系统更新，可以帮我操作一下吗？"
-            }
-        ],
-        "output": "SystemUpdate(ActionType=下载)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "现在系统提示有更新，我想马上安装，可以开始吗？"
-            }
-        ],
-        "output": "SystemUpdate(ActionType=安装)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "系统更新暂停了，能不能继续下载？"
-            }
-        ],
-        "output": "SystemUpdate(ActionType=继续)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想切换到微信，能帮我打开一下吗？"
-            }
-        ],
-        "output": "SwitchApp(AppName=微信)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我现在需要处理工作消息，把应用切换到钉钉吧。"
-            }
-        ],
-        "output": "SwitchApp(AppName=钉钉)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我要去开会了，先把应用切换到企业微信。"
-            }
-        ],
-        "output": "SwitchApp(AppName=企业微信)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用钉钉给李经理打个电话，他手机号是13812345678。"
-            }
-        ],
-        "output": "Call(AppName=钉钉,Contact=李经理,PhoneCard=主卡,Mode=免提)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想用微信和张三视频通话，他的号码是13987654321。"
-            }
-        ],
-        "output": "Call(AppName=微信,Contact=张三,PhoneCard=主卡,Mode=扬声器)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用短信给王总发个信息，他的号码是13712345678。"
-            }
-        ],
-        "output": "Call(AppName=短信,Contact=王总,PhoneCard=主卡,Mode=正常)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想查看一下联系人张三的信息。"
-            }
-        ],
-        "output": "CheckContact(Contact=张三)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "能帮我找一下李经理的电话号码吗？"
-            }
-        ],
-        "output": "CheckContact(Contact=李经理)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要查询一下王总的联系方式。"
-            }
-        ],
-        "output": "CheckContact(Contact=王总)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "现在有来电，用免提模式接听。"
-            }
-        ],
-        "output": "AnswerCall(ActionType=True,Mode=免提)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "有人打电话来，我暂时不能接，先挂断吧。"
-            }
-        ],
-        "output": "AnswerCall(ActionType=False,Mode=正常)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "现在有电话进来，我正在开车，用蓝牙模式接听。"
-            }
-        ],
-        "output": "AnswerCall(ActionType=True,Mode=蓝牙)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用QQ给小明发个消息，内容是今晚一起吃饭。"
-            }
-        ],
-        "output": "SendMessage(AppName=QQ,Contact=小明,PhoneCard=主卡,Content=今晚一起吃饭)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "发一条短信给李经理，告诉他会议改到明天。"
-            }
-        ],
-        "output": "SendMessage(AppName=短信,Contact=李经理,PhoneCard=主卡,Content=会议改到明天)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "通过微信给张三发个消息，说项目进度没问题。"
-            }
-        ],
-        "output": "SendMessage(AppName=微信,Contact=张三,PhoneCard=主卡,Content=项目进度没问题)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用Outlook给王总发送一封邮件，内容是下周的会议安排。"
-            }
-        ],
-        "output": "SendEmail(AppName=Outlook,Contact=王总,Content=下周的会议安排)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "通过QQ邮箱给李经理发一封邮件，内容是项目总结。"
-            }
-        ],
-        "output": "SendEmail(AppName=QQ邮箱,Contact=李经理,Content=项目总结)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用Gmail给张三发送一份报告，标题是市场分析。"
-            }
-        ],
-        "output": "SendEmail(AppName=Gmail,Contact=张三,Content=市场分析)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看一下最近的邮件，特别是收件箱里的。"
-            }
-        ],
-        "output": "CheckEmail(AppName=Gmail,Folder=收件箱,TimeRange=今天)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "帮我查一下Outlook里昨天的邮件，特别是来自公司的重要邮件。"
-            }
-        ],
-        "output": "CheckEmail(AppName=Outlook,Folder=重要邮件,TimeRange=昨天)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想检查一下QQ邮箱里的垃圾邮件，看看有没有误删的。"
-            }
-        ],
-        "output": "CheckEmail(AppName=QQ邮箱,Folder=垃圾邮件,TimeRange=最近7天)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "明天早上七点提醒我起床，别忘了。"
-            }
-        ],
-        "output": "CreateAlarm(Time=早上7点,Content=起床)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我每天上午十点要开会，设置一个闹钟提醒我。"
-            }
-        ],
-        "output": "CreateAlarm(Time=上午10点,Content=开会)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "下午三点要吃药，帮我设置一个闹钟。"
-            }
-        ],
-        "output": "CreateAlarm(Time=下午3点,Content=吃药)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我今天早上起床的时候发现蓝牙没开，能不能帮我打开一下？"
-            }
-        ],
-        "output": "BlueToothOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "最近手机的电量总是掉得特别快，我想看看是不是有哪个应用在偷偷耗电。"
-            }
-        ],
-        "output": "CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy=\"DESC\")"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚买了个新的蓝牙耳机，现在想把它连接到我的手机上。"
-            }
-        ],
-        "output": "ConnectBlueTooth(DeviceType=耳机,ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我有点担心手机的电池寿命，能帮我查一下当前的电量吗？"
-            }
-        ],
-        "output": "CheckBatteryLevel()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚刚关掉了热点，现在想确认一下是不是真的关闭了。"
-            }
-        ],
-        "output": "HotShotOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要找一个可以连接的蓝牙音箱，你能帮我搜索一下附近的设备吗？"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=音箱)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "最近天气冷了，手机的电量好像不太够用，有没有什么办法能省点电？"
-            }
-        ],
-        "output": "BatterySavingMode(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想要连接家里的蓝牙音箱，但一直连不上，可能需要重新扫描一下。"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=音箱)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我现在不想让手机自动连接其他设备，可以帮我把蓝牙关掉吗？"
-            }
-        ],
-        "output": "BlueToothOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看看今天哪些应用用了最多的电量，能帮我分析一下吗？"
-            }
-        ],
-        "output": "CheckBatteryConsumptionRank(TimeRange=今天,AnomalyDetection=True,SortBy=\"DESC\")"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚才打开了热点，但是别人好像连不上，是不是哪里设置错了？"
-            }
-        ],
-        "output": "HotShotOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要连接键盘，但不知道怎么操作，能帮我找到可用的设备吗？"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=键盘)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我之前开了省电模式，现在想关掉，恢复正常的使用状态。"
-            }
-        ],
-        "output": "BatterySavingMode(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚买了一台新打印机，想把它和手机配对，能帮我连接一下吗？"
-            }
-        ],
-        "output": "ConnectBlueTooth(DeviceType=打印机,ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我今天出门的时候发现WiFi没开，能不能帮我打开？"
-            }
-        ],
-        "output": "WlanOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想查看一下最近一周内哪些应用最耗电，能帮我生成一份报告吗？"
-            }
-        ],
-        "output": "CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy=\"DESC\")"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我正在找一个可以连接的蓝牙鼠标，能帮我搜索一下附近有哪些设备吗？"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=鼠标)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要连接车载系统，但不确定是否已经配对成功，能帮我检查一下吗？"
-            }
-        ],
-        "output": "ConnectBlueTooth(DeviceType=车载,ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我最近经常忘记关闭热点，有没有办法能让我提醒一下？"
-            }
-        ],
-        "output": "HotShotOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我今天早上打开了移动数据，但好像信号不太好，能帮我关掉吗？"
-            }
-        ],
-        "output": "MobileDataOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看看今天的电池消耗情况，特别是有没有异常的应用在耗电。"
-            }
-        ],
-        "output": "CheckBatteryConsumptionRank(TimeRange=今天,AnomalyDetection=True,SortBy=\"DESC\")"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要连接耳机，但找不到设备，能帮我搜索一下附近有哪些蓝牙设备吗？"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=耳机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚刚关掉了蓝牙，但现在想重新开启，能帮我处理一下吗？"
-            }
-        ],
-        "output": "BlueToothOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我今天想用手机热点分享网络给朋友，能帮我打开热点吗？"
-            }
-        ],
-        "output": "HotShotOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想查找一下周围的WiFi网络，看看有没有可以连接的。"
-            }
-        ],
-        "output": "SearchWlan()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要连接音箱，但找不到设备，能帮我扫描一下周围有什么可用的蓝牙设备吗？"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=音箱)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚打开省电模式，感觉手机运行有点慢，能帮我关闭它吗？"
-            }
-        ],
-        "output": "BatterySavingMode(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想要连接手机，但蓝牙好像没反应，能帮我检查一下蓝牙是否开启吗？"
-            }
-        ],
-        "output": "BlueToothOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看看昨天的电池消耗情况，特别是有没有异常的耗电行为。"
-            }
-        ],
-        "output": "CheckBatteryConsumptionRank(TimeRange=昨天,AnomalyDetection=True,SortBy=\"DESC\")"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要连接键盘，但蓝牙一直搜不到，是不是应该重新扫描一下？"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=键盘)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我今天打开WiFi后发现网速很慢，能帮我关掉吗？"
-            }
-        ],
-        "output": "WlanOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚买了个蓝牙音箱，现在想把它连接到我的手机上。"
-            }
-        ],
-        "output": "ConnectBlueTooth(DeviceType=音箱,ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想知道手机现在的电量是多少，能帮我看一下吗？"
-            }
-        ],
-        "output": "CheckBatteryLevel()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想要断开蓝牙耳机的连接，能帮我处理一下吗？"
-            }
-        ],
-        "output": "ConnectBlueTooth(DeviceType=耳机,ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要连接鼠标，但找不到设备，能帮我搜索一下附近有哪些蓝牙设备吗？"
-            }
-        ],
-        "output": "SearchBlueTooth(DeviceType=鼠标)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想让手机重新启动一下，可能系统有点卡顿了。"
-            }
-        ],
-        "output": "Reboot(DeviceType=手机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把音箱关掉吧，我需要安静一点的环境。"
-            }
-        ],
-        "output": "ShutDown(DeviceType=音箱)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "电脑屏幕有点亮，能不能调低一点？"
-            }
-        ],
-        "output": "ControlLuminance(DeviceType=电脑屏幕,ActionType=调到,Percentage=50)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我今天用耳机听音乐的时候感觉音量有点小，能调大点吗？"
-            }
-        ],
-        "output": "ControlSound(VolumeType=媒体音量,ActionType=调到,Percentage=70)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "最近手机总是震动，能不能关闭一下振动模式？"
-            }
-        ],
-        "output": "VibrationModeOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我要去开会了，把手机的勿扰模式打开吧。"
-            }
-        ],
-        "output": "QuietModeOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "检查一下平板屏幕的亮度，我觉得有点暗。"
-            }
-        ],
-        "output": "CheckLuminance(DeviceType=平板屏幕)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "帮我把显示器的自动亮度关掉，我现在在室内，不需要智能调节。"
-            }
-        ],
-        "output": "AutoLuminanceOnOff(DeviceType=显示器,ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想知道手机屏幕的对比度是多少，可以查一下吗？"
-            }
-        ],
-        "output": "CheckContrast(DeviceType=手机屏幕)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把鼠标休眠一下，我不用了。"
-            }
-        ],
-        "output": "Sleep(DeviceType=鼠标)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要把打印机关机，今天不用了。"
-            }
-        ],
-        "output": "ShutDown(DeviceType=打印机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把键盘的亮度调高一点，晚上使用方便些。"
-            }
-        ],
-        "output": "ControlLuminance(DeviceType=键盘,ActionType=调到,Percentage=80)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我的音箱音量太吵了，能不能调小一些？"
-            }
-        ],
-        "output": "ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=40)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把车载系统的音量调高，我开车的时候听不太清楚。"
-            }
-        ],
-        "output": "ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=60)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把手机锁屏待机一下，节省点电量。"
-            }
-        ],
-        "output": "Sleep(DeviceType=手机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要把耳机的振动功能关闭，有时候会误触。"
-            }
-        ],
-        "output": "VibrationModeOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "检查一下电脑屏幕的对比度，是不是设置得太高了？"
-            }
-        ],
-        "output": "CheckContrast(DeviceType=电脑屏幕)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把音箱的自动亮度关掉，这样晚上使用更方便。"
-            }
-        ],
-        "output": "AutoLuminanceOnOff(DeviceType=音箱,ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把手机的静音模式打开，现在开会不能有声音。"
-            }
-        ],
-        "output": "QuietModeOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我的键盘有点亮，能调低一点吗？"
-            }
-        ],
-        "output": "ControlLuminance(DeviceType=键盘,ActionType=调到,Percentage=30)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想重启一下打印机，它好像卡住了。"
-            }
-        ],
-        "output": "Reboot(DeviceType=打印机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把耳机的音量调小点，我刚戴上有点响。"
-            }
-        ],
-        "output": "ControlSound(VolumeType=通话音量,ActionType=调到,Percentage=20)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把车载的屏幕亮度调高一些，我看不太清楚。"
-            }
-        ],
-        "output": "ControlLuminance(DeviceType=车载,ActionType=调到,Percentage=70)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我需要把显示器的对比度调低一点，眼睛有点不舒服。"
-            }
-        ],
-        "output": "CheckContrast(DeviceType=显示器)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把音箱的音量调大，我听不太清。"
-            }
-        ],
-        "output": "ControlSound(VolumeType=媒体音量,ActionType=调到,Percentage=90)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把鼠标设置成睡眠模式，省电一点。"
-            }
-        ],
-        "output": "Sleep(DeviceType=鼠标)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把手机屏幕的对比度调成高一点，我感觉现在看不太清楚。"
-            }
-        ],
-        "output": "SwitchContrast(DeviceType=手机屏幕,ActionType=高对比度,Percentage=100)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想把电脑屏幕的对比度调低一些，这样晚上用起来更舒服。"
-            }
-        ],
-        "output": "SwitchContrast(DeviceType=电脑屏幕,ActionType=低对比度,Percentage=50)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把所有设备的对比度都调到标准模式吧，这样看起来比较统一。"
-            }
-        ],
-        "output": "SwitchContrast(DeviceType=ALL,ActionType=标准对比度,Percentage=75)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "切换一下系统主题，我觉得深色模式看起来更舒服。"
-            }
-        ],
-        "output": "SetSystemTheme(ThemeType=深色模式)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把我的手机主题改成浅色模式，晚上看屏幕不那么刺眼。"
-            }
-        ],
-        "output": "SetSystemTheme(ThemeType=浅色模式)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "最近天气变化大，系统主题也跟着自动调整吧。"
-            }
-        ],
-        "output": "SetSystemTheme(ThemeType=自动模式)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看看现在的字体设置是什么样的。"
-            }
-        ],
-        "output": "CheckFont()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "检查一下当前系统的字体大小和样式。"
-            }
-        ],
-        "output": "CheckFont()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "有没有办法查看默认的字体设置？"
-            }
-        ],
-        "output": "CheckFont()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把微信里的字体调大一点，我现在看不太清楚。"
-            }
-        ],
-        "output": "SwitchFontSize(ActionType=放大,AdjustLevel=一级,AppName=微信)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把浏览器里的字体缩小两档，这样页面显示更紧凑。"
-            }
-        ],
-        "output": "SwitchFontSize(ActionType=缩小,AdjustLevel=两级,AppName=浏览器)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把系统全局的字体恢复成默认大小。"
-            }
-        ],
-        "output": "SwitchFontSize(ActionType=恢复默认,AdjustLevel=一级,AppName=系统)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把QQ里的字体加粗一点，看起来更醒目。"
-            }
-        ],
-        "output": "SwitchFontWeight(ActionType=设置,FontWeight=粗体,AppName=QQ)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把文档里的字体调成正常粗细，不要那么重。"
-            }
-        ],
-        "output": "SwitchFontWeight(ActionType=设置,FontWeight=正常,AppName=文档)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把阅读器里的字体设为中等粗细，不要太细。"
-            }
-        ],
-        "output": "SwitchFontWeight(ActionType=设置,FontWeight=中等,AppName=阅读器)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把系统里的字体换成微软雅黑，看起来更清晰。"
-            }
-        ],
-        "output": "ControlFontType(FontType=微软雅黑,ActionType=设置,AppName=系统)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "在浏览器里更换成思源黑体，这样排版更美观。"
-            }
-        ],
-        "output": "ControlFontType(FontType=思源黑体,ActionType=设置,AppName=浏览器)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把微信的字体换成仿宋，感觉更有风格。"
-            }
-        ],
-        "output": "ControlFontType(FontType=仿宋,ActionType=设置,AppName=微信)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "检查一下当前使用的输入法是什么。"
-            }
-        ],
-        "output": "CheckInputMethod()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想看看输入法的设置信息，能帮我查一下吗？"
-            }
-        ],
-        "output": "CheckInputMethod()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "输入法状态显示有点问题，能不能重新查看一下？"
-            }
-        ],
-        "output": "CheckInputMethod()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把微信里的输入法切换成搜狗输入法，方便打字。"
-            }
-        ],
-        "output": "SwitchInputMethod(AppName=微信,InputMethodName=搜狗输入法,ActionType=切换)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "在浏览器里临时切换成拼音输入法，我需要输入中文。"
-            }
-        ],
-        "output": "SwitchInputMethod(AppName=浏览器,InputMethodName=拼音输入法,ActionType=临时切换)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把系统默认的输入法改成讯飞输入法，语音识别更准。"
-            }
-        ],
-        "output": "SwitchInputMethod(AppName=系统,InputMethodName=讯飞输入法,ActionType=设置)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把手机语言切换成英文，方便和外国朋友交流。"
-            }
-        ],
-        "output": "SwitchLanguage(AppName=手机,LanguageType=英文,ActionType=切换)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把翻译应用的语言改回中文，我更习惯用中文操作。"
-            }
-        ],
-        "output": "SwitchLanguage(AppName=翻译,LanguageType=中文,ActionType=切换)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "把系统语言设置成日文，体验一下日本版本。"
-            }
-        ],
-        "output": "SwitchLanguage(AppName=系统,LanguageType=日文,ActionType=设置)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "打开飞行模式，我需要关掉所有的网络连接。"
-            }
-        ],
-        "output": "AirplaneModeOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "关闭手机的飞行模式，我要接一个重要的电话。"
-            }
-        ],
-        "output": "AirplaneModeOnOff(ActionType=False)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "切换一下飞行模式，我需要暂时断开网络。"
-            }
-        ],
-        "output": "AirplaneModeOnOff(ActionType=True)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我最近系统好像有更新，能帮我看看有没有新的版本吗？"
-            }
-        ],
-        "output": "CheckSystemUpdate()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想知道我的手机系统是不是已经更新到最新了，可以查一下吗？"
-            }
-        ],
-        "output": "CheckSystemUpdate()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "系统最近有没有什么新功能，能不能让我看看更新记录？"
-            }
-        ],
-        "output": "CheckSystemUpdate()"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "现在可以开始下载系统更新了吗？"
-            }
-        ],
-        "output": "SystemUpdate(ActionType=下载)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我要安装最新的系统更新，麻烦帮我处理一下。"
-            }
-        ],
-        "output": "SystemUpdate(ActionType=安装)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我刚刚暂停了系统更新，现在想继续执行，可以吗？"
-            }
-        ],
-        "output": "SystemUpdate(ActionType=继续)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "帮我切换到微信，我现在需要看一下消息。"
-            }
-        ],
-        "output": "SwitchApp(AppName=微信)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想打开QQ，有点事情要和朋友聊一下。"
-            }
-        ],
-        "output": "SwitchApp(AppName=QQ)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "现在切换到支付宝，我要支付一下账单。"
-            }
-        ],
-        "output": "SwitchApp(AppName=支付宝)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用钉钉打电话给李经理，他的号码是13812345678。"
-            }
-        ],
-        "output": "Call(AppName=钉钉,Contact=李经理,PhoneCard=主卡,Mode=免提)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我要用WhatsApp给张三打电话，他手机号是+86-138-1234-5678。"
-            }
-        ],
-        "output": "Call(AppName=WhatsApp,Contact=张三,PhoneCard=副卡,Mode=扬声器)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "请用短信给王总发个电话，他的号码是13987654321。"
-            }
-        ],
-        "output": "Call(AppName=短信,Contact=王总,PhoneCard=主卡,Mode=正常)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "我想找一下张三的联系方式，能帮我查一下吗？"
-            }
-        ],
-        "output": "CheckContact(Contact=张三)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "查看一下李经理的电话号码，我记得他之前加过。"
-            }
-        ],
-        "output": "CheckContact(Contact=李经理)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "能不能帮我看看王总的联系信息？"
-            }
-        ],
-        "output": "CheckContact(Contact=王总)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "接一下这个电话，用耳机模式。"
-            }
-        ],
-        "output": "AnswerCall(ActionType=True,Mode=耳机)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "拒绝来电，发送一个正在开会的回复。"
-            }
-        ],
-        "output": "AnswerCall(ActionType=False,Mode=蓝牙,Response=正在开会)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "接听这个电话，用免提模式。"
-            }
-        ],
-        "output": "AnswerCall(ActionType=True,Mode=免提)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用微信给李经理发个消息，内容是今天下午三点开会。"
-            }
-        ],
-        "output": "SendMessage(AppName=微信,Contact=李经理,PhoneCard=主卡,Content=今天下午三点开会)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用QQ给张三发个通知，说项目进度有问题。"
-            }
-        ],
-        "output": "SendMessage(AppName=QQ,Contact=张三,PhoneCard=主卡,Content=项目进度有问题)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "通过短信给王总发个提醒，说会议改到明天。"
-            }
-        ],
-        "output": "SendMessage(AppName=短信,Contact=王总,PhoneCard=主卡,Content=会议改到明天)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用Outlook给李经理发一封邮件，主题是项目进展汇报。"
-            }
-        ],
-        "output": "SendEmail(AppName=Outlook,Contact=李经理,Content=项目进展汇报)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "通过QQ邮箱给张三发一封邮件，内容是关于合作方案。"
-            }
-        ],
-        "output": "SendEmail(AppName=QQ邮箱,Contact=张三,Content=关于合作方案)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "用Gmail给王总发一封邮件，说明下周的工作安排。"
-            }
-        ],
-        "output": "SendEmail(AppName=Gmail,Contact=王总,Content=说明下周的工作安排)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "检查一下我的收件箱，看看有没有重要的邮件。"
-            }
-        ],
-        "output": "CheckEmail(AppName=Outlook,Folder=收件箱,TimeRange=今天)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "查看一下网易邮箱里的草稿箱，可能还有没发出去的邮件。"
-            }
-        ],
-        "output": "CheckEmail(AppName=网易邮箱,Folder=草稿箱,TimeRange=最近7天)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "帮我看看QQ邮箱里的垃圾邮件，清理一下。"
-            }
-        ],
-        "output": "CheckEmail(AppName=QQ邮箱,Folder=垃圾邮件,TimeRange=最近30天)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "明天早上七点提醒我起床，别忘了。"
-            }
-        ],
-        "output": "CreateAlarm(Time=早上7点,Content=起床)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "设置一个下午三点的闹钟，提醒我开一个重要会议。"
-            }
-        ],
-        "output": "CreateAlarm(Time=下午3点,Content=开一个重要会议)"
-    },
-    {
-        "input": [
-            {
-                "role": "user",
-                "content": "每天早上八点提醒我吃药，这个要设成重复的。"
-            }
-        ],
-        "output": "CreateAlarm(Time=早上8点,Content=吃药)"
-    }
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我今天出门的时候发现蓝牙没开，能不能帮我打开一下？"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想关掉蓝牙，这样能省点电。"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "最近蓝牙连接总是断开，是不是需要重新扫描一下附近的设备？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=ALL（默认值）)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想要搜索一下有没有新的耳机可以连接。"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=耳机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把手机的蓝牙连接取消掉，我现在要用耳机了。"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=手机,ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "请帮我把音箱连上蓝牙，我准备放音乐了。"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=音箱,ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "今天的WiFi好像不太稳定，能帮我打开一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "WlanOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "别让手机自动连接别人的WiFi了，把它关掉吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "WlanOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我要找一个可靠的WiFi网络，能帮我扫描一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchWlan()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "移动数据太贵了，我打算关闭它。"
+      },
+      {
+        "role": "assistant",
+        "content": "MobileDataOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "现在流量快用完了，能不能把移动数据关掉？"
+      },
+      {
+        "role": "assistant",
+        "content": "MobileDataOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想打开移动数据，这样就能上网了。"
+      },
+      {
+        "role": "assistant",
+        "content": "MobileDataOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "热点怎么关掉？我刚用完手机共享网络。"
+      },
+      {
+        "role": "assistant",
+        "content": "HotShotOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "能让我分享一下手机的网络吗？打开热点吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "HotShotOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚刚用完热点，现在要关掉它。"
+      },
+      {
+        "role": "assistant",
+        "content": "HotShotOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我的手机电量还剩20%，能告诉我电池情况吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryLevel()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "看看我手机的电池状态，还有多久能用完？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryLevel()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我最近经常用手机，想知道哪些应用最耗电。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy=\"DESC\")"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "帮我查一下昨天的电池消耗情况，特别是耗电最多的应用。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryConsumptionRank(TimeRange=昨天,AnomalyDetection=True,SortBy=\"DESC\")"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看看最近一个月的电池使用情况，按耗电从高到低排。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryConsumptionRank(TimeRange=最近30天,AnomalyDetection=False,SortBy=\"DESC\")"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "开启省电模式，这样手机能多用一会儿。"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "现在不需要省电模式了，可以关掉吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "如果电量低于20%，就自动开启省电模式吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我今天早上开机的时候发现手机有点卡，能不能帮我重启一下手机？"
+      },
+      {
+        "role": "assistant",
+        "content": "Reboot(DeviceType=手机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "这个音箱声音太小了，我把它关掉吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "ShutDown(DeviceType=音箱)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我现在要出门了，把手机设置成睡眠模式吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "Sleep(DeviceType=手机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想调高一下耳机的音量，现在有点小声。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=50)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "最近总是被电话打扰，能帮我关闭振动模式吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "VibrationModeOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我要开会了，把手机的勿扰模式打开吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "QuietModeOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想要查看一下电脑屏幕的亮度是多少。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckLuminance(DeviceType=电脑屏幕)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把平板屏幕的亮度调低一点，我现在觉得有点刺眼。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=平板屏幕,ActionType=减少,Percentage=30)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我觉得手机屏幕的自动亮度功能不太合适，能不能关掉它？"
+      },
+      {
+        "role": "assistant",
+        "content": "AutoLuminanceOnOff(DeviceType=手机,ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看看显示器的对比度，你帮我查一下。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContrast(DeviceType=显示器)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把手机屏幕的对比度调高一点，我现在看不清字。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchContrast(DeviceType=手机屏幕,ActionType=高对比度,Percentage=80)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想把电脑屏幕的对比度改成低一点的，这样晚上看东西舒服些。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchContrast(DeviceType=电脑屏幕,ActionType=低对比度,Percentage=30)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "能不能帮我把平板屏幕的对比度设置成护眼模式，我眼睛有点不舒服。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchContrast(DeviceType=平板屏幕,ActionType=护眼模式,Percentage=50)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把系统主题换成深色模式吧，晚上用起来更舒服。"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=深色模式)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "今天想试试浅色模式，感觉亮一点更容易集中注意力。"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=浅色模式)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把主题改成自动模式，根据时间切换深浅色。"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=自动模式)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看看现在用的是什么字体，能告诉我吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckFont()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "这个文档里的字体好像有点小，能不能调大点？"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontSize(ActionType=放大,AdjustLevel=一级,AppName=当前应用)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把微信里的字体调到最大，我看书的时候特别吃力。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontSize(ActionType=设置,AdjustLevel=最大,AppName=微信)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把系统里的字体调小一点，太大会浪费屏幕空间。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontSize(ActionType=缩小,AdjustLevel=一级,AppName=系统)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把浏览器里的字体设为加粗，这样看起来更清晰。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontWeight(ActionType=设置,FontWeight=加粗,AppName=浏览器)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想要把QQ里的字体调成细一点的，看起来更舒服。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontWeight(ActionType=设置,FontWeight=细体,AppName=QQ)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把文档里的字体改成黑体，看起来更有气势。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontWeight(ActionType=设置,FontWeight=粗体,AppName=文档)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把输入法换成搜狗输入法，我习惯用它打字。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=系统,InputMethodName=搜狗输入法,ActionType=切换)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "在微信里切换一下输入法，我现在用的是拼音输入法。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=微信,InputMethodName=手写输入法,ActionType=切换)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把默认输入法换成谷歌输入法，我需要多语言支持。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=系统,InputMethodName=谷歌输入法,ActionType=设置)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把系统语言换成英文，方便我学习。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLanguage(AppName=系统,LanguageType=英文,ActionType=切换)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想把微信的语言改成日文，这样可以练习日语。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLanguage(AppName=微信,LanguageType=日文,ActionType=切换)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把浏览器的语言设置成法语，我需要浏览一些法语网站。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLanguage(AppName=浏览器,LanguageType=法语,ActionType=设置)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "打开飞行模式，我要去飞机上不用手机了。"
+      },
+      {
+        "role": "assistant",
+        "content": "AirplaneModeOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "关掉飞行模式，我需要接收短信。"
+      },
+      {
+        "role": "assistant",
+        "content": "AirplaneModeOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "切换一下飞行模式，我刚进地铁站。"
+      },
+      {
+        "role": "assistant",
+        "content": "AirplaneModeOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我最近系统好像有点卡顿，能帮我看看有没有更新吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckSystemUpdate()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想知道我的手机系统是不是已经更新到最新版本了，可以查一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckSystemUpdate()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "今天早上收到通知说有系统更新，但我不确定是不是已经安装了，能帮我确认一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckSystemUpdate()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想要下载最新的系统更新，可以帮我操作一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SystemUpdate(ActionType=下载)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "现在系统提示有更新，我想马上安装，可以开始吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SystemUpdate(ActionType=安装)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "系统更新暂停了，能不能继续下载？"
+      },
+      {
+        "role": "assistant",
+        "content": "SystemUpdate(ActionType=继续)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想切换到微信，能帮我打开一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=微信)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我现在需要处理工作消息，把应用切换到钉钉吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=钉钉)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我要去开会了，先把应用切换到企业微信。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=企业微信)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用钉钉给李经理打个电话，他手机号是13812345678。"
+      },
+      {
+        "role": "assistant",
+        "content": "Call(AppName=钉钉,Contact=李经理,PhoneCard=主卡,Mode=免提)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想用微信和张三视频通话，他的号码是13987654321。"
+      },
+      {
+        "role": "assistant",
+        "content": "Call(AppName=微信,Contact=张三,PhoneCard=主卡,Mode=扬声器)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用短信给王总发个信息，他的号码是13712345678。"
+      },
+      {
+        "role": "assistant",
+        "content": "Call(AppName=短信,Contact=王总,PhoneCard=主卡,Mode=正常)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想查看一下联系人张三的信息。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=张三)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "能帮我找一下李经理的电话号码吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=李经理)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要查询一下王总的联系方式。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=王总)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "现在有来电，用免提模式接听。"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True,Mode=免提)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "有人打电话来，我暂时不能接，先挂断吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=False,Mode=正常)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "现在有电话进来，我正在开车，用蓝牙模式接听。"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True,Mode=蓝牙)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用QQ给小明发个消息，内容是今晚一起吃饭。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendMessage(AppName=QQ,Contact=小明,PhoneCard=主卡,Content=今晚一起吃饭)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "发一条短信给李经理，告诉他会议改到明天。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendMessage(AppName=短信,Contact=李经理,PhoneCard=主卡,Content=会议改到明天)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "通过微信给张三发个消息，说项目进度没问题。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendMessage(AppName=微信,Contact=张三,PhoneCard=主卡,Content=项目进度没问题)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用Outlook给王总发送一封邮件，内容是下周的会议安排。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendEmail(AppName=Outlook,Contact=王总,Content=下周的会议安排)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "通过QQ邮箱给李经理发一封邮件，内容是项目总结。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendEmail(AppName=QQ邮箱,Contact=李经理,Content=项目总结)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用Gmail给张三发送一份报告，标题是市场分析。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendEmail(AppName=Gmail,Contact=张三,Content=市场分析)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看一下最近的邮件，特别是收件箱里的。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckEmail(AppName=Gmail,Folder=收件箱,TimeRange=今天)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "帮我查一下Outlook里昨天的邮件，特别是来自公司的重要邮件。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckEmail(AppName=Outlook,Folder=重要邮件,TimeRange=昨天)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想检查一下QQ邮箱里的垃圾邮件，看看有没有误删的。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckEmail(AppName=QQ邮箱,Folder=垃圾邮件,TimeRange=最近7天)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "明天早上七点提醒我起床，别忘了。"
+      },
+      {
+        "role": "assistant",
+        "content": "CreateAlarm(Time=早上7点,Content=起床)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我每天上午十点要开会，设置一个闹钟提醒我。"
+      },
+      {
+        "role": "assistant",
+        "content": "CreateAlarm(Time=上午10点,Content=开会)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "下午三点要吃药，帮我设置一个闹钟。"
+      },
+      {
+        "role": "assistant",
+        "content": "CreateAlarm(Time=下午3点,Content=吃药)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我今天早上起床的时候发现蓝牙没开，能不能帮我打开一下？"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "最近手机的电量总是掉得特别快，我想看看是不是有哪个应用在偷偷耗电。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy=\"DESC\")"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚买了个新的蓝牙耳机，现在想把它连接到我的手机上。"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=耳机,ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我有点担心手机的电池寿命，能帮我查一下当前的电量吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryLevel()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚刚关掉了热点，现在想确认一下是不是真的关闭了。"
+      },
+      {
+        "role": "assistant",
+        "content": "HotShotOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要找一个可以连接的蓝牙音箱，你能帮我搜索一下附近的设备吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=音箱)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "最近天气冷了，手机的电量好像不太够用，有没有什么办法能省点电？"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想要连接家里的蓝牙音箱，但一直连不上，可能需要重新扫描一下。"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=音箱)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我现在不想让手机自动连接其他设备，可以帮我把蓝牙关掉吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看看今天哪些应用用了最多的电量，能帮我分析一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryConsumptionRank(TimeRange=今天,AnomalyDetection=True,SortBy=\"DESC\")"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚才打开了热点，但是别人好像连不上，是不是哪里设置错了？"
+      },
+      {
+        "role": "assistant",
+        "content": "HotShotOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要连接键盘，但不知道怎么操作，能帮我找到可用的设备吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=键盘)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我之前开了省电模式，现在想关掉，恢复正常的使用状态。"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚买了一台新打印机，想把它和手机配对，能帮我连接一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=打印机,ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我今天出门的时候发现WiFi没开，能不能帮我打开？"
+      },
+      {
+        "role": "assistant",
+        "content": "WlanOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想查看一下最近一周内哪些应用最耗电，能帮我生成一份报告吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy=\"DESC\")"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我正在找一个可以连接的蓝牙鼠标，能帮我搜索一下附近有哪些设备吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=鼠标)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要连接车载系统，但不确定是否已经配对成功，能帮我检查一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=车载,ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我最近经常忘记关闭热点，有没有办法能让我提醒一下？"
+      },
+      {
+        "role": "assistant",
+        "content": "HotShotOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我今天早上打开了移动数据，但好像信号不太好，能帮我关掉吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "MobileDataOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看看今天的电池消耗情况，特别是有没有异常的应用在耗电。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryConsumptionRank(TimeRange=今天,AnomalyDetection=True,SortBy=\"DESC\")"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要连接耳机，但找不到设备，能帮我搜索一下附近有哪些蓝牙设备吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=耳机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚刚关掉了蓝牙，但现在想重新开启，能帮我处理一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我今天想用手机热点分享网络给朋友，能帮我打开热点吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "HotShotOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想查找一下周围的WiFi网络，看看有没有可以连接的。"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchWlan()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要连接音箱，但找不到设备，能帮我扫描一下周围有什么可用的蓝牙设备吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=音箱)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚打开省电模式，感觉手机运行有点慢，能帮我关闭它吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想要连接手机，但蓝牙好像没反应，能帮我检查一下蓝牙是否开启吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看看昨天的电池消耗情况，特别是有没有异常的耗电行为。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryConsumptionRank(TimeRange=昨天,AnomalyDetection=True,SortBy=\"DESC\")"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要连接键盘，但蓝牙一直搜不到，是不是应该重新扫描一下？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=键盘)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我今天打开WiFi后发现网速很慢，能帮我关掉吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "WlanOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚买了个蓝牙音箱，现在想把它连接到我的手机上。"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=音箱,ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想知道手机现在的电量是多少，能帮我看一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryLevel()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想要断开蓝牙耳机的连接，能帮我处理一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=耳机,ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要连接鼠标，但找不到设备，能帮我搜索一下附近有哪些蓝牙设备吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchBlueTooth(DeviceType=鼠标)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想让手机重新启动一下，可能系统有点卡顿了。"
+      },
+      {
+        "role": "assistant",
+        "content": "Reboot(DeviceType=手机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把音箱关掉吧，我需要安静一点的环境。"
+      },
+      {
+        "role": "assistant",
+        "content": "ShutDown(DeviceType=音箱)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "电脑屏幕有点亮，能不能调低一点？"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=电脑屏幕,ActionType=调到,Percentage=50)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我今天用耳机听音乐的时候感觉音量有点小，能调大点吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=媒体音量,ActionType=调到,Percentage=70)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "最近手机总是震动，能不能关闭一下振动模式？"
+      },
+      {
+        "role": "assistant",
+        "content": "VibrationModeOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我要去开会了，把手机的勿扰模式打开吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "QuietModeOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "检查一下平板屏幕的亮度，我觉得有点暗。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckLuminance(DeviceType=平板屏幕)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "帮我把显示器的自动亮度关掉，我现在在室内，不需要智能调节。"
+      },
+      {
+        "role": "assistant",
+        "content": "AutoLuminanceOnOff(DeviceType=显示器,ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想知道手机屏幕的对比度是多少，可以查一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContrast(DeviceType=手机屏幕)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把鼠标休眠一下，我不用了。"
+      },
+      {
+        "role": "assistant",
+        "content": "Sleep(DeviceType=鼠标)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要把打印机关机，今天不用了。"
+      },
+      {
+        "role": "assistant",
+        "content": "ShutDown(DeviceType=打印机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把键盘的亮度调高一点，晚上使用方便些。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=键盘,ActionType=调到,Percentage=80)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我的音箱音量太吵了，能不能调小一些？"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=40)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把车载系统的音量调高，我开车的时候听不太清楚。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=60)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把手机锁屏待机一下，节省点电量。"
+      },
+      {
+        "role": "assistant",
+        "content": "Sleep(DeviceType=手机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要把耳机的振动功能关闭，有时候会误触。"
+      },
+      {
+        "role": "assistant",
+        "content": "VibrationModeOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "检查一下电脑屏幕的对比度，是不是设置得太高了？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContrast(DeviceType=电脑屏幕)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把音箱的自动亮度关掉，这样晚上使用更方便。"
+      },
+      {
+        "role": "assistant",
+        "content": "AutoLuminanceOnOff(DeviceType=音箱,ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把手机的静音模式打开，现在开会不能有声音。"
+      },
+      {
+        "role": "assistant",
+        "content": "QuietModeOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我的键盘有点亮，能调低一点吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=键盘,ActionType=调到,Percentage=30)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想重启一下打印机，它好像卡住了。"
+      },
+      {
+        "role": "assistant",
+        "content": "Reboot(DeviceType=打印机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把耳机的音量调小点，我刚戴上有点响。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=通话音量,ActionType=调到,Percentage=20)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把车载的屏幕亮度调高一些，我看不太清楚。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=车载,ActionType=调到,Percentage=70)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我需要把显示器的对比度调低一点，眼睛有点不舒服。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContrast(DeviceType=显示器)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把音箱的音量调大，我听不太清。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=媒体音量,ActionType=调到,Percentage=90)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把鼠标设置成睡眠模式，省电一点。"
+      },
+      {
+        "role": "assistant",
+        "content": "Sleep(DeviceType=鼠标)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把手机屏幕的对比度调成高一点，我感觉现在看不太清楚。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchContrast(DeviceType=手机屏幕,ActionType=高对比度,Percentage=100)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想把电脑屏幕的对比度调低一些，这样晚上用起来更舒服。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchContrast(DeviceType=电脑屏幕,ActionType=低对比度,Percentage=50)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把所有设备的对比度都调到标准模式吧，这样看起来比较统一。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchContrast(DeviceType=ALL,ActionType=标准对比度,Percentage=75)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "切换一下系统主题，我觉得深色模式看起来更舒服。"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=深色模式)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把我的手机主题改成浅色模式，晚上看屏幕不那么刺眼。"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=浅色模式)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "最近天气变化大，系统主题也跟着自动调整吧。"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=自动模式)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看看现在的字体设置是什么样的。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckFont()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "检查一下当前系统的字体大小和样式。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckFont()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "有没有办法查看默认的字体设置？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckFont()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把微信里的字体调大一点，我现在看不太清楚。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontSize(ActionType=放大,AdjustLevel=一级,AppName=微信)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把浏览器里的字体缩小两档，这样页面显示更紧凑。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontSize(ActionType=缩小,AdjustLevel=两级,AppName=浏览器)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把系统全局的字体恢复成默认大小。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontSize(ActionType=恢复默认,AdjustLevel=一级,AppName=系统)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把QQ里的字体加粗一点，看起来更醒目。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontWeight(ActionType=设置,FontWeight=粗体,AppName=QQ)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把文档里的字体调成正常粗细，不要那么重。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontWeight(ActionType=设置,FontWeight=正常,AppName=文档)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把阅读器里的字体设为中等粗细，不要太细。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontWeight(ActionType=设置,FontWeight=中等,AppName=阅读器)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把系统里的字体换成微软雅黑，看起来更清晰。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlFontType(FontType=微软雅黑,ActionType=设置,AppName=系统)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "在浏览器里更换成思源黑体，这样排版更美观。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlFontType(FontType=思源黑体,ActionType=设置,AppName=浏览器)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把微信的字体换成仿宋，感觉更有风格。"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlFontType(FontType=仿宋,ActionType=设置,AppName=微信)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "检查一下当前使用的输入法是什么。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckInputMethod()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想看看输入法的设置信息，能帮我查一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckInputMethod()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "输入法状态显示有点问题，能不能重新查看一下？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckInputMethod()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把微信里的输入法切换成搜狗输入法，方便打字。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=微信,InputMethodName=搜狗输入法,ActionType=切换)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "在浏览器里临时切换成拼音输入法，我需要输入中文。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=浏览器,InputMethodName=拼音输入法,ActionType=临时切换)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把系统默认的输入法改成讯飞输入法，语音识别更准。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=系统,InputMethodName=讯飞输入法,ActionType=设置)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把手机语言切换成英文，方便和外国朋友交流。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLanguage(AppName=手机,LanguageType=英文,ActionType=切换)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把翻译应用的语言改回中文，我更习惯用中文操作。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLanguage(AppName=翻译,LanguageType=中文,ActionType=切换)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "把系统语言设置成日文，体验一下日本版本。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLanguage(AppName=系统,LanguageType=日文,ActionType=设置)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "打开飞行模式，我需要关掉所有的网络连接。"
+      },
+      {
+        "role": "assistant",
+        "content": "AirplaneModeOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "关闭手机的飞行模式，我要接一个重要的电话。"
+      },
+      {
+        "role": "assistant",
+        "content": "AirplaneModeOnOff(ActionType=False)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "切换一下飞行模式，我需要暂时断开网络。"
+      },
+      {
+        "role": "assistant",
+        "content": "AirplaneModeOnOff(ActionType=True)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我最近系统好像有更新，能帮我看看有没有新的版本吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckSystemUpdate()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想知道我的手机系统是不是已经更新到最新了，可以查一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckSystemUpdate()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "系统最近有没有什么新功能，能不能让我看看更新记录？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckSystemUpdate()"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "现在可以开始下载系统更新了吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SystemUpdate(ActionType=下载)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我要安装最新的系统更新，麻烦帮我处理一下。"
+      },
+      {
+        "role": "assistant",
+        "content": "SystemUpdate(ActionType=安装)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我刚刚暂停了系统更新，现在想继续执行，可以吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "SystemUpdate(ActionType=继续)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "帮我切换到微信，我现在需要看一下消息。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=微信)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想打开QQ，有点事情要和朋友聊一下。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=QQ)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "现在切换到支付宝，我要支付一下账单。"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=支付宝)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用钉钉打电话给李经理，他的号码是13812345678。"
+      },
+      {
+        "role": "assistant",
+        "content": "Call(AppName=钉钉,Contact=李经理,PhoneCard=主卡,Mode=免提)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我要用WhatsApp给张三打电话，他手机号是+86-138-1234-5678。"
+      },
+      {
+        "role": "assistant",
+        "content": "Call(AppName=WhatsApp,Contact=张三,PhoneCard=副卡,Mode=扬声器)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "请用短信给王总发个电话，他的号码是13987654321。"
+      },
+      {
+        "role": "assistant",
+        "content": "Call(AppName=短信,Contact=王总,PhoneCard=主卡,Mode=正常)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "我想找一下张三的联系方式，能帮我查一下吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=张三)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "查看一下李经理的电话号码，我记得他之前加过。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=李经理)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "能不能帮我看看王总的联系信息？"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=王总)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "接一下这个电话，用耳机模式。"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True,Mode=耳机)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "拒绝来电，发送一个正在开会的回复。"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=False,Mode=蓝牙,Response=正在开会)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "接听这个电话，用免提模式。"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True,Mode=免提)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用微信给李经理发个消息，内容是今天下午三点开会。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendMessage(AppName=微信,Contact=李经理,PhoneCard=主卡,Content=今天下午三点开会)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用QQ给张三发个通知，说项目进度有问题。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendMessage(AppName=QQ,Contact=张三,PhoneCard=主卡,Content=项目进度有问题)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "通过短信给王总发个提醒，说会议改到明天。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendMessage(AppName=短信,Contact=王总,PhoneCard=主卡,Content=会议改到明天)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用Outlook给李经理发一封邮件，主题是项目进展汇报。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendEmail(AppName=Outlook,Contact=李经理,Content=项目进展汇报)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "通过QQ邮箱给张三发一封邮件，内容是关于合作方案。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendEmail(AppName=QQ邮箱,Contact=张三,Content=关于合作方案)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "用Gmail给王总发一封邮件，说明下周的工作安排。"
+      },
+      {
+        "role": "assistant",
+        "content": "SendEmail(AppName=Gmail,Contact=王总,Content=说明下周的工作安排)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "检查一下我的收件箱，看看有没有重要的邮件。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckEmail(AppName=Outlook,Folder=收件箱,TimeRange=今天)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "查看一下网易邮箱里的草稿箱，可能还有没发出去的邮件。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckEmail(AppName=网易邮箱,Folder=草稿箱,TimeRange=最近7天)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "帮我看看QQ邮箱里的垃圾邮件，清理一下。"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckEmail(AppName=QQ邮箱,Folder=垃圾邮件,TimeRange=最近30天)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "明天早上七点提醒我起床，别忘了。"
+      },
+      {
+        "role": "assistant",
+        "content": "CreateAlarm(Time=早上7点,Content=起床)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "设置一个下午三点的闹钟，提醒我开一个重要会议。"
+      },
+      {
+        "role": "assistant",
+        "content": "CreateAlarm(Time=下午3点,Content=开一个重要会议)"
+      }
+    ]
+  },
+  {
+    "input": [
+      {
+        "role": "user",
+        "content": "每天早上八点提醒我吃药，这个要设成重复的。"
+      },
+      {
+        "role": "assistant",
+        "content": "CreateAlarm(Time=早上8点,Content=吃药)"
+      }
+    ]
+  }
 ]
