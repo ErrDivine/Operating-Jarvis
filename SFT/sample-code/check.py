@@ -2,7 +2,7 @@ import json
 from tqdm import tqdm
 import re 
 
-from infer import chat_once, load_lora_chat_model,SystemPrompts
+from infer import chat_once, load_lora_chat_model, SystemPrompts
 
 def get_validation_msgs(path):
     with open(path,"r",encoding="utf-8") as f:
