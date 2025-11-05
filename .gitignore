@@ -11,3 +11,5 @@ __pycache__/*
 *.?/__pycache__/
 
 SFT/sample-code/out-qwen4b-lora-lastonly
+
+SFT/sample-code/direct-lora

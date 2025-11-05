@@ -10,32 +10,36 @@ def load_lora_chat_model(base_model: str, adapter_dir: str):
     """
     tok = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True, use_fast=True)
     model = AutoModelForCausalLM.from_pretrained(
-        base_model, trust_remote_code=True, device_map="auto"
+        base_model, trust_remote_code=True, device_map="auto",torch_dtype="bfloat16"
     )
     model = PeftModel.from_pretrained(model, adapter_dir)
     model.eval()
     return tok, model
 
-def chat_once(
-    tok,
-    model,
-    messages: List[Dict[str, str]],
-    temperature: float = 0.5,
-    do_sample: bool = True,
-) -> str:
-    """
-    One-shot chat generation using Qwen chat template.
-    `messages` is a list of {"role": "...", "content": "..."} dicts.
-    """
+def chat_once(tok, model, messages, temperature=0.5, do_sample=True) -> str:
+    
     prompt = tok.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-    inputs = tok([prompt], return_tensors="pt").to(model.device)
-    out = model.generate(
+
+    
+    inputs = tok([prompt], return_tensors="pt")
+    if tok.pad_token_id is None:
+        tok.pad_token = tok.eos_token
+    inputs = {k: v.to(model.device) for k, v in inputs.items()}
+
+    
+    output = model.generate(
         **inputs,
         do_sample=do_sample,
         temperature=temperature,
+        max_new_tokens=1024,
         pad_token_id=tok.eos_token_id,
+        eos_token_id=tok.eos_token_id,
     )
-    return tok.decode(out[0], skip_special_tokens=True)
+
+    
+    gen_only = output[0, inputs["input_ids"].shape[1]:]
+    return tok.decode(gen_only, skip_special_tokens=True).strip()
+
 
 # Optional convenience wrapper
 def simple_ask(
@@ -54,7 +58,7 @@ def simple_ask(
 
 class SystemPrompts:
     def __init__(self):
-        self.level1_json_path = "../../models/test_level1_json.json"
+        self.level1_json_path = "../../models/tools_openai_format.json"
         # >>>   level1 use   >>>
         with open(self.level1_json_path, 'r', encoding='utf-8') as f:
             tools_data = json.load(f)

@@ -1,0 +1,361 @@
+Categories:A:参数理解错误 B:格式混乱 C:选择错误 D:非模型待解决工作失误 E:规约性弹性错误
+
+**************************************************D
+agent:<tool>CheckBatteryConsumptionRank(TimeRange=最近30天,AnomalyDetection=True,SortBy=DESC)</tool>
+answer:<tool>CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy="DESC")</tool>
+
+**************************************************A
+agent:<tool>CheckBatteryConsumptionRank(TimeRange=昨天,AnomalyDetection=False,SortBy="DESC")</tool>
+answer:<tool>CheckBatteryConsumptionRank(TimeRange=昨天,AnomalyDetection=True,SortBy="DESC")</tool>
+
+**************************************************C
+agent:<tool>SwitchApp(AppName=音箱,ActionType=True)</tool>
+answer:<tool>ShutDown(DeviceType=音箱)</tool>
+
+**************************************************A
+agent:<tool>ControlSound(VolumeType=通话音量,ActionType=调到,Percentage=50)</tool>
+answer:<tool>ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=50)</tool>
+
+**************************************************C
+agent:<tool>QuietModeOnOff(ActionType=True)</tool>
+answer:<tool>VibrationModeOnOff(ActionType=False)</tool>
+
+**************************************************D
+agent:<tool>ControlLuminance(DeviceType=平板屏幕,ActionType=调小,Percentage=10)</tool>
+answer:<tool>ControlLuminance(DeviceType=平板屏幕,ActionType=减少,Percentage=30)</tool>
+
+**************************************************
+agent:<tool>SwitchContrast(DeviceType=手机屏幕,ActionType=增强,Percentage=50)</tool>
+answer:<tool>SwitchContrast(DeviceType=手机屏幕,ActionType=高对比度,Percentage=80)</tool>
+
+**************************************************
+agent:<tool>SwitchContrast(DeviceType=电脑屏幕,ActionType=降低,Percentage=10)</tool>
+answer:<tool>SwitchContrast(DeviceType=电脑屏幕,ActionType=低对比度,Percentage=30)</tool>
+
+**************************************************
+agent:<tool>SwitchContrast(DeviceType=平板屏幕,ActionType=护眼模式,Percentage=0)</tool>
+answer:<tool>SwitchContrast(DeviceType=平板屏幕,ActionType=护眼模式,Percentage=50)</tool>
+
+**************************************************
+agent:<tool>SwitchFontSize(AppName=系统, ActionType=放大, AdjustLevel=一级)</tool>
+answer:<tool>SwitchFontSize(ActionType=放大,AdjustLevel=一级,AppName=当前应用)</tool>
+
+**************************************************
+agent:<tool>SwitchFontSize(AppName=微信, ActionType=调大, AdjustLevel=最大)</tool>
+answer:<tool>SwitchFontSize(ActionType=设置,AdjustLevel=最大,AppName=微信)</tool>
+
+**************************************************
+agent:<tool>SwitchFontSize(AppName=系统,ActionType=缩小,AdjustLevel=一级)</tool>
+answer:<tool>SwitchFontSize(ActionType=缩小,AdjustLevel=一级,AppName=系统)</tool>
+
+**************************************************
+agent:<tool>SwitchFontWeight(AppName=浏览器, ActionType=设置, FontWeight=加粗)</tool>
+answer:<tool>SwitchFontWeight(ActionType=设置,FontWeight=加粗,AppName=浏览器)</tool>
+
+**************************************************
+agent:<tool>SwitchFontSize(AppName=QQ,ActionType=调小,AdjustLevel=一级)</tool>
+answer:<tool>SwitchFontWeight(ActionType=设置,FontWeight=细体,AppName=QQ)</tool>
+
+**************************************************
+agent:<tool>SwitchFontType(AppName=文档,ActionType=设置,FontType=黑体)</tool>
+answer:<tool>SwitchFontWeight(ActionType=设置,FontWeight=粗体,AppName=文档)</tool>
+
+**************************************************
+agent:<tool>SwitchInputMethod(AppName=微信,InputMethodName=拼音输入法,ActionType=切换)</tool>
+answer:<tool>SwitchInputMethod(AppName=微信,InputMethodName=手写输入法,ActionType=切换)</tool>
+
+**************************************************
+agent:<tool>SwitchInputMethod(AppName=系统,InputMethodName=谷歌输入法,ActionType=切换)</tool>
+answer:<tool>SwitchInputMethod(AppName=系统,InputMethodName=谷歌输入法,ActionType=设置)</tool>
+
+**************************************************
+agent:<tool>SwitchLanguage(AppName=浏览器,LanguageType=法语,ActionType=切换)</tool>
+answer:<tool>SwitchLanguage(AppName=浏览器,LanguageType=法语,ActionType=设置)</tool>
+
+**************************************************
+agent:<tool>SystemUpdate(ActionType=更新)</tool>
+answer:<tool>SystemUpdate(ActionType=下载)</tool>
+
+**************************************************
+agent:<tool>Call(AppName=钉钉,Contact=李经理,PhoneCard=主卡,Mode=耳机)</tool>
+answer:<tool>Call(AppName=钉钉,Contact=李经理,PhoneCard=主卡,Mode=免提)</tool>
+
+**************************************************
+agent:<tool>Call(AppName=微信,Contact=张三,PhoneCard=主卡,Mode=免提)</tool>
+answer:<tool>Call(AppName=微信,Contact=张三,PhoneCard=主卡,Mode=扬声器)</tool>
+
+**************************************************
+agent:<tool>SendMessage(AppName=短信,Contact=王总,PhoneCard=主卡,Content=)</tool>
+answer:<tool>Call(AppName=短信,Contact=王总,PhoneCard=主卡,Mode=正常)</tool>
+
+**************************************************
+agent:<tool>AnswerCall(ActionType=True, Mode=免提)</tool>
+answer:<tool>AnswerCall(ActionType=True,Mode=免提)</tool>
+
+**************************************************
+agent:<tool>AnswerCall(ActionType=True, Mode=蓝牙)</tool>
+answer:<tool>AnswerCall(ActionType=True,Mode=蓝牙)</tool>
+
+**************************************************
+agent:<tool>SendEmail(AppName=Gmail, Contact=张三, Content=市场分析)</tool>
+answer:<tool>SendEmail(AppName=Gmail,Contact=张三,Content=市场分析)</tool>
+
+**************************************************
+agent:<tool>CheckEmail(AppName=邮件, Folder=收件箱, TimeRange=最近7天)</tool>
+answer:<tool>CheckEmail(AppName=Gmail,Folder=收件箱,TimeRange=今天)</tool>
+
+**************************************************
+agent:<tool>CheckEmail(AppName=Outlook,Folder=重要邮件,TimeRange=昨天,Sender=公司)</tool>
+answer:<tool>CheckEmail(AppName=Outlook,Folder=重要邮件,TimeRange=昨天)</tool>
+
+**************************************************
+agent:<tool>CheckEmail(AppName=QQ邮箱, Folder=垃圾邮件, TimeRange=今天)</tool>
+answer:<tool>CheckEmail(AppName=QQ邮箱,Folder=垃圾邮件,TimeRange=最近7天)</tool>
+
+**************************************************
+agent:<tool>CreateAlarm(Time=早上7点, Content=起床)</tool>
+answer:<tool>CreateAlarm(Time=早上7点,Content=起床)</tool>
+
+**************************************************
+agent:<tool>CreateAlarm(Time=上午十点,Content=开会)</tool>
+answer:<tool>CreateAlarm(Time=上午10点,Content=开会)</tool>
+
+**************************************************
+agent:<tool>CreateAlarm(Time=下午三点,Content=吃药)</tool>
+answer:<tool>CreateAlarm(Time=下午3点,Content=吃药)</tool>
+
+**************************************************
+agent:<tool>CheckBatteryConsumptionRank(TimeRange=最近30天,AnomalyDetection=True,SortBy="DESC")</tool>
+answer:<tool>CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy="DESC")</tool>
+
+**************************************************
+agent:<tool>ConnectBlueTooth(DeviceType=蓝牙耳机, ActionType=True)</tool>
+answer:<tool>ConnectBlueTooth(DeviceType=耳机,ActionType=True)</tool>
+
+**************************************************
+agent:<tool>CheckHotShotOnOff()</tool>
+answer:<tool>HotShotOnOff(ActionType=False)</tool>
+
+**************************************************
+agent:<tool>CheckBatteryConsumptionRank(TimeRange=今天,AnomalyDetection=False,SortBy="DESC")</tool>
+answer:<tool>CheckBatteryConsumptionRank(TimeRange=今天,AnomalyDetection=True,SortBy="DESC")</tool>
+
+**************************************************
+agent:<tool>CheckBatteryLevel()</tool>
+answer:<tool>HotShotOnOff(ActionType=True)</tool>
+
+**************************************************
+agent:<tool>ConnectBlueTooth(DeviceType=打印机, ActionType=True)</tool>
+answer:<tool>ConnectBlueTooth(DeviceType=打印机,ActionType=True)</tool>
+
+**************************************************
+agent:<tool>CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=False,SortBy="DESC")</tool>
+answer:<tool>CheckBatteryConsumptionRank(TimeRange=最近7天,AnomalyDetection=True,SortBy="DESC")</tool>
+
+**************************************************
+agent:<tool>CheckBatteryLevel()</tool>
+answer:<tool>ConnectBlueTooth(DeviceType=车载,ActionType=True)</tool>
+
+**************************************************
+agent:<tool>CreateAlarm(Time=晚上22点,Content=关闭热点)</tool>
+answer:<tool>HotShotOnOff(ActionType=False)</tool>
+
+**************************************************
+agent:<tool>CheckBatteryConsumptionRank(TimeRange=今天, AnomalyDetection=True, SortBy="DESC")</tool>
+answer:<tool>CheckBatteryConsumptionRank(TimeRange=今天,AnomalyDetection=True,SortBy="DESC")</tool>
+
+**************************************************
+agent:<tool>CheckBatteryLevel()</tool>
+answer:<tool>BlueToothOnOff(ActionType=True)</tool>
+
+**************************************************
+agent:<tool>ConnectBlueTooth(DeviceType=蓝牙音箱, ActionType=True)</tool>
+answer:<tool>ConnectBlueTooth(DeviceType=音箱,ActionType=True)</tool>
+
+**************************************************
+agent:<tool>ConnectBlueTooth(DeviceType=蓝牙耳机, ActionType=False)</tool>
+answer:<tool>ConnectBlueTooth(DeviceType=耳机,ActionType=False)</tool>
+
+**************************************************
+agent:<tool>SwitchApp(AppName=音箱,ActionType=关闭)</tool>
+answer:<tool>ShutDown(DeviceType=音箱)</tool>
+
+**************************************************
+agent:<tool>ControlLuminance(DeviceType="电脑屏幕", ActionType="调到", Percentage=30)</tool>
+answer:<tool>ControlLuminance(DeviceType=电脑屏幕,ActionType=调到,Percentage=50)</tool>
+
+**************************************************
+agent:<tool>ControlSound(VolumeType=媒体音量, ActionType=调到, Percentage=50)</tool>
+answer:<tool>ControlSound(VolumeType=媒体音量,ActionType=调到,Percentage=70)</tool>
+
+**************************************************
+agent:<VibrationModeOnOff(ActionType=False)>
+answer:<tool>VibrationModeOnOff(ActionType=False)</tool>
+
+**************************************************
+agent:<tool>AutoLuminanceOnOff(DeviceType=显示器, ActionType=False)</tool>
+answer:<tool>AutoLuminanceOnOff(DeviceType=显示器,ActionType=False)</tool>
+
+**************************************************
+agent:<tool>CheckContrast(DeviceType="手机屏幕")</tool>
+answer:<tool>CheckContrast(DeviceType=手机屏幕)</tool>
+
+**************************************************
+agent:<tool>ControlLuminance(DeviceType=键盘,ActionType=调到,Percentage=50)</tool>
+answer:<tool>ControlLuminance(DeviceType=键盘,ActionType=调到,Percentage=80)</tool>
+
+**************************************************
+agent:<tool>ControlSound(VolumeType=系统音量,ActionType=减少,Percentage=10)</tool>
+answer:<tool>ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=40)</tool>
+
+**************************************************
+agent:<tool>ControlSound(VolumeType=系统音量, ActionType=增加, Percentage=10)</tool>
+answer:<tool>ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=60)</tool>
+
+**************************************************
+agent:<tool>AutoLuminanceOnOff(DeviceType=音箱, ActionType=False)</tool>
+answer:<tool>AutoLuminanceOnOff(DeviceType=音箱,ActionType=False)</tool>
+
+**************************************************
+agent:<tool>ControlLuminance(DeviceType=键盘,ActionType=减少,Percentage=10)</tool>
+answer:<tool>ControlLuminance(DeviceType=键盘,ActionType=调到,Percentage=30)</tool>
+
+**************************************************
+agent:<tool>ControlSound(VolumeType=通话音量,ActionType=减少,Percentage=10)</tool>
+answer:<tool>ControlSound(VolumeType=通话音量,ActionType=调到,Percentage=20)</tool>
+
+**************************************************
+agent:<tool>ControlLuminance(DeviceType="车载", ActionType="调到", Percentage=80)</tool>
+answer:<tool>ControlLuminance(DeviceType=车载,ActionType=调到,Percentage=70)</tool>
+
+**************************************************
+agent:<tool>SwitchContrast(DeviceType=显示器, ActionType=降低, Percentage=10)</tool>
+answer:<tool>CheckContrast(DeviceType=显示器)</tool>
+
+**************************************************
+agent:<tool>ControlSound(VolumeType=系统音量,ActionType=调到,Percentage=80)</tool>
+answer:<tool>ControlSound(VolumeType=媒体音量,ActionType=调到,Percentage=90)</tool>
+
+**************************************************
+agent:<tool>SwitchContrast(DeviceType=手机屏幕,ActionType=高对比度,Percentage=80)</tool>
+answer:<tool>SwitchContrast(DeviceType=手机屏幕,ActionType=高对比度,Percentage=100)</tool>
+
+**************************************************
+agent:<tool>SwitchContrast(DeviceType=电脑屏幕,ActionType=降低,Percentage=50)</tool>
+answer:<tool>SwitchContrast(DeviceType=电脑屏幕,ActionType=低对比度,Percentage=50)</tool>
+
+**************************************************
+agent:<tool>SwitchContrast(DeviceType=ALL,ActionType=标准对比度,Percentage=100)</tool>
+answer:<tool>SwitchContrast(DeviceType=ALL,ActionType=标准对比度,Percentage=75)</tool>
+
+**************************************************
+agent:<tool>SwitchFontSize(AppName=微信, ActionType=调大, AdjustLevel=一级)</tool>
+answer:<tool>SwitchFontSize(ActionType=放大,AdjustLevel=一级,AppName=微信)</tool>
+
+**************************************************
+agent:<tool>SwitchFontSize(AppName=浏览器, ActionType=缩小, AdjustLevel=两级)</tool>
+answer:<tool>SwitchFontSize(ActionType=缩小,AdjustLevel=两级,AppName=浏览器)</tool>
+
+**************************************************
+agent:<tool>SwitchFontSize(AppName=系统, ActionType=恢复默认, AdjustLevel=)</tool>
+answer:<tool>SwitchFontSize(ActionType=恢复默认,AdjustLevel=一级,AppName=系统)</tool>
+
+**************************************************
+agent:<tool>SwitchFontWeight(AppName=QQ, ActionType=切换, FontWeight=粗体)</tool>
+answer:<tool>SwitchFontWeight(ActionType=设置,FontWeight=粗体,AppName=QQ)</tool>
+
+**************************************************
+agent:<tool>SwitchFontWeight(AppName=文档, ActionType=切换, FontWeight=正常)</tool>
+answer:<tool>SwitchFontWeight(ActionType=设置,FontWeight=正常,AppName=文档)</tool>
+
+**************************************************
+agent:<tool>SwitchFontWeight(AppName=阅读器, ActionType=设置, FontWeight=中等, ActionLevel=一级)</tool>
+answer:<tool>SwitchFontWeight(ActionType=设置,FontWeight=中等,AppName=阅读器)</tool>
+
+**************************************************
+agent:<tool>SwitchFontType(AppName=系统,ActionType=设置,FontType=微软雅黑)</tool>
+answer:<tool>ControlFontType(FontType=微软雅黑,ActionType=设置,AppName=系统)</tool>
+
+**************************************************
+agent:<tool>SwitchFontType(AppName=浏览器, ActionType=切换, FontType=思源黑体)</tool>
+answer:<tool>ControlFontType(FontType=思源黑体,ActionType=设置,AppName=浏览器)</tool>
+
+**************************************************
+agent:<tool>SwitchFontType(AppName=微信,ActionType=切换,FontType=仿宋)</tool>
+answer:<tool>ControlFontType(FontType=仿宋,ActionType=设置,AppName=微信)</tool>
+
+**************************************************
+agent:<tool>SwitchInputMethod(AppName=系统,InputMethodName=讯飞输入法,ActionType=切换)</tool>
+answer:<tool>SwitchInputMethod(AppName=系统,InputMethodName=讯飞输入法,ActionType=设置)</tool>
+
+**************************************************
+agent:<tool>SwitchLanguage(AppName=系统,LanguageType=英文,ActionType=切换)</tool>
+answer:<tool>SwitchLanguage(AppName=手机,LanguageType=英文,ActionType=切换)</tool>
+
+**************************************************
+agent:<tool>SwitchLanguage(AppName=系统,LanguageType=中文,ActionType=切换)</tool>
+answer:<tool>SwitchLanguage(AppName=翻译,LanguageType=中文,ActionType=切换)</tool>
+
+**************************************************
+agent:<tool>SwitchLanguage(AppName=系统,LanguageType=日文,ActionType=切换)</tool>
+answer:<tool>SwitchLanguage(AppName=系统,LanguageType=日文,ActionType=设置)</tool>
+
+**************************************************
+agent:<tool>SystemUpdate(ActionType=更新)</tool>
+answer:<tool>SystemUpdate(ActionType=下载)</tool>
+
+**************************************************
+agent:<tool>SystemUpdate(ActionType=更新)</tool>
+answer:<tool>SystemUpdate(ActionType=安装)</tool>
+
+**************************************************
+agent:<tool>Call(AppName=钉钉,Contact=李经理,PhoneCard=主卡,Mode=耳机)</tool>
+answer:<tool>Call(AppName=钉钉,Contact=李经理,PhoneCard=主卡,Mode=免提)</tool>
+
+**************************************************
+agent:<tool>Call(AppName=WhatsApp,Contact=张三,PhoneCard=主卡,Mode=耳机)</tool>
+answer:<tool>Call(AppName=WhatsApp,Contact=张三,PhoneCard=副卡,Mode=扬声器)</tool>
+
+**************************************************
+agent:<tool>SendMessage(AppName=短信,Contact=王总,PhoneCard=主卡,Content=电话)</tool>
+answer:<tool>Call(AppName=短信,Contact=王总,PhoneCard=主卡,Mode=正常)</tool>
+
+**************************************************
+agent:<tool>AnswerCall(ActionType=True, Mode=耳机)</tool>
+answer:<tool>AnswerCall(ActionType=True,Mode=耳机)</tool>
+
+**************************************************
+agent:<tool>AnswerCall(ActionType=False, Response="正在开会")</tool>
+answer:<tool>AnswerCall(ActionType=False,Mode=蓝牙,Response=正在开会)</tool>
+
+**************************************************
+agent:<tool>AnswerCall(ActionType=True, Mode=免提)</tool>
+answer:<tool>AnswerCall(ActionType=True,Mode=免提)</tool>
+
+**************************************************
+agent:<tool>SendMessage(AppName=微信, Contact=李经理, PhoneCard=主卡, Content=今天下午三点开会)</tool>
+answer:<tool>SendMessage(AppName=微信,Contact=李经理,PhoneCard=主卡,Content=今天下午三点开会)</tool>
+
+**************************************************
+agent:<tool>SendEmail(AppName=QQ邮箱, Contact=张三, Content=关于合作方案)</tool>
+answer:<tool>SendEmail(AppName=QQ邮箱,Contact=张三,Content=关于合作方案)</tool>
+
+**************************************************
+agent:<tool>CheckEmail(AppName=QQ邮箱, Folder=重要邮件, TimeRange=今天)</tool>
+answer:<tool>CheckEmail(AppName=Outlook,Folder=收件箱,TimeRange=今天)</tool>
+
+**************************************************
+agent:<tool>CheckEmail(AppName=网易邮箱, Folder=草稿箱, TimeRange=今天)</tool>
+answer:<tool>CheckEmail(AppName=网易邮箱,Folder=草稿箱,TimeRange=最近7天)</tool>
+
+**************************************************
+agent:<tool>CheckEmail(AppName=QQ邮箱,Folder=垃圾邮件,TimeRange=今天)</tool>
+answer:<tool>CheckEmail(AppName=QQ邮箱,Folder=垃圾邮件,TimeRange=最近30天)</tool>
+
+**************************************************
+agent:<tool>CreateAlarm(Time=早上7点, Content=起床)</tool>
+answer:<tool>CreateAlarm(Time=早上7点,Content=起床)</tool>
+
+**************************************************
+agent:<tool>CreateAlarm(Time=早上8点,Content=吃药,RangeType=重复)</tool>
+answer:<tool>CreateAlarm(Time=早上8点,Content=吃药)</tool>

@@ -34,23 +34,23 @@ CONFIG = {
     # Base model & data
     "model_name_or_path": "../../models/Qwen3-4B-Instruct-2507",
     "data_path": "../data/single.json",
-    "output_dir": "out-qwen4b-lora-lastonly",
+    "output_dir": "direct-lora",
 
     # Repro
     "seed": 42,
 
     # Training schedule
-    "num_train_epochs": 1,
+    "num_train_epochs": 2,
     "per_device_train_batch_size": 1,
-    "gradient_accumulation_steps": 8,
+    "gradient_accumulation_steps": 16,
     "learning_rate": 2e-4,
-    "weight_decay": 0.0,
+    "weight_decay": 0.01,
     "warmup_ratio": 0.03,
     "lr_scheduler_type": "cosine",
-    "max_grad_norm": 1.0,
+    "max_grad_norm": 0.3,
 
     # Lengths
-    "max_seq_length": 2048,
+    "max_seq_length": 8192,
 
     # Precision (set bf16 True if available on your GPU)
     "bf16": True,
@@ -64,14 +64,14 @@ CONFIG = {
     "target_modules": "q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj",
 
     # Efficiency
-    "gradient_checkpointing": True,
+    "gradient_checkpointing": False,
     "save_steps": 0,
     "save_strategy": "epoch",
-    "logging_steps": 10,
+    "logging_steps": 50,
 
     # Quantization (QLoRA)
     "use_qlora": True,
-    "bnb_4bit_compute_dtype": "bfloat16",  # bfloat16|float16|float32
+    "bnb_4bit_compute_dtype": "float16",  # bfloat16|float16|float32
 }
 # ===============================================
 
@@ -263,7 +263,7 @@ def main():
         fp16=cfg["fp16"],
         gradient_checkpointing=cfg["gradient_checkpointing"],
         optim=("paged_adamw_8bit" if cfg["use_qlora"] else "adamw_torch"),
-        report_to="none",
+        report_to="tensorboard",
         max_grad_norm=cfg["max_grad_norm"],
     )
 
