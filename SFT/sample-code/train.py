@@ -9,6 +9,7 @@ import os
 import json
 from dataclasses import dataclass
 from typing import Dict, List, Tuple
+from infer import SystemPrompts
 
 import torch
 from torch.utils.data import Dataset
@@ -109,6 +110,7 @@ def get_encoder_and_tokenspan(tokenizer, messages: List[Dict[str, str]]) -> Tupl
     )
     c_start=len(before_text)
     c_end=len(full_text)
+    # print(c_start,c_end)
     enc = tokenizer(
         full_text,
         return_tensors="pt",
@@ -116,6 +118,7 @@ def get_encoder_and_tokenspan(tokenizer, messages: List[Dict[str, str]]) -> Tupl
         add_special_tokens=False,
     )
     offsets = enc["offset_mapping"][0].tolist() # list[(s,e)]
+    # print(offsets)
     tok_start = None
     tok_end = None
     for ti, (ts, te) in enumerate(offsets):
@@ -128,6 +131,7 @@ def get_encoder_and_tokenspan(tokenizer, messages: List[Dict[str, str]]) -> Tupl
         tok_end = ti + 1
     if tok_start is not None and tok_end is not None:
         token_span=(tok_start, tok_end)
+    # print(tok_start,tok_end)
     return enc, token_span
 
 
@@ -154,9 +158,11 @@ class ChatJsonlDataset(Dataset):
         return len(self.samples)
 
     def __getitem__(self, idx):
-        messages = self.samples[idx]
-        enc, token_spans = get_encoder_and_tokenspan(self.tokenizer, self.samples)
-
+        messages = self.samples[idx]["input"]
+        direct_sys = SystemPrompts().direct
+        messages = [direct_sys] + messages
+        # print(messages)
+        enc, token_spans = get_encoder_and_tokenspan(self.tokenizer, messages)
         input_ids = enc["input_ids"]
         attn = enc["attention_mask"]
         labels = build_labels(input_ids, token_spans)

@@ -9,3 +9,5 @@ __pycache__/*
 
 
 *.?/__pycache__/
+
+SFT/sample-code/out-qwen4b-lora-lastonly
