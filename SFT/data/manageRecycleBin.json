@@ -1,0 +1,929 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空一下回收站，最近没用的东西太多了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空一下回收站里的所有文件，我已经不需要它们了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站，里面有很多无用的文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站，里面有很多临时文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件，不要保留"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "永久删除回收站里的垃圾文件，别恢复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清理掉回收站中的所有无用文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把回收站清空，我不想再看到那些文件了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "彻底清空回收站，确保没有残留"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件，我已经不需要它们了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把垃圾箱清空，里面有很多无用的文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件，我已经不需要它们了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑上的垃圾文件全部删除，清理回收站"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "永久删除回收站里的内容，不再恢复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空废纸篓，确保没有残留文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除回收站里的所有东西，我确定不需要了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件，不要保留任何东西"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "永久删除回收站中的垃圾文件，不用恢复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我清理一下废纸篓，里面全是无用的文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把回收站里的内容全部删除，不要再提示我确认"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "彻底清空回收站，确保没有残留文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空一下回收站，里面有很多没用的文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件，我不想再保留它们了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空垃圾箱，里面全是没用的文件和图片"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空一下电脑的回收站，里面有很多不需要的文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件，确保彻底删除"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有垃圾文件，不要保留任何东西"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站，里面有很多临时文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我清空回收站里的所有文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑的回收站满了，能帮我清空一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把垃圾箱里的东西全部删除，不要留任何文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要永久删除回收站里的文件，能帮我处理吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站，把所有暂时不用的文件都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件，不要保留任何东西"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "彻底删除回收站里的内容，别留任何痕迹"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要清空垃圾箱，里面有很多无用的文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把回收站的内容全部删除，不要再恢复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请清空电脑上的废纸篓，我已经不需要那些文件了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑上的垃圾箱彻底清理干净"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除回收站中的所有临时文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站，不再需要里面的文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "永久删除回收站中的内容"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件，不要保留任何东西"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我彻底删除回收站里的垃圾文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的所有文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "永久删除回收站里的垃圾文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "彻底清空我的电脑回收站"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空系统中的废纸篓"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把回收站里的所有东西都删除掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电脑太卡了，能帮我清理一下垃圾文件吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空回收站里的垃圾文件"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我帮您清空回收站里的所有文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，把那些没用的都永久删除掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚不小心删除了一个重要文件，能恢复吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我帮您从回收站恢复文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里全是垃圾文件，清空一下吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站里的所有文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全部删除"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您清空回收站"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里的文件太多了，清空一下吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，全都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里的文件太多，清空一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，全删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里的垃圾太多了，帮我清理一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，全删"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里有好多无用文件，清空吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，全都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里的文件太多，帮我清空"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，全删"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里全是垃圾文件，帮我清空一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全部删除"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里全是垃圾文件，能清空一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站里的所有文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全部删除"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里有好多无用的文件，帮我清空吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站里的所有文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "回收站里有很多不需要的文件，帮我处理一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想清空回收站里的所有文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全部删除"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>EmptyBin()</tool>"
+            }
+        ],
+        "level": "manageRecycleBin"
+    }
+]

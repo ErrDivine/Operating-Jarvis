@@ -1,0 +1,929 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用短信给张姐发个消息，内容是‘下午三点开会，请准时参加’，用我的生活卡。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"张姐\", PhoneCard=\"生活卡\", Content=\"下午三点开会，请准时参加\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过微信给李经理发个通知，说会议改到明天上午十点。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"李经理\", Content=\"会议改到明天上午十点\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用飞书发个消息给团队，提醒大家提交本周的报告。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"飞书\", Contact=\"团队\", Content=\"提醒大家提交本周的报告\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信给王总发个消息，说项目进度有问题。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"王总\", Content=\"项目进度有问题\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过QQ给陈老师发个消息，告诉他作业提交截止时间延后了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"陈老师\", Content=\"作业提交截止时间延后了\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我发个微信消息给张总，内容是下午三点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"张总\", Content=\"下午三点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用短信给李经理发个信息，说今天下午三点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"李经理\", Content=\"今天下午三点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用钉钉给王总发个消息，内容是项目进度汇报"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"钉钉\", Contact=\"王总\", Content=\"项目进度汇报\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ给陈老师发个信息，说作业提交时间延后了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"陈老师\", Content=\"作业提交时间延后了\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用企业微信给团队发个通知，说明天上午十点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"团队\", Content=\"明天上午十点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用短信给张姐发个信息，内容是‘明天下午三点会议室开会’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"张姐\", Content=\"明天下午三点会议室开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用微信给李总发个消息，告诉他项目进度已经完成80%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"李总\", Content=\"项目进度已经完成80%\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉给团队成员发送通知，提醒他们提交周报"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"钉钉\", Contact=\"团队成员\", Content=\"提醒他们提交周报\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我通过QQ给王老板发个消息，内容是‘附件是合同草案，请查收’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"王老板\", Content=\"附件是合同草案，请查收\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用飞书给同事发个消息，说明今天会议取消"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"飞书\", Contact=\"同事\", Content=\"今天会议取消\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用短信给王总发个消息，用副卡，内容是明天会议取消"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"王总\", PhoneCard=\"副卡\", Content=\"明天会议取消\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我在微信里给赵老师发个消息，说今天下午三点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"赵老师\", Content=\"今天下午三点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用企业微信给客户发个通知，用工作卡，内容是项目进度更新"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"客户\", PhoneCard=\"工作卡\", Content=\"项目进度更新\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用微信给李经理发个消息，说下午三点开会。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"李经理\", Content=\"下午三点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用短信给张姐发个通知，内容是明天早上八点集合。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"张姐\", Content=\"明天早上八点集合\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ给王总发个消息，告诉他项目进度更新了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"王总\", Content=\"项目进度更新了\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用企业微信发个消息给团队，提醒大家提交周报。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"团队\", Content=\"提醒大家提交周报\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用飞书给赵主任发个信息，说明会议时间调整为明天上午十点。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"飞书\", Contact=\"赵主任\", Content=\"会议时间调整为明天上午十点\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用微信给李经理发个消息，说项目进度有点延迟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"李经理\", Content=\"项目进度有点延迟\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用短信给客户发一个通知，说明活动时间调整了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Content=\"活动时间调整了\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过QQ给张经理发个消息，内容是“明天下午两点开会”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"张经理\", Content=\"明天下午两点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信发一份文件给王总，备注是“请查收”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"王总\", Content=\"请查收\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过飞书给团队成员发一条消息，提醒他们提交报告"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"飞书\", Content=\"提醒他们提交报告\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用短信给张经理发个消息，说今天下午三点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"张经理\", Content=\"今天下午三点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用微信给李姐发个通知，她今天不用来上班"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"李姐\", Content=\"今天不用来上班\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过QQ发送一份文件给王总，内容是项目方案"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"王总\", Content=\"项目方案\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用飞书发个消息给团队成员，提醒他们提交周报"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"飞书\", Contact=\"团队成员\", Content=\"提醒提交周报\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "给小明发条短信，告诉他明天上午九点在会议室集合"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"小明\", Content=\"明天上午九点在会议室集合\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我发送一条短信给客户，内容是“会议时间调整为明天下午两点”。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Content=\"会议时间调整为明天下午两点\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信给张主管发个消息，说今天下班前完成任务。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"张主管\", Content=\"今天下班前完成任务\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我通过钉钉发送一条消息给团队成员，提醒他们提交周报。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"钉钉\", Content=\"提醒他们提交周报\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用微信给李经理发一条消息，说会议时间改到下午两点。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"李经理\", Content=\"会议时间改到下午两点\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用短信给王总发个信息，说今天下午三点准时开会。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"王总\", Content=\"今天下午三点准时开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过QQ发个消息给张姐，提醒她提交项目报告。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"张姐\", Content=\"提醒她提交项目报告\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信给团队发个通知，说明明天的培训安排。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"团队\", Content=\"说明明天的培训安排\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过飞书给同事发条消息，说临时会议改到明天上午十点。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"飞书\", Contact=\"同事\", Content=\"临时会议改到明天上午十点\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用短信发个消息给李总，内容是“下午三点开会，请准时参加”。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"李总\", Content=\"下午三点开会，请准时参加\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要通过钉钉给王主任发个消息，说项目资料已准备好。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"钉钉\", Contact=\"王主任\", Content=\"项目资料已准备好\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信给赵总监发个通知，提醒他今天下午三点提交报告。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"赵总监\", Content=\"提醒您今天下午三点提交报告\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我发个短信给小刘，告诉他明天早上八点在公司门口集合。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"小刘\", Content=\"明天早上八点在公司门口集合\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我给王总发条微信，说下午三点开会，用我工作卡"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午三点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "麻烦用短信给李经理发个信息，内容是项目进度更新，请尽快回复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"李经理\", Content=\"项目进度更新，请尽快回复\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用QQ给张女士发个消息，告诉她会议时间改到明天"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"张女士\", Content=\"会议时间改到明天\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用企业微信给团队发个通知，内容是明天上午九点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"团队\", Content=\"明天上午九点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用飞书给赵主管发个消息，说今天下午的会议推迟半小时"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"飞书\", Contact=\"赵主管\", Content=\"今天的会议推迟半小时\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用微信给客户发个消息，说明我们下午的会议改到三点。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"客户\", Content=\"下午的会议改到三点\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用短信发个信息给王阿姨，告诉她我晚上七点到家。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"王阿姨\", Content=\"晚上七点到家\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉给团队发个通知，说今天的工作安排调整了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"钉钉\", Contact=\"团队\", Content=\"工作安排调整了\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我发个消息给李老板，说项目进度没问题。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"李老板\", Content=\"项目进度没问题\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信给部门发个消息，让大家注意下周的会议时间。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"部门\", Content=\"注意下周的会议时间\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我给张经理发个信息，说项目进度没问题"
+            },
+            {
+                "role": "assistant",
+                "content": "请确认：1.消息内容是\"项目进度没问题\" 2.使用微信发送给张经理"
+            },
+            {
+                "role": "user",
+                "content": "对，再加一句让他放心"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"张经理\", Content=\"项目进度没问题，让他放心\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用企业微信给同事发个消息，说下午三点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "请确认：1.消息内容是\"下午三点开会\" 2.使用企业微信发送给同事"
+            },
+            {
+                "role": "user",
+                "content": "对，再加一句别迟到"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"同事\", Content=\"下午三点开会，别迟到\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用短信给张总发个信息，说会议改到明天下午三点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想用短信发送一条信息给张总吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，内容是'会议改到明天下午三点'"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"张总\", Content=\"会议改到明天下午三点\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想用微信给王总发个消息，说项目进展顺利"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想用微信发送一条消息给王总吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，内容是'项目进展顺利，请查收附件'"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"王总\", Content=\"项目进展顺利，请查收附件\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用微信给张经理发个消息，内容是‘会议改到明天’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"张经理\", Content=\"会议改到明天\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用QQ给李老师发个消息，说今天下午三点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Contact=\"李老师\", Content=\"今天下午三点开会\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要通过短信给王总发个消息，说‘项目进展顺利’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Contact=\"王总\", Content=\"项目进展顺利\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用飞书给周经理发个消息，内容是‘请查收附件’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"飞书\", Contact=\"周经理\", Content=\"请查收附件\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要用企业微信给赵主管发个消息，说‘会议时间调整’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"企业微信\", Contact=\"赵主管\", Content=\"会议时间调整\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用微信给李经理发个消息，就说项目进度没问题"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想通过微信发送消息给李经理吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，内容是“项目进度没问题”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"微信\", Contact=\"李经理\", Content=\"项目进度没问题\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚收到一条短信，想回复一下，能帮我发个消息吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想发送一条短信回复吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，内容是“收到，稍后联系”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"短信\", Content=\"收到，稍后联系\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用QQ发个文件给同事，能帮我操作一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想通过QQ发送文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，发个文档过去"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendMessage(AppName=\"QQ\", Content=\"文档\")</tool>"
+            }
+        ],
+        "level": "manageMessages"
+    }
+]

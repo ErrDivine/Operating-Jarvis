@@ -1,0 +1,1252 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能帮我创建一个便签，标题是‘购物清单’，内容写上‘牛奶、鸡蛋、面包’，还要在晚上七点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"购物清单\", Content=\"牛奶、鸡蛋、面包\", Type=\"购物清单\", ReminderTime=\"晚上7点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个OneNote笔记，标题是‘项目计划’，内容包括‘需求分析、设计阶段、测试安排’，并在明天下午四点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目计划\", Content=\"需求分析、设计阶段、测试安排\", Type=\"工作笔记\", ReminderTime=\"明天16:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个石墨文档，标题为‘会议纪要’，内容是‘讨论产品上线计划’，并在明天上午九点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"会议纪要\", Content=\"讨论产品上线计划\", Type=\"会议记录\", ReminderTime=\"明天9:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个有道云笔记，标题是‘学习计划’，内容包括‘复习Python基础、练习算法题、阅读技术文章’，并在明天下午两点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"有道云笔记\", Title=\"学习计划\", Content=\"复习Python基础、练习算法题、阅读技术文章\", Type=\"学习笔记\", ReminderTime=\"明天14:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在印象笔记里新建一个标题是'学习计划'的笔记，内容写'每天背单词20个，复习错题1小时'}"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"印象笔记\", Title=\"学习计划\", Content=\"每天背单词20个，复习错题1小时\", Type=\"学习笔记\", ReminderTime=\"无\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用OneNote创建一个会议记录，标题是'项目讨论会'，内容是'讨论了产品设计和进度安排'}"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目讨论会\", Content=\"讨论了产品设计和进度安排\", Type=\"会议记录\", ReminderTime=\"无\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在石墨文档中新建一个购物清单，标题是'周末采购清单'，内容包括'牛奶、鸡蛋、面包、蔬菜'}"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"周末采购清单\", Content=\"牛奶、鸡蛋、面包、蔬菜\", Type=\"购物清单\", ReminderTime=\"无\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用便签创建一个待办事项笔记，标题是'本周任务'，内容写'完成报告、回复邮件、开会'，设置提醒时间为明天上午10点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"本周任务\", Content=\"完成报告、回复邮件、开会\", Type=\"待办事项\", ReminderTime=\"明天10:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在WPS里新建一个工作笔记，标题是'项目进度更新'，内容是'完成了需求分析，开始开发阶段'}，提醒时间是下周三下午3点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"WPS\", Title=\"项目进度更新\", Content=\"完成了需求分析，开始开发阶段\", Type=\"工作笔记\", ReminderTime=\"下周三15:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要创建一个便签，标题是‘购物清单’，内容写上牛奶、鸡蛋和面包，还要在明天中午12点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"购物清单\", Content=\"牛奶、鸡蛋和面包\", Type=\"提醒事项\", ReminderTime=\"明天12:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用OneNote写一篇关于项目进度的会议记录，内容要详细一点，提醒时间定在明天下午4点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目进度会议记录\", Content=\"关于项目进度的详细讨论内容\", Type=\"会议记录\", ReminderTime=\"明天16:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想在石墨文档里创建一份学习笔记，标题是‘Python基础教程’，内容包括变量、函数和循环，提醒时间设为后天上午10点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"Python基础教程\", Content=\"变量、函数和循环\", Type=\"学习笔记\", ReminderTime=\"后天10:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个标题是“项目进度”的笔记，内容写“1.需求分析 2.原型设计 3.开发测试”，用OneNote保存，还要在明天下午5点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目进度\", Content=\"1.需求分析 2.原型设计 3.开发测试\", Type=\"工作笔记\", ReminderTime=\"明天17:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要在便签里记下今天的会议记录，内容是“讨论产品功能优化方案”，类型是会议记录，提醒时间定在今天下午4点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Content=\"讨论产品功能优化方案\", Type=\"会议记录\", ReminderTime=\"今天16:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我新建一个购物清单，标题是“周末采购”，内容包括牛奶、鸡蛋和面包，设置提醒时间为明天上午10点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"记事本\", Title=\"周末采购\", Content=\"牛奶、鸡蛋和面包\", Type=\"购物清单\", ReminderTime=\"明天10:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在石墨文档里写了一份学习笔记，标题是“Python入门教程”，内容是基础语法和变量定义，需要提醒我今天晚上8点查看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"Python入门教程\", Content=\"基础语法和变量定义\", Type=\"学习笔记\", ReminderTime=\"今天20:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个待办事项，标题是“完成报告”，内容包括“收集数据、整理图表、撰写结论”，用腾讯文档保存，并在今天下午3点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"腾讯文档\", Title=\"完成报告\", Content=\"收集数据、整理图表、撰写结论\", Type=\"待办事项\", ReminderTime=\"今天15:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要创建一个便签，内容是‘记得买牛奶’，标题叫‘购物清单’，类型是待办事项"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"购物清单\", Content=\"记得买牛奶\", Type=\"待办事项\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用OneNote写一份会议记录，标题是‘季度汇报会议’，内容包括项目进展和下一步计划"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"季度汇报会议\", Content=\"项目进展和下一步计划\", Type=\"会议记录\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在WPS里新建一个工作笔记，标题是‘项目总结’，内容是‘1. 任务完成情况 2. 问题分析 3. 改进措施’，并设置明天下午两点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"WPS\", Title=\"项目总结\", Content=\"1. 任务完成情况 2. 问题分析 3. 改进措施\", Type=\"工作笔记\", ReminderTime=\"明天14:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个个人日记，标题是‘今日感悟’，内容是‘今天心情不错，感觉一切都在向好的方向发展’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"记事本\", Title=\"今日感悟\", Content=\"今天心情不错，感觉一切都在向好的方向发展\", Type=\"个人日记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要用OneNote创建一个关于健身计划的笔记，标题是‘每周锻炼计划’，内容包括每天的运动项目和时间安排，还要在每天早上8点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"每周锻炼计划\", Content=\"每天的运动项目和时间安排\", Type=\"学习笔记\", ReminderTime=\"每天早上8点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用有道云笔记创建一个购物清单，包括牛奶、鸡蛋、面包和蔬菜，提醒我明天上午10点去超市"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"有道云笔记\", Title=\"购物清单\", Content=\"牛奶 鸡蛋 面包 蔬菜\", Type=\"购物清单\", ReminderTime=\"明天上午10点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "创建一个待办事项笔记，内容是完成报告、回复邮件和开会，提醒我今天下午5点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"待办事项\", Content=\"完成报告 回复邮件 开会\", Type=\"待办事项\", ReminderTime=\"今天17:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我创建一个便签，标题是‘项目会议记录’，内容是‘讨论了市场策略和预算分配’，还要在明天上午十点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"项目会议记录\", Content=\"讨论了市场策略和预算分配\", Type=\"会议记录\", ReminderTime=\"明天上午十点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在OneNote里创建一个标题为‘学习计划’的笔记，内容写‘每天复习两小时英语’，并设置提醒时间在下周三下午两点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"学习计划\", Content=\"每天复习两小时英语\", Type=\"学习笔记\", ReminderTime=\"下周三下午两点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在石墨文档中创建一份标题为‘团队协作指南’的笔记，内容是‘沟通流程与责任分工’，并在后天下午四点提醒我查看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"团队协作指南\", Content=\"沟通流程与责任分工\", Type=\"工作笔记\", ReminderTime=\"后天下午四点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在腾讯文档中创建一个标题为‘周报汇总’的笔记，内容是‘本周完成的工作和下周计划’，并在明天早上九点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"腾讯文档\", Title=\"周报汇总\", Content=\"本周完成的工作和下周计划\", Type=\"工作笔记\", ReminderTime=\"明天早上九点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想在OneNote里创建一个标题为“学习计划”的笔记，内容是今天要复习的科目"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"学习计划\", Content=\"今天要复习的科目\", Type=\"学习笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用便签创建一个购物清单，包括牛奶、鸡蛋和面包，提醒时间定在今晚8点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"购物清单\", Content=\"牛奶、鸡蛋和面包\", Type=\"购物清单\", ReminderTime=\"今晚8点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在石墨文档里新建一个会议记录，标题是“项目讨论”，内容是今天的讨论要点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"项目讨论\", Content=\"今天的讨论要点\", Type=\"会议记录\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用WPS写一份工作笔记，标题是“Q2总结”，内容是本月的工作成果和问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"WPS\", Title=\"Q2总结\", Content=\"本月的工作成果和问题\", Type=\"工作笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个个人日记，内容是今天的心情和见闻，类型设为个人日记，不设置提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(Title=\"今天的心情和见闻\", Content=\"今天的心情和见闻\", Type=\"个人日记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在OneNote里新建一个标题为“项目进度”的学习笔记，内容写“1.需求分析 2.原型设计 3.开发计划”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目进度\", Content=\"1.需求分析 2.原型设计 3.开发计划\", Type=\"学习笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用便签创建一个待办事项，标题是“购物清单”，内容包括“牛奶、鸡蛋、面包、水果”并设置提醒时间到明天中午12点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"购物清单\", Content=\"牛奶、鸡蛋、面包、水果\", Type=\"待办事项\", ReminderTime=\"明天中午12点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在WPS中需要一份会议记录的笔记，标题是“技术讨论会”，内容是“1.系统架构 2.功能模块 3.测试方案”，记得设置提醒时间到下周三下午三点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"WPS\", Title=\"技术讨论会\", Content=\"1.系统架构 2.功能模块 3.测试方案\", Type=\"会议记录\", ReminderTime=\"下周三下午3点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用石墨文档创建一个工作笔记，标题是“季度总结”，内容是“1.完成目标 2.存在问题 3.改进措施”，类型设为工作笔记，并在后天早上8点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"季度总结\", Content=\"1.完成目标 2.存在问题 3.改进措施\", Type=\"工作笔记\", ReminderTime=\"后天早上8点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在腾讯文档里新建一个个人日记，标题是“今日感悟”，内容是“今天收获颇多，希望继续保持”，不需要设置提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"腾讯文档\", Title=\"今日感悟\", Content=\"今天收获颇多，希望继续保持\", Type=\"个人日记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在OneNote里创建一个标题为‘学习计划’的笔记，内容是‘每天复习两小时’，还要设置提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"学习计划\", Content=\"每天复习两小时\", Type=\"学习笔记\", ReminderTime=\"明天 8:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用便签写个购物清单，包括牛奶、鸡蛋和面包，提醒我下次去超市时带"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"购物清单\", Content=\"牛奶、鸡蛋和面包\", Type=\"购物清单\", ReminderTime=\"下次去超市时\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在WPS中新建一个会议记录，主题是‘项目汇报’，内容包括‘讨论方案进展’和‘安排下一步任务’，记得设置提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"WPS\", Title=\"项目汇报\", Content=\"讨论方案进展、安排下一步任务\", Type=\"会议记录\", ReminderTime=\"今天 17:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用石墨文档创建一份‘周报’，内容是本周的工作总结，类型是‘工作笔记’，提醒我周五下班前查看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"周报\", Content=\"本周的工作总结\", Type=\"工作笔记\", ReminderTime=\"周五 18:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要在有道云笔记里做一份‘个人日记’，写今天发生的事情，提醒我明天早上看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"有道云笔记\", Title=\"个人日记\", Content=\"今天发生的事情\", Type=\"个人日记\", ReminderTime=\"明天 8:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在OneNote里新建一个标题为“项目总结”的笔记，内容是“1.需求分析 2.功能设计 3.测试计划”，提醒时间定在明天下午4点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目总结\", Content=\"1.需求分析 2.功能设计 3.测试计划\", Type=\"工作笔记\", ReminderTime=\"明天16:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用便签创建一个待办事项，标题是“买菜清单”，内容包括“鸡蛋、牛奶、面包”，并设置提醒时间为明天早上9点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"买菜清单\", Content=\"鸡蛋、牛奶、面包\", Type=\"待办事项\", ReminderTime=\"明天9:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在OneNote里新建一个标题为'项目总结'的笔记，内容是'1. 项目进度 2. 风险分析 3. 下一步计划'，并设置提醒时间"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目总结\", Content=\"1. 项目进度 2. 风险分析 3. 下一步计划\", Type=\"工作笔记\", ReminderTime=\"明天10:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个购物清单，标题叫'周末采购'，内容包括牛奶、鸡蛋和面包，设置提醒时间为今天晚上8点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"周末采购\", Content=\"牛奶、鸡蛋和面包\", Type=\"购物清单\", ReminderTime=\"今晚8点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用WPS写一份会议记录，标题是'客户会议纪要'，内容是'1. 讨论产品需求 2. 确定交付时间 3. 分配任务'，提醒时间是明天上午9点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"WPS\", Title=\"客户会议纪要\", Content=\"1. 讨论产品需求 2. 确定交付时间 3. 分配任务\", Type=\"会议记录\", ReminderTime=\"明天上午9点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在石墨文档里创建一个学习笔记，标题是'Python基础教程'，内容包括变量、函数和类的介绍，提醒时间是后天下午3点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"Python基础教程\", Content=\"变量、函数和类的介绍\", Type=\"学习笔记\", ReminderTime=\"后天下午3点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我在腾讯文档里写一个待办事项，标题是'本周任务'，内容是'1. 完成报告 2. 回复邮件 3. 参加培训'，提醒时间是今天晚上7点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"腾讯文档\", Title=\"本周任务\", Content=\"1. 完成报告 2. 回复邮件 3. 参加培训\", Type=\"待办事项\", ReminderTime=\"今天晚上7点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把昨天的会议记录保存到OneNote里"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问会议的主题是什么？需要设置提醒时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "主题是‘项目汇报’，提醒时间设在今天下午3点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目汇报\", Type=\"会议记录\", ReminderTime=\"2024-10-15 15:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚写完一份报告，想保存到石墨文档里"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问报告的标题是什么？需要设置提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "标题是‘季度总结’，提醒时间设在明天上午10点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"季度总结\", Type=\"工作笔记\", ReminderTime=\"2024-10-16 10:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想创建一个关于健身计划的笔记，用OneNote"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问笔记标题是什么？需要设置提醒时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "标题是\"每周健身计划\"，下午5点提醒我看看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"每周健身计划\", Type=\"工作笔记\", ReminderTime=\"17:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要创建一个购物清单，用有道云笔记"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问清单标题是什么？需要设置提醒时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "标题是\"周末采购清单\"，明天上午9点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"有道云笔记\", Title=\"周末采购清单\", Type=\"购物清单\", ReminderTime=\"明天 09:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把昨天的会议记录保存到石墨文档里"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问会议主题是什么？需要设置提醒时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "主题是\"季度复盘会议\"，不需要提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"季度复盘会议\", Type=\"会议记录\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想创建一个学习笔记，用WPS"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问笔记标题是什么？需要设置提醒时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "标题是\"Python编程基础\"，下周三提醒我复习"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"WPS\", Title=\"Python编程基础\", Type=\"学习笔记\", ReminderTime=\"下周三\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把今天的日程安排同步到腾讯文档"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想创建一个今日日程笔记吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，包括会议、邮件和待办事项"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"腾讯文档\", Title=\"今日日程安排\", Type=\"工作笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个明天的提醒事项，关于下班后去健身房"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问提醒标题是什么？需要设置具体时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "标题是\"下班后去健身房\"，下班时间提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(Title=\"下班后去健身房\", Type=\"提醒事项\", ReminderTime=\"下班时间\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把刚才的对话记录存为便签"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我帮您创建一条便签记录吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，标题是\"用户对话记录\""
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"用户对话记录\", Type=\"普通笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把这篇文档保存到Word里"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我帮您创建一个Word文档吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，标题是\"年度总结报告\""
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"Word\", Title=\"年度总结报告\", Type=\"工作笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把今天的工作计划整理成一个待办事项"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我帮您创建一个待办事项笔记吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，包括上午的会议和下午的报告"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(Type=\"待办事项\", Content=\"上午会议，下午报告\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想创建一个关于旅行计划的笔记，用印象笔记"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问笔记标题是什么？需要设置提醒时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "标题是\"三亚旅行计划\"，出发前一周提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"印象笔记\", Title=\"三亚旅行计划\", Type=\"旅行计划\", ReminderTime=\"出发前一周\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想创建一个笔记，记录今天开会的内容"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想用哪个应用来创建这个笔记呢？"
+            },
+            {
+                "role": "user",
+                "content": "用OneNote吧，标题就叫“项目讨论”"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您在OneNote中创建一个标题为“项目讨论”的笔记"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目讨论\", Type=\"会议记录\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要一个购物清单，买完东西后可以提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想用哪个应用来创建这个购物清单？"
+            },
+            {
+                "role": "user",
+                "content": "用有道云笔记，标题是“周末采购”"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您在有道云笔记中创建一个标题为“周末采购”的购物清单"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"有道云笔记\", Title=\"周末采购\", Type=\"购物清单\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想创建一个学习笔记，记录今天的课程内容"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想用哪个应用来创建这个学习笔记呢？"
+            },
+            {
+                "role": "user",
+                "content": "用石墨文档，标题是“今日课程总结”"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您在石墨文档中创建一个标题为“今日课程总结”的学习笔记"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"今日课程总结\", Type=\"学习笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我早上总是忘记吃药，能帮我设置个提醒吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想创建一个吃药的提醒对吗？请问具体时间是什么时候？"
+            },
+            {
+                "role": "user",
+                "content": "每天早上8点，而且要重复的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"吃药提醒\", Content=\"每天早上8点吃药\", Type=\"提醒事项\", ReminderTime=\"每天 08:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要在OneNote里记个笔记，内容是‘项目进度’"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问需要设置提醒时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "今天下午5点提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"项目进度\", Content=\"项目进度\", Type=\"工作笔记\", ReminderTime=\"今天 17:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想创建一个待办事项笔记，内容是‘下午3点开会’"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问使用哪个应用来创建这个笔记？"
+            },
+            {
+                "role": "user",
+                "content": "用OneNote吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Title=\"待办事项\", Content=\"下午3点开会\", Type=\"待办事项\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想在便签里记下今天的日程安排"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问具体内容是什么？"
+            },
+            {
+                "role": "user",
+                "content": "上午10点开会，下午2点健身"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Title=\"今日日程\", Content=\"上午10点开会，下午2点健身\", Type=\"个人日记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想设置一个‘下班提醒’，每天下午6点"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您希望用哪个应用来创建这个提醒？"
+            },
+            {
+                "role": "user",
+                "content": "用石墨文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Title=\"下班提醒\", Content=\"每天下午6点\", Type=\"提醒事项\", ReminderTime=\"18:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想在腾讯文档里写个‘工作周报’"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问具体内容是什么？"
+            },
+            {
+                "role": "user",
+                "content": "本周完成的工作和下周计划"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"腾讯文档\", Title=\"工作周报\", Content=\"本周完成的工作和下周计划\", Type=\"工作笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要创建一个待办事项笔记，内容是买菜和交电费"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问使用哪个应用来创建笔记？"
+            },
+            {
+                "role": "user",
+                "content": "用有道云笔记吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"有道云笔记\", Title=\"待办事项\", Content=\"买菜和交电费\", Type=\"待办事项\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要写个会议记录，主题是项目进度汇报，内容包括各部门的情况"
+            },
+            {
+                "role": "assistant",
+                "content": "请问会议记录的标题是什么？是否需要设置提醒？"
+            },
+            {
+                "role": "user",
+                "content": "标题就叫“项目进度汇报”，提醒时间定在明天下午2点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"记事本\", Title=\"项目进度汇报\", Content=\"各部门的情况\", Type=\"会议记录\", ReminderTime=\"明天下午2:00\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨晚记了个笔记，但好像没保存，能帮我找找吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查找之前创建的笔记吗？请问笔记内容是什么？"
+            },
+            {
+                "role": "user",
+                "content": "内容是\"项目进度汇报\"，用的是WPS"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"WPS\", Content=\"项目进度汇报\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚在便签里写了个待办事项，但好像没保存，能帮我看看吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查找便签中未保存的待办事项吗？"
+            },
+            {
+                "role": "user",
+                "content": "内容是\"买菜\"，类型是待办事项"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"便签\", Content=\"买菜\", Type=\"待办事项\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在OneNote里写了一段学习笔记，但好像没保存，能帮我看看吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查找OneNote中未保存的学习笔记吗？"
+            },
+            {
+                "role": "user",
+                "content": "内容是\"Python编程基础\"，类型是学习笔记"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"OneNote\", Content=\"Python编程基础\", Type=\"学习笔记\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把‘下周的课程安排’这个提醒设为明天上午8点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将‘下周的课程安排’的提醒时间调整为明天上午8点吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，改成明天"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(Content=\"下周的课程安排\", ReminderTime=\"明天上午8点\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在石墨文档里写了一份会议记录，但好像没保存，能帮我看看吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查找石墨文档中未保存的会议记录吗？"
+            },
+            {
+                "role": "user",
+                "content": "内容是\"项目讨论纪要\"，类型是会议记录"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateNote(AppName=\"石墨文档\", Content=\"项目讨论纪要\", Type=\"会议记录\")</tool>"
+            }
+        ],
+        "level": "runSystemUtility"
+    }
+]

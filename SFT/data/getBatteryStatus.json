@@ -1,0 +1,1978 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天的电池消耗情况怎么样？有没有特别耗电的应用？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下手机当前的电量，快没电了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近一周哪些应用最耗电？按从高到低排一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想检查一下最近30天的电池使用情况，有没有异常的地方"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看有哪些应用在最近一天里耗电最多"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量还剩20%，能帮我查看一下电池情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我感觉手机不太耐用了，能分析一下电池消耗情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天用了不少电，能帮我查查是哪个应用最耗电吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看本月的电池使用情况，有异常耗电的应用吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"本月\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近总是没电，能帮我分析一下电池消耗情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在手机电量很低，能帮我检查一下电池情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天用了很久，想知道哪些应用最耗电，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我分析下最近30天的电池消耗情况，有没有异常的应用？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天早上电量掉得特别快，能帮我检测一下原因吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看最近一周哪个应用最耗电，按从高到低排一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "刚才用了很久，能帮我查看一下电池使用情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看手机还有多少电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天用了很久，电量还剩20%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电池显示只剩15%，是不是快没电了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚充满电，能帮我查下电量情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机一天就掉一半电，怎么回事？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下最近30天哪些应用最耗电，按从高到低排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天晚上用了很多电，能帮我分析一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天电量消耗特别快，有异常吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "想看看上周的电池使用情况，有没有异常应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上周\", AnomalyDetection=True, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下昨天的耗电情况，按升序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=False, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在电量只剩20%了，能看看电池情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天的耗电情况有点奇怪，能分析一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下最近30天哪个应用最耗电，排个名"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙一直开着，是不是很费电？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "刚才用了很久的蓝牙，感觉电量掉得很快，能检查下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天电量显示只有15%，能告诉我具体剩余多少吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我看到有些应用在后台耗电严重，能帮我查一下哪些最耗电？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电池好像不太耐用，能不能查一下最近几天哪些应用最耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚充满电，想知道现在的电池状态怎么样"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几周的耗电情况有点异常，能不能分析一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机的电池消耗特别快，想看看是不是有哪个应用有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看一下当前的电池电量，好决定要不要充电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要检查一下最近一周的电池消耗情况，看看有没有异常的应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚充完电，能告诉我现在的电量是多少吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下昨天哪些应用最耗电，我想优化一下。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近电池消耗特别快，能帮我分析一下原因吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下本月的电池使用情况，按耗电从高到低排一下。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"本月\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下最近30天的应用耗电排名，看有没有异常的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天早上电量还很多，现在突然掉得很快，是不是有什么问题？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要知道最近一周哪个应用最耗电，这样我可以卸载它。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量显示还有50%，但感觉不太准，再确认一下。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨晚用了很长时间的手机，想知道今天的耗电情况。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天电池用得特别快，能帮我看看有没有异常的应用？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要了解上个月的电池消耗情况，看看有没有可以优化的地方。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上月\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几周的电池使用情况如何？能帮我分析一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我看到电池消耗很快，想看看是不是有异常的应用在后台运行。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看上个月有哪些应用最耗电，可能需要卸载几个。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上月\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看当前电量，看看还能用多久"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看最近30天哪个应用最耗电，顺便检测一下异常情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "昨天的电池消耗有点奇怪，能分析一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚充满电，想看看哪些应用最耗电，按降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下手机的电池使用情况，特别是最近一周的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下今天的电池消耗情况，按升序排列"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=False, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下电池电量，我有点担心续航"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量还剩多少？我准备出门"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看电池还有多少，马上要开会了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天哪些应用最耗电？按从高到低排一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查一下昨天的耗电情况，看看有没有异常的应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我分析下上个月的电池消耗，按升序排列"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上月\", AnomalyDetection=False, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电量显示多少？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机还剩多少电？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我好担心手机没电，查一下电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电池还有多少？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量显示不准确，帮我查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下最近30天哪些应用最耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天的电量消耗情况如何？按降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有异常耗电的应用？帮我检测一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看最近一周哪个APP最耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天哪些应用耗电最多？按升序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=False, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量显示只剩10%，能帮我查一下当前电量吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天电池消耗特别快，能帮我分析一下哪些应用最耗电吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看上个月的电池使用情况，能帮我生成一份报告吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上月\", AnomalyDetection=False, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天晚上用了很久，能帮我检查一下电池消耗排名吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我看到电池消耗特别快，能帮我检测一下是否有异常耗电的应用吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要查看昨天的电池消耗情况，并按从低到高排序，能帮我处理一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=False, SortBy=\"ASC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量显示只剩20%，能帮我查一下电池情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前电池电量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我担心会没电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "昨天晚上手机耗电特别快，能帮我看看哪些应用最耗电吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看昨天的应用耗电排行吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有异常耗电的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前设备的电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，帮我看看还剩多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看昨天哪些应用最耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是否需要同时检测异常耗电情况？另外您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，从高到低排，顺便检查下有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机的电池消耗很快，能帮我分析一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看电池消耗排名和耗电分析吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是看看有没有异常耗电的情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机的电池消耗很快，能帮我分析一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看电池消耗排名和耗电分析吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是看看有没有异常耗电的情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前设备的电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，帮我看看还剩多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "昨天晚上电池掉得好快，帮我查查是不是哪个应用太耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是否需要同时检测异常耗电情况？另外您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，从高到低排，顺便检查下有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前设备的电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，帮我看看还剩多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "昨天晚上电池掉得好快，帮我查查是不是哪个应用太耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是否需要同时检测异常耗电情况？另外您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，从高到低排，顺便检查下有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前设备的电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，帮我看看还剩多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "昨天晚上电池掉得好快，帮我查查是不是哪个应用太耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是否需要同时检测异常耗电情况？另外您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，从高到低排，顺便检查下有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前设备的电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，帮我看看还剩多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "昨天晚上电池掉得好快，帮我查查是不是哪个应用太耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是否需要同时检测异常耗电情况？另外您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，从高到低排，顺便检查下有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天早上起床的时候手机没电了，能查下电池情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前设备的电池电量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在还有多少电？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查下昨天哪个应用最耗电，能帮我分析下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看昨天的应用耗电排行吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有异常耗电的情况"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询并分析"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近电池掉得特别快，能帮我看看怎么回事吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看电池消耗排名和耗电分析吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看哪些应用最耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询电池使用情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要查看今天的电池消耗情况，能帮我调出报告吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天的电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还想看看有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您生成报告"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天用了很多时间，能帮我查下电池消耗情况吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天的电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，也看看有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您分析"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看上周的电池消耗情况，能帮我调出来吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看上周的电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还想看看有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上周\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看本月的电池消耗情况，能帮我调出来吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看本月的电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还想看看有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"本月\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看最近30天的电池消耗情况，能帮我调出来吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看最近30天的电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还想看看有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看昨天的电池消耗情况，能帮我调出来吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看昨天的电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，也看看有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看本周的电池消耗情况，能帮我调出来吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看本周的电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，也看看有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"本周\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看上月的电池消耗情况，能帮我调出来吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看上月的电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，也看看有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查询"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上月\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天电量掉得特别快，帮我查查是什么应用耗电最多"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想查看电池消耗排名吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有异常耗电的情况"
+            },
+            {
+                "role": "assistant",
+                "content": "您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"今天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看最近一周的电池使用情况，还能不能优化一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看最近一周的电池消耗情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有耗电异常的应用"
+            },
+            {
+                "role": "assistant",
+                "content": "您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这手机总是自动关机，能帮我看看电池状态吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还有续航时间"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查看电池信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看上周的电池消耗情况，还能不能优化一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看上周的电池消耗情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有异常耗电的应用"
+            },
+            {
+                "role": "assistant",
+                "content": "您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上周\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看昨天的电池消耗情况，还能不能优化一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看昨天的电池消耗情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有异常耗电的应用"
+            },
+            {
+                "role": "assistant",
+                "content": "您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看最近30天的电池消耗情况，还能不能优化一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看最近30天的电池消耗情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有异常耗电的应用"
+            },
+            {
+                "role": "assistant",
+                "content": "您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看本周的电池消耗情况，还能不能优化一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看本周的电池消耗情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有异常耗电的应用"
+            },
+            {
+                "role": "assistant",
+                "content": "您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"本周\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看本月的电池消耗情况，还能不能优化一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看本月的电池消耗情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要看看有没有异常耗电的应用"
+            },
+            {
+                "role": "assistant",
+                "content": "您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，降序排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"本月\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前设备的电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，帮我看看还剩多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看昨天哪些应用最耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是否需要同时检测异常耗电情况？另外您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，从高到低排，顺便检查下有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"昨天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前设备的电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，帮我看看还剩多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看上个月哪些应用最耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是否需要同时检测异常耗电情况？另外您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，从高到低排，顺便检查下有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"上月\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询当前设备的电池电量情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，帮我看看还剩多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryLevel()</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看最近30天哪些应用最耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是否需要同时检测异常耗电情况？另外您希望按耗电量从高到低排序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，从高到低排，顺便检查下有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckBatteryConsumptionRank(TimeRange=\"最近30天\", AnomalyDetection=True, SortBy=\"DESC\")</tool>"
+            }
+        ],
+        "level": "getBatteryStatus"
+    }
+]

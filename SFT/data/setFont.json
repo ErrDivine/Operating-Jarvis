@@ -1,0 +1,5668 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近总看不清字体，能帮我查一下当前字体设置吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是什么字体啊？感觉有点小"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前改过字体，现在想看看是不是恢复了默认"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有办法查看当前系统字体设置？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在的字体大小和样式是什么样的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体调大点，我看不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AdjustLevel=\"一级\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体调小一点，显示太多内容了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AdjustLevel=\"一级\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体调到最大，方便看聊天记录"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体调小一些，让界面更紧凑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AdjustLevel=\"两级\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把阅读器里的字体调大，看书更轻松些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AdjustLevel=\"三级\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，看起来更醒目"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体调细一点，看着更清爽"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器里的字体改成正常粗细，不要太重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"正常\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把编辑器的字体调得更粗一点，便于阅读"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"调整\", FontWeight=\"超粗\", AppName=\"编辑器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统里的字体调细一点，显得更简洁"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成微软雅黑，看着更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体换成黑体，风格更统一"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"黑体\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体改成楷体，看起来更有艺术感"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体换成思源黑体，感觉更现代"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"设置\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法的字体换成方正兰亭黑，更加美观"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"方正\", ActionType=\"更换\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么字体，感觉不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下当前使用的字体是什么，好像有点模糊"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有办法查看系统默认的字体设置？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下浏览器里的字体是哪种，不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能让我看一下现在的字体设置吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体调大一点，现在看不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AdjustLevel=\"一级\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把浏览器的字体调小一点，太占地方了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AdjustLevel=\"一级\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把阅读器的字体设置成最大号，方便阅读长文章"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体调到16号，不要太小"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"二级\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体恢复默认大小，现在有点大"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"恢复默认\", AdjustLevel=\"默认\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，看起来更明显"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体调细一点，显得更专业"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器里的字体调成中等粗细，不要太重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把编辑器里的字体恢复默认粗细，现在有点奇怪"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"恢复默认\", FontWeight=\"正常\", AppName=\"编辑器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ聊天窗口的字体调得更粗一点，更容易识别"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"加粗\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成微软雅黑，看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统界面的字体换成黑体，感觉更正式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"黑体\", ActionType=\"更换\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器里的字体换成思源黑体，看着舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档的字体换成楷体，写起来更有感觉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把记事本的字体换成方正兰亭黑，看起来更美观"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"方正兰亭黑\", ActionType=\"更换\", AppName=\"记事本\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的是什么字体，感觉不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近一直用大号字体，能恢复默认字体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要检查一下当前系统的字体设置，是不是默认的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请问现在的字体是什么样式，有没有修改过？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下自己是否更改过字体设置，麻烦查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的字体调小一点，我看久了眼睛累"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把浏览器的字体调大两级，让我看得更清楚些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调整\", AdjustLevel=\"两级\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体设置成16号，不要太大或太小"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"16号\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把QQ的字体调到最小，方便我快速浏览消息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最小\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把阅读器的字体大小恢复默认，我现在看不清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"恢复默认\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，这样看起来更醒目"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体调细一点，看起来更正式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我希望把浏览器里的字体调成中等粗细，不要太重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把记事本的字体恢复成正常，我现在觉得太粗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"恢复默认\", AppName=\"记事本\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信聊天的字体换成黑体，看起来更有质感"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"黑体\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统界面的字体换成微软雅黑，感觉更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把浏览器的字体换成思源黑体，看着舒服一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法的字体换成华文细黑，显示效果更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"华文细黑\", ActionType=\"设置\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把文档里的字体换成仿宋，看起来更正式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"仿宋\", ActionType=\"更换\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么字体，有没有改过"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个界面的字体好像有点小，能帮我看看是什么字体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要检查一下当前的字体设置，确保没有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是什么字体？是不是默认的？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我确认一下系统里的字体设置有没有被修改过"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体调大一点，我看不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器里的字体调小一点，方便阅读长文章"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把文档里的字体设置成18号，看着更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"18号\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体调到最大，这样在公共场所也能看得清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体恢复默认大小，感觉有点太大了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"恢复默认\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，这样重点内容更容易看到"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把浏览器里的字体调细一点，看起来更简洁"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档中的字体设为正常粗细，不要太重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"正常\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ聊天窗口的字体调得更粗一些，方便识别消息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"加粗\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统里的字体调成中等粗细，不要太轻也不太重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信聊天的字体换成微软雅黑，感觉更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体改成思源黑体，看起来更现代"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把输入法的字体换成华文细黑，显得更专业"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"华文细黑\", ActionType=\"更换\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体换成苹方，显示效果更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"苹方\", ActionType=\"更换\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体改成仿宋，看起来更正式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"仿宋\", ActionType=\"更换\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么字体，有没有特别大的或者特别小的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了字体，现在想确认一下是不是成功了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能帮我查一下当前系统默认的字体是什么吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚调整了字体大小，现在想确认一下是否生效"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道我现在用的字体是哪个，是不是默认的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的字体调大一点，我看不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把浏览器的字体调小一些吗？现在太大了，影响阅读"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体调到24号，我需要看得更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"24号\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把系统字体调到最大，这样不管在哪都能看清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把阅读器里的字体调小一点，这样一页能显示更多内容"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，这样聊天记录更醒目"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把文档里的字体调细一点？看起来太厚重了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器里的字体调成正常粗细，现在太粗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"正常\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统界面的字体调得更粗一点，这样更容易识别"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把编辑器里的字体调得更细一点，节省空间"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"编辑器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成微软雅黑，看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把系统字体换成苹方，这样看起来更现代"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"苹方\", ActionType=\"设置\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体换成仿宋，这样看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"仿宋\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把输入法字体换成思源黑体，这样更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"设置\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体换成华文细黑，看起来更正式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"华文细黑\", ActionType=\"更换\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是什么字体？能查一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看当前系统的字体设置是什么样的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有办法查看当前使用的字体类型和大小？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的字体是哪种？能不能调整一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道现在系统里用的字体是什么，方便后续修改"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器里的字体调大一点，看网页不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把微信的字体调小一点，减少滚动次数"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把阅读器的字体设置成18号，我看书更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"18号\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体恢复默认，现在调得太大了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"恢复默认\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体调到最大，这样聊天内容看得更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体加粗，让重点部分更明显"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体调细一点，看着更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体调成正常粗细，不要那么重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"正常\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统里的字体调成中等粗细，不要太轻也不太重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把编辑器的字体换成加粗，突出显示代码部分"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"加粗\", AppName=\"编辑器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成微软雅黑，看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把系统字体换成思源黑体，感觉更现代"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"更换\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体换成Arial，适应我的阅读习惯"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"Arial\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档中的字体换成楷体，显得更正式一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法字体调成方正，看着更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"方正\", ActionType=\"设置\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下现在用的是什么字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "81dc1d5f-527d-58fa-9d17-fe2038a50486",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道当前系统字体是什么样式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "81dc1d5f-527d-58fa-9d17-fe2038a50486",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下我的浏览器字体设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "81dc1d5f-527d-58fa-9d17-fe2038a50486",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的字体是微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "81dc1d5f-527d-58fa-9d17-fe2038a50486",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有办法看看当前的字体大小"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "81dc1d5f-527d-58fa-9d17-fe2038a50486",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体调大一些，看得更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "id": "965be042-2fa8-5ab0-a9f2-289bef95d44a",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器里的文字调小一点，太占地方了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "id": "965be042-2fa8-5ab0-a9f2-289bef95d44a",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体调到16号，别太大"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"16号\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "id": "965be042-2fa8-5ab0-a9f2-289bef95d44a",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把阅读器里的字体调大两档，看小说方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调整\", AdjustLevel=\"两级\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "id": "965be042-2fa8-5ab0-a9f2-289bef95d44a",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体恢复默认大小"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"恢复默认\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "id": "965be042-2fa8-5ab0-a9f2-289bef95d44a",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，看起来更醒目"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "id": "c987f3b6-6d8a-5a40-b1e6-470f6ded7fe9",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的文字调细一点，显得更整洁"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "id": "c987f3b6-6d8a-5a40-b1e6-470f6ded7fe9",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体设置成正常粗细"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"正常\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "id": "c987f3b6-6d8a-5a40-b1e6-470f6ded7fe9",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把记事本的字体调得更粗一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"调整\", FontWeight=\"超粗\", AppName=\"记事本\")</tool>"
+            }
+        ],
+        "id": "c987f3b6-6d8a-5a40-b1e6-470f6ded7fe9",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ聊天窗口的字体调回默认粗细"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"恢复默认\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "id": "c987f3b6-6d8a-5a40-b1e6-470f6ded7fe9",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成微软雅黑，感觉更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "id": "f8ac8e46-a371-546a-a588-caf0fdd17f87",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体改成思源黑体，看着更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "id": "f8ac8e46-a371-546a-a588-caf0fdd17f87",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体换成楷体，写论文用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "id": "f8ac8e46-a371-546a-a588-caf0fdd17f87",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法字体改回默认，有些不适应"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"默认\", ActionType=\"恢复\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "id": "f8ac8e46-a371-546a-a588-caf0fdd17f87",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把编辑器的字体换成仿宋，排版更美观"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"仿宋\", ActionType=\"更换\", AppName=\"编辑器\")</tool>"
+            }
+        ],
+        "id": "f8ac8e46-a371-546a-a588-caf0fdd17f87",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么字体，是不是默认的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下系统字体有没有被改过"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的字体是什么？有点模糊，想确认一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能告诉我当前应用的字体设置吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查看一下系统的字体配置信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的字体调大一点，看得清楚些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把浏览器的字体调小点吗？太占地方了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体调到18号，这样看文章更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"18号\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体调整到最大，方便聊天"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把阅读器的字体恢复默认，好像有点变形"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"恢复默认\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，更醒目些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把QQ的字体调细一点，看起来更清爽"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体恢复正常，现在太粗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"恢复默认\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体调成中等粗细，不要太重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把编辑器的字体改成超粗，突出显示代码"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"超粗\", AppName=\"编辑器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成微软雅黑，看着更顺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "可以把浏览器的字体换成仿宋吗？感觉更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"仿宋\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体换成思源黑体，比较现代"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"设置\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把记事本的字体换成楷体，写笔记更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"记事本\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法字体换成华文细黑，看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"华文细黑\", ActionType=\"设置\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近总感觉字体太小，能帮我看看现在的字体设置吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下现在系统用的是什么字体，是不是默认的？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有办法查看当前应用的字体设置？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的字体是微软雅黑吗？麻烦确认一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道现在用的是什么字体，可能需要调整一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的字体调大点，我看不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把浏览器的字体调小一些吗？太大会遮住内容"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体调到18号，这样看起来更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"18号\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把阅读器的字体调到最大，方便长时间阅读"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体恢复默认大小，刚才调太大了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"恢复默认\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，看起来更醒目"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把QQ的字体调细一点吗？太粗了看着不舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"细体\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体调成正常粗细，感觉太重了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"正常\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体调得更粗一点，方便打印时看得清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"超粗\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把编辑器里的字体调成中等粗细，刚刚太细了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"编辑器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成微软雅黑，感觉更顺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把浏览器的字体换成思源黑体？看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统字体换成苹方，这样更符合我的审美"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"苹方\", ActionType=\"设置\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体换成楷体，看起来更正式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法的字体换成华文细黑，这样更易读"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"华文细黑\", ActionType=\"设置\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看当前使用的字体是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在系统里的字体大小是不是最大的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了个新字体，能确认一下是否成功了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有办法查看当前应用的字体样式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要检查一下系统里的字体设置，可能有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的字体调大一点，我现在看不清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我感觉浏览器的字体太小了，能不能调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调整\", AdjustLevel=\"最大\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统里的字体调到16号，看着舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"16号\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ的字体调小一点，太占地方了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"缩小\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把阅读器里的字体调到22号，我看书方便些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"22号\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体加粗一点，这样更醒目"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我感觉QQ的字体太细了，能调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"调整\", FontWeight=\"加粗\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档里的字体调成正常，太粗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"正常\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统里的字体变细一点，看起来更简洁"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"调整\", FontWeight=\"细体\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把编辑器的字体调成超粗，突出显示"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"超粗\", AppName=\"编辑器\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信聊天的字体换成微软雅黑，看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把浏览器的字体换成思源黑体，显得更现代"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"更换\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统里的字体换成楷体，感觉更正式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法的字体换成华文细黑，看起来更美观"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"华文细黑\", ActionType=\"更换\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成苹方，感觉更流畅"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"苹方\", ActionType=\"更换\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这页面上的字太小了，能帮我调大一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调整\", AdjustLevel=\"最大\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "阅读器里的文字太小了，能不能调到18号？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"设置\", FontSize=\"18号\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "微信的字体太细了，能不能改粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"调整\", FontWeight=\"粗体\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "文档里的字看起来有点模糊，把字体调大点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调整\", AdjustLevel=\"两级\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把浏览器的字体换成微软雅黑吗？看着更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"更换\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么字体，能告诉我吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前使用的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "只要字体名称就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看文档，里面的字体有点小，能帮我查一下是什么字体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前文档的字体名称，还是想知道字体大小和样式？"
+            },
+            {
+                "role": "user",
+                "content": "就字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个阅读器里的字太小了，能帮我看看用了什么字体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前字体名称，还是包括大小和样式的详细信息？"
+            },
+            {
+                "role": "user",
+                "content": "只看字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在编辑文档的时候，发现字体有点奇怪，能查一下是什么字体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前使用的字体名称，还是想查看字体大小和样式？"
+            },
+            {
+                "role": "user",
+                "content": "就字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页上的文字看起来不太清楚，能帮我看看用的什么字体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前网页中的字体名称，还是包括大小和样式的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "只看字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的字太小了，能帮我调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问您想调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我看小说的时候字太小了，能帮我调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将字体调大几级？比如“一级”、“两级”或“最大”？"
+            },
+            {
+                "role": "user",
+                "content": "调大三级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"三级\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个浏览器里的文字太小了，能帮我调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您想调大几级？我们可以提供“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大一级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"一级\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在看邮件，文字太小了，能帮我调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将字体调大几级？比如“一级”、“两级”或“最大”？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"邮件\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个微信里的文字太小了，能帮我调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将字体调大几级？比如“一级”、“两级”或“最大”？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的字有点细，能帮我调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将“文档”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在打开的Word文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在写论文，发现标题字有点细，能帮我加粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将“文档”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个标题部分"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个PPT里的文字太细了，能帮我调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将“PPT”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在的那一页"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"PPT\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看电子书，里面的字有点细，能帮我调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将“阅读器”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在这页"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个表格里的字有点细，能帮我调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将“表格”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在打开的那个表格"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"表格\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把浏览器的字体换成微软雅黑，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把微信里的字体换成黑体，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信应用中的字体永久更改为黑体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"黑体\", ActionType=\"设置\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个阅读器的字体太难看了，能换成思源黑体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将“阅读器”应用中的字体永久更改为思源黑体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就换成这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"设置\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把文档的字体换成楷体，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将“文档”应用中的字体永久更改为楷体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就换成楷体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"设置\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把QQ的字体换成仿宋，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将“QQ”应用中的字体永久更改为仿宋吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"仿宋\", ActionType=\"设置\", AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么字体，能告诉我吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前系统的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "只看字体名称就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "文档里的字体是什么呀，能看一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前文档的字体类型，还是包括字号和样式的信息？"
+            },
+            {
+                "role": "user",
+                "content": "只要字体名字"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的字体是什么？能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前系统的默认字体，还是某个特定应用中的字体？"
+            },
+            {
+                "role": "user",
+                "content": "系统默认的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看的这篇文章用的是什么字体？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看文章中使用的具体字体名称，还是包括字号和样式的信息？"
+            },
+            {
+                "role": "user",
+                "content": "只看字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在的字体设置，有什么内容？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前字体的名称、大小，还是包括样式等详细信息？"
+            },
+            {
+                "role": "user",
+                "content": "全部都看看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "阅读器里的字太小了，能不能帮我调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问您想调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "浏览器里的文字太小了，能帮我调大一些吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将字体调大一级、两级，还是直接设置为最大？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "文档里的字太小了，能帮我调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将字体调大一级、两级，还是直接设置为最大？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "微信里的字太小了，能调大一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将字体调大一级、两级，还是直接设置为最大？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个页面的文字太小了，能帮我调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将字体调大一级、两级，还是直接设置为最大？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "文档里的标题字太细了，能不能调粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将文档中的字体设置为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在打开的Word文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页的字体太细了，能帮我加粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将网页中的字体设置为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，加粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "微信里的字太细了，能帮我调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信中的字体设置为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，加粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "文档里的字太细了，能帮我调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将文档中的字体设置为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在打开的文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页的字体太细了，能帮我调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将网页中的字体设置为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，加粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把浏览器的字体换成微软雅黑吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成黑体吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信中所有内容的字体永久更改为黑体吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改成黑体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"黑体\", ActionType=\"设置\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把文档的字体换成宋体"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将文档中所有内容的字体永久更改为宋体吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改，这样看起来更正式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"宋体\", ActionType=\"设置\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的字体换成思源黑体"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器中所有内容的字体永久更改为思源黑体吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改成思源黑体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"设置\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的字体换成楷体"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信中所有内容的字体永久更改为楷体吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改，看着舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"设置\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看当前字体是什么样式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前文档的字体名称还是包括大小和样式在内的完整字体信息？"
+            },
+            {
+                "role": "user",
+                "content": "只要字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这页面上的字看起来有点奇怪，能查一下用的是什么字体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前页面使用的字体类型吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个文档里的文字"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在看到的字体是不是默认的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前使用的是默认字体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我想知道是不是系统默认的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个应用里的字体好像变了，能检查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前应用中的字体设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看是不是默认的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我看文档里的字特别小，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将文档中的字体放大几级？我们有'一级'、'两级'或'最大'的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个阅读器的字太小了，能帮我调大一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问您想调大几级？我们有'一级'、'两级'或'最大'的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大三级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"三级\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这边的文字太小了，能不能调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统字体调大几级？我们有'一级'、'两级'或'最大'的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页的字太小了，能调大一些吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器中的字体调大几级？我们有'一级'、'两级'或'最大'的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "文档里的字太小了，能不能调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将文档中的字体调大几级？我们有'一级'、'两级'或'最大'的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的标题字太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将'文档'应用中的字体加粗吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是标题部分"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我写的这个报告标题字太细了，能加粗吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将报告中的标题字体加粗吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，加粗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的正文部分字太细了，能调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将文档中正文的字体调粗吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个PDF的字体太细了，能调粗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将PDF中的字体调粗吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"中等\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太细了，能换成粗体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将文档中的字体设置为粗体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成粗体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把浏览器的字体换成微软雅黑吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器中所有内容的字体永久更改为微软雅黑吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样看着舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个应用的字体太难看了，能换成黑体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将该应用的字体更换为黑体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成黑体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"黑体\", ActionType=\"设置\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把文档的字体换成思源黑体，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将文档中的字体设置为思源黑体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"设置\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个阅读器的字体太小了，能换成楷体吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将阅读器中的字体更换为楷体吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成楷体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"楷体\", ActionType=\"设置\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把输入法字体换成微软雅黑，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将输入法的字体设置为微软雅黑吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"输入法\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在会议室，投影的字太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我看文档的时候字太小了，眼睛都花了，能帮我调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页上的字太小了，我根本看不清，能不能调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看电子书，但字体太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个APP里的文字太小了，我看不太清楚，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用微信聊天，但文字太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太小了，我看不清，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用QQ看消息，但文字太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"QQ\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个PDF文件的字太小了，我怎么看都不清楚，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看一个视频，字幕太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要检查一下当前使用的字体是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "就看看字体名称就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里用的是什么字体啊？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前文档的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "只看字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在看一个网页，想知道它用了什么字体"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前页面的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "字体名称就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下系统默认的字体是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前系统的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个APP里的文字用的是什么字体？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前应用的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的字体是不是微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看一个PDF文件，想确认它的字体类型"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前文档的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页的文字是用什么字体显示的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前页面的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道系统默认字体是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前系统的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的字体是不是宋体？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前文档的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "字体名称"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个浏览器的字体太小了，能不能调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太小了，能不能调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我看电子书时字太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个APP的字太小了，我看得吃力，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看一个视频，字幕太小了，能不能调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页上的字太小了，我怎么也看不清，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用微信聊天，但文字太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个PDF文件的字太小了，我怎么看都不清楚，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看一个视频，字幕太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太小了，能不能调大一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大字体，还是调整屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "调大字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"放大\",AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把字体调粗一点，这样看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的标题字太细了，能不能调粗点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个APP的字体太细了，看起来很吃力，能调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页上的字太细了，能不能调粗点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看一个PDF文件，文字太细了，能不能调粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的标题字太细了，能不能调粗点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚打开的这个APP，字体太细了，能不能调粗点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页上的文字太细了，能不能调粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看一个视频，字幕太细了，能不能调粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的字体太细了，能不能调粗点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整字体粗细，还是调大字体？"
+            },
+            {
+                "role": "user",
+                "content": "调粗点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把系统字体换成微软雅黑，这样看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换系统字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "更换字体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个浏览器的字体太难看了，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个APP的字体太小了，能不能换成微软雅黑？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的字体太难看了，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近觉得宋体太老气了，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页的字体太难看了，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个APP的字体太小了，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的字体太小了，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把系统字体换成微软雅黑，这样看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"系统\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个网页的字体太难看了，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换字体，还是调整字体粗细？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\",ActionType=\"设置\",AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在看小说，字体太小了，能不能帮我调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将当前阅读器中的字体调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级吧，这样看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将“文档”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就现在打开的那个Word文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在浏览器里看网页，字体不太舒服，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个APP里的文字太小了，能不能调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将当前应用中的字体调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大三级吧，这样看起来更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"三级\", AppName=\"当前应用\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天用电脑写报告，发现字体太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将“文档”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就现在打开的那个Word文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在浏览器里看网页，字体不太舒服，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太小了，能不能帮我调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将当前文档中的字体调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级吧，这样看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才用手机看新闻，觉得字体太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将“浏览器”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就现在打开的那个新闻页面"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用电脑看电子书，字体不太舒服，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将电脑中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"电脑\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太小了，能不能帮我调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将当前文档中的字体调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大三级吧，这样看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"三级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才用手机看小说，觉得字体太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将“阅读器”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就现在打开的那个小说"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用电脑看电子书，字体不太舒服，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将电脑中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"电脑\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太小了，能不能帮我调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将当前文档中的字体调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级吧，这样看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才用手机看小说，觉得字体太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将“阅读器”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就现在打开的那个小说"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用电脑看电子书，字体不太舒服，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将电脑中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"电脑\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太小了，能不能帮我调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将当前文档中的字体调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级吧，这样看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才用手机看小说，觉得字体太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将“阅读器”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就现在打开的那个小说"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用电脑看电子书，字体不太舒服，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将电脑中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"电脑\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的字太小了，能不能帮我调大点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将当前文档中的字体调大几级？我们有“一级”、“两级”或“最大”的选项。"
+            },
+            {
+                "role": "user",
+                "content": "调大两级吧，这样看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才用手机看小说，觉得字体太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想将“阅读器”应用中的字体调整为“粗体”吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就现在打开的那个小说"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用电脑看电子书，字体不太舒服，能换成微软雅黑吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将电脑中所有内容的字体永久更改为微软雅黑吗？还是仅调整当前页面的显示？"
+            },
+            {
+                "role": "user",
+                "content": "永久改所有内容，看着舒服点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"电脑\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的什么字体，能告诉我吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前文档的字体名称，还是包括大小和样式在内的完整信息？"
+            },
+            {
+                "role": "user",
+                "content": "就看看字体名字就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档里的文字看起来怪怪的，是不是换了字体？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前使用的字体名称，还是想知道它的大小和样式？"
+            },
+            {
+                "role": "user",
+                "content": "就是字体名称，别的不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckFont()</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚打开的这个网页字体太小了，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大几级，还是直接设置具体字号？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级吧，刚好适合我看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "阅读器里的字太小了，眼睛有点累，能调大一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大一级、两级，还是直接设置成16号字？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级，刚刚好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的字体太大了，能不能缩小点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想缩小一级、两级，还是直接设置成14号字？"
+            },
+            {
+                "role": "user",
+                "content": "缩小两级吧，不要太小"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调小\", AdjustLevel=\"两级\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "微信里的文字太小了，看不清，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调大一级、两级，还是直接设置成16号字？"
+            },
+            {
+                "role": "user",
+                "content": "调大两级，刚好合适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontSize(ActionType=\"调大\", AdjustLevel=\"两级\", AppName=\"微信\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个APP的字体有点模糊，能帮我调粗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将字体设为粗体，还是中等粗细？"
+            },
+            {
+                "role": "user",
+                "content": "粗体吧，这样看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "文档里的标题字太细了，能不能加粗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将标题设为粗体，还是加粗显示？"
+            },
+            {
+                "role": "user",
+                "content": "加粗显示就行，别太夸张"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"加粗\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个PDF的字体太细了，能换成更粗的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将字体设为粗体，还是超粗？"
+            },
+            {
+                "role": "user",
+                "content": "粗体就行，不要太重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchFontWeight(ActionType=\"设置\", FontWeight=\"粗体\", AppName=\"阅读器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个文档的字体太普通了，能换个更正式的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想更换为宋体、黑体，还是微软雅黑？"
+            },
+            {
+                "role": "user",
+                "content": "换成微软雅黑吧，看起来更专业"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"微软雅黑\", ActionType=\"设置\", AppName=\"文档\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "浏览器里的字体太小了，还能不能换成更大的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想换一种字体，还是直接调大字号？"
+            },
+            {
+                "role": "user",
+                "content": "换种字体，比如思源黑体"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlFontType(FontType=\"思源黑体\", ActionType=\"设置\", AppName=\"浏览器\")</tool>"
+            }
+        ],
+        "level": "setFont"
+    }
+]

@@ -1,0 +1,1560 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的媒体音量调高一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把通话音量调低点，现在太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把闹钟音量设置成50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把通知音量调到最大，别漏掉消息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通知音量\", ActionType=\"调到\", Percentage=100)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把铃声音量调小点，免得打扰别人"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"铃声音量\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个音箱声音太大了，能不能调小一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把耳机的音量调高一些吗？我听不太清楚。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的音量调到最大，我想试一下效果。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=100)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把智能音箱的音量调低，现在有点吵。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个音箱声音太小了，能调大一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"调到\", Percentage=70)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的耳机音量调低点，现在有点吵人"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载系统的音量调高，我听不太清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"调到\", Percentage=80)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把智能音箱的音量调低，不要太大声"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把音箱的音量调高，我听不清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"调到\", Percentage=85)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载的音量调低，我开车的时候太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=25)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机的音量太大了，能不能调低一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机的音量调高一些，我听不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的音量调小点，太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的音量调到最大，我需要听清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱音量太大了，能不能调低点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的音量调低一点，现在太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把音乐的音量调高一些，我想听清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把闹钟的声音调小点，别吵醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"减少\", Percentage=5)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把通知音量调到最大，不能错过消息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通知音量\", ActionType=\"设置为\", Percentage=100)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把通话音量调到50%？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个音箱声音太小了，能帮我调大一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的键盘音量调高点，听不到敲击声了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的音量调到最大，我想听清歌词"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载音响的音量调小点，我听不清导航"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的耳机音量调低一点，有点吵"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的音箱的音量调到70%，刚刚好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=70)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的车载音响的音量调大一点，我听不清音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的音箱的音量调到最大，我想听清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的耳机的音量调低一点，我有点受不了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的音箱的音量调高，我听不清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的键盘的音量调大一点，我听不到敲击声"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把音箱调到最低音量，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的手机媒体音量调高一点，现在听音乐太小声了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通话音量太大了，能不能调低一些？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把闹钟音量设置为50%吧，别太吵"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通知音量好像没开，帮我调大点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通知音量\", ActionType=\"调到\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "调高一下手机的媒体音量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电视的铃声音量调低点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"铃声音量\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把通话音量调到最大，这样不会听不清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我设置一下闹钟音量为50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统音量调小一点，别那么响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的音量调低点，现在太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱音量太大了，调小点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把打印机的音量调低，现在太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通知音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的音量调到最大"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"铃声音量\", ActionType=\"最大\", Percentage=100)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个音箱声音太小了，能帮我调大一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统音量调低一些，别影响别人"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音响的音量调到最大，我要开个派对"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把闹钟音量调低一点，别吵醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统音量调到一半，不要太吵"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"调到\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把媒体音量调低一点，现在太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通话音量太大了，调小点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把闹钟音量调高，不然听不到"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"增加\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通知音量有点小，调到50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通知音量\", ActionType=\"调到\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "铃声音量调到最大，不然别人打来听不到"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"铃声音量\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的音量调低一点，现在太响了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的媒体音量调高一点，我听不清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=25)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的通话音量调大一点，我听不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的系统音量调高，现在太小了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把手机的音量调高一点，我听不清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "媒体播放音量太小了，调大点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通话音量太大了，降一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "闹钟声音太小了，调到最大"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把通知音量调低一些，别打扰我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通知音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机的音量调低一点，现在有点吵"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的媒体音量调大点，我听不清音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的通话音量调高，我听不太清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的音量调小一点，太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机音量调小点，太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将耳机的音量降低到特定百分比，还是直接调小一定幅度呢？"
+            },
+            {
+                "role": "user",
+                "content": "调到30%就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"设置为\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱声音太大了，调低一点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将音箱的音量降低到特定百分比，还是直接调小一定幅度呢？"
+            },
+            {
+                "role": "user",
+                "content": "调到50%吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机音量调大点，听不清音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将耳机的音量增加到特定百分比，还是直接调高一定幅度呢？"
+            },
+            {
+                "role": "user",
+                "content": "调到80%吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=80)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我耳机声音太大了，能不能调小点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节耳机的音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到一半就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱怎么突然没声音了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查音箱的音量设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看是不是静音了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘太响了，能调小点音量吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节键盘的音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个机械键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"设置为\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机铃声音量太大了，能调低一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将手机的铃声音量调低吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到50%就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"铃声音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音乐音量有点大，能调小一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节媒体音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在播放的音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通知音量太大了，能调小点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节通知音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个手机的通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通知音量\", ActionType=\"设置为\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把通话音量调高一点吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节通话音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在接的电话"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把闹钟音量调小点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节闹钟音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是早上那个闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"设置为\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我耳朵疼，把耳机音量调小点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将耳机的音量调小吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机铃声太大了，能不能调低点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将手机铃声音量调低吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到30%就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"铃声音量\", ActionType=\"设置为\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在太吵了，把音响音量调低"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将音响的音量调低吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到20%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机声音太小了，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将耳机的音量调大吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到70%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=70)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机闹钟声音太小了，能调大吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将手机闹钟音量调大吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到80%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"闹钟音量\", ActionType=\"设置为\", Percentage=80)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚打开音乐，音量有点小"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将媒体音量调大吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到60%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱声音太小了，能调大点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将音箱的音量调大吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘打字声音太大了，能调小点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将键盘的音量调小吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到30%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"设置为\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能把耳机音量调小点吗？太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将耳机的音量调低吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到50%就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台音箱声音太大了，能不能调小点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将音箱的音量调低吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到40%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新音箱，能帮我检查下它的亮度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询音箱的亮度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "不是，是音箱的音量设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"系统音量\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱的音量一直很大，能调小点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将音箱的音量调低吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到30%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机音量调低点，我现在听不清别人说话"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将耳机的音量调低到特定百分比吗？"
+            },
+            {
+                "role": "user",
+                "content": "调到40%就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的音量调小点，太大声了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将音箱的音量调小到特定百分比吗？"
+            },
+            {
+                "role": "user",
+                "content": "调到60%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车上的音响声音太大了，能调低点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将车载音响的音量调低到特定百分比吗？"
+            },
+            {
+                "role": "user",
+                "content": "调到50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机的铃声音量太大了，能调小点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将手机的铃声音量调小吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到50%就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"铃声音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的车载导航一直在响，能调小音量吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低车载音响的音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到一半就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱音量太大了，能调小点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低音箱的音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlSound(VolumeType=\"媒体音量\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "setVolume"
+    }
+]

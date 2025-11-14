@@ -1,0 +1,5958 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下显示器的当前亮度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查下手机屏幕的亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下电脑屏幕的亮度是否合适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "看看平板屏幕现在的亮度值"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示一下显示器的亮度等级"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的亮度调低一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "将电脑屏幕亮度调到50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"调到\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板屏幕的亮度调高一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "设置显示器的亮度为最大值"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"最大\", Percentage=100)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的亮度调到自动模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"自动\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机屏幕的自动亮度调节功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=false)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启显示器的自动亮度调节，适应环境光线"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=true)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板屏幕的自动亮度调成关闭状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=false)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启用电脑屏幕的自动亮度功能，更省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"电脑屏幕\", ActionType=true)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭所有设备的自动亮度调节"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"ALL\", ActionType=false)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下显示器的当前对比度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看手机屏幕的对比度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下电脑屏幕的对比度数值"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "看看平板屏幕的对比度是不是太高了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示所有设备的对比度信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"ALL\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调高一点，晚上看有点吃力"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"增强\", Percentage=70)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把电脑显示器的对比度调到最低，这样看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"降低\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把平板的对比度换成护眼模式，眼睛不太舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"护眼模式\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电视屏幕对比度太亮了，能不能调成标准模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\", ActionType=\"标准对比度\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把所有设备的对比度都调成低对比度，节省电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"低对比度\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把手机的自动亮度关闭，现在阳光下看不清屏幕。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把显示器的亮度调低点，眼睛有点不舒服。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要检查一下手机屏幕的对比度，看看是不是有问题。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板屏幕的亮度调到最低，这样晚上使用更舒服。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"最小\", Percentage=0)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把电脑的屏幕亮度调高，现在太暗了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"增加\", Percentage=25)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的自动亮度调节打开，这样光线变化时会更方便。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看一下显示器的当前亮度是多少。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的亮度调到50%，不要太亮也不要太暗。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"调到\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下笔记本屏幕的对比度，可能有问题。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把手机的自动亮度调节关掉，晚上看手机太刺眼了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查下显示器的对比度，感觉颜色不太对"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把键盘的亮度调暗一点，太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的亮度调高，现在看不清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"调到\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下我电脑屏幕的当前亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把所有设备的自动亮度调节都关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"ALL\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的平板屏幕的对比度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的键盘亮度调到最低，这样不会影响我工作"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"最小\", Percentage=0)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的耳机的当前亮度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的显示器亮度调高，现在看不清文字"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"调到\", Percentage=75)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调高一点，我现在看不清字"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"高对比度\", Percentage=80)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把电脑显示器的对比度改成标准模式，这样看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"标准对比度\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板屏幕的对比度调低一些，晚上用起来不刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"低对比度\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把所有设备的对比度都切换成护眼模式，眼睛有点累"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"护眼模式\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电视屏幕的对比度设置为增强模式，让画面更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\", ActionType=\"增强\", Percentage=70)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把电脑屏幕的亮度调暗点，眼睛有点不舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道音箱的当前亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的自动亮度调节关掉，这样更省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机的屏幕太亮了，能不能调低一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把智能音箱的亮度设置为50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"音箱\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要检查一下显示器的对比度，看看是不是有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的自动亮度调成最大，这样白天看更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把打印机的亮度调到最低，节省电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"打印机\", ActionType=\"最小\", Percentage=0)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查看一下平板屏幕的当前亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑屏幕的亮度调高一点，光线不够"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"增加\", Percentage=25)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把打印机的亮度调到一半"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"打印机\", ActionType=\"调到\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的自动亮度关掉，我手动调节更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的平板屏幕的对比度调低一点，晚上看太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把手机屏幕的对比度改成护眼模式，眼睛有点不舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把电脑显示器的对比度调整到50%，这样看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"增强\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在电视的对比度太高了，能不能调成标准对比度？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\", ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把所有设备的对比度都设置为低对比度，节省电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查下平板屏幕的亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示器的亮度太高了，看看有没有办法调低"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕的亮度太暗了，能不能调高？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑屏幕的亮度调到60%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"调到\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "自动亮度调节功能太不准确了，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看下显示器的对比度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕的对比度太低了，能调高吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调到最高"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道电脑屏幕现在的对比度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示对比度太低了，帮我调高一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调高一点，看东西太模糊了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把电脑显示器的对比度改成护眼模式，对眼睛好些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把平板的对比度调低点，晚上用起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想切换到标准对比度，这样看起来比较自然"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把所有设备的对比度都调成60%吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的手机屏幕亮度调低点，晚上看不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关掉电脑的自动亮度调节功能吧，我现在在室内"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"电脑屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下平板的屏幕对比度，好像有点暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把显示器的亮度调到最亮，这样更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查下我的手机屏幕亮度是多少，我想调整一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑的自动亮度调节打开，这样更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"电脑屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把手机的屏幕亮度调低一些，光线太强了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的平板屏幕的对比度，感觉颜色不对"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的亮度调到一半，不要太刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"调到\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下我的手机屏幕亮度，看看是不是太低了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的显示器对比度，是不是有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑的亮度调高，我看不清文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的自动亮度调节，我现在在室内"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的平板屏幕亮度，是不是太暗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的电脑屏幕亮度，是不是太暗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的手机屏幕亮度调低，现在太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"减少\", Percentage=25)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的显示器的亮度调高，这样更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"增加\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的平板屏幕的对比度，看起来不太正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的鼠标屏幕亮度调低，太刺眼了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"鼠标\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的电脑屏幕亮度，是不是太暗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的自动亮度调节，我现在在室内"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的显示器的亮度调到60%，刚刚好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"调到\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的平板屏幕的对比度，是不是有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调高一点，晚上看东西太费眼睛了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把电脑显示器的对比度改成护眼模式，这样用久了眼睛不会那么累"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把平板屏幕的对比度设置成标准模式，现在有点刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把电视屏幕的对比度调低点？我感觉太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要把所有设备的对比度都调到60%，这样看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"增强\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下显示器当前的亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机屏幕太暗了，能调亮一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑屏幕的亮度调到60%，光线有点强"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"调到\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕太亮了，能不能调低一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把手机的自动亮度调节关掉，不用那么智能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启显示器的自动亮度功能，让屏幕更舒适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下我的手机屏幕对比度是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示器的对比度太低了，能调高一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看平板的对比度设置，感觉不太清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把所有设备的对比度都调高一点，看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"ALL\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调低一点，晚上看舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把电脑显示器的对比度设置成高对比度，这样看起来更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把平板屏幕的对比度调到50%，这样不会太刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"增强\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想切换到护眼模式，保护一下眼睛，特别是晚上用手机的时候"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把所有设备的对比度都调成标准模式，这样统一一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下显示器的当前亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看手机屏幕的亮度是不是太暗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下平板的屏幕亮度，是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示电脑屏幕的当前亮度值"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查询一下音箱的屏幕亮度，可能有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的亮度调到40%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"调到\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "增加一下平板屏幕的亮度，现在看不清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"增加\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的亮度调低一点，太刺眼了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "设置电脑屏幕的亮度为最大，方便工作"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的亮度调到最低，省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的自动亮度调节功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启用平板的智能亮度调节，更节能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的自动亮度调关掉，我觉得手动控制更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让所有设备的自动亮度都开启，适应环境变化"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"ALL\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭电脑屏幕的自动亮度，我习惯自己调节"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"电脑屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下显示器的当前对比度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下手机屏幕的对比度是不是太低了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看平板屏幕的对比度，有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查询一下电脑屏幕的对比度数值"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下音箱的对比度设置，可能有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕太亮了，调暗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕太暗了，调高一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"增加\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的亮度调到最暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"最小\", Percentage=0)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让音箱自动播放音乐，关掉它的自动功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"音箱\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机屏幕太亮了，能调暗点吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"减少\", Percentage=25)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开汽车的自动亮度调节"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑屏幕的对比度调高一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下键盘的当前亮度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的亮度调到最大"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"音箱\", ActionType=\"最大\", Percentage=100)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的自动亮度调关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下显示器的当前亮度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让我看看笔记本屏幕的对比度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的亮度调低一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"音箱\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的自动亮度关掉吧，现在晚上看屏幕太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道电脑屏幕的对比度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的平板屏幕有点暗，能调高点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"增加\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下车载系统的亮度是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的屏幕亮度调到最低，省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机\", ActionType=\"最小\", Percentage=0)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我打开打印机的自动亮度功能，这样打印时更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"打印机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关掉显示器的自动亮度，我觉得手动调节更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑屏幕的对比度调高一点，看起来更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下手机的当前亮度值"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把键盘的亮度调到60%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"调到\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把打印机的亮度调低，避免太刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"打印机\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下平板的对比度设置是否合理"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的自动亮度开启，方便日常使用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调高一点，看不清字"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "id": "1e113efe-5595-5758-84f3-1a08ad50afcd",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要切换到护眼模式，眼睛有点累"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "id": "1e113efe-5595-5758-84f3-1a08ad50afcd",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板屏幕的对比度调低点，太刺眼了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "id": "1e113efe-5595-5758-84f3-1a08ad50afcd",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑显示器的对比度设置成60%吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"增强\", Percentage=60)</tool>"
+            }
+        ],
+        "id": "1e113efe-5595-5758-84f3-1a08ad50afcd",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把所有设备的对比度调到标准模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "id": "1e113efe-5595-5758-84f3-1a08ad50afcd",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看显示器的亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕太暗了，查一下亮度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕的亮度设置多少了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕亮度有点低，检查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看电视屏幕的亮度值"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕亮度调高到70%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"调到\", Percentage=70)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "调整一下显示器的亮度，现在太暗了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕的亮度太刺眼了，调低点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"减少\", Percentage=15)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕的亮度设为50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕亮度调到最低"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的自动亮度调节功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启显示器的自动亮度功能，适应环境光线"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的自动亮度关掉，避免干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "所有设备都开启自动亮度，方便使用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"ALL\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载系统的自动亮度，手动调节更合适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下显示器的对比度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕的对比度太高了，调低点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕的对比度设置多少了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕的对比度太低，需要调高"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "所有设备的对比度都查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"ALL\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调高一点，晚上看东西太模糊了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把电脑显示器的对比度调成护眼模式，眼睛有点累"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把平板屏幕的对比度设置为低一些，这样看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电视屏幕对比度太高了，能不能调到标准模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\", ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把所有设备的对比度都调到60%，这样统一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"增强\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下平板的亮度设置，感觉有点暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "调整一下显示器的亮度，现在太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的自动亮度调节关掉，我觉得手动控制更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看电脑屏幕的对比度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘太亮了，能把它调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"减少\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下手机屏幕的亮度是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的亮度调到50%，不要太刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"调到\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载系统的自动亮度功能，我觉得手动调更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下平板的对比度设置，看看是不是太低了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标屏幕太亮了，能不能调低点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"鼠标\", ActionType=\"减少\", Percentage=35)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下电脑屏幕的亮度，看是否合适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的亮度调低一些，现在太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"音箱\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载设备的自动亮度调节功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道显示器的对比度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘屏幕太亮了，能不能调暗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"减少\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下手机屏幕的亮度是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的亮度调到60%左右，刚刚好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"调到\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载设备的自动亮度调节，我想要手动控制"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下平板的对比度设置，是否合理"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调高一点，晚上看东西太费眼睛了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把电脑显示器的对比度设置成低一点，这样看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板屏幕的对比度调到50%，不要太亮"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"增强\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把电视的对比度改成护眼模式，孩子看久了不会累"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器对比度有点低，能不能调成标准模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"显示器\", ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下显示器的当前亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看平板屏幕的亮度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太暗了，查一下亮度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕的亮度太高了，检查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道音响的屏幕亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的亮度调到50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"调到\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕太亮了，调低点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"减少\", Percentage=10)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕亮度太低了，调高一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱的屏幕亮度调到最大"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"屏幕\", ActionType=\"最大\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太暗了，调到80%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"调到\", Percentage=80)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机屏幕的自动亮度调节"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启电脑显示器的自动亮度功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板屏幕的自动亮度关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "所有设备的自动亮度都打开吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"ALL\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载系统的自动亮度调节"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下显示器的对比度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下手机屏幕的对比度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕对比度太低了，看看设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕的对比度是不是默认的？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的对比度调高一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的对比度调低一点，晚上看太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把电脑显示器的对比度调高一些，这样看起来更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把平板的对比度改成护眼模式，眼睛有点累"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电视屏幕的对比度调到50%，不要太亮"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\", ActionType=\"增强\", Percentage=50)</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把所有设备的对比度都设置为标准模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下平板的亮度，感觉有点暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的亮度调高一些，这样看视频更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"调到\", Percentage=70)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机屏幕的自动亮度调节功能，我现在想手动控制"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看笔记本的对比度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下手机屏幕的亮度，我觉得有点暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把键盘的亮度调低一点，太刺眼了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭所有设备的自动亮度调节功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"ALL\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下显示器的对比度设置是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下手机的屏幕亮度，是不是太亮了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的亮度调到60%，看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"调到\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载系统的自动亮度调节，我要手动调整"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "看看笔记本的对比度是多少，我需要调整"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下平板的亮度，有点暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把键盘的亮度调高一点，我看不清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"增加\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭所有设备的自动亮度调节"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"ALL\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下电脑屏幕的对比度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我感觉手机屏幕太暗了，能不能调高一点对比度？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\", ActionType=\"增强\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑显示器的对比度改成护眼模式吧，眼睛有点不舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在看电子书，想让平板屏幕的对比度低一些，更柔和一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\", ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把所有设备的对比度都设置成标准模式，这样看起来统一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\", ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电视屏幕对比度太低了，能不能调到60%？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\", ActionType=\"增强\", Percentage=60)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个显示器太暗了，帮我看看现在的亮度是多少？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要查询当前显示器的亮度等级对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个LG的显示器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把平板调亮一点，看不清内容"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要调亮平板屏幕吗？亮度需要增加多少百分比呢？"
+            },
+            {
+                "role": "user",
+                "content": "增加20%吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "会议室投影仪能设为自动亮度吗？现在反光看不清"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想为会议室投影仪开启自动亮度调节功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个投影仪"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器对比度现在是啥样啊？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想查询当前显示器的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个显示器亮度太低了，能调高一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要调高显示器的亮度吗？亮度需要增加多少百分比呢？"
+            },
+            {
+                "role": "user",
+                "content": "增加30%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"增加\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "办公桌上的键盘亮度太刺眼了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低键盘的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想给电脑屏幕开启自动亮度调节，现在太费眼睛"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想为电脑屏幕开启自动亮度调节功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个屏幕"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"电脑屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下手机屏幕的对比度，是不是太低了？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想查询当前手机屏幕的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个手机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "办公室的显示器太暗了，能调亮一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要调亮显示器的亮度吗？亮度需要增加多少百分比呢？"
+            },
+            {
+                "role": "user",
+                "content": "增加40%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"增加\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个键盘的亮度太高了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低键盘的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"键盘\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想给平板屏幕开启自动亮度调节，现在太费眼睛"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想为平板屏幕开启自动亮度调节功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个平板"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下电脑屏幕的对比度，是不是太低了？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想查询当前电脑屏幕的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个电脑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器亮度太高了，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询显示器的亮度等级吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在看不清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太暗了，能调亮一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想增加手机屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在看不清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想减少平板屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，眼睛不舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "投影仪太亮了，能调低一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低投影仪的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，反光太严重"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"屏幕\", ActionType=\"减少\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器对比度太高了，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询显示器的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，现在看起来不自然"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕自动亮度太差了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机屏幕的自动亮度功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，手动调更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器自动亮度太敏感了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭显示器的自动亮度功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，现在总是一会亮一会暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低车载屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "嗯，现在开车看不清"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"车载\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我办公室的显示器太暗了，能调亮吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想增加显示器的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在看文件很吃力"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"增加\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的笔记本屏幕太暗了，能调亮点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想增加笔记本屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，现在看视频不方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"增加\", Percentage=25)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器亮度调暗一点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低显示器的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这台显示器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"减少\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节手机屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到最低就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕太刺眼了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节平板屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到最暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "投影仪亮度太高了，能调低点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节投影仪的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是会议室的那个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"屏幕\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器对比度太低了，能调高吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节显示器的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕对比度有点低，能调高吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节手机屏幕的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕对比度太低了，能调高吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节电脑屏幕的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕对比度太低了，能调高吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节平板屏幕的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示器对比度调得太高了，能调低吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调节显示器的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕的自动亮度关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机屏幕的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕的自动亮度调得太快了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭平板屏幕的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把显示器的自动亮度调成自动吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启显示器的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统的自动亮度太慢了，能调快点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整车载系统的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是中控屏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "所有屏幕都开启自动亮度吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想为所有屏幕开启自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是全部"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"ALL\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕太亮了，能不能调暗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低电脑屏幕亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到50%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"设置为\", Percentage=50)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕太刺眼了，调暗点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低平板屏幕亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到最小"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示器太亮了，能自动调节吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启显示器的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样晚上看舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了个新手机，能帮我设置一下自动亮度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启新手机的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样不用手动调了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看手机屏幕的亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询手机屏幕的当前亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在有点暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"手机屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示器亮度太低了，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询显示器的当前亮度等级吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个LG的显示器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电脑屏幕对比度看起来不太对，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询电脑屏幕的当前对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "投影仪的对比度好像有问题，能看一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询投影仪的当前对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我眼睛不舒服，把显示器调暗点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低显示器亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到40%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"设置为\", Percentage=40)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚进房间，能自动调暗屏幕吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启屏幕的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样更舒适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太亮了，能自动调暗吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样不用手动调"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了个新显示器，能查下它的亮度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询显示器的当前亮度等级吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看是不是正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的平板屏幕对比度有点高，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询平板屏幕的当前对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调整一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "投影仪的对比度设置不对，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询投影仪的当前对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个显示器太暗了，帮我查一下亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要查询当前显示器的亮度等级吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个LG的显示器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板屏幕调亮一点"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要调亮平板屏幕吗？亮度需要增加多少百分比呢？"
+            },
+            {
+                "role": "user",
+                "content": "对，增加30%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"增加\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "会议室投影仪能设为自动亮度吗？现在反光看不清"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想为投影仪开启自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是投影仪"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看电脑屏幕的对比度设置"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想查询当前电脑屏幕的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机屏幕太亮了，能不能调暗点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低手机屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到最低"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把打印机的自动亮度关掉，现在太刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭打印机的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个打印机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"打印机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台电脑屏幕有点模糊，能调高对比度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想提高电脑屏幕的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到最高"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上用平板看书时屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低平板屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到最低"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把显示器的自动亮度关掉，现在太刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭显示器的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个显示器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"显示器\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台打印机打印出来的内容太浅了，能调高对比度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整打印机的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调高点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了新的显示器，能帮我查一下它的亮度设置吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要查询新显示器的亮度等级吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个27寸的显示器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示器太暗了，帮我看看亮度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要查询当前显示器的亮度等级吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个LG的显示器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckLuminance(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机屏幕调亮一点，我看不清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要调亮手机屏幕吗？亮度需要增加多少百分比呢？"
+            },
+            {
+                "role": "user",
+                "content": "增加30%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"手机屏幕\", ActionType=\"增加\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "会议室投影仪能设为自动亮度吗？现在反光看不清"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想为会议室投影仪开启自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电视对比度太低了，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是想查询当前电视的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个显示器的亮度太亮了，能调低点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要调低显示器的亮度吗？亮度需要减少多少百分比呢？"
+            },
+            {
+                "role": "user",
+                "content": "减少25%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"减少\", Percentage=25)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的平板屏幕太暗了，能自动调节亮度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想为平板屏幕开启自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"平板屏幕\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道电脑屏幕的对比度是多少"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要查询当前电脑屏幕的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电脑屏幕太亮了，能调低点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要调低电脑屏幕的亮度吗？亮度需要减少多少百分比呢？"
+            },
+            {
+                "role": "user",
+                "content": "减少30%"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"电脑屏幕\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把手机的自动亮度调成关闭"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个显示器的对比度太高了，能调低吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整显示器的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个屏幕看起来有点灰，能调亮一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整屏幕的对比度模式吗？可以切换到高对比度或者直接提高亮度数值，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "对，调亮点，换成高对比度吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\",ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器总感觉太刺眼了，能不能调低点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低显示器的对比度，还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"显示器\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了手机屏幕，但显示效果不太舒服，能帮我调一下对比度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您希望切换到哪种对比度模式呢？比如标准、高对比度或护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式吧，保护眼睛"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕的对比度好像没调好，我看看能不能调高点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调高对比度，还是设置为特定模式？例如增强对比度或者标准模式？"
+            },
+            {
+                "role": "user",
+                "content": "增强一下，让文字更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\",ActionType=\"增强\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天看平板屏幕有点累，能不能调成护眼模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将平板屏幕切换到护眼模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那种比较柔和的模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个屏幕的对比度太高了，有点刺眼，能不能调低一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整屏幕的对比度模式吗？可以切换到低对比度或者护眼模式，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "嗯，护眼模式吧，感觉对眼睛好点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机的屏幕太亮了，晚上看的时候特别不舒服，能帮我调一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低屏幕的亮度还是切换成护眼模式呢？"
+            },
+            {
+                "role": "user",
+                "content": "调成护眼模式就行，不用太暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示器的对比度好像有问题，总是显示不清，能帮我改一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整显示器的对比度模式吗？可以尝试切换到低对比度或标准对比度看看效果如何？"
+            },
+            {
+                "role": "user",
+                "content": "试试低对比度吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"显示器\",ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕的对比度太高了，看得我眼睛酸，有没有办法调低？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把电脑屏幕的对比度调低还是换成护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "换护眼模式吧，这样比较舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板的屏幕对比度太强了，晚上用起来很吃力，能调低点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将平板屏幕的对比度调低，还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式应该更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台电脑的屏幕太暗了，能不能调亮一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要调亮电脑显示器的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是办公桌上的那台显示器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"增加\", Percentage=20)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天的会议投影太刺眼了，能不能调低点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低会议室投影仪的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个屏幕"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"屏幕\", ActionType=\"减少\", Percentage=30)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的平板屏幕显示太模糊了，能查一下对比度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询平板屏幕的对比度设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个平板"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机的自动亮度太不智能了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的自动亮度功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器太亮了，晚上看屏幕不舒服，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低显示器的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到最低"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"显示器\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我平板屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低平板屏幕的亮度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到最暗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"最小\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的显示器对比度太低了，能调高点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整显示器的对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调高一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContrast(DeviceType=\"显示器\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机的自动亮度老是不准，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的自动亮度调节功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个屏幕看久了眼睛不舒服，能调低点对比度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整屏幕的对比度模式吗？可以切换到护眼模式或者降低对比度百分比，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式就行，感觉舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太亮了，能不能调暗一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整手机屏幕的对比度模式吗？可以切换到低对比度或护眼模式，您更喜欢哪种？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式吧，晚上用的时候更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "显示器有点刺眼，我想换成标准对比度"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想将显示器的对比度模式切换为标准对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是标准的那种"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"显示器\",ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕的对比度太高了，能不能调柔和点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将平板屏幕的对比度模式调整为护眼模式或降低对比度吗？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕的对比度调得太高了，能不能改一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把电脑屏幕的对比度切换到低对比度或护眼模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式吧，这样看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个手机屏幕太亮了，眼睛有点不舒服，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整屏幕的对比度模式，还是直接降低亮度呢？"
+            },
+            {
+                "role": "user",
+                "content": "我觉得应该是调低对比度吧，这样看起来更舒服一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\",ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天开会的时候，投影仪的字看不清楚，能不能调一下对比度？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把投影仪的对比度调高还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "调高一点就行，让字更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"显示器\",ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个平板的屏幕总是反光，感觉特别刺眼，能不能换个模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到护眼模式，还是直接调低对比度呢？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式应该更合适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了新电脑，但是屏幕对比度太高了，看久了头疼"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将电脑屏幕的对比度调低，还是切换成护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "调低一点就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\",ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这台显示器的颜色太鲜艳了，看得我眼花，能不能调柔和点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低对比度，还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "调低对比度吧，这样看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"显示器\",ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近经常熬夜，晚上看手机屏幕特别吃力，有没有什么模式可以保护眼睛？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启护眼模式，还是降低屏幕对比度？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式最好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电视画面太亮了，晚上看有点不舒服，能调暗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低对比度，还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "调低一点就好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\",ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个笔记本屏幕反光太严重了，我得调一下设置"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低对比度，还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式应该更合适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用电脑写报告，但屏幕太亮了，眼睛不舒服，能不能调一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低对比度，还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "调低对比度就可以了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\",ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才在阳光下看手机，屏幕太亮了，有点刺眼，能调一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调低对比度，还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "调低对比度吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\",ActionType=\"低对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个显示器看起来有点暗，能不能调亮一点？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整显示器的对比度模式吗？可以为您切换到高对比度或增加对比度百分比，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "对，调高点，最好能调到高对比度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"显示器\",ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才看了个视频，感觉眼睛有点累，能调下屏幕的对比度吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整屏幕的对比度模式吗？可以为您切换到护眼模式或降低对比度百分比，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到护眼模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚坐上车，导航显示太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整车载屏幕的对比度模式吗？可以为您切换到低对比度或护眼模式，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到护眼模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"车载屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚打开平板，发现屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整平板屏幕的对比度模式吗？可以为您切换到低对比度或护眼模式，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到护眼模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚打开笔记本，发现屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整笔记本屏幕的对比度模式吗？可以为您切换到低对比度或护眼模式，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到护眼模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚打开手机，发现屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整手机屏幕的对比度模式吗？可以为您切换到低对比度或护眼模式，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到护眼模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚打开平板，发现屏幕太亮了，能调暗点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整平板屏幕的对比度模式吗？可以为您切换到低对比度或护眼模式，您更倾向哪种方式？"
+            },
+            {
+                "role": "user",
+                "content": "对，调到护眼模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个显示器的对比度太亮了，眼睛有点不舒服，能调低点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想降低显示器的对比度，还是切换到护眼模式呢？"
+            },
+            {
+                "role": "user",
+                "content": "嗯，我觉得护眼模式可能更合适一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"显示器\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机屏幕的对比度调得太高了，看久了头疼，能不能改一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将手机屏幕的对比度调整为标准模式，还是直接切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式吧，感觉对眼睛更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"手机屏幕\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕的对比度好像不太对，看起来有点暗，能调高一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想提高对比度，还是切换到高对比度模式？"
+            },
+            {
+                "role": "user",
+                "content": "高对比度吧，这样看起来更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"电脑屏幕\",ActionType=\"高对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕的对比度总是忽明忽暗，能固定一个模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置为标准对比度，还是切换到护眼模式？"
+            },
+            {
+                "role": "user",
+                "content": "标准对比度应该可以，不用太夸张"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"平板屏幕\",ActionType=\"标准对比度\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "所有的屏幕都太刺眼了，有没有统一的对比度设置？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将所有设备的对比度统一设置为护眼模式，还是指定一个数值？"
+            },
+            {
+                "role": "user",
+                "content": "护眼模式就行，不用调百分比"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchContrast(DeviceType=\"ALL\",ActionType=\"护眼模式\")</tool>"
+            }
+        ],
+        "level": "adjustDisplay"
+    }
+]

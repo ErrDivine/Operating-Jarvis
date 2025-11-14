@@ -1,0 +1,1378 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要一个暗色的主题，感觉晚上用起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机主题改成浅色模式，白天看东西更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"浅色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题好像有点问题，换回默认主题吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"默认主题等\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电脑现在是白色主题，换成黑色主题吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的界面主题调成自动模式，根据时间切换"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统主题换成暗色模式，晚上用起来更舒适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机的主题改成白色主题，看起来更干净"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的界面改成夜间模式，保护视力"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"夜间模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题应该切换到自动模式，根据时间调整颜色"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑的系统主题改成深色模式，看着更酷"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的手机主题换成深色模式，白天看屏幕不刺眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题太亮了，切换成暗色模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天心情不好，想把电脑的主题换成黑色主题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的平板屏幕主题改成白色主题，看起来更清爽"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要把手机的系统主题改为自动模式，根据时间变化"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统主题换成深色模式，晚上看屏幕不伤眼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天想换个亮一点的主题，感觉有点压抑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"浅色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机主题改成自动模式，根据时间变化调整"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想设置一个个性化主题，让手机看起来更特别"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"默认主题等\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑的系统主题改成黑色主题，看起来更有科技感"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统主题换成深色模式，晚上用起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天心情不好，想把手机的主题换成黑色主题，显得更有格调"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我觉得现在的主题太亮了，能不能换成夜间模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"夜间模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我电脑的系统主题改成白色主题，看起来更清爽"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近在用暗色模式，但有时候也想切换回浅色模式，可以设置自动切换吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统主题换成深色模式，晚上使用更舒适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把电脑的主题改成白色主题，感觉更清爽"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "换一个暗色模式吧，现在这个亮色模式太刺眼了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的主题设置为自动模式，根据时间切换"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把桌面主题改成默认主题，有点儿不习惯现在的风格"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"默认主题等\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机主题换成暗色模式，晚上用起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "id": "ebe635d5-3119-52f4-8667-24fc4052cc92",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题现在太亮了，切换成夜间模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"夜间模式\")</tool>"
+            }
+        ],
+        "id": "ebe635d5-3119-52f4-8667-24fc4052cc92",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把平板的界面改成白色主题，看起来更干净"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白色主题\")</tool>"
+            }
+        ],
+        "id": "ebe635d5-3119-52f4-8667-24fc4052cc92",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑的主题换成深色模式，工作时更专注"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "id": "ebe635d5-3119-52f4-8667-24fc4052cc92",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题设置为自动模式，根据时间切换"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "id": "ebe635d5-3119-52f4-8667-24fc4052cc92",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机主题换成暗色模式，白天用起来不太亮"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天感觉系统主题太刺眼了，换一个浅色的吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"浅色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑的界面改成夜间模式，晚上工作更舒适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"夜间模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我觉得默认主题太普通了，换个黑色主题试试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的系统主题切换到自动模式，根据时间变化"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把系统主题换成暗色的，这样在晚上用起来更舒适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的主题换成白色主题，看起来更清爽"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天想试试自动模式的主题，看看效果怎么样"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把电脑的系统主题换成黑色主题，感觉更有科技感"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的界面改成白天模式，光线好些的时候更清晰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白天模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的手机主题换成深色的，晚上用起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近光线不太好，把电脑屏幕的主题调成暗色模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的界面换成白色主题，看起来更明亮"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白色主题\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机主题太亮了，切换成夜间模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"夜间模式\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题应该恢复默认，我现在觉得有点不舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"默认主题\")</tool>"
+            }
+        ],
+        "id": "0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z",
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想切换到深色主题，晚上用手机更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统主题换成白色，白天看东西更清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"白色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近天气阴沉，把电脑主题换成暗色模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天心情不错，想把手机主题换成亮色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"亮色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题好像没变，再检查一下是不是自动模式没开启"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题太亮了，晚上用起来不舒服，换一个暗色的吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色模式还是自动模式？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式，这样晚上看屏幕更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天的界面颜色太亮了，我想换个更柔和的风格"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到暗色/夜间模式，还是其他类型的主题？"
+            },
+            {
+                "role": "user",
+                "content": "暗色模式就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机主题白天太亮了，晚上看很吃力，能改一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到夜间模式还是自动模式？"
+            },
+            {
+                "role": "user",
+                "content": "夜间模式吧，这样晚上使用更舒适"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"夜间模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是白色主题，有点刺眼，能换成黑色的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换为黑色主题，还是其他的暗色主题？"
+            },
+            {
+                "role": "user",
+                "content": "黑色主题就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题看起来太单调了，能换个更有个性的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置个性化主题，还是切换到默认主题？"
+            },
+            {
+                "role": "user",
+                "content": "个性化主题，比如有图案的那种"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"个性化主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题太亮了，晚上看屏幕很不舒服，能换个暗一点的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换为深色模式还是夜间模式？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式吧，看起来更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个界面的颜色太刺眼了，能不能换个颜色搭配？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色/夜间模式，还是设置一个个性化主题？"
+            },
+            {
+                "role": "user",
+                "content": "就换成深色模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机主题太亮了，晚上看东西很难受，能换个暗的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换为深色模式、夜间模式，还是设置一个自定义主题？"
+            },
+            {
+                "role": "user",
+                "content": "换成深色模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "桌面主题太亮了，影响我看东西，能调暗一点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换为深色模式，还是设置一个更柔和的主题？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式就可以了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题太亮了，我有点看不清文字，能换一个暗色的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换为深色模式、夜间模式，还是设置一个自定义主题？"
+            },
+            {
+                "role": "user",
+                "content": "换深色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题怎么又变亮了？能不能改成暗色？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色模式还是夜间模式呢？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天白天看屏幕好刺眼，能换个暗一点的主题吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到暗色/夜间模式来减少光线刺激吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就那个黑色背景的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机主题太亮了，能换成黑色的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色模式或黑色主题吗？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式就可以"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我觉得现在主题太花哨了，能换成默认的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想恢复默认主题吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就那种简洁的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"默认主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个界面的颜色太亮了，换一个更安静的风格吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色模式或夜间模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，要深色的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把系统主题改成深色的，这样晚上看屏幕不那么累"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色模式，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在白天看屏幕太亮了，我想换成暗色主题"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到暗色模式，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "暗色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近总熬夜，晚上看手机特别吃力，能换个主题吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到夜间模式，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "夜间模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"夜间模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机的主题换成黑色的，这样晚上使用更舒适"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到黑色主题，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "黑色主题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我讨厌白色的背景，能不能换一个更舒适的主题？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色模式、暗色模式，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近觉得浅色主题太刺眼了，想换成暗色的"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到暗色模式，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "暗色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把系统主题改成深色，这样晚上看屏幕更舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色模式，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要一个更安静的界面，能换成暗色主题吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到暗色模式，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "暗色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在图书馆，想把手机主题换成暗色，减少光线干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到暗色模式，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "暗色模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"暗色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把电脑的主题换成黑色的，这样晚上工作更轻松"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到黑色主题，还是其他主题？"
+            },
+            {
+                "role": "user",
+                "content": "黑色主题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天开会的时候，我的电脑主题太刺眼了，能换成暗色模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换为深色/夜间模式，还是仅调低屏幕亮度？"
+            },
+            {
+                "role": "user",
+                "content": "就是那个黑色背景的模式，护眼的那种"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统主题怎么又变成白色了，能换回深色模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换为深色模式，还是夜间模式？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式就可以了，看起来舒服些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的电脑主题太亮了，晚上用起来很吃力，能换个暗一点的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换到深色模式，还是黑色主题？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式就可以，不用太黑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近系统主题总变来变去，能不能固定成一个？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想固定为深色模式、浅色模式，还是自动模式？"
+            },
+            {
+                "role": "user",
+                "content": "自动模式吧，根据时间自动切换"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"自动模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天看到的界面太白了，能换成暗色的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换为深色模式，还是黑色主题？"
+            },
+            {
+                "role": "user",
+                "content": "深色模式就行，看着舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"深色模式\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置的是黑色主题，现在怎么又变了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想恢复黑色主题，还是切换到其他模式？"
+            },
+            {
+                "role": "user",
+                "content": "恢复黑色主题吧，我喜欢那种风格"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SetSystemTheme(ThemeType=\"黑色主题\")</tool>"
+            }
+        ],
+        "level": "setThemeAndWallpaper"
+    }
+]

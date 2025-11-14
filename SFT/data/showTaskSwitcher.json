@@ -1,0 +1,1961 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把任务管理器打开，我要检查一下后台程序有没有异常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "麻烦你关闭多窗口模式，我现在需要集中注意力做一件事"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我要结束一个卡顿的应用程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把多窗口模式关掉，我现在不需要分屏操作"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启动任务管理器，我要检查一下系统进程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭多窗口模式，我现在不需要并排看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我要结束一个占用资源过高的程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭多窗口模式，现在不需要同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我需要查看后台程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭任务管理器，我现在不需要它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启动进程管理器，我要检查系统资源占用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "退出系统监视器，现在不用看了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器怎么没出来？再试一次"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启多窗口模式，我要同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭分屏模式，我现在不需要多窗口"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启用窗口并排显示，方便对比文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "禁用分割屏幕功能，切换回单窗口"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把多窗口模式打开，这样我可以同时处理多个任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器怎么打不开？能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在系统太慢了，关闭任务管理器应该会快一点吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的多窗口模式开启，我要同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不需要分屏显示，把多窗口模式关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我要看一下CPU使用情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭任务管理器，我现在不需要它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启动进程管理器，我需要监控后台程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "退出系统监视器，我不再需要它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让我看看任务管理器，我需要处理一些卡顿的应用程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把多窗口模式关掉，我现在不需要分屏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开多窗口模式，这样我可以同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "禁用分屏模式，我现在只用一个窗口"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启用并排显示，方便我同时处理多个任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭多窗口显示，我现在只需要一个界面"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我想看看后台运行的应用程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭任务管理器，我现在不需要它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启动进程管理器，我需要检查一下系统资源使用情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "退出系统监视器，我暂时不需要监控系统性能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开任务管理器，看看有哪些程序在运行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启多窗口模式，我需要同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭分屏模式，现在不需要多窗口显示"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启用窗口并排显示，这样我可以同时处理多个任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "禁用分割屏幕功能，我只需要单个窗口"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开多窗口模式，我需要同时操作两个软件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭任务管理器，我现在不需要查看后台进程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把多窗口模式关掉，我要专注做一件事"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我需要结束一个无响应的应用程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的分屏模式关掉，我现在只用一个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我要看看哪些程序正在运行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭多窗口模式，我现在想专心处理一个任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我要看看哪个程序占用了太多内存"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭多窗口模式，我现在想单独使用一个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启动任务管理器，我需要结束一些不必要的进程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "切换回单窗口模式，我现在要专注处理一个任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我要监控一下CPU使用情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭分屏模式，我现在要专注于一个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我要查看运行中的程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启分屏模式，我要同时看两个文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "可以打开任务管理器让我看看后台进程吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要任务管理器了，麻烦关掉它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想启动任务管理器来查看运行中的程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器太占资源了，把它关闭吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开任务管理器，我要结束一个卡住的应用程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把多窗口模式打开，我需要同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要分屏了，把多窗口模式关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能帮我启用多窗口显示功能吗，我需要并排看两个窗口"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不需要多窗口模式，麻烦关闭"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把两个应用并排显示，开启多窗口模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "可以帮我打开任务管理器吗？我需要检查一下进程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器怎么关掉？我现在不需要它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请启动进程管理器，我需要查看后台运行的应用程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "退出系统监视器，我不需要再看了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把任务管理器调出来，我需要监控一下资源占用情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请开启多窗口模式，我需要同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭分屏模式，我现在只需要看一个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启用窗口并排显示，方便我处理多个任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "禁用分割屏幕，我要专注在一个界面"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开多窗口模式，这样我可以一边看文档一边做笔记"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我想看看进程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启动任务管理器，检查一下CPU占用情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关掉任务管理器，我现在不需要它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "退出任务管理器，我完成了操作"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器太占资源了，把它关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启多窗口模式，我需要同时处理两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把分屏模式打开，方便对比文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不用多窗口了，关闭吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把多窗口模式关掉，我只需要一个界面"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "切换到单窗口模式，这样更专注"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我要看看哪个程序占用了太多内存"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭任务管理器，我现在不需要查看进程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启多窗口模式，我需要同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭分屏模式，现在我要专注处理一个任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，我需要查看后台程序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "可以让我看到任务管理器吗？我需要检查一下进程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭任务管理器，我现在不需要它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启动任务管理器，我想看看哪些程序在运行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "退出任务管理器，我不再需要它了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启多窗口模式，我要同时看两个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把分屏模式打开，方便我看视频和做笔记"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭多窗口模式，我现在只需要一个窗口"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启用多窗口显示，我要同时处理多个任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "禁用分割屏幕，我现在不想用分屏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机好像被锁住了，能不能把任务管理器打开看看？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要打开任务管理器来查看运行中的程序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我关闭多窗口模式，我现在看不清屏幕了"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要关闭多窗口显示模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的笔记本电脑电池掉得快，能帮我查查耗电的应用吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开任务管理器查看运行中的程序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想关闭多窗口模式，现在看东西太分散了"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要关闭多窗口显示模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开任务管理器，看看哪个程序占用了太多内存"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要打开任务管理器查看运行中的程序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭多窗口模式，我现在不需要分屏"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要关闭多窗口显示模式吗？所有分屏应用将恢复全屏"
+            },
+            {
+                "role": "user",
+                "content": "是的，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统提示说电池耗电太快，帮我检查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我帮您检查电量消耗情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看是不是哪个应用在后台运行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器怎么打不开？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开任务管理器查看运行中的程序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我感觉系统有点卡"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您打开任务管理器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不想用分屏模式了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭多窗口分屏模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在只想看一个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭多窗口分屏模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器怎么打不开？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我要看看哪个程序卡住了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让任务管理器一直开着，太占地方了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑分屏模式怎么关掉？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭多窗口分屏模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在只想看一个应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开分屏模式，我想一边看视频一边记笔记"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启分屏模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就现在"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器怎么关不掉？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不需要它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把两个窗口并排显示吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启多窗口模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样工作效率高"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器又弹出来了，能不能关掉？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别让它再弹了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把这两个文档分屏显示"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启多窗口模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样方便对照"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器太烦人了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不需要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把两个窗口分开显示"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭多窗口模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，恢复原样"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器怎么又打开了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别让它再弹了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把两个窗口并排显示"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启多窗口模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样看资料更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要打开任务管理器，看看哪些程序在后台运行"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，快点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "任务管理器怎么关不掉？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭任务管理器吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不需要它了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想开启多窗口模式，一边看视频一边聊天"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启分屏模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那种可以并排显示的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个分屏太乱了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭多窗口模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，恢复全屏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑运行太慢了，能不能打开任务管理器看看？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开任务管理器检查运行中的程序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看有没有占用资源高的进程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想关闭多窗口模式，现在分屏太麻烦了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭多窗口分屏模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，恢复全屏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要打开任务管理器，看看哪个程序卡住了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开任务管理器检查运行中的程序吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，快点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚设置了两个应用的分屏，但感觉不太顺手，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭多窗口分屏模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，恢复单窗口"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要打开任务管理器，看看哪个程序占用了太多内存"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想打开任务管理器检查内存使用情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，快点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>TaskManagerOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚开启了分屏模式，但现在不想用了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭多窗口分屏模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，恢复单窗口"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MultipleWindowModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "showTaskSwitcher"
+    }
+]

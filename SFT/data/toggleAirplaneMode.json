@@ -1,0 +1,1200 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开飞行模式，飞机上不能用手机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要飞行模式了，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要暂时开启飞行模式，别打扰我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的飞行模式关掉，可以接电话了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要去坐飞机了，开启飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开飞行模式，我现在要上飞机了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭飞行模式，我需要接收信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "切换飞行模式，确保信号不会干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在可以关掉飞行模式了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要临时开启飞行模式，处理紧急情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启飞行模式，别让手机打扰我休息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要网络，关掉飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我准备睡觉了，打开飞行模式避免干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "航班马上起飞了，赶紧开启飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞行模式已经开了，现在可以关闭了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启飞行模式，避免打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞机上要关闭飞行模式，现在可以正常使用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "临时切换一下飞行模式，测试一下功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把飞行模式关掉，我需要接收信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在要开启飞行模式，防止信号干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开飞行模式，我现在要休息一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞机上不能用手机，帮我关掉飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚开启了飞行模式，现在想关闭它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我把飞行模式打开，我要去旅行了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在需要开启飞行模式，以免打扰别人"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要开启飞行模式，避免信号干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在可以关闭飞行模式了，不需要再保持开启"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "切换一下飞行模式，看看有没有变化"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞机上应该开启飞行模式，不能有信号干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚下飞机，可以关闭飞行模式了吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开飞行模式，防止干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在需要关闭飞行模式，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "切换飞行模式，测试信号"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请开启飞行模式，避免打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞行模式关掉，我要接重要电话"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启飞行模式，避免打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在需要关闭飞行模式，有电话要接"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "临时切换到飞行模式，防止信号干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的飞行模式关掉，我需要上网"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "切换飞行模式，确保没有信号干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要开启飞行模式，飞机上不能用手机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要用网络，帮我关闭飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞行模式已经打开了，但我不需要，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我打算坐飞机，先打开飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我切换一下飞行模式，测试一下效果"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开飞行模式，我现在要关机了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞机上不能用网络，帮我关掉飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开启飞行模式，不要干扰信号"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭飞行模式，我要用手机上网了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞行模式已经打开了，不用再操作了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在飞机模式开着，可以关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要去飞行，麻烦打开飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "航班起飞前请关闭飞行模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要暂时启用飞行模式，别干扰信号"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "刚才误触打开了飞行模式，现在要关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机要起飞了，能不能帮我处理一下这个模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是那个飞机图标的功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞机马上起飞了，能帮我关掉飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在要降落了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才不小心打开了飞行模式，能帮我关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机在飞行模式下无法连接网络，能帮我关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要去机场了，能帮我打开飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机要起飞了，能不能帮我处理一下这个模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是那个飞机图标的功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞机快起飞了，能帮我开一下飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我准备坐飞机了，能帮我开启飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，马上就要登机了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要上飞机了，能帮我关掉飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不需要了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚开了飞行模式，现在需要关掉它"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要起飞了，能帮我打开飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个飞机图标的功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我马上要坐飞机了，能帮我处理下飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，开启"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭飞行模式，能帮我操作下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "飞机快起飞了，能帮我切换下飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，开启"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要飞行模式了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机要起飞了，能不能帮我处理一下飞行模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是那个飞机图标的功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要上飞机了，能帮我打开飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在就开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我准备坐飞机了，能帮我关掉飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在就关"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚在机场，想确认一下飞行模式是否开启"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启或关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "关闭"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要切换飞行模式，能帮我处理一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启还是关闭飞行模式？"
+            },
+            {
+                "role": "user",
+                "content": "开启"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机连不上，你看看是不是蓝牙没开？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查蓝牙状态还是需要我帮您开启蓝牙功能？"
+            },
+            {
+                "role": "user",
+                "content": "嗯，可能蓝牙没开，麻烦你帮我打开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机要起飞了，能帮我开启飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，飞机图标那个功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我马上要登机了，能帮我关掉飞行模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭飞行模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在可以正常使用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AirplaneModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleAirplaneMode"
+    }
+]

@@ -1,0 +1,4051 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天出门的时候发现蓝牙没开，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想关掉蓝牙，这样能省点电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我把蓝牙连上我的耳机？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙好像没反应，是不是没开？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接音箱，但不知道怎么操作，能帮我找找附近设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不想用蓝牙了，把它关了吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要连接键盘，能帮我搜索一下附近的设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要断开蓝牙连接，现在不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"手机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把蓝牙关掉，现在不需要连接任何设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查找所有可用的蓝牙设备，包括鼠标和键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在要连接车载系统，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我打开蓝牙，我要连接耳机听音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要断开蓝牙连接，现在不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天出门的时候发现蓝牙好像没开，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把蓝牙关掉，这样手机就不会自动连接别人的设备了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近经常忘记蓝牙开关的状态，能不能帮我查一下现在是不是开着的？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接耳机，但好像找不到，你能帮我扫描一下附近的设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要去开会了，先把蓝牙关掉，别让别人连上我的手机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想找找有没有可用的蓝牙音箱，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才断开了蓝牙键盘，现在想重新连接，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙耳机一直连不上，可能是设备没被找到，能再扫描一次吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不需要用蓝牙，先把它关掉，避免耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我把蓝牙打开了，但没看到我的音箱，是不是得重新扫描？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接车载系统，但不知道怎么操作，能帮我连一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙鼠标突然断开了，能重新连接一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭蓝牙，不然会浪费电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙设备太多，能帮我只搜索手机和耳机吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新音箱，能帮我扫描一下让它连接上吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我感觉手机蓝牙好像没开，能帮我看看吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把蓝牙关掉，我现在不想让别人连我的设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接一下耳机，但怎么也连不上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近蓝牙总是自动断开，能不能重新扫描一下周围的设备？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买的新音箱，能帮我搜索一下附近的蓝牙设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天晚上我要开个会，能把蓝牙关闭以免被干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接键盘，但系统好像没找到它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把蓝牙打开，这样我就能用耳机听音乐了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙设备老是连不上，是不是需要重新扫描？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我把车载设备的蓝牙连接上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在周围有好多蓝牙设备，能帮我找找有没有可用的音箱？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才不小心关掉了蓝牙，能重新打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把蓝牙设备列表刷新一下，可能有新设备出现"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接鼠标，但找不到它，能帮忙扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙一直开着，但没连接任何设备，可以关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接打印机，能帮我搜索一下附近有哪些蓝牙打印机吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把蓝牙设备断开，这样就不会干扰我玩游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙总是在我使用的时候断开，能重新连接一次吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个新买的蓝牙音箱，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把蓝牙关掉，我需要集中注意力工作"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接键盘，但系统没有显示，能再扫一遍吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙好像没反应，能帮我检查一下是否开启？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把蓝牙连接到车载系统，能帮我操作一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙连接不稳定，能重新扫描一下周围设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接耳机，但找不到，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把蓝牙关掉，我现在不需要连接任何设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个新设备，能帮我扫描一下蓝牙设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙一直开着，但没用，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接鼠标，能帮我搜索一下周围有没有可用的蓝牙鼠标？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把蓝牙打开，这样我才能和朋友分享文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙连接不上，可能是没扫描到设备，能再试一次吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我把蓝牙关了，现在想连接耳机，能帮我打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接打印机，能帮我扫描一下蓝牙打印机吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙一直开着，但没连接，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接一个新买的蓝牙设备，能帮我扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙没开，我需要连接耳机，能帮我打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把蓝牙关闭，这样不会影响游戏体验"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙连接不稳定，能重新扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接键盘，能帮我搜索一下附近的蓝牙键盘吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙一直开着，但没用，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个新设备，能帮我扫描一下蓝牙设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙没开，我需要连接耳机，能帮我打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把蓝牙关闭，这样不会影响游戏体验"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙连接不稳定，能重新扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接键盘，能帮我搜索一下附近的蓝牙键盘吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙一直开着，但没用，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个新设备，能帮我扫描一下蓝牙设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我感觉手机蓝牙有点问题，能帮我关掉再打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近周围好像有很多蓝牙设备，能不能帮我扫描一下有哪些可以连接的？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的耳机从蓝牙里断开，现在它总是自动连上其他设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让手机自动连接别人的蓝牙了，麻烦关掉我的蓝牙功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接一下家里的蓝牙音箱，但找不到，你能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机蓝牙好像没开，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天开会的时候一直连不上蓝牙耳机，是不是被关掉了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新蓝牙音箱，能不能帮我看看能不能连上？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近老是连不上蓝牙设备，是不是需要重新扫描一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙键盘怎么突然断开了，能再连一次吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "刚才连接的蓝牙耳机现在怎么又断开了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把车载蓝牙连接一下，我朋友要用车载音响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想用蓝牙连接音箱，但找不到，是不是该先搜索？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让蓝牙一直开着，太费电了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前连过的蓝牙耳机，还能不能重新连接？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机的蓝牙好像没开，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把蓝牙关掉，我现在不想让别人连我的耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接一下家里的蓝牙音箱，你帮我找找看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近蓝牙老是断开，能不能重新扫描一下附近的设备？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前连的耳机现在断开了，能重新连上吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统一直连着我的手机，能不能断开？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把蓝牙关掉，不然手机会更耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚连接了一个新蓝牙键盘，能确认一下是否成功？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "周围有好多蓝牙设备，能帮我扫描一下有哪些可用的？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机总是在断开，能重新扫描并连接一次吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把蓝牙音箱连上，这样我可以听音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"音箱\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天出门的时候蓝牙没关，现在有点耗电，能不能帮我关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想找一下附近有没有可以连接的耳机，你帮我搜一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让手机自动连接别人的蓝牙设备了，把它断开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"ALL\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "朋友说他能连上我的蓝牙音箱，但我这边怎么没显示"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近蓝牙总是自己打开，能不能设置成不自动连上之前的设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"ALL\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了手机，现在要连接新的蓝牙键盘，你能帮我连上吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚发现蓝牙一直开着，现在不用，麻烦关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要连接家里的蓝牙音箱，能帮我找到并连接吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"音箱\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前连过一个蓝牙鼠标，现在想断开它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看周围有哪些可连接的蓝牙设备，能帮我扫描一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把蓝牙关闭，这样能节省一点电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个蓝牙耳机，能帮我搜索并连接吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才不小心打开了蓝牙，现在不需要，帮我关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天出门的时候蓝牙一直开着，现在想关掉它节省电量。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下周围有没有可用的蓝牙耳机，我想连接一个。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的蓝牙连接断开，我现在要用电脑的蓝牙功能。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"手机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近蓝牙总是自动连上别人的设备，能不能扫描一下附近的设备看看？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把蓝牙开关关掉，我需要集中精力工作，不要被其他设备干扰。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把蓝牙打开，我想连接我的无线耳机。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在蓝牙搜不到设备，是不是需要重新扫描一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把蓝牙设置成可被发现的状态，我要连接一个新的设备。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前连接过一个音箱，现在想重新连接它。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"音箱\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙连接不稳定，我想断开并重新搜索设备。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"ALL（默认值）\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙有时候会自动连接，能不能让它暂时不连接？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"ALL（默认值）\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接一个新买的蓝牙键盘，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙连接不上，可能是设备没开，让我再试试。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不需要蓝牙，把它关掉吧，避免误操作。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个蓝牙音箱，能帮我搜索一下附近有没有可用的？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才关了蓝牙，现在想重新打开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我把蓝牙连上耳机？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想搜索附近的蓝牙设备，看看有没有可以连接的音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近蓝牙总是断开，能帮我检查一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"ALL（默认值）\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把蓝牙关掉，我现在不想连接任何设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接一个蓝牙键盘，但一直连不上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "扫描一下周围的蓝牙设备，我要找一个耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把蓝牙断开，我不需要连接任何设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"ALL（默认值）\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个蓝牙音箱，但找不到它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚关了蓝牙，现在想连一下耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把蓝牙打开，我想连接音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让蓝牙一直开着，太费电了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要搜索附近的蓝牙设备，看看有没有可用的鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "扫描一下周围有没有可以连接的手机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想找找看有没有能连的耳机，最近蓝牙总断开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜一下周围的蓝牙设备，可能有音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在要连接车载设备，能帮我连上吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机和耳机之间的连接断开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我把键盘连接到设备上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才把蓝牙关了，现在想连一下耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开蓝牙，我想连接一下音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近蓝牙老是自动关闭，能检查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天晚上要开个会，得先搜索下附近的蓝牙设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想找找有没有可以配对的键盘，蓝牙扫描一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载蓝牙断开，我换一个手机连接"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新耳机，能不能先搜索看看有没有可连接的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "蓝牙一直开着，但没找到任何设备，是不是有问题？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接打印机，蓝牙搜一下有没有可用的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让蓝牙一直开着，太费电了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才把蓝牙关了，现在想连一下耳机，能帮我打开蓝牙吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天出门的时候发现手机蓝牙没开，现在能不能帮我重新开启一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想用蓝牙连接音箱，但好像没找到，能帮我搜索一下周围有没有可用的设备吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在超市，想看看有没有可以连接的蓝牙设备，能帮我扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新键盘，能帮我搜索下附近的蓝牙设备，看看能不能连上？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前连过车载蓝牙，现在想断开，能帮我操作一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接耳机，但系统提示没有找到设备，能再试试看吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "朋友的鼠标一直连不上，能帮我重新搜索并连接一次吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "刚才连接的打印机断开了，能重新连上吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"打印机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的车载设备突然断开了，能再连一次吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机总是断开，能帮我检查下蓝牙状态吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想确认蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我怀疑蓝牙没开，所以耳机连不上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接手机蓝牙，但找不到设备，能帮我扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要扫描所有设备还是只找手机类的？"
+            },
+            {
+                "role": "user",
+                "content": "就扫手机吧，我之前连过"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新音箱，怎么才能连上？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想连接这个新音箱还是先搜索它？"
+            },
+            {
+                "role": "user",
+                "content": "先搜索看看有没有这个设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙键盘老是掉线，能帮我重新连接一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新连接蓝牙键盘吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这台电脑的蓝牙好像坏了，能帮我关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭电脑的蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我朋友的耳机一直连着我的手机，能帮我断开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想断开那台耳机的连接吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我耳机连不上，能帮我看看蓝牙开了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我检测到您设备的蓝牙当前是关闭状态。需要我帮您开启蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，快打开吧，我着急用耳机呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我新买的蓝牙耳机找不到了，能帮我扫描下周围吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问您需要扫描所有蓝牙设备，还是仅搜索耳机类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只要搜耳机就行，别的设备不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我连一下车载蓝牙呗"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是要连接还是断开车载蓝牙呢？"
+            },
+            {
+                "role": "user",
+                "content": "当然是连接啦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近经常忘记关蓝牙，能帮我设置成自动关闭吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置蓝牙在特定情况下自动关闭吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，比如长时间不用就关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接家里的智能音箱，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索家里的智能音箱设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标突然断开了，能帮我重新连接一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新连接蓝牙鼠标吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了一个新的蓝牙键盘，能帮我连接一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想连接这个新买的蓝牙键盘吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机一直连着别人的设备，能帮我断开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想断开那台耳机的连接吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚关掉了蓝牙，但现在想重新开启，能帮我吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新开启蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要连接耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机连接不稳定，能帮我检查一下蓝牙状态吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我怀疑蓝牙没开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要连接家里的蓝牙音箱，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索家里的蓝牙音箱设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙鼠标突然断开了，能帮我重新连接吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新连接蓝牙鼠标吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了一个新的蓝牙键盘，能帮我连接一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想连接这个新买的蓝牙键盘吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机一直连着别人的设备，能帮我断开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想断开那台耳机的连接吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机一直连不上，你能帮我看看是不是没开蓝牙？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想确认蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对啊，我试了好几次都连不上，可能是蓝牙关着呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我新买的蓝牙音箱找不到了，能帮我扫描下周围吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要扫描所有蓝牙设备，还是仅搜索音箱类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只要搜音箱就行，别的设备不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我断开一下手机的蓝牙连接吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要断开手机的蓝牙连接吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，最近老是自动连上别人的手机，烦死了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"手机\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机连不上了，你能帮我看看蓝牙开了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我检测到您设备的蓝牙当前是关闭状态。需要我帮您开启蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，快打开吧，我着急用耳机呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我新买的蓝牙耳机找不到了，能帮我扫描下周围吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问您需要扫描所有蓝牙设备，还是仅搜索耳机类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只要搜耳机就行，别的设备不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我连一下车载蓝牙呗"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是要连接还是断开车载蓝牙呢？"
+            },
+            {
+                "role": "user",
+                "content": "当然是连接啦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机连不上了，你能帮我看看蓝牙开了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我检测到您设备的蓝牙当前是关闭状态。需要我帮您开启蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，快打开吧，我着急用耳机呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我新买的蓝牙耳机找不到了，能帮我扫描下周围吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问您需要扫描所有蓝牙设备，还是仅搜索耳机类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只要搜耳机就行，别的设备不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我连一下车载蓝牙呗"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是要连接还是断开车载蓝牙呢？"
+            },
+            {
+                "role": "user",
+                "content": "当然是连接啦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机连不上了，你能帮我看看蓝牙开了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我检测到您设备的蓝牙当前是关闭状态。需要我帮您开启蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，快打开吧，我着急用耳机呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我新买的蓝牙耳机找不到了，能帮我扫描下周围吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问您需要扫描所有蓝牙设备，还是仅搜索耳机类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只要搜耳机就行，别的设备不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我连一下车载蓝牙呗"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是要连接还是断开车载蓝牙呢？"
+            },
+            {
+                "role": "user",
+                "content": "当然是连接啦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机又断开了，你帮我看看是不是没连上？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，请问您是想重新连接蓝牙耳机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对啊，我刚放了点音乐就断开了，肯定有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您重新连接一下蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚关了蓝牙，但好像没关掉，你能确认下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认蓝牙是否已经关闭吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我怕它还在运行，浪费电"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您检查一下蓝牙状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我找不到附近的蓝牙设备，能帮我扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索周围的蓝牙设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是耳机和音箱之类的"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描一下蓝牙设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在开车，能不能帮我关掉蓝牙？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不需要连接设备"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我耳机一直连不上，能帮我重启蓝牙吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新启动蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，之前试过几次都不行"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭再开启蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了新手机，能帮我把旧机的蓝牙关了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭旧手机的蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别让它继续连接了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要找附近的蓝牙键盘，能帮我搜一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索附近的蓝牙键盘设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要配对一个外接键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描蓝牙设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚在车上用了蓝牙，现在要下车了，能帮我断开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想断开车载蓝牙连接吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别让车里的系统还连着"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您断开连接"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接打印机，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索可用的蓝牙打印机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我准备打印一份文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查找蓝牙打印机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚关了蓝牙，但现在想重新连接耳机，能帮我吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新连接蓝牙耳机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我刚才可能误关了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您重新连接"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭所有蓝牙设备，能帮我操作吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭所有蓝牙设备连接吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我不想再连任何设备了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您断开所有蓝牙设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"ALL\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要搜索所有的蓝牙设备，能帮我扫一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想扫描所有类型的蓝牙设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要找到可以连接的设备"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描所有蓝牙设备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"ALL（默认值）\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接蓝牙音箱，能帮我找一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索可用的蓝牙音箱吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我要放音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描蓝牙音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开启蓝牙，这样就能连耳机了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我耳机现在连不上"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要断开蓝牙鼠标，能帮我操作吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想断开蓝牙鼠标的连接吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您断开连接"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭蓝牙，现在不用设备了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别让设备一直开着"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接蓝牙键盘，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索可用的蓝牙键盘吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要输入文字"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描蓝牙键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接蓝牙音箱，能帮我找一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索可用的蓝牙音箱吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我要放音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描蓝牙音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭蓝牙，现在不用设备了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别让设备一直开着"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开启蓝牙，这样就能连耳机了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我耳机现在连不上"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接蓝牙鼠标，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索可用的蓝牙鼠标吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要操作电脑"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描蓝牙鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接蓝牙耳机，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索可用的蓝牙耳机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我要听音乐"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭蓝牙，现在不用设备了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别让设备一直开着"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机突然断开了，能帮我看看是不是没开蓝牙？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想确认蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对啊，我刚才在车上用着呢，现在怎么连不上了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要我帮您开启蓝牙功能吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想连接家里的智能音箱，但好像搜不到，你帮我找找看"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是要搜索附近的蓝牙设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个智能音箱，我之前连过一次"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您要搜索所有类型的设备，还是只搜索音箱类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只搜音箱就行，别别的干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新鼠标，能帮我配对一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接这个新买的蓝牙鼠标吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个新买的，我之前没连过"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接这个蓝牙鼠标吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这手机信号太差了，能帮我关掉蓝牙再开WiFi吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙并开启WLAN功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先关蓝牙，然后打开WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我先帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了新耳机，能帮我重新连接一下蓝牙吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接新的蓝牙耳机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，之前连的是旧耳机，现在换了个新的"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接新的蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这会儿信号不好，能帮我关掉蓝牙再扫下周围WiFi吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙并扫描附近WiFi吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先关蓝牙，再扫WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我先帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新键盘，能帮我连接一下蓝牙吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接新的蓝牙键盘吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，之前连的是旧的，现在换了个新的"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接新的蓝牙键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚在超市买了个新音箱，能帮我连上蓝牙吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接这个新买的蓝牙音箱吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个，我之前没连过"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接这个蓝牙音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"音箱\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了一台新电脑，能帮我连上蓝牙鼠标吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接蓝牙鼠标吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我之前用的是有线的，现在换成无线的了"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接蓝牙鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新耳机，能帮我连接一下蓝牙吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接新的蓝牙耳机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，之前连的是旧的，现在换了个新的"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接新的蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这手机信号太差了，能帮我关掉蓝牙再开WiFi吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙并开启WLAN功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先关蓝牙，然后打开WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我先帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新键盘，能帮我连接一下蓝牙吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接新的蓝牙键盘吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，之前连的是旧的，现在换了个新的"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接新的蓝牙键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"键盘\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新音箱，能帮我连上蓝牙吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接这个新买的蓝牙音箱吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我之前没连过"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接这个蓝牙音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"音箱\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这手机信号太差了，能帮我关掉蓝牙再开WiFi吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙并开启WLAN功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先关蓝牙，然后打开WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我先帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新耳机，能帮我连接一下蓝牙吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接新的蓝牙耳机吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，之前连的是旧的，现在换了个新的"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接新的蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚买了个新鼠标，能帮我连接一下蓝牙吗"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想连接新的蓝牙鼠标吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，之前连的是旧的，现在换了个新的"
+            },
+            {
+                "role": "assistant",
+                "content": "那我帮您连接新的蓝牙鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这手机信号太差了，能帮我关掉蓝牙再开WiFi吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭蓝牙并开启WLAN功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先关蓝牙，然后打开WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我先帮您关闭蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机又断开了，你能帮我检查一下蓝牙状态吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想确认蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对啊，我刚才在车上用着突然就断了，可能没开吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我新买的蓝牙音箱找不到了，能帮我扫描下周围吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要扫描所有蓝牙设备，还是仅搜索音箱类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只要搜音箱就行，别的设备不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我连一下手机蓝牙呗"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是要连接还是断开手机蓝牙呢？"
+            },
+            {
+                "role": "user",
+                "content": "当然是连接啦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"手机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机又断开了，你能帮我检查一下蓝牙状态吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想确认蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对啊，我刚才在车上用着突然就断了，可能没开吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我新买的蓝牙键盘找不到了，能帮我扫描下周围吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要扫描所有蓝牙设备，还是仅搜索键盘类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只要搜键盘就行，别的设备不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我连一下鼠标蓝牙呗"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是要连接还是断开鼠标蓝牙呢？"
+            },
+            {
+                "role": "user",
+                "content": "当然是连接啦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的蓝牙耳机又断开了，你能帮我检查一下蓝牙状态吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是想确认蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对啊，我刚才在车上用着突然就断了，可能没开吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BlueToothOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我新买的蓝牙音箱找不到了，能帮我扫描下周围吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要扫描所有蓝牙设备，还是仅搜索音箱类设备？"
+            },
+            {
+                "role": "user",
+                "content": "只要搜音箱就行，别的设备不用管"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchBlueTooth(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我连一下打印机蓝牙呗"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您是要连接还是断开打印机蓝牙呢？"
+            },
+            {
+                "role": "user",
+                "content": "当然是连接啦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ConnectBlueTooth(DeviceType=\"打印机\", ActionType=True)</tool>"
+            }
+        ],
+        "level": "manageBluetooth"
+    }
+]

@@ -1,0 +1,1144 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下‘如何设置Windows防火墙’的相关教程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何设置Windows防火墙\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下‘如何优化电脑性能’的相关资料"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何优化电脑性能\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下‘如何提高工作效率’的实用技巧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何提高工作效率\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下‘如何提升专注力’的方法和建议"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何提升专注力\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下最近的天气情况，看看会不会下雨"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近 天气 雨\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下北京今天的空气质量指数"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"北京 今天 空气质量指数\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下这个视频的简介和评分"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"这个视频 简介 评分\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "找一下公司最新的公告内容"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"公司 最新 公告\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下如何修复这个软件的问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何 修复 软件 问题\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下最近有哪些关于人工智能的新闻"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近 人工智能 新闻\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下这个产品的用户评价，可能是在网上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"产品 用户评价\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下最近的天气预报，我打算明天出去玩"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近 天气预报\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下公司内部系统的登录链接"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"公司内部系统 登录\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下今天会议的资料，我记得放在某个文件夹里"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今天 会议 资料\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下如何设置邮件提醒功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"设置 邮件 提醒\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下关于项目计划的文档，应该在共享文件夹里"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"项目计划 文档 共享文件夹\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下今天北京的天气情况，我需要准备出门"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今天 北京 天气\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下明天上海的航班信息，看看有没有合适的机票"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"明天 上海 航班\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下最近的新闻，特别是关于科技方面的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近 科技 新闻\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下如何安装这个软件，我遇到了一些问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何 安装 软件\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "找一下这个项目的最新资料，我需要参考一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"项目 最新 资料\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下北京到上海的高铁票，价格便宜一点的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"北京 上海 高铁票 价格便宜\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下明天晚上7点的天气情况，特别是看看要不要带伞"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"明天 晚上7点 天气 是否带伞\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下如何制作蛋糕，要有详细的步骤和材料清单"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何制作蛋糕 步骤 材料清单\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下最新的科技新闻，尤其是关于人工智能的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最新 科技新闻 人工智能\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下最近几天北京的空气质量情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近几天 北京 空气质量\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下最近一周内关于人工智能的新闻"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近一周 人工智能 新闻\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下上周五公司开会的内容记录"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"上周五 公司 开会 内容记录\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下昨天的会议纪要和相关资料"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"昨天 会议纪要 相关资料\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下最近的天气情况，特别是北京的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近的天气 北京\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下今天上海的空气质量指数"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今天 上海 空气质量指数\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找找这周有哪些重要的会议安排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"这周 重要会议\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下关于人工智能的最新新闻"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"人工智能 最新新闻\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查一下这个软件的用户评价和评分"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"软件 用户评价 评分\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下关于人工智能的最新资讯"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"人工智能 最新资讯\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下今天的新闻，特别是科技类的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今天的新闻 科技\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在本地文件中搜索‘项目报告’相关的文档"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"项目报告\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "找一下‘2024年度计划’这个文件在哪里"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"2024年度计划\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下公司内部的邮件通知，关键词是‘会议安排’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"公司内部 邮件通知 会议安排\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下今天的新闻，特别是关于科技的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今天的新闻 科技\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查一下北京今天的空气质量数据"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"北京 今天的空气质量\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下如何设置Wi-Fi密码"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何设置 Wi-Fi 密码\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找最近的餐厅推荐，要求评分高于4星"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近的餐厅 推荐 评分高于4星\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下‘人工智能的发展趋势’相关资料"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"人工智能的发展趋势\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下北京今天的空气质量指数"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"北京 今天 空气质量指数\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下公司内部系统登录页面的链接"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"公司内部系统 登录页面\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下昨天下载的PDF文档在哪里"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"昨天 下载 PDF 文档\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下北京明天的天气情况"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"北京 明天 天气\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下今天最新的新闻资讯"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今天 最新 新闻\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下关于人工智能的最新研究进展"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"人工智能 最新 研究\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "搜索一下如何制作蛋糕的步骤"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"如何 制作蛋糕 步骤\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下公司内部的文件资源"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"公司 内部 文件 资源\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚记了一条笔记，但好像没保存，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看最近创建的笔记吗？请问笔记的标题或内容是什么？"
+            },
+            {
+                "role": "user",
+                "content": "标题是‘购物清单’，内容是‘买牛奶、鸡蛋和面包’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"购物清单 买牛奶 鸡蛋 面包\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想给妈妈发个消息，用的是微信，但发不出去"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查微信是否有异常吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，可能网络有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"微信 发送失败 网络问题\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天下载了一个文件，但找不到，能帮我找找吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索最近下载的文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，是PDF格式的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"PDF 文件 下载\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机里的照片备份到云盘里"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想使用云盘进行备份吗？请问是哪款云盘？"
+            },
+            {
+                "role": "user",
+                "content": "用的是百度网盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"百度网盘 备份照片\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机连不上蓝牙，能帮我看看是不是没开？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查蓝牙是否开启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"蓝牙连接 失败\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才录了一段视频，但不知道保存在哪里了，能帮我找找吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想搜索最近录制的视频文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，是今天上午录的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今天 上午 视频 文件\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚写了一篇日记，但好像没保存，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看最近创建的笔记吗？请问笔记的标题或内容是什么？"
+            },
+            {
+                "role": "user",
+                "content": "标题是‘今日感悟’，内容是‘今天过得不错’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今日感悟 今天过得不错\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚写了一篇学习笔记，但好像没保存，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看最近创建的笔记吗？请问笔记的标题或内容是什么？"
+            },
+            {
+                "role": "user",
+                "content": "标题是‘Python基础’，内容是‘变量定义与使用’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"Python基础 变量定义与使用\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下最近的天气预报"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您要查询哪个城市的天气？"
+            },
+            {
+                "role": "user",
+                "content": "北京"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"北京 最近 天气预报\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下最近的航班信息"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要查询具体的时间段吗？比如上午、下午或晚上？"
+            },
+            {
+                "role": "user",
+                "content": "最好是明天上午的航班"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"明天 上午 航班\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下明天北京到上海的高铁票"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要查询具体的出发时间吗？"
+            },
+            {
+                "role": "user",
+                "content": "最好是上午9点到11点之间的车次"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查找明天上午9点到11点之间的北京到上海高铁票"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"北京到上海 明天 上午9点到11点 高铁\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下明天从上海到广州的航班信息"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要查询什么时间段的航班？"
+            },
+            {
+                "role": "user",
+                "content": "最好是上午10点到12点之间的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"上海到广州 明天 上午10点到12点 航班\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下上个月的会议记录"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想找上个月的会议记录吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，具体是5月的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"上个月 会议记录 5月\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下最近的天气预报"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想找最近的天气预报吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是明天的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"最近 天气预报 明天\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下‘旅行计划’相关的资料"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想找‘旅行计划’相关的资料吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，最好包括景点和住宿"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"旅行计划 景点 住宿\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下‘健身计划’的相关信息"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想找‘健身计划’的相关信息吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，包括锻炼方式和时间安排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"健身计划 锻炼方式 时间安排\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要搜索一下北京到上海的机票信息"
+            },
+            {
+                "role": "assistant",
+                "content": "请问您需要查询什么时间段的航班？"
+            },
+            {
+                "role": "user",
+                "content": "最好是明天上午的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"北京到上海 明天 上午 航班\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下昨天的会议记录，存放在哪个文件夹里"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查找昨天的会议记录文件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我记得是在‘项目资料’文件夹里"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"昨天的会议记录 项目资料 文件夹\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想搜索一下今天有哪些待办事项"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天的待办事项吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，帮我找出来"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"今天的待办事项\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下最近的天气预报"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询最近的天气情况吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是明天的天气"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"明天天气预报\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下附近有哪些餐厅推荐"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查找附近的餐厅推荐吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，最好有评分高的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"附近高评分餐厅\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我搜索一下明天的航班信息"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询明天的航班信息吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，最好是上午的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Search(Content=\"明天 上午 航班信息\")</tool>"
+            }
+        ],
+        "level": "performSearch"
+    }
+]

@@ -1,0 +1,3792 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天下午三点有没有设置提醒我吃药的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午三点\", Content=\"吃药\", RangeType=\"今天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "id": "71d1acad-3d9f-5a56-848b-5ddde6206d54",
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除明天早上八点那个叫‘起床’的闹钟，能不能帮我处理一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天8:00\", Content=\"起床\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "id": "ef6ebf81-29d5-5a30-8c89-26d42c7ae751",
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看下周所有工作日的闹钟，特别是每天上午十点的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"上午十点\", Content=\"会议\", RangeType=\"下周\", State=\"已开启\")</tool>"
+            }
+        ],
+        "id": "71d1acad-3d9f-5a56-848b-5ddde6206d54",
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除今天早上七点的闹钟，那是我之前不小心设置的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上七点\", Content=\"无\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "id": "ef6ebf81-29d5-5a30-8c89-26d42c7ae751",
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看本周所有重复的闹钟，尤其是每天早上八点的叫醒服务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上八点\", Content=\"叫醒服务\", RangeType=\"本周\", State=\"重复\")</tool>"
+            }
+        ],
+        "id": "71d1acad-3d9f-5a56-848b-5ddde6206d54",
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除昨天下午三点的提醒事项，那是一个错误的设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"下午三点\", Content=\"无\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "id": "ef6ebf81-29d5-5a30-8c89-26d42c7ae751",
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看今天所有未开启的闹钟，特别是中午十二点的休息提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"中午十二点\", Content=\"休息\", RangeType=\"今天\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "id": "71d1acad-3d9f-5a56-848b-5ddde6206d54",
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除上周三下午五点的提醒，那是个误操作"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"下午五点\", Content=\"无\", RangeType=\"上周三\")</tool>"
+            }
+        ],
+        "id": "ef6ebf81-29d5-5a30-8c89-26d42c7ae751",
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上7点提醒我起床，别迟到了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天早上8点提醒我吃药，不要忘了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天早上8点\", Content=\"吃药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "下午3点提醒我开部门会议，记得准时到场。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下午3点\", Content=\"开部门会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明早9点提醒我做体检，不能耽误时间。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上9点\", Content=\"做体检\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每周一早上10点提醒我提交周报，不能拖到后面。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每周一早上10点\", Content=\"提交周报\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上七点提醒我起床"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上七点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天晚上九点提醒我喝一杯温水"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"晚上九点\", Content=\"喝一杯温水\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "下周三早上八点提醒我参加面试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下周三早上八点\", Content=\"参加面试\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我设置一个下午三点的闹钟，提醒我开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下午三点\", Content=\"开会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上六点半提醒我吃早餐"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上六点半\", Content=\"吃早餐\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上7点提醒我起床"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天晚上9点提醒我喝一杯温水"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"晚上9点\", Content=\"喝一杯温水\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "下周三上午10点提醒我参加面试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下周三上午10点\", Content=\"参加面试\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "下午3点提醒我吃药，别忘了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下午3点\", Content=\"吃药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每周一早上8点提醒我做运动"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每周一早上8点\", Content=\"做运动\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天早上8点的闹钟是不是还在响？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8点\", Content=\"默认\", RangeType=\"今天\", State=\"活跃\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看明天下午3点提醒我吃药的闹钟有没有被关闭"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午3点\", Content=\"吃药\", RangeType=\"明天\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天的闹钟状态都显示为暂停，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"任意时间点\", Content=\"任意事件描述\", RangeType=\"最近几天\", State=\"暂停\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下上周五的会议提醒是否还存在"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"周五\", Content=\"会议\", RangeType=\"上周\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请检查所有未完成的闹钟，特别是今天和明天的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"任意时间点\", Content=\"任意事件描述\", RangeType=\"今天,明天\", State=\"活跃\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除掉昨天10点的所有闹钟吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"10:00\", Content=\"默认\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把明天早上7点的上班提醒删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上7点\", Content=\"上班\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这些重复的闹钟都取消掉，特别是每周一的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"周一\", Content=\"默认\", RangeType=\"每周\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要删除所有今天早上8点到9点之间的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上8点到9点\", Content=\"默认\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把上周五的会议提醒全部删除"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"周五\", Content=\"会议\", RangeType=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天下午3点有没有设置叫我去开会的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"今天下午3点\", Content=\"开会\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天晚上设置的提醒吃药的闹钟是不是还在运行？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"吃药\", State=\"活跃\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把明天早上8点的起床闹钟关掉？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天早上8点\", Content=\"起床\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除所有上周设置的健身提醒，别再让我被吵醒了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Content=\"健身\", RangeType=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请检查一下我的闹钟里有没有10点睡觉的提醒，已经好几天没看到它了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"10点\", Content=\"睡觉\", RangeType=\"全部\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上7点提醒我起床，别让我迟到"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要设置一个每天上午10点的闹钟，提醒我去健身房锻炼"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"上午10点\", Content=\"去健身房锻炼\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天下午3点提醒我参加项目评审会，别忘了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天下午3点\", Content=\"项目评审会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要设置一个每天早上8点的闹钟，提醒我吃早餐"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"早上8点\", Content=\"吃早餐\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请在每周一早上9点提醒我提交周报"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每周一早上9点\", Content=\"提交周报\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天下午3点的吃药提醒有没有设置好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"今天下午3点\", Content=\"吃药\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天设的起床闹钟现在还在运行吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上7点\", Content=\"起床\", State=\"活跃\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能帮我查一下明天上午10点的会议提醒是不是开启了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"明天上午10点\", Content=\"会议\", RangeType=\"明天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下这个月所有的健身提醒有没有被关闭"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"健身\", RangeType=\"本月\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我检查一下今天所有叫醒我的闹钟状态？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"今天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把上周三晚上8点的睡觉提醒删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"上周三晚上8点\", Content=\"睡觉\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置的每天早上7点的闹钟好像没用了，帮我删除吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上7点\", Content=\"起床\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我明天早上9点的开会提醒全部清空"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天早上9点\", Content=\"开会\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "那些过期的提醒都不要了，直接删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把上个月的所有日程提醒都取消掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"上个月\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上七点半叫我起床，别迟到。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点半\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我每天晚上九点都要吃药，能帮我设置一个闹钟提醒吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"晚上9点\", Content=\"吃药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "下周三早上八点有个重要的会议，提前半小时提醒我。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下周三早上7点半\", Content=\"重要会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要每天早上六点起床锻炼，帮我设置一个每天的闹钟。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"早上6点\", Content=\"锻炼\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天下午三点要参加面试，提醒我提前准备。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天下午2点半\", Content=\"面试准备\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上7点提醒我起床"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "设置一个每天上午10点的闹钟，提醒我喝药"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"上午10点\", Content=\"喝药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我创建一个下午3点的提醒，关于下周的会议"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下午3点\", Content=\"下周的会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天早上8点提醒我做早操"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"早上8点\", Content=\"做早操\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "设定一个晚上10点的闹钟，提醒我关灯睡觉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"晚上10点\", Content=\"关灯睡觉\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看今天下午三点有没有设置提醒我吃药的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午三点\", Content=\"吃药\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我删除所有明天早上七点起床的闹钟，这些都取消吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上七点\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把昨天晚上十点那个提醒我开会的闹钟关掉，别再响了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"晚上十点\", Content=\"开会\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看一下今天上午九点和下午四点之间的所有闹钟状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"今天\", Time=\"上午九点, 下午四点\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我检查一下那些还没开启的闹钟，特别是关于健身的提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"健身\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我删除所有本周内重复的闹钟，太烦人了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"本周\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上七点半提醒我起床"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点半\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "设置一个每天上午十点的闹钟，提醒我喝药"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天上午10点\", Content=\"喝药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我明天早上八点叫醒我，然后去健身房"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上8点\", Content=\"去健身房\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每周三早上九点提醒我开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每周三早上9点\", Content=\"开会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "设置一个下午三点的闹钟，提醒我参加视频会议"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下午3点\", Content=\"参加视频会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天下午3点有没有设置提醒我吃药的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"今天下午3点\", Content=\"吃药\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除明天早上7点那个叫‘起床’的闹钟，还有所有重复的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天早上7点\", Content=\"起床\", RangeType=\"明天\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "可以帮我把明天上午10点的会议提醒删除吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天上午10点\", Content=\"会议\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下最近一周内所有状态为已开启的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"本周\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除所有今天上午9点的闹钟，不管是什么内容"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"今天上午9点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下所有未开启的闹钟，特别是那些已经过期的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除所有工作日的闹钟，我不需要这些提醒了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"工作日\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下所有活跃状态的闹钟，确保没有遗漏的提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(State=\"活跃\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上七点提醒我起床，别迟到了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要设置一个每天上午十点的闹钟，提醒我喝药。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天上午10点\", Content=\"喝药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天下午三点提醒我开会，别忘了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天下午3点\", Content=\"开会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我设置一个每晚十点的闹钟，提醒我睡觉。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每晚10点\", Content=\"睡觉\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要一个早上八点的闹钟，让我准时上班。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"早上8点\", Content=\"上班\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天下午三点有没有设置提醒我吃药的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午三点\", Content=\"吃药\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除所有明天早上七点起床的闹钟，不管是不是重复的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上七点\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下所有已开启的闹钟，特别是今天和明天的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"今天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除所有工作日早上八点的闹钟，包括那些重复的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上八点\", RangeType=\"工作日\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下所有未关闭的闹钟，尤其是明天的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"明天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除所有今天上午九点的提醒，不管是上班还是其他事件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"上午九点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看所有今天上午十点的闹钟，包括重复的和单次的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"上午十点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除所有周末早上八点的闹钟，不管它们是什么类型"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上八点\", RangeType=\"周末\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上七点提醒我起床，顺便让我记得吃早饭。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"起床，记得吃早饭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "设置一个每天上午十点的闹钟，提醒我喝一杯水。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天上午十点\", Content=\"喝一杯水\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天下午四点提醒我开会，不要迟到。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天下午四点\", Content=\"开会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天早上八点半提醒我做运动，保持健康。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天早上八点半\", Content=\"做运动\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天中午十二点提醒我吃午饭，别忘了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天中午十二点\", Content=\"吃午饭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上七点叫醒我，我有一个重要的会议。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"重要会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天早上九点提醒我喝一杯水，保持健康。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天早上9点\", Content=\"喝水\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要在下午五点半提醒我下班，避免加班太久。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下午5点30分\", Content=\"下班\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我设置一个闹钟，每周一早上八点提醒我开会。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每周一早上8点\", Content=\"开会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天晚上十点提醒我睡觉，保证休息时间。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天晚上10点\", Content=\"睡觉\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天下午3点的吃药提醒是不是还开着"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"今天下午3点\", Content=\"吃药\", RangeType=\"今天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天设置的健身闹钟怎么不见了，能帮我查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"健身\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上8点的会议提醒好像被关闭了，可以帮我重新打开吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"明天早上8点\", Content=\"会议\", RangeType=\"明天\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道上周五晚上10点的睡觉闹钟有没有被取消"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"上周五晚上10点\", Content=\"睡觉\", RangeType=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我确认下所有已经过期的闹钟是不是都删除了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把那个每天早上7点叫醒的闹钟删掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"每天早上7点\", Content=\"叫醒\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置的跑步提醒今天没有响，是不是被误删了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Content=\"跑步\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把上周三的开会提醒全部删除，我不需要了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Content=\"开会\", RangeType=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能把那些状态是暂停的闹钟都清空掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"暂停\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把明天上午10点的所有提醒都删掉，我临时改主意了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天上午10点\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天下午3点的吃药提醒有没有设置好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"今天下午3点\", Content=\"吃药\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置的每天早上7点叫醒我的闹钟现在是关闭状态吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上7点\", Content=\"叫醒\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我查一下明天上午10点的会议提醒有没有被取消"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"明天上午10点\", Content=\"会议\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下上个月25号那个加班提醒是不是还在生效"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"上个月25号\", Content=\"加班\", RangeType=\"指定日期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天的闹钟里有没有活跃状态的提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"最近几天\", State=\"活跃\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把昨天晚上8点的锻炼提醒删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"昨天晚上8点\", Content=\"锻炼\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要删除所有今天早上9点的叫醒闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"今天早上9点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把上周五下午3点的开会提醒全部清除"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"上周五下午3点\", Content=\"开会\", RangeType=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我不想再收到重复的健身提醒了，帮我删除所有重复类型的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我之前设置的所有未开启的闹钟都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上七点提醒我起床，别忘了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天早上八点半提醒我吃药，不能漏掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天早上8点半\", Content=\"吃药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "下午三点半提醒我参加线上会议，记得准时"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"下午3点半\", Content=\"参加线上会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每周一早上九点提醒我开部门例会，不能错过"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每周一早上9点\", Content=\"开部门例会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要在晚上十点提醒自己睡觉，保证休息时间"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"晚上10点\", Content=\"睡觉\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天早上8点的闹钟是不是已经设置了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看上个月15号下午3点的提醒有没有被关闭了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午3点\", RangeType=\"指定日期\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天所有叫‘起床’的闹钟都还在开着吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"起床\", RangeType=\"最近几天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道明天上午10点的会议提醒是否还有效"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"上午10点\", Content=\"会议\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "那些在工作日设置的闹钟状态怎么样？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"工作日\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把上周五晚上9点的吃药提醒删掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"晚上9点\", Content=\"吃药\", RangeType=\"上周五\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "取消所有今天上午的闹钟，尤其是那个叫‘上班’的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"上午\", Content=\"上班\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除昨天下午4点的‘锻炼’提醒，不要留着"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"下午4点\", Content=\"锻炼\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要清除所有重复的闹钟，不管是什么时候"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把所有‘暂停’状态的闹钟都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"暂停\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天下午3点的吃药提醒是不是还在开着"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"今天下午3点\", Content=\"吃药\", RangeType=\"今天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近几天的上班闹钟好像没响，能查一下有没有关闭的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"上班\", RangeType=\"最近几天\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上7点叫我起床的那个闹钟还有效吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"明天早上7点\", Content=\"起床\", RangeType=\"明天\", State=\"活跃\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道上周五上午10点的会议提醒有没有被删除"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"上周五上午10点\", Content=\"会议\", RangeType=\"上周\", State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我确认一下所有未开启的闹钟有哪些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"全部\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把今天上午10点的锻炼提醒删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"今天上午10点\", Content=\"锻炼\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置的每天早上8点叫醒我的闹钟好像被误删了，能不能恢复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"每天早上8点\", Content=\"叫醒\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我删除明天下午2点的开会提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天下午2点\", Content=\"开会\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要删除所有本周内已过期的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"本周\", State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "取消所有工作日的早会提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"工作日\", Content=\"早会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上7点提醒我起床，别迟到了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上7点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要设置一个每天早上8点的闹钟，提醒我做早操。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天早上8点\", Content=\"做早操\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天下午3点提醒我开会，不要忘了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天下午3点\", Content=\"开会\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "每天上午9点提醒我吃药，这很重要。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"每天上午9点\", Content=\"吃药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上6点半叫我，我要赶飞机。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"明天早上6点半\", Content=\"赶飞机\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天早上8点的闹钟是不是已经设置了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下上周五下午3点的提醒，看看有没有设置过"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午3点\", RangeType=\"上周五\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道明天早上7点起床的闹钟状态是什么？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上7点\", Content=\"起床\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天的会议提醒都关闭了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"会议\", State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天的吃药提醒还在吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"吃药\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把所有今天上午10点的闹钟都删掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"上午10点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "取消下周三早上9点的健身提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"早上9点\", RangeType=\"下周三\", Content=\"健身\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除所有已过期的提醒，特别是那些重复的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已过期\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我昨天设置的上班提醒删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Content=\"上班\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "清空所有明天的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Content=\"会议\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上7点叫我起床，顺便提醒我吃药"
+            },
+            {
+                "role": "assistant",
+                "content": "CreateAlarm(Time=\"06:45\", Content=\"起床并吃药\")"
+            },
+            {
+                "role": "user",
+                "content": "对，就这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"06:45\", Content=\"起床并吃药\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚把手机放在充电器上，能帮我设置一个10分钟后提醒我关机的闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "是设置Time=\"10分钟后\", Content=\"提醒关机\"吗"
+            },
+            {
+                "role": "user",
+                "content": "对，就这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"10分钟后\", Content=\"提醒关机\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天早上闹钟没响，能帮我看看是不是关掉了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询今天早上设置的闹钟状态吗？请问是哪个时间点的闹钟？"
+            },
+            {
+                "role": "user",
+                "content": "就是早上8点那个叫‘起床’的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8点\", Content=\"起床\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除所有明天的闹钟，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要删除所有明天设置的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把今天的日程全部清空吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除今天的所有闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全部删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置了两个闹钟，一个上午7点，一个下午3点，但都不响，能帮我看看吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查这两个闹钟的状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看是不是关掉了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上7点\", Content=\"起床\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚设置了一个提醒，但好像没生效，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看这个提醒的状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，是下午3点的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午3点\", Content=\"会议\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除所有已过期的闹钟，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要删除所有状态为‘已过期’的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天设置了两个闹钟，一个早上7点，一个下午3点，但都没响，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查这两个闹钟的状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看是不是关掉了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上7点\", Content=\"起床\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除所有重复的闹钟，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要删除所有类型为‘重复’的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚设置了一个提醒，但好像没生效，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看这个提醒的状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，是下午3点的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午3点\", Content=\"会议\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除所有今天设置的闹钟，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要删除所有今天设置的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚设置了一个提醒，但好像没生效，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看这个提醒的状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，是下午3点的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午3点\", Content=\"会议\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除所有单次的闹钟，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要删除所有类型为‘单次’的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"单次\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天晚上设置的吃药闹钟怎么没响？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看昨天晚上设置的吃药闹钟状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个每天早上8点提醒吃降压药的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8点\", Content=\"吃降压药\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把明天早上7点的起床闹钟删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "确认是要删除明天早上7点关联\"起床\"的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，不要了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天早上7点\", Content=\"起床\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置的闹钟都被取消了，能恢复吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想恢复已删除的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是上周三的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"周三 10:00\", Content=\"会议\", RangeType=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下今天有哪些待办事项"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天所有待办事项吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，尤其是和客户相关的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"客户\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭所有未开启的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除所有未开启状态的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是那些还没设置时间的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我设置了多个重复闹钟，但好像只生效了一个，能查一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看所有重复类型的闹钟状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是每天早上6点的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上6点\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下上个月的会议记录"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看上个月所有会议相关的笔记吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是和项目进度相关的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"项目进度\", RangeType=\"上个月\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我设置了多个闹钟，但有些可能已经过期了，能清理下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除所有已过期的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全部清理"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我设置一个闹钟，每天早上七点提醒我起床"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想每天早上七点设置一个闹钟提醒起床吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还要响五分钟，别太吵"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"07:00\", Content=\"每天早上七点起床提醒\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天下午三点有个重要的会议，能帮我设个闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个明天下午三点的闹钟提醒会议吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，提前十分钟响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"14:50\", Content=\"明天下午三点重要会议提醒\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我早上总是忘记吃药，能帮我设置一个闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想在每天早上固定时间提醒您吃药吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是早上8点，而且要一直响到我看到为止"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您设置一个每天早上8点的吃药提醒闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8点\", Content=\"吃药\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的闹钟怎么又没响？是不是关掉了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前闹钟的状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是我昨天设的那个会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您检查一下昨天设置的会议提醒状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午3点\", Content=\"会议\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置了两个闹钟，现在想删掉其中一个"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除哪个闹钟呢？请告诉我具体时间和内容"
+            },
+            {
+                "role": "user",
+                "content": "那个上午10点的健身提醒，我记得是上周设的"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您删除上午10点的健身提醒闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"上午10点\", Content=\"健身\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近有好多过期的闹钟，能不能清理一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除所有已过期的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，那些已经失效的都不要了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您清理所有已过期的闹钟记录"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天设置的提醒好像没生效，能看看吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看某个特定提醒的状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "是下午2点的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查看下午2点的会议提醒状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午2点\", Content=\"会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删除今天所有的待办事项提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除今天所有待办事项的提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，那些还没完成的都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您删除今天所有待办事项的提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"今天\", Type=\"待办事项\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要一个提醒，每天早上7点叫我起床"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个每天早上7点的起床提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，而且要响到我起来为止"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您设置一个每天早上7点的起床提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上7点\", Content=\"起床\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我发现有些闹钟被误删了，能恢复吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想恢复被误删的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是上周的健身提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您恢复上周的健身提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"上午10点\", Content=\"健身\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天有很多事要做，能帮我整理下提醒吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天的所有提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，尤其是会议和待办事项"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您查看今天的所有会议和待办事项提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"今天\", Type=\"待办事项, 会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要一个提醒，在每天晚上10点提醒我关灯"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个每天晚上10点的关灯提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，而且要持续响到我看到为止"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您设置一个每天晚上10点的关灯提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"晚上10点\", Content=\"关灯\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置的提醒都被关闭了，能重新开启吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新开启某些被关闭的提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是会议和日程相关的"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您重新开启会议和日程相关的提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(State=\"已关闭\", Content=\"会议, 日程\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要一个提醒，每天早上6点叫我起床"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个每天早上6点的起床提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，而且要响到我起来为止"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您设置一个每天早上6点的起床提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上6点\", Content=\"起床\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设置的闹钟全被取消了，能恢复吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想恢复被取消的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是工作日的早间提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您恢复工作日的早间提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"工作日\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要一个提醒，在每天下午5点提醒我下班"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个每天下午5点的下班提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，而且要响到我看到为止"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您设置一个每天下午5点的下班提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午5点\", Content=\"下班\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要一个提醒，在每天早上8点提醒我喝咖啡"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个每天早上8点的喝咖啡提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，而且要响到我看到为止"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您设置一个每天早上8点的喝咖啡提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8点\", Content=\"喝咖啡\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上八点我要起床，能帮我设置个闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"07:55\", Content=\"明天早上起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要每天早上七点准时上班，帮我设置一个重复闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"06:55\", Content=\"每天早上上班\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我晚上十点要睡觉，帮我设置个闹钟提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"21:55\", Content=\"晚上睡觉\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我明天早上九点有一个会议，能帮我设个提前十分钟的闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"08:50\", Content=\"明天早上会议\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要每天早上七点半起床，帮我设置一个闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"07:25\", Content=\"每天早上起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看今天有哪些闹钟没？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天的所有闹钟对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，还有哪些是开着的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"今天\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天设了一个下午3点的会议提醒，现在找不到了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想找昨天下午3点的会议提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我记得有这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午3点\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的闹钟怎么突然全关了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是发现所有闹钟都被关闭了吗？"
+            },
+            {
+                "role": "user",
+                "content": "是啊，我还没来得及看呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(State=\"已关闭\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我删掉明天早上6点的起床闹钟吧"
+            },
+            {
+                "role": "assistant",
+                "content": "确认是要删除明天早上6点的起床闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "没错，就是那个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"明天早上6点\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近设置了好多闹钟，能不能都删掉？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除所有闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我都用不着了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"全部\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天设置的提醒怎么没响啊？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是说昨天设置的某个提醒没有响起对吗？请问是什么内容的提醒呢？"
+            },
+            {
+                "role": "user",
+                "content": "是关于‘项目汇报’的，我记得是上午10点的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"上午10点\", Content=\"项目汇报\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我删掉所有明天的闹钟吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要删除所有明天设定的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全部都删"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天早上8点的闹钟是不是开了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天早上8点的闹钟状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看有没有开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设的‘起床’闹钟太吵了，能调小点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想调整‘起床’闹钟的音量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，调低点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我删除所有已过期的提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要删除所有已过期的提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看今天有哪些闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天所有的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，都列出来"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我设置了‘健身提醒’，但好像没响"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看‘健身提醒’的状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看是不是开了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Content=\"健身提醒\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "删除所有‘重复’的闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要删除所有重复类型的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，都删"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要设置一个早上7点的闹钟，提醒我起床"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个早上7点的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，每天都要响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"07:00\", Content=\"早上起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天下午三点有个会议，帮我设个闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个明天下午三点的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，提前十分钟提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"14:50\", Content=\"明天下午三点会议提醒\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨晚睡得不好，能帮我设定一个早起的闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个较早的起床闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，早上六点半"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"06:30\", Content=\"早起\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天要早起去上班，能帮我设个闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个早上七点的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别太早，刚好够时间准备"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"07:00\", Content=\"上班提醒\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要去健身房锻炼，能帮我定个早上六点的闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个早上六点的闹钟去健身房吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，让我准时出发"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"06:00\", Content=\"去健身房\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我明天早上要开会，能帮我看看有没有设置闹钟吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查询明天的会议闹钟对吗？请问会议的具体时间是？"
+            },
+            {
+                "role": "user",
+                "content": "明早9点的，记得提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"明天9:00\", Content=\"会议\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近老是忘记吃药，能不能帮我查一下之前的提醒？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看已设置的吃药提醒吗？请问具体是哪种药物？"
+            },
+            {
+                "role": "user",
+                "content": "就是每天早上8点的降压药"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上8:00\", Content=\"降压药\", RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前设了一个晚上10点的闹钟，现在好像没响，能查一下状态吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看晚上10点的闹钟状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"晚上10:00\", State=\"活跃\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想删掉所有今天上午的闹钟，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要删除今天上午的所有闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，都删了吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个下午3点的提醒太烦人了，能取消掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除下午3点的提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"下午3:00\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要设置一个闹钟，明天早上7点提醒我起床，能帮我做一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个明天早上7点的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别忘了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"07:00\", Content=\"起床\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要设置一个每天下午3点的提醒，去健身房锻炼，能帮我弄一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想设置一个每天下午3点的锻炼提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，重复设置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CreateAlarm(Time=\"15:00\", Content=\"去健身房锻炼\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天早上闹钟没响，能帮我看看是不是关了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看今天早上设置的闹钟状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是7点的那个起床闹钟"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"早上7点\", RangeType=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我删掉明天下午3点的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要删除明天下午3点的会议提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，那个会议取消了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(Time=\"下午3点\", RangeType=\"明天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我设置了一个提醒，但不知道是否生效，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前设置的提醒状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，是晚上10点的睡觉提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"晚上10点\", State=\"已开启\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我删除所有过期的闹钟，别让我再被吵醒"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除所有状态为已过期的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全都删掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(State=\"已过期\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天设置的提醒怎么没响？能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看昨天设置的提醒状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，是下午2点的会议提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"下午2点\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我删除所有重复的闹钟，太烦人了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除所有类型为重复的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，全都删"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"重复\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨天设置的闹钟为什么没响？能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看昨天设置的闹钟状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，是晚上10点的睡觉提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckAlarm(Time=\"晚上10点\", RangeType=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我删除所有工作日的闹钟，周末不用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想删除所有类型为工作日的闹钟吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，周末不要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>DeleteAlarm(RangeType=\"工作日\")</tool>"
+            }
+        ],
+        "level": "manageAlarms"
+    }
+]

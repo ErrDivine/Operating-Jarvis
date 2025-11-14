@@ -1,0 +1,2422 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉给张经理打个电话，用卡2，开启扬声器模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"钉钉\", Contact=\"张经理\", PhoneCard=\"卡2\", Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用 WhatsApp 拨打李总，使用主卡并设置为蓝牙模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"WhatsApp\", Contact=\"李总\", PhoneCard=\"主卡\", Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用微信给王总打电话，用副卡，设置为免提。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"副卡\", Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用短信给刘老师发个电话，号码是13800138000，用生活卡。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", PhoneNumber=\"13800138000\", PhoneCard=\"生活卡\", Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信联系陈主管，用工作卡，设置为耳机模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"企业微信\", Contact=\"陈主管\", PhoneCard=\"工作卡\", Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下赵总的联系方式，他在公司通讯录里。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"赵总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要找一下李老师的电话号码，他之前给我发过邮件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李老师\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下周总的联系方式，我记得他是市场部的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下孙经理的手机号码，他可能在项目群里。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"孙经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下吴总的联系电话，方便联系他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"吴总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接起这个电话，用蓝牙模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不接这个电话，用预设信息回复他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Mode=\"正常\", Response=\"正在开会\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "拒绝这个来电，发送‘稍后回电’的自动回复。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Mode=\"静音\", Response=\"稍后回电\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用耳机接听这个电话，不要用免提。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "直接挂断这个电话，不用回复。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用微信给张经理打个电话，用卡2，设置成扬声器模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", PhoneCard=\"卡2\", Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用QQ给李总打电话，用主卡，不要开免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"QQ\", PhoneCard=\"主卡\", Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想用短信给王老板发个电话，号码是13812345678，用副卡"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", PhoneNumber=\"13812345678\", PhoneCard=\"副卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用WhatsApp给Tom发个电话，用工作卡，设为蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"WhatsApp\", PhoneCard=\"工作卡\", Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用飞书给赵主管打电话，用卡1，开启免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"飞书\", PhoneCard=\"卡1\", Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下刘总的联系方式，我有事找他"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"刘总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看陈经理的电话号码，方便联系"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"陈经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下周总的手机号码，我需要给他发个信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要知道李总的联系方式，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我查看一下王总的联系信息，有重要事情要谈"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"王总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接一下这个电话，用耳机模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在有来电，用免提接听，别挂断"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个电话我暂时不想接，直接挂断吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用蓝牙模式接听这个电话，不要用免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在有人打电话来，我正在开会，用静音模式接听"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"静音\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用微信给张经理打个电话，用卡2，设置成蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"张经理\", PhoneCard=\"卡2\", Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用钉钉联系李总，用主卡，开免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"钉钉\", Contact=\"李总\", PhoneCard=\"主卡\", Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用短信给王阿姨发个电话，用副卡，设置为正常模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", Contact=\"王阿姨\", PhoneCard=\"副卡\", Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要通过WhatsApp给Tom打电话，使用工作卡并开启耳机模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"WhatsApp\", Contact=\"Tom\", PhoneCard=\"工作卡\", Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信给陈主任打个电话，用移动卡，设为扬声器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"企业微信\", Contact=\"陈主任\", PhoneCard=\"移动卡\", Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下赵总的联系方式，方便后续联系"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"赵总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下周老师的信息，他之前教过我编程"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周老师\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看一下刘总的电话号码，准备联系他"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"刘总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看李经理的联系方式，方便之后沟通"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查找一下吴总的联系电话，我们约好今天见面"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"吴总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接一下这个来电，用耳机模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用免提接听这个电话，我不方便拿手机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在有电话进来，直接挂断，不用接听"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接起来，用蓝牙模式，我正在开车"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "不要接这个电话，自动回复说我在开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Mode=\"正常\", Response=\"我在开会\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉给张经理打个电话，用主卡，开蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"钉钉\", Contact=\"张经理\", PhoneCard=\"主卡\", Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用WhatsApp和李阿姨视频通话，用卡2，不要声音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"WhatsApp\", Contact=\"李阿姨\", PhoneCard=\"卡2\", Mode=\"静音\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下刘总的联系方式，他在我们公司是销售部的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"刘总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想找一下李经理的手机号码，他是技术部的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下周总的电话号码，他在市场部"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要联系陈主任，他应该在行政部，帮我查他的信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"陈主任\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要找到张主管的联系方式，他在财务部"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"张主管\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我接到了一个电话，用免提模式接听"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "来电显示是陌生号码，我直接挂断，不用回复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有来电，我用耳机接听，别让对方听到我的声音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我看到一个未接来电，想用预设信息回复他，说我现在不方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Response=\"我现在不方便\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有电话进来，我用正常模式接听"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想打电话给李总，用的是工作卡，声音要开大一点。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", Contact=\"李总\", PhoneCard=\"工作卡\", Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用QQ打个电话给王老师，用副卡，别用耳机模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"QQ\", Contact=\"王老师\", PhoneCard=\"副卡\", Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要通过微信联系客户，用主卡，不要静音。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"客户\", PhoneCard=\"主卡\", Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想打个电话给赵主管，用蓝牙连接耳机，保持免提模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"赵主管\", Mode=\"蓝牙\", PhoneCard=\"主卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用飞书给我发个电话，用移动卡，设置成耳机模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"飞书\", Contact=\"同事\", PhoneCard=\"移动卡\", Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下陈总的联系方式，方便联系他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"陈总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查找一下周阿姨的电话号码，她是我家的保洁。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周阿姨\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要联系刘医生，麻烦帮我查一下他的联系方式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"刘医生\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看李经理的详细信息，方便后续沟通。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下孙阿姨的手机号码，她是我们家的保姆。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"孙阿姨\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "来电显示是王老板，我用免提接一下吧。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个电话我不接，直接挂断就行。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有人打电话来，我暂时不方便接听，先拒绝掉。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用蓝牙模式接听这个重要电话。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接通后用扬声器模式，让对方听清楚。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉给张经理打个电话，用卡2"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"钉钉\", Contact=\"张经理\", PhoneCard=\"卡2\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我在微信上联系李总，用蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"李总\", Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "拨打13912345678，使用主卡并开启免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(PhoneNumber=\"13912345678\", PhoneCard=\"主卡\", Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用短信给王总发个消息，内容是“会议改到下午三点”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", Contact=\"王总\", Content=\"会议改到下午三点\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过飞书给赵老师打电话，设置为耳机模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"飞书\", Contact=\"赵老师\", Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下张三的联系方式，我需要联系他"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"张三\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要查看一下李经理的电话号码"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我找到公司里王总的联系方式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"王总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要确认一下周总的手机号码"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我查一下陈老师的联系信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"陈老师\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接通这个来电，用扬声器模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不方便接听，直接挂断"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "拒绝来电，发送一条‘正在开会’的回复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Response=\"正在开会\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用耳机接听这个电话，不要开免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接听电话，使用正常模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打电话给赵老板，用我的工作卡，开免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", Contact=\"赵老板\", PhoneCard=\"工作卡\", Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信联系一下陈主任，他可能在忙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"企业微信\", Contact=\"陈主任\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用WhatsApp打给刘老师，号码是13912345678"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"WhatsApp\", PhoneNumber=\"13912345678\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "给李经理打个电话，使用副卡，不要声音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"李经理\", PhoneCard=\"副卡\", Mode=\"静音\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉给王主管打个电话，让他尽快回复邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"钉钉\", Contact=\"王主管\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下我的联系人列表，特别是张总的联系方式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"张总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我找一下王经理的手机号码？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"王经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下李总的联系方式，方便联系"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我查找一下周老师的邮箱地址"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周老师\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有张总的联系电话？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"张总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接一下这个电话，用蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不接电话，直接挂断"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用扬声器接听这个来电，别用耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "拒绝来电，并回复说正在开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Response=\"正在开会\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接听这个电话，用正常模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用微信给张经理打个电话，用主卡，开免提模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", PhoneCard=\"主卡\", Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用QQ联系李老师，麻烦帮我拨通他的号码。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"QQ\", Contact=\"李老师\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用我的工作卡拨打13812345678，是客户那边的王总。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(PhoneNumber=\"13812345678\", PhoneCard=\"工作卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想用飞书和陈主任视频通话，先确认一下他是否在线。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"飞书\", Contact=\"陈主任\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请用蓝牙模式接通刘总的电话，他现在在开车。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下赵总的联系方式，我需要联系他处理项目问题。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"赵总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查看一下周总的手机号码，方便后续沟通。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看下公司同事的联系信息，特别是销售部的王姐。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"王姐\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查找一下李经理的联系电话，有紧急的事情要问他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉给李经理打个电话，问一下项目进度。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"钉钉\", Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我通过微信给张总发个电话，用卡2，设置为蓝牙模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"张总\", PhoneCard=\"卡2\", Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用短信给王阿姨发个信息，告诉她明天下午三点在门口等她。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", Contact=\"王阿姨\", Content=\"明天下午三点在门口等她\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "拨打13912345678，用主卡，设为免提模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", PhoneNumber=\"13912345678\", PhoneCard=\"主卡\", Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用WhatsApp给Tom发个电话，让他尽快回复我。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"WhatsApp\", Contact=\"Tom\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下李经理的联系方式，我需要联系他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下张总的电话号码，方便联系他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"张总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查看一下王总的详细信息，包括他的手机号码。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"王总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我找一下赵主任的联系方式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"赵主任\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我查询一下周老师的信息，包括他的邮箱地址。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周老师\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接通这个来电，用耳机模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "拒绝这个电话，并发送‘正在开会’的自动回复。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Response=\"正在开会\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "接听这个电话，使用扬声器模式。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "挂断这个来电，不接听。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用免提模式接听这个电话，别挂断。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用微信给张经理打个电话，他应该在忙，别用扬声器。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"张经理\", Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用微信给张经理打个电话，用卡2，别开免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"张经理\", PhoneCard=\"卡2\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用QQ和李总视频通话，用主卡，模式设为扬声器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"QQ\", Contact=\"李总\", PhoneCard=\"主卡\", Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我拨打13912345678，用电信卡，设置为蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(PhoneNumber=\"13912345678\", PhoneCard=\"电信卡\", Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想给王主任发个短信，内容是明天上午十点开会，用副卡"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", PhoneNumber=\"13912345678\", PhoneCard=\"副卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我通过飞书联系赵总监，用工作卡，不要用免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"飞书\", Contact=\"赵总监\", PhoneCard=\"工作卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下刘总的联系方式，方便联系他"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"刘总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我找一下公司财务部的张姐，她的电话是多少？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"张姐\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要找客户陈先生的联系方式，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"陈先生\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "麻烦查一下李经理的手机号码，我需要联系他"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看周阿姨的电话号码，她是我妈妈的朋友"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"周阿姨\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在正在开会，不能接电话，直接挂断"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用耳机接听这个电话，别用免提"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不方便接电话，帮我发送一个‘稍后回电’的回复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Response=\"稍后回电\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "来电显示是陌生号码，直接拒绝并发送‘正在开会’的回复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Response=\"正在开会\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用蓝牙模式接听这个电话，别用扬声器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉给张经理打个电话，他可能有重要的事情找我。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"钉钉\", Contact=\"张经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用短信联系一下李老师，告诉他今天课程改时间了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", Contact=\"李老师\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用WhatsApp给Tom发个语音，问他明天能不能一起吃饭。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"WhatsApp\", Contact=\"Tom\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用蓝牙模式接电话，我现在正在开车。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不能接电话，直接转到语音信箱。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下王总的手机号码，我需要联系他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"王总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看一下赵老师的联系方式，方便之后联系。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"赵老师\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看一下张总的号码，我之前加过他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"张总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查找一下李经理的联系方式，我需要给他发个消息。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看刘总的电话号码是多少，我需要联系他。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"刘总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用微信给李经理打个电话，用蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "需要指定使用哪张手机卡吗？"
+            },
+            {
+                "role": "user",
+                "content": "主卡就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"李经理\", Mode=\"蓝牙\", PhoneCard=\"主卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查下王总的联系方式，方便的话发我一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要查询联系人\"王总\"的电话号码吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是上周开会的那个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"王总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "刚才有个电话响了，帮我接起来用免提"
+            },
+            {
+                "role": "assistant",
+                "content": "是否需要发送预设回复消息？"
+            },
+            {
+                "role": "user",
+                "content": "不用，直接接听"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在开车，突然来了个电话，能帮我切换到蓝牙音箱接听吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "确认要用蓝牙模式接听吗？"
+            },
+            {
+                "role": "user",
+                "content": "是的，用蓝牙"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机卡掉了，能帮我用副卡打个电话给客服吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "需要指定使用哪个应用程序打电话？"
+            },
+            {
+                "role": "user",
+                "content": "用短信应用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", PhoneCard=\"副卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要打电话给李经理，能帮我用企业微信打个电话吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想用企业微信拨打李经理的电话吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，用主卡打，别用副卡"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"企业微信\", Contact=\"李经理\", PhoneCard=\"主卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用微信打个电话给张总，用免提模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"张总\", Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要用QQ给王经理发个电话，用耳机模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"QQ\", Contact=\"王经理\", Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用短信给李老师发个电话，用主卡"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", Contact=\"李老师\", PhoneCard=\"主卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用飞书给客户发个电话，用蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"飞书\", Contact=\"客户\", Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要给陈主任打个电话，用副卡"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"微信\", Contact=\"陈主任\", PhoneCard=\"副卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用WhatsApp联系小刘，用正常模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"WhatsApp\", Contact=\"小刘\", Mode=\"正常\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要用企业微信给赵主管打电话，用扬声器"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"企业微信\", Contact=\"赵主管\", Mode=\"扬声器\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用钉钉给周经理打个电话，用工作卡"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"钉钉\", Contact=\"周经理\", PhoneCard=\"工作卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要用短信给客户发个电话，用生活卡"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\", Contact=\"客户\", PhoneCard=\"生活卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下李总的联系方式，能帮我找一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"李总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下张经理的电话号码，我需要联系他"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"张经理\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看王总的邮箱地址，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"王总\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要查找一下陈主任的联系方式，能帮我看看吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckContact(Contact=\"陈主任\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要接听一个来电，用免提模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"免提\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有个电话进来了，我不能接，帮我拒掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要接听一个电话，用蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电话响了，我正在开车，帮我拒接并回复‘正在驾驶’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False, Response=\"正在驾驶\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有人打电话进来，我需要接听，用耳机模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"耳机\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我朋友让我用微信给他打电话，但我想用短信，能帮我切换吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想使用短信功能拨打电话吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，用短信方式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"短信\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用企业微信给客户发个电话，能帮我调用一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想使用企业微信拨打电话吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，用主卡打"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Call(AppName=\"企业微信\", PhoneCard=\"主卡\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚收到一个陌生号码的来电，能帮我拒接吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想拒绝接听这个来电吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，直接挂断"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=False)</tool>"
+            }
+        ],
+        "level": "placeCall"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在开车，有电话进来，能帮我用蓝牙接听吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想通过蓝牙接听来电吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，用蓝牙模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>AnswerCall(ActionType=True, Mode=\"蓝牙\")</tool>"
+            }
+        ],
+        "level": "placeCall"
+    }
+]

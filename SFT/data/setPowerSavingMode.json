@@ -1,0 +1,878 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开启省电模式，不然电池撑不到晚上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量太低了，能帮我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我觉得手机耗电太快了，能帮我打开省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我不需要用那么高的性能，能关闭省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚打开省电模式，感觉手机运行有点慢，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天电量不够，能帮我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量不够用了，帮我开启省电模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚充完电，可以关闭省电模式了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在手机有点发热，是不是因为省电模式没开？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上睡觉的时候最好开启省电模式，帮我设置一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量太低了，能帮我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在电量还行，不用开省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启省电模式，这样电池能多撑一会儿"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天电量消耗太快了，能让我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "省电模式关掉吧，我现在不需要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "省电模式好像没开，能帮我启动一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机经常没电，能设置成自动省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天电量只剩20%了，快没电了，能不能开启省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天刚关了省电模式，现在感觉手机运行慢了，能不能再打开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚打开省电模式，现在感觉手机很卡，能不能关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机电量只剩10%了，能帮我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚用了很久的手机，现在想关掉省电模式恢复正常使用。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量快没了，帮我开启省电模式，等会儿再充。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不需要省电模式了，恢复正常的使用状态。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量还剩20%，能帮我开启省电模式吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天电量只剩15%了，开启省电模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开省电模式，这样手机能多用一会儿"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要省电模式，把它关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启省电模式，电池快没电了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要打开省电模式来延长续航时间"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭省电模式，我不需要这个功能了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量快没了，开启省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "离回家还有一段时间，打开省电模式，防止没电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要延长续航时间，启动节能模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关掉省电模式，我不需要优化"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电量太低了，充电宝也没带，帮我开启省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我感觉手机不太省电，能帮我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电量快没了，能帮我打开省电模式节省一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚关闭了省电模式，现在想恢复正常使用，能帮我打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "早上起来发现省电模式开着，能帮我关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=False)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机电池掉得很快，能帮我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启省电模式来延长续航吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要节省电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了，帮我弄下省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近感觉手机很费电，能帮我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启省电模式来延长续航吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要节省电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近感觉手机很费电，能帮我开启省电模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启省电模式来延长续航吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要节省电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了，帮我弄下省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了，帮我弄下省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了，帮我弄下省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了，帮我弄下省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开启省电模式，不然手机太耗电了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的省电模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在电量只剩20%了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机又没电了，能帮我打开省电模式吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式来延长续航吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这手机没电了，能帮我打开省电模式吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式来延长续航吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这手机没电了，能帮我打开省电模式吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式来延长续航吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这手机没电了，能帮我打开省电模式吗"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式来延长续航吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了，帮我弄下省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了，帮我弄下省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机快没电了，帮我弄下省电模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是需要开启省电模式对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶紧开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>BatterySavingMode(ActionType=True)</tool>"
+            }
+        ],
+        "level": "setPowerSavingMode"
+    }
+]

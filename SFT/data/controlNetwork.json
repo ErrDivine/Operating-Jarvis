@@ -1,0 +1,2687 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我关闭手机的热点功能，我不想分享流量了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在WiFi信号不太好，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚关了移动数据，现在想重新打开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看周围有什么WiFi可以连接"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想关掉热点，这样别人就无法连接我的网络了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在WiFi信号很弱，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让手机的热点一直开着，太费电了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想关闭移动数据，防止流量超支"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把WiFi打开，我需要下载一些文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在的网络很慢，能关掉WiFi，换4G试试吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚关了WiFi，现在想重新开启，方便我上网"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能帮我看看附近有哪些WiFi热点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个WiFi，但不知道密码，能帮我搜索一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我把移动数据关了，现在想用WiFi，能帮我打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要打开移动数据，这样就能在没有WiFi的地方上网"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "流量快用完了，赶紧关掉移动数据，别再用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天用了很多流量，能帮我检查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我不想用移动数据，还是用WiFi吧，能帮我关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想打开热点，朋友要借我流量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别开热点了，我现在不想分享我的网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开热点，让同事连上我的网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "热点已经开了，但没人连，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想暂时关闭热点，等下再开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把WiFi关掉吧，我现在不想用网络，想省点电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "周围有好多WiFi信号，能帮我看看哪些是可用的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在要出门，别让我用移动数据了，把它关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开热点，朋友需要借我的流量上网"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "WiFi信号太弱了，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了房子，想看看周围有没有可用的WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让WiFi一直开着，我现在用的是流量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我朋友说他家的WiFi信号很好，能帮我看看有没有这个网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天的网速特别慢，可能WiFi有问题吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "移动数据快用完了，能帮我关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在用的是流量，别让WiFi自动连上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了个套餐，能帮我打开移动数据吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "流量用了好多，赶紧关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天用了不少流量，别让移动数据继续用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开热点，朋友需要联网"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让热点一直开着，浪费电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我朋友要借用我的热点，能帮他连一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "热点好像没开，能再检查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让热点一直开着，我电池快没了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天想用WiFi，但好像没开，帮忙打开吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个房间的WiFi信号不好，能帮我搜索一下其他可用网络吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "移动数据太费了，我打算关掉，别让我多花钱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我朋友要借我流量，能开启热点让他用吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近几天的流量消耗特别快，能帮我关掉移动数据吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要分享热点给同事，能先打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前打开了热点，现在不需要了，能关闭吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天晚上想看视频，但WiFi信号不好，能不能把热点开一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才不小心打开了WLAN，现在不想用，赶紧关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要搜索一下附近的无线网络，看看有没有可用的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在咖啡馆，想用移动数据上网，不要用WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚关闭了热点，现在朋友要用，能重新打开吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天想用移动数据上网，别用WiFi，能帮我切换一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚打开WLAN，但现在没有信号，能不能关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查找一下周围的WiFi网络，看看有没有可用的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开WiFi，我需要下载一些文件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才没找到可用的WiFi网络，能帮我重新扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机流量快用完了，麻烦把移动数据关掉。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "朋友需要借我的热点，能帮我开启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要去开会了，先关闭热点避免别人连上。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在要出去玩，把WiFi打开方便导航。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚进家门，想连接家里的WiFi网络。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让移动数据在后台偷偷消耗流量，把它关掉吧。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我朋友说他的手机无法连接我的热点，可能是哪里出错了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不用热点了，把它关闭以免浪费电量。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天晚上开个蓝牙热点，让朋友也能用我的网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我关闭手机上的WLAN，我现在要省点流量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想找找周围有没有可用的WiFi信号"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "移动数据太费了，还是用WiFi吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天流量快用完了，赶紧关掉移动数据"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让手机自动连接其他WiFi了，我只想用家里那个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我关闭热点，朋友已经用完我的流量了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不要用WiFi了，切换到移动数据吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭一下热点，朋友已经用完了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机热点打开，我需要分享网络给同事"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天WiFi好像不太稳定，能重新扫描一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接一个WiFi，能帮我找找附近有哪些可用的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "刚才没找到合适的WiFi，再扫一次看看有没有新出现的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把移动数据关掉，我现在在用WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机流量快用完了，赶紧关掉移动数据吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开移动数据，我要下载一些文件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把WLAN打开，我需要连接家里的网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不用WiFi了，把它关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "WiFi信号不好，能重新搜索一下附近网络吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要连接一个新WiFi，帮我扫描一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "周围好像有好几个WiFi，能让我看看有哪些可选的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要连接公司WiFi，帮忙找一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "怎么又断开了，再搜索一下周围的WiFi"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "移动数据太贵了，帮我关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "流量快用完了，赶紧把移动数据关了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在地铁上，不需要移动数据，关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了套餐，把移动数据打开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "流量使用异常，帮我关掉移动数据"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "热点功能怎么关？朋友已经不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要分享网络，帮我打开热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "朋友说我的热点没开，检查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "不要开热点了，太耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "朋友需要连我的热点，帮我开启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我把WiFi关了，现在要出去玩，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "家里网络有点慢，能帮我重新扫描一下周围的WiFi吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才关闭了移动数据，现在需要下载大文件，能重新打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "朋友要用我的流量，能帮他打开热点功能吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在咖啡馆，想分享我的网络，能打开热点吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天开会时WiFi信号特别差，能帮我打开一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新开启WLAN功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要上网"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我找不到附近的WiFi，能帮我扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描周围的无线网络"
+            },
+            {
+                "role": "user",
+                "content": "快点，我急着用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在没有WiFi，能帮我开移动数据吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的移动数据流量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要联网"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的热点被别人用了，能帮我关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不需要分享网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这屋里WiFi信号好差啊，帮我看看怎么回事"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望我帮您重新打开WLAN功能吗？当前检测到您的WiFi是关闭状态"
+            },
+            {
+                "role": "user",
+                "content": "对对对，赶快打开吧，急着用呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这里的WiFi信号好差，帮我看看附近还有什么网络能用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我扫描周围的无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶快查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想上网但是没WiFi了，帮我弄下移动网络吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望开启手机的移动数据流量功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，开蜂窝数据就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "哎哟手机没网了，你能帮我把热点打开吗？我急着传个文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是需要开启手机的WiFi热点功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要关闭手机的热点功能，能帮我操作一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不需要分享网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天出门的时候发现手机的WiFi没开，能帮我打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新开启WLAN功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要连接附近的网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我找不到可用的WiFi，能帮我扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描周围的无线网络"
+            },
+            {
+                "role": "user",
+                "content": "快点，我急着用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天用了很多数据，能帮我关闭移动数据吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的移动数据流量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要节省流量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在办公室，但找不到可用的WiFi，能帮我扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描周围的无线网络"
+            },
+            {
+                "role": "user",
+                "content": "快点，我急着用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要关闭手机的热点功能，能帮我操作一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不需要分享网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天出门的时候发现手机的WiFi没开，能帮我打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新开启WLAN功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要连接附近的网络"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我找不到可用的WiFi，能帮我扫描一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您扫描周围的无线网络"
+            },
+            {
+                "role": "user",
+                "content": "快点，我急着用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天用了很多数据，能帮我关闭移动数据吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的移动数据流量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我需要节省流量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这屋里WiFi信号好差啊，帮我看看怎么回事"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望我帮您重新打开WLAN功能吗？当前检测到您的WiFi是关闭状态"
+            },
+            {
+                "role": "user",
+                "content": "对对对，赶快打开吧，急着用呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这里的WiFi信号好差，帮我看看附近还有什么网络能用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我扫描周围的无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶快查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想上网但是没WiFi了，帮我弄下移动网络吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望开启手机的移动数据流量功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，开蜂窝数据就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "哎哟手机没网了，你能帮我把热点打开吗？我急着传个文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是需要开启手机的WiFi热点功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这屋里WiFi信号好差啊，帮我看看怎么回事"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望我帮您重新打开WLAN功能吗？当前检测到您的WiFi是关闭状态"
+            },
+            {
+                "role": "user",
+                "content": "对对对，赶快打开吧，急着用呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这里的WiFi信号好差，帮我看看附近还有什么网络能用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我扫描周围的无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶快查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想上网但是没WiFi了，帮我弄下移动网络吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望开启手机的移动数据流量功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，开蜂窝数据就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "哎哟手机没网了，你能帮我把热点打开吗？我急着传个文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是需要开启手机的WiFi热点功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这屋里WiFi信号好差啊，帮我看看怎么回事"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望我帮您重新打开WLAN功能吗？当前检测到您的WiFi是关闭状态"
+            },
+            {
+                "role": "user",
+                "content": "对对对，赶快打开吧，急着用呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这里的WiFi信号好差，帮我看看附近还有什么网络能用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我扫描周围的无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶快查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想上网但是没WiFi了，帮我弄下移动网络吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望开启手机的移动数据流量功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，开蜂窝数据就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "哎哟手机没网了，你能帮我把热点打开吗？我急着传个文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是需要开启手机的WiFi热点功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这屋里WiFi信号好差啊，帮我看看怎么回事"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望我帮您重新打开WLAN功能吗？当前检测到您的WiFi是关闭状态"
+            },
+            {
+                "role": "user",
+                "content": "对对对，赶快打开吧，急着用呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这里的WiFi信号好差，帮我看看附近还有什么网络能用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我扫描周围的无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶快查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想上网但是没WiFi了，帮我弄下移动网络吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望开启手机的移动数据流量功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，开蜂窝数据就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "哎哟手机没网了，你能帮我把热点打开吗？我急着传个文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是需要开启手机的WiFi热点功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开热点分享网络给朋友，能帮我打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的WiFi热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个个人热点，快点弄吧"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，马上为您开启热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这会儿信号不好，能帮我打开WLAN吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新启用无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在急着用网"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启WLAN功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才不小心关掉了移动数据，能再打开吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重新启用手机的移动数据功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在要下载文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启移动数据"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天用了很久的WLAN，能帮我关掉省点电吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭无线网络以节省电量吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不用网了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭WLAN"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚用了热点，现在想关掉它，能帮我操作吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，不用了，怕费流量"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚用完移动数据，能帮我关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的移动数据功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，不想再用流量了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭移动数据"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚用完热点，现在想关掉它，能帮我吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭WLAN，现在不用网了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在不联网"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭WLAN"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开启热点，这样朋友就能连我的网了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在就开"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开启移动数据，这样就能上网了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的移动数据功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在要下载文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启移动数据"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭热点，现在不用分享网络了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要开启WLAN，这样就能上网了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，我现在要下载文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启WLAN"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要关闭移动数据，现在不用流量了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的移动数据功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，不想再用流量了"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭移动数据"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机的热点开起来，这样就能让别人连我的网了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的WiFi热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就这个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您开启热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机的热点关掉，这样别人就不能连我的网了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的WiFi热点功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，我帮您关闭热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这屋里WiFi信号好差啊，帮我看看怎么回事"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望我帮您重新打开WLAN功能吗？当前检测到您的WiFi是关闭状态"
+            },
+            {
+                "role": "user",
+                "content": "对对对，赶快打开吧，急着用呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这里的WiFi信号好差，帮我看看附近还有什么网络能用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我扫描周围的无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶快查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想上网但是没WiFi了，帮我弄下移动网络吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望开启手机的移动数据流量功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，开蜂窝数据就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "哎哟手机没网了，你能帮我把热点打开吗？我急着传个文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是需要开启手机的WiFi热点功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这屋里WiFi信号好差啊，帮我看看怎么回事"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望我帮您重新打开WLAN功能吗？当前检测到您的WiFi是关闭状态"
+            },
+            {
+                "role": "user",
+                "content": "对对对，赶快打开吧，急着用呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这里的WiFi信号好差，帮我看看附近还有什么网络能用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我扫描周围的无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶快查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想上网但是没WiFi了，帮我弄下移动网络吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望开启手机的移动数据流量功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，开蜂窝数据就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "哎哟手机没网了，你能帮我把热点打开吗？我急着传个文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是需要开启手机的WiFi热点功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这屋里WiFi信号好差啊，帮我看看怎么回事"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望我帮您重新打开WLAN功能吗？当前检测到您的WiFi是关闭状态"
+            },
+            {
+                "role": "user",
+                "content": "对对对，赶快打开吧，急着用呢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>WlanOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这里的WiFi信号好差，帮我看看附近还有什么网络能用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让我扫描周围的无线网络吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，赶快查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SearchWlan()</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想上网但是没WiFi了，帮我弄下移动网络吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是希望开启手机的移动数据流量功能吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，开蜂窝数据就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>MobileDataOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "哎哟手机没网了，你能帮我把热点打开吗？我急着传个文件"
+            },
+            {
+                "role": "assistant",
+                "content": "好的，您是需要开启手机的WiFi热点功能对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对对，就是那个个人热点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>HotShotOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "controlNetwork"
+    }
+]

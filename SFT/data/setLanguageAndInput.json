@@ -1,0 +1,3847 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下现在用的输入法是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近换了输入法，现在想确认一下是否生效"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看输入法的状态是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "有没有办法查看当前输入法的设置信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的输入法是哪个？麻烦确认一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的输入法换成搜狗输入法，打字更快"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在浏览器里切换成百度输入法，适应一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"百度输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统默认输入法改成讯飞输入法，语音识别更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"讯飞输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在记事本里临时切换成拼音输入法试试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"记事本\", InputMethodName=\"拼音输入法\", ActionType=\"临时切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ里的输入法换成谷歌输入法，支持多语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"QQ\", InputMethodName=\"谷歌输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言改成英文，朋友看不懂中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统语言调成日文，体验一下外文界面"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"日文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译应用的语言换成法语，学习一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"法语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的语言设置成德语，看看效果"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"德语\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把游戏语言换成西班牙语，尝试新体验"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"西班牙语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的输入法是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近换了输入法，能帮我确认一下是否生效吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要检查一下当前系统用的输入法是不是搜狗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看输入法设置里有没有其他可用的选项"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能确认一下我的输入法是不是已经切换好了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的输入法切换成讯飞输入法，打字更快"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"讯飞输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在浏览器里换一个输入法，试试百度的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"百度输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统默认的输入法改成拼音输入法，方便使用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"拼音输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ里的输入法换成谷歌输入法，体验一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"QQ\", InputMethodName=\"谷歌输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把邮件应用的输入法设为手写输入法，更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"邮件\", InputMethodName=\"手写输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言改成英文，和朋友交流更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统语言设置成日语，想练习一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"日语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译软件的语言换成德语，测试一下效果"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"德语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的语言改回中文，我看不懂其他语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"中文\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把游戏的语言设置成西班牙语，体验一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"西班牙语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下当前使用的输入法是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道现在用的是哪个输入法，能不能改一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要检查一下输入法设置，看看有没有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我确认一下现在使用的是哪个输入法，可能要换一个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近在用不同的输入法，想确认一下当前用的是哪一个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的输入法换成搜狗输入法，打字更顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在浏览器里想切换成百度输入法，方便输入中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"百度输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统默认输入法改成讯飞输入法，适合语音输入"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"讯飞输入法\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "临时切换一下输入法，用语音输入法试试看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"全局\", InputMethodName=\"语音输入法\", ActionType=\"临时切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把当前应用的输入法换成九宫格输入法，适应拼音输入"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"当前应用\", InputMethodName=\"九宫格输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言改成英文，让外国朋友也能看懂"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把浏览器的语言设置成日文，方便学习"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"日文\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统语言改成韩文，适应新的工作环境"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"韩文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译软件的语言换成德语，方便沟通"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"德语\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法的语言设置成阿拉伯语，方便和客户交流"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"阿拉伯语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的是哪个输入法，换一个试试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近在用其他输入法，想确认一下有没有切换成功"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下当前系统使用的输入法是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是拼音输入法，想换成手写输入法试试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(InputMethodName=\"手写输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的输入法换成搜狗输入法，打字更快"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统语言改成英文，方便和外国朋友交流"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(LanguageType=\"英文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把浏览器的语言设置成日语，看看效果如何"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"日语\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译应用的语言换成德语，帮助学习"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"德语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法的语言设置成韩语，日常使用需要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"韩语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把游戏的语言改成西班牙语，体验一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"西班牙语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的输入法是什么，是不是搜狗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前换过输入法，现在想确认一下是不是还在用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能帮我检查一下当前的输入法设置？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道现在用的是不是谷歌输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的输入法好像出问题了，能帮我看看是什么输入法吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的输入法换成讯飞输入法吧，我更习惯用它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"讯飞输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用英文输入法来打字，麻烦帮我切换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"全局\", InputMethodName=\"英文输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统默认的输入法换成百度输入法，这样更顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"百度输入法\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在使用记事本时，想临时切换成拼音输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"记事本\", InputMethodName=\"拼音输入法\", ActionType=\"临时切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把支付宝的输入法换成五笔输入法，我更喜欢这种打字方式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"支付宝\", InputMethodName=\"五笔输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言设置改成英文，这样和朋友交流更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把系统语言切换成日语，这样学习更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"日语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的语言改成西班牙语，这样能更好地理解相关内容"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"西班牙语\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把输入法的语言换成韩语，这样能练习韩语"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"韩语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把游戏的语言设置为德语，体验不同的语言环境"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"德语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的输入法是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近换了输入法，能确认一下是否成功了吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在用的输入法是不是拼音输入法？我有点记不清了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请检查一下当前输入法的状态是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看当前输入法的设置信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的输入法切换成搜狗输入法，打字更顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在浏览器里切换成百度输入法，更适合我输入文字"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"百度输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统输入法换成讯飞输入法，语音识别更好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"讯飞输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把QQ里的输入法改回系统自带的，不用其他输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"QQ\", InputMethodName=\"系统输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在记事本里临时切换成手写输入法，试试看效果"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"记事本\", InputMethodName=\"手写输入法\", ActionType=\"临时切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言设置成英文，朋友看不懂中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统语言改成日语，体验一下不同的界面"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"日语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的语言换成西班牙语，方便学习"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"西班牙语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译应用的语言调成德语，测试一下功能"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"德语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法的语言改成韩语，尝试一下多语言支持"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"韩语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下现在的输入法是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是哪个输入法？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能告诉我当前的输入法设置吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的输入法是不是拼音输入法？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下输入法的状态是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的输入法换成搜狗输入法，打字更快"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在浏览器里切换成百度输入法，更顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"百度输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统默认输入法改成讯飞输入法，语音识别好"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"讯飞输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "暂时切换到手写输入法，试试看"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"当前应用\", InputMethodName=\"手写输入法\", ActionType=\"临时切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把邮件应用的输入法换为谷歌输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"邮件\", InputMethodName=\"谷歌输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言改成英文，朋友看不懂中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统语言设置成日语，学习用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"日语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的语言切换成西班牙语"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"西班牙语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译软件的语言改为德语，方便交流"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"德语\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把游戏的语言设置成韩语，体验更真实"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"韩语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的是哪个输入法，有点奇怪"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下当前的输入法设置是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "可以帮我查一下输入法的状态吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在用的输入法是谷歌输入法吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要切换到讯飞输入法，打字更快些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(InputMethodName=\"讯飞输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在微信里切换成百度输入法，感觉更顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统输入法换成拼音输入法，适应一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"拼音输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把浏览器的输入法设为手写输入法，方便写字"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"手写输入法\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把当前应用的输入法换成语音输入法，节省时间"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"当前应用\", InputMethodName=\"语音输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的语言切换成英文，和朋友交流方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"英文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言改成日文，跟日本朋友聊天用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"日文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的语言设置为德语，测试一下效果"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"德语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译软件的语言改为西班牙语，方便使用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"西班牙语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把输入法的语言改成韩语，练习一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"韩语\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的什么输入法，好像不是搜狗的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道当前系统使用的是哪个输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下输入法设置，是不是有误配置"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是手写输入法吗？麻烦确认一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想切换输入法，现在这个不太顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信里的输入法换成搜狗输入法，打字更快"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的输入法改一下，用拼音输入法更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"拼音输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统默认的输入法换成讯飞输入法，体验一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"讯飞输入法\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "临时切换一下输入法，我现在要输入英文"
+            },
+            {
+                "role": "user",
+                "content": "把输入法暂时换成英文输入法吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"当前应用\", InputMethodName=\"英文输入法\", ActionType=\"临时切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把记事本的输入法换成五笔输入法，效率更高"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"记事本\", InputMethodName=\"五笔输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言改成英文，这样和朋友聊天更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统语言换成日语，我最近在学日语"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"日语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译软件的语言改成德语，这样练习更有效"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"德语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的语言设置为西班牙语，体验一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"西班牙语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把游戏的语言换成俄语，感受不同的文化"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"俄语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看当前使用的是哪个输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我确认一下现在用的输入法是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近换了输入法，能查一下现在用的是哪一个吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统里的输入法设置有什么问题吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要切换输入法，现在用的是搜狗，换成百度"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"百度输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在微信里切换成讯飞输入法，打字更快"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"讯飞输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的输入法改成拼音输入法，更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"拼音输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统里的输入法改成谷歌输入法，体验一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"谷歌输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的输入法设为手写输入法，适合写字"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"手写输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的语言改成英文，和朋友交流方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"英文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的语言换成日文，我朋友是日本人"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"微信\", LanguageType=\"日文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统语言还是中文吧，我习惯了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把浏览器的语言改成西班牙语，学习用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\", LanguageType=\"西班牙语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把翻译软件的语言设为俄语，方便沟通"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"俄语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "输入法怎么又切换回拼音了？能不能换回搜狗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"搜狗输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在写邮件的时候，输入法总是乱跳，能不能固定成微软的？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"邮件\", InputMethodName=\"微软输入法\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把微信的输入法换成手写输入法，我写字更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"手写输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "当前应用的输入法是谷歌的，我想换成百度的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"当前应用\", InputMethodName=\"百度输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把系统语言改成英文，这样和朋友交流更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"英文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的翻译软件还是中文，能不能换成日文？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"日语\", ActionType=\"更改\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"西班牙语\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "输入法的语言好像还是中文，把它改成韩文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"韩语\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要临时切换成俄语，之后再改回来"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"全局\", LanguageType=\"俄语\", ActionType=\"临时切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的是什么输入法？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前正在使用的输入法类型吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，我想知道现在打字的键盘是哪个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是哪个输入法？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前使用的输入法名称吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下现在用的是什么输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前使用的输入法名称吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚切换了输入法，能帮我确认一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前使用的输入法名称吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近换了输入法，能帮我确认一下现在用的是哪个？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前使用的输入法名称吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在微信里打字总弹出来百度输入法，能不能帮我换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信应用中的输入法从百度输入法永久切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在浏览器里用的是谷歌输入法，能帮我换成微软的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器中的输入法从谷歌输入法切换到微软输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"微软输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前用的是拼音输入法，现在想换成手写输入法，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将当前应用中的输入法从拼音输入法切换到手写输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"当前应用\", InputMethodName=\"手写输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才在记事本里用的是英文输入法，能帮我换成中文的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将记事本中的输入法从英文输入法切换到中文输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"记事本\", InputMethodName=\"拼音输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近在使用语音输入法，想换成数字输入法，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将当前应用中的输入法从语音输入法切换到数字输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"当前应用\", InputMethodName=\"数字输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我玩的游戏全是英文看不懂啊，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在看一部英文电影，字幕太难懂了，能帮我改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将这部电影的字幕语言从英文切换为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"电影\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个翻译软件的语言是英文，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将翻译软件的语言从英文切换为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚切换了输入法语言，能帮我确认一下是中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法的语言设置吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在用的系统语言是英文，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统语言从英文切换为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看现在用的是什么输入法？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前正在使用的输入法类型吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，我想知道现在打字的键盘是哪个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近经常用不到输入法，能帮我查下现在用的是什么吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前正在使用的输入法类型吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，想知道现在用的是哪个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚换了输入法，能帮我看看是不是生效了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前正在使用的输入法类型吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，确认一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近总用错输入法，能帮我查一下现在用的是哪个？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前正在使用的输入法类型吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，确认一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想知道现在用的输入法是什么，能查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想确认当前正在使用的输入法类型吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，查一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在微信里打字老是弹出百度输入法，能不能帮我换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信应用中的输入法从百度输入法永久切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我用微信时总是用错输入法，能帮我换成搜狗的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信应用中的输入法从当前输入法永久切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，这样更顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在QQ里打字总是用百度输入法，能帮我换成搜狗的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将QQ应用中的输入法从百度输入法永久切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，这样更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"QQ\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近在浏览器里打字老是用错输入法，能帮我换成搜狗的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将浏览器应用中的输入法从当前输入法永久切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，这样更顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在记事本里打字总是用百度输入法，能帮我换成搜狗的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将记事本应用中的输入法从百度输入法永久切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，这样更方便"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"记事本\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个游戏全是英文看不懂啊，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个应用的语言是英文的，能帮我改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将该应用的语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"当前应用\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "翻译软件的语言太难懂了，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将翻译软件的语言从当前语言切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "输入法的语言是英文的，能帮我改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将输入法的语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个APP的语言是英文的，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将该APP的语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"当前应用\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是百度输入法，能换成搜狗的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统默认输入法从百度输入法切换为搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，最好设为默认"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在微信里打字老是弹出谷歌输入法，能帮我换成搜狗吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信应用中的输入法从谷歌输入法切换为搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就用搜狗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设置\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在的输入法是微软的，能换成拼音的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将当前输入法从微软输入法切换为拼音输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成拼音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"拼音输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的是手写输入法，能换成语音输入法吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将输入法从手写输入法切换为语音输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成语音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"语音输入法\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个翻译软件的语言是英文的，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将翻译软件的语言从英文切换为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "游戏里的字全是英文，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将游戏界面语言从英文切换为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机语言是英文的，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统语言从英文切换为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，改成中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个APP的界面语言是日文的，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将该APP的语言从日文切换为中文吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，换成中文"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"应用\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近总觉得输入法不对劲，能帮我看看是什么输入法吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的输入法是什么？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想确认一下现在用的是哪个输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚打开手机，想确认一下现在的输入法是什么"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近换了个输入法，但不确定是不是已经切换成功了，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看现在用的是什么输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在打字，想确认一下输入法是否正常"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚切换了输入法，能帮我确认一下是否成功了吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我之前换了输入法，但不确定是不是生效了，能帮我查一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在想确认一下输入法是否正确"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看当前输入法，还是切换输入法？"
+            },
+            {
+                "role": "user",
+                "content": "查看当前输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckInputMethod()</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚在微信里打字，发现输入法不对，能帮我切换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "切换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在QQ里打字，发现输入法不对，能帮我切换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "切换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"QQ\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在浏览器里打字，但输入法不对，能帮我换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"浏览器\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在文档里打字，发现输入法不对，能帮我切换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "切换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"文档\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在游戏里打字，但输入法不对，能帮我换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"游戏\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在翻译软件里打字，发现输入法不对，能帮我切换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "切换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"翻译\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在记事本里打字，发现输入法不对，能帮我换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"记事本\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚刚在邮件里打字，发现输入法不对，能帮我切换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "切换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"邮件\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在搜索框里打字，发现输入法不对，能帮我换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"搜索\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在编辑器里打字，发现输入法不对，能帮我切换一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换输入法，还是查看当前输入法？"
+            },
+            {
+                "role": "user",
+                "content": "切换一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"编辑器\",InputMethodName=\"搜狗输入法\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把系统语言换成中文，这样更方便操作"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "系统语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近在用英文软件，但感觉不太顺手，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "应用语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"当前应用\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机的语言改成中文，这样更容易使用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "系统语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个APP的语言是英文的，能不能换成中文？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "应用语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"当前应用\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近在用一个英文网站，但看不懂，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "应用语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"浏览器\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把输入法的语言改成中文，这样更方便打字"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是输入法语言？"
+            },
+            {
+                "role": "user",
+                "content": "输入法语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个游戏是英文的，能不能换成中文？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "应用语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我最近在用一个英文软件，但不太习惯，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "应用语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"当前应用\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把系统语言换成中文，这样更符合我的习惯"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "系统语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"系统\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个APP的语言是英文的，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想切换系统语言，还是应用语言？"
+            },
+            {
+                "role": "user",
+                "content": "应用语言"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"当前应用\",LanguageType=\"中文\",ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机上的输入法总是弹出百度的，能不能换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统默认输入法从百度输入法切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个游戏全是英文看不懂啊，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机上的输入法总是弹出百度的，能不能换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统默认输入法从百度输入法切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我玩游戏的时候，语言全是英文，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机上的输入法总是在微信里弹出来百度的，能不能换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信应用中的输入法从百度输入法切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我玩的游戏全是英文，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机上的输入法总是在QQ里弹出来百度的，能不能换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将QQ应用中的输入法从百度输入法切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"QQ\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我玩的游戏全是英文，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机上的输入法总是在微信里弹出来百度的，能不能换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信应用中的输入法从百度输入法切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我玩的游戏全是英文，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机上的输入法总是在QQ里弹出来百度的，能不能换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将QQ应用中的输入法从百度输入法切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"QQ\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我玩的游戏全是英文，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机上的输入法总是在微信里弹出来百度的，能不能换成搜狗的？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将微信应用中的输入法从百度输入法切换到搜狗输入法吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，最好设置成默认输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我玩的游戏全是英文，能改成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想把当前游戏的界面语言从英文切换为中文对吗？"
+            },
+            {
+                "role": "user",
+                "content": "对对，就是现在玩的这个游戏"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在用的输入法是搜狗，但有时候打字不准，能换成百度的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想在系统范围内切换输入法，还是只在微信里使用百度输入法？"
+            },
+            {
+                "role": "user",
+                "content": "系统范围都换成百度输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"百度输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在QQ里打字老是弹出谷歌输入法，能不能改成搜狗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将QQ应用中的输入法切换为搜狗输入法，还是仅临时切换？"
+            },
+            {
+                "role": "user",
+                "content": "永久切换成搜狗输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"QQ\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在的输入法是讯飞，但有时候语音识别不好，能换成微软的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统范围内的输入法切换为微软输入法，还是只在浏览器中使用？"
+            },
+            {
+                "role": "user",
+                "content": "系统范围都换成微软输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"微软输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把输入法换成拼音的，这样打字更快些"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将系统范围内的输入法切换为拼音输入法，还是仅在某个应用中使用？"
+            },
+            {
+                "role": "user",
+                "content": "系统范围都换成拼音输入法"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchInputMethod(AppName=\"系统\", InputMethodName=\"拼音输入法\", ActionType=\"设为默认\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我游戏里的语言是英文的，看不懂，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将游戏的语言切换为简体中文，还是繁体中文？"
+            },
+            {
+                "role": "user",
+                "content": "简体中文就行，方便理解"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"游戏\", LanguageType=\"简体中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个翻译软件的语言是日文，能换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将翻译软件的语言切换为简体中文，还是繁体中文？"
+            },
+            {
+                "role": "user",
+                "content": "简体中文，更习惯"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"翻译\", LanguageType=\"简体中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我输入法的语言是英文的，打字不方便，能切换成中文吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想将输入法的语言切换为简体中文，还是繁体中文？"
+            },
+            {
+                "role": "user",
+                "content": "简体中文，更顺手"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SwitchLanguage(AppName=\"输入法\", LanguageType=\"简体中文\", ActionType=\"切换\")</tool>"
+            }
+        ],
+        "level": "setLanguageAndInput"
+    }
+]

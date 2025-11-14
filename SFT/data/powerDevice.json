@@ -1,0 +1,3812 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的手机重启一下，刚才用着突然卡住了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台打印机好像有点问题，能帮我重新启动一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统一直没反应，能不能重新启动一下电脑"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱好像死机了，能再重启一次吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的车载系统怎么突然不工作了，重启一下试试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请关掉我的耳机电源"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的电源吧，我准备睡觉了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "麻烦把智能音箱的电源关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关掉鼠标电源，我现在不需要用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载导航系统关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机屏幕太亮了，让它进入睡眠模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让键盘进入待机状态，不用的时候省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把音箱设为休眠模式，别一直响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让我的平板进入锁屏待机状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载系统设为休眠状态，等会儿再用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想让电脑屏幕进入睡眠状态，这样能省电。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我重启一下平板，它现在反应特别慢。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把打印机的电源关掉，我暂时不需要打印。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统提示说我的键盘有点问题，可以重新启动一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载系统的电源，我要去休息一下。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机总是自己关机，能帮我重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统提示我的键盘需要重启，可以帮我处理一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把打印机的电源关闭，我不需要打印文件了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标在工作中突然没反应了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想让音箱进入睡眠模式，这样不会打扰别人。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘经常死机，可以重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载系统的电源关掉，我准备停车休息。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想让平板进入睡眠状态，别再亮着了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统卡死了，快重启一下我的电脑吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭打印机电源，我暂时不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标突然不动了，是不是需要重启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱总是自动关机，能不能关掉它的电源"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要让手机进入休眠状态，省电一些"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把打印机的电源重启一下，它好像有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的鼠标进入待机模式，节省电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的音箱重启一下，它好像死机了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个耳机突然没声音了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把打印机关掉吧，我现在不需要用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标不动了，能不能让它进入睡眠模式休息一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要让车载系统重新启动一下，可能有点卡顿"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把键盘关掉，现在不使用它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标好像没反应了，可以试试重启吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘一直亮着，能不能让它进入睡眠模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的车载系统有点问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把鼠标调成睡眠模式，我不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机突然卡住了，能帮我重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要重新启动一下电脑，不然没法工作了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"电脑\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱好像没反应了，可以试试重启吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统运行太慢了，我得关掉再重新打开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让打印机一直开着，关掉它吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机有点问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载系统关掉，我现在不需要用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "鼠标不动了，是不是要重启一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让我把手机进入睡眠模式，这样省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕太亮了，让它休息一下吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把键盘设置成待机状态吧，不用的时候别耗电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机突然没反应了，是不是需要重启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把打印机关机，我要去处理其他事情了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在系统卡顿得厉害，能不能让我手机进入睡眠模式休息一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "重新启动一下我的打印机，它好像死机了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘突然不工作了，可能是需要重启"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标突然不灵敏了，可能需要重启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘有点问题，重启一下试试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的打印机关机，我暂时不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机死机了，能帮我重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个音箱声音太大了，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机有点问题，能不能让它重新启动一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕一直亮着，能不能让我进入睡眠模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让我的键盘一直响，把它关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把打印机的电源关掉，我暂时不需要用它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要让车载系统重启一下，可能有点卡顿"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标动不了了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机锁屏了，能不能让它进入待机状态？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "耳机的指示灯闪个不停，是不是要重启一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱有点问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个音箱有点问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机卡得不行了，快帮我重启一下吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机好像没反应，能不能重新启动一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统好像出错了，能重新启动一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机一直没反应，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关掉手机的电源吧，我现在不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音响的电源关掉，我需要安静一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个键盘太慢了，关掉再重启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统太耗电了，把它关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机没电了，关闭它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让电脑进入睡眠模式吧，我暂时不使用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太亮了，让它休眠一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "鼠标不动了，让它待机吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统太吵了，让它休息一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "平板屏幕一直亮着，让它进入睡眠状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"平板屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我手机卡住了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱关掉吧，不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘没反应了，能不能重新启动一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把车载系统重启一下，它好像出问题了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让耳机一直响，关掉它的声音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标不动了，能重启一下吗"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让手机一直亮着，让它进入睡眠状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标没反应了，重启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的耳机关掉，不想要声音了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我重启一下打印机，它好像卡住了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭耳机的电源，我暂时不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘需要进入睡眠模式，节省电量"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机需要重新启动一下，刚才没反应"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱要休眠一下，晚上睡觉时别响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标需要进入睡眠模式，不使用的时候省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个手机卡得不行了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把耳机重启一下，刚才声音断断续续的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "系统好像出问题了，能不能重新启动一下音箱？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "键盘有点不响应，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统死机了，快给我重启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关掉打印机电源，等会儿再开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机突然黑屏了，是不是该关机了？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让音箱一直开着，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "鼠标没反应了，先关掉再重启"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统太耗电了，关掉它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太亮了，锁屏休息一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "耳机没声音了，先让它待机一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱一直在响，让它进入休眠状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "键盘不用了，暂时让它待机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载导航卡住了，让它休眠一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机突然卡住了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把音箱关掉，它一直播放音乐太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑屏幕有点亮，能不能让它进入睡眠模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机死机了，我需要重新启动一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音响关掉，我不需要它一直开着"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机重启一下吧，系统运行很慢"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机的电源关掉，不用再播放音乐了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机又卡住了，麻烦重启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机的电源关掉，我不需要用它了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这个手机卡得不行了，能不能重启一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机突然没声音了，是不是需要重启一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱好像死机了，能帮我重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "键盘连接不上了，试试重启设备吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "鼠标不动了，可能系统有问题，重启一下试试"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统有点问题，能重新启动一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机一直打印错误的文件，重启一下应该能解决"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机电源，我现在要睡觉了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱关掉，我听不到外面的声音了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑太热了，关机让它休息一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让耳机一直开着，关掉它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机用完了，可以关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机屏幕亮着，让我锁屏休息一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "耳机不用了，进入睡眠模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱没人在用，可以待机一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "鼠标不操作了，让它休眠吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统暂时不用，进入休眠状态"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机调成睡眠模式，省电一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机突然卡住了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把电脑关掉吧，我准备去睡觉了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个音箱声音太大了，能不能让它进入睡眠模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的打印机好像没反应，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个鼠标一直闪烁，能关掉电源吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的车载系统有点问题，可以重新启动一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机有点问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关掉音箱的电源，我需要安静一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让电脑进入睡眠模式，我暂时不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "重启一下我的耳机，它好像有问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把鼠标关掉，我暂时不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让手机进入睡眠模式，我准备休息了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台电脑好像有点卡，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的电脑设备吗？还是其他设备？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这台电脑，已经没反应了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"电脑\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机用了一天感觉很烫，关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前使用的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在开车，能不能让车载系统进入睡眠模式？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让车载娱乐系统进入休眠模式吗？还是整个车载系统都待机？"
+            },
+            {
+                "role": "user",
+                "content": "就中控屏幕和音响关掉就行，空调还得开着"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台打印机有点问题，重启一下试试"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "没错，就是这个打印机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "耳机有点发热，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前使用的耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在开车，系统太耗电了，让它进入睡眠状态"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让车载系统进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就中控系统"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标有点问题，重启一下试试"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的鼠标设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱有点发热，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前使用的音箱设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在跑步，系统太耗电了，让它进入睡眠状态"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让运动设备进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就智能手表"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机卡得不行，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这台手机，已经没法用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "这个键盘有点问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启键盘设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，重新连接一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "鼠标不动了，能重启下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启鼠标设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，可能驱动出问题了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统好像死机了，能重启吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启车载娱乐系统吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，整个系统都卡住了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机一直没反应，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，刚才连不上"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想关掉手机，现在太耗电了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，直接关机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "耳机关机吧，我现在不想用"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，蓝牙也断开"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱不用了，可以关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭音箱设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别响了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机屏幕太亮了，能不能让它睡一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让手机进入睡眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，锁屏就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要让电脑进入休眠状态"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让电脑进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统太吵了，能休眠一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让车载系统进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，音响和中控都关"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘突然没反应了，能帮我重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的键盘设备吗？还是其他设备？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个机械键盘，现在完全没反应了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台打印机一直卡着，能不能重新启动一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要重启当前的打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个办公室的打印机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机死机了，能关掉再开机吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭并重启当前的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想关掉电脑，但系统好像卡住了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前的电脑设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这台笔记本"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"电脑屏幕\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "耳机连接不上，是不是需要重启一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱有点问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的音箱设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个客厅的音响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统好像有问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的车载系统吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是中控屏和音响部分"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机死机了，可以关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭当前的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标不动了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的鼠标设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个无线鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要让手机进入睡眠模式，可以吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让手机进入休眠或待机状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机调成睡眠模式吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让耳机进入休眠或待机状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统太吵了，能让我睡一会儿吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让车载系统进入休眠或待机状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是中控屏和音响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把音箱调到睡眠模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让音箱进入休眠或待机状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个客厅的音响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机突然黑屏了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这台手机，现在完全没反应了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我耳机一直没声音，是不是没连接好？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查耳机的连接状态还是需要重启耳机？"
+            },
+            {
+                "role": "user",
+                "content": "应该不是连接问题，可能是系统卡住了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱怎么突然没声音了？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启音箱设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，感觉它死机了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "键盘打字老是断连，能不能重启一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启键盘设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个无线键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "鼠标不动了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启鼠标设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个蓝牙鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统好像出问题了，能关掉再重启吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭车载系统再重启吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是中控系统"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机卡纸了，先关机吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，先关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机有点发热，帮我关了吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前使用的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机突然没声音了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，刚才用了几分钟就没了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机老是卡纸，重启一下试试"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，最近经常卡纸"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标突然不灵了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启鼠标设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个无线鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱有杂音，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启音箱设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，感觉是系统问题"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统又卡了，重启一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启车载系统吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是中控系统"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电池快没电了，帮我关机吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，省点电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "电脑用久了发热，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭电脑设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，暂时不用了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"电脑\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "耳机充电的时候突然断开，能重启吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，可能系统卡住了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机显示错误代码，重启试试"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，故障提示一直没消失"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在开会，手机能进入睡眠模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让手机进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，别让它响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开车时手机屏幕太亮了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让手机进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，锁屏就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我这台打印机好像卡住了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个老式喷墨打印机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机今天特别耗电，能关掉它吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在没电了，赶紧关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在要开车，让车载系统进入休眠状态吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让车载系统进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就中控屏幕和音响就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘突然失灵了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启键盘设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个机械键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "耳机连不上，能关机重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机在跑步时总断连，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个运动耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天的会议太长了，能让我手机进入睡眠模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让手机进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样可以省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘按键有点卡顿，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启键盘设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个有线键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标在玩游戏时总出问题，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启鼠标设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个游戏鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机突然死机了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这台手机，现在完全没反应了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我感觉电脑有点发热，可以关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前使用的电脑设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"电脑\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "车载系统太吵了，能不能让它休息一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让车载娱乐系统进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是中控屏和音响，空调不用关"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘突然没反应了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的键盘设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个机械键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机一直打印不停，快关掉吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前使用的打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "鼠标动不了了，能让它睡一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让鼠标进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个无线鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机连不上，是不是蓝牙没开？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想检查耳机的连接状态吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机电池耗得太快了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把鼠标设置成睡眠模式，省电一点"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让鼠标进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机突然没声音了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打印机卡纸了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是要关闭当前使用的打印机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机死机了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启当前的手机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个手机，现在完全动不了了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机总是断连，是不是需要重启一下？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的车载系统有点发热，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭车载系统的电源吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是中控系统"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"车载\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的音箱突然没声音了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启音箱设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个音响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚从外面回来，能让我手机进入睡眠模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想让手机进入休眠模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样省电"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Sleep(DeviceType=\"手机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘经常失灵，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启键盘设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个无线键盘"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"键盘\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我办公室的打印机一直响个不停，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭打印机的电源吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这台打印机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标突然不动了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启鼠标设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个无线鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"鼠标\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚才用完音箱，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭音箱的电源吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个音箱"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"音箱\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机突然没声音了，能重启一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想重启耳机设备吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个蓝牙耳机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>Reboot(DeviceType=\"耳机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我办公室的打印机一直响个不停，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭打印机的电源吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这台打印机"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>ShutDown(DeviceType=\"打印机\")</tool>"
+            }
+        ],
+        "level": "powerDevice"
+    }
+]

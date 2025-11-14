@@ -1,0 +1,1905 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用网易邮箱给客户发一封正式邮件，内容是关于合作方案的修改意见。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"客户\", Content=\"关于合作方案的修改意见\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过Outlook给李总发封邮件，说明下季度的合作计划。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"李总\", Content=\"下季度的合作计划\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给客户发一份合同附件，请他们确认。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"客户\", Content=\"请确认合同附件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过Gmail给张经理发封邮件，附上最新的项目数据。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"张经理\", Content=\"附上最新的项目数据\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉邮箱给团队发个通知，提醒大家下周的培训安排。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"钉钉邮箱\", Contact=\"团队\", Content=\"提醒大家下周的培训安排\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在QQ邮箱里查看昨天的收件箱，特别是来自李总的邮件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Folder=\"收件箱\", TimeRange=\"昨天\", Sender=\"李总\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Outlook检查一下今天的星标邮件，看看有没有重要信息。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看网易邮箱里的垃圾邮件，删除一些无用的信息。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"网易邮箱\", Folder=\"垃圾邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在Gmail中搜索一下上周的邮件，特别是关于项目进展的内容。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"收件箱\", TimeRange=\"上周\", Content=\"项目进展\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用企业微信查看一下最近的草稿邮件，是否有需要保存的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"企业微信\", Folder=\"草稿箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用网易邮箱给客户发一封邮件，内容是合作方案讨论"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"客户\", Content=\"合作方案讨论\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给李总发个邮件，说明下季度的合作计划"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"李总\", Content=\"下季度的合作计划\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Gmail给张经理发封邮件，内容是会议安排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"张经理\", Content=\"会议安排\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Outlook给公司发封邮件，说明项目进展"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"公司\", Content=\"项目进展\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用163邮箱给客户发个邮件，附上附件详细资料"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"163邮箱\", Contact=\"客户\", Content=\"附上附件详细资料\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看Outlook里今天收到的收件箱邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"收件箱\", TimeRange=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在QQ邮箱里找一下昨天发件箱里的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Folder=\"发件箱\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下Gmail里最近7天的星标邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"星标邮件\", TimeRange=\"最近7天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "看看微信里有没有重要的未读邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"微信\", Folder=\"未读邮件\", TimeRange=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看126邮箱中最近一个月的草稿邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"126邮箱\", Folder=\"草稿箱\", TimeRange=\"最近30天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用网易邮箱给客户发封邮件，内容是‘关于项目进展的汇报，请查收附件’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"客户\", Content=\"关于项目进展的汇报，请查收附件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Outlook给部门主管发送一份报告，主题是‘本月销售数据’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"部门主管\", Content=\"本月销售数据\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给合作伙伴发一封邮件，内容是‘感谢支持，期待长期合作’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"合作伙伴\", Content=\"感谢支持，期待长期合作\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Gmail给老同学发封邮件，附上照片和祝福语"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"老同学\", Content=\"附上照片和祝福语\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉邮箱给团队发送会议纪要，内容是‘今日讨论结果汇总’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"钉钉邮箱\", Contact=\"团队\", Content=\"今日讨论结果汇总\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在QQ邮箱里看看上周收到的未读邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Folder=\"未读邮件\", TimeRange=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用Outlook查看今天收到的重要邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"重要邮件\", TimeRange=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在163邮箱里找找昨天发件箱里的草稿"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"163邮箱\", Folder=\"草稿箱\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Gmail看看最近7天内的垃圾邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"垃圾邮件\", TimeRange=\"最近7天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下腾讯企业邮箱里最近30天的已读邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"腾讯企业邮箱\", Folder=\"已读邮件\", TimeRange=\"最近30天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用QQ邮箱给客户发送一份合同，内容是关于合作细节的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"客户\", Content=\"关于合作细节的合同\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用Gmail给李经理发封邮件，说明下季度的合作计划"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"李经理\", Content=\"下季度的合作计划\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用Outlook给团队发一封会议通知，内容是明天10点开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"团队\", Content=\"明天10点开会\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用网易邮箱给供应商发一份报价单，内容包含产品详情"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"供应商\", Content=\"产品详情\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用Foxmail给同事发邮件，内容是今天的项目汇报"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Foxmail\", Contact=\"同事\", Content=\"今天的项目汇报\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查看一下Outlook里的垃圾邮件，看看有没有误判的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"垃圾邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看QQ邮箱里最近收到的重要邮件，特别是来自客户的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Folder=\"重要邮件\", Sender=\"客户\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下Gmail里昨天的草稿箱，看看有没有未完成的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"草稿箱\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下163邮箱里最近一周的已读邮件，看看有没有遗漏的信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"163邮箱\", Folder=\"已读邮件\", TimeRange=\"最近7天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查看一下腾讯企业邮箱里的星标邮件，特别是与项目相关的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"腾讯企业邮箱\", Folder=\"星标邮件\", Content=\"项目\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用网易邮箱给客户发封邮件，主题是关于合作方案的讨论。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"客户\", Content=\"关于合作方案的讨论\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给李经理发一封正式的邮件，内容是项目进展报告。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"李经理\", Content=\"项目进展报告\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用Outlook给公司领导发邮件，附上本月的财务报表。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"公司领导\", Content=\"附上本月的财务报表\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Gmail给客户发个邮件，内容是感谢他们的支持。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"客户\", Content=\"感谢他们的支持\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用126邮箱给合作伙伴发封邮件，附件是产品介绍文档。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"126邮箱\", Contact=\"合作伙伴\", Content=\"附件是产品介绍文档\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在QQ邮箱里看一下昨天收到的邮件，特别是来自公司的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Sender=\"公司\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下Outlook里的垃圾邮件，看看有没有误判的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"垃圾邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看微信的草稿箱里有没有未发送的消息。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"微信\", Folder=\"草稿箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我在钉钉邮箱里搜索一下上周收到的关于培训的通知。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"钉钉邮箱\", Content=\"培训\", TimeRange=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看一下Gmail中的星标邮件，有些重要的信息可能被忽略了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"星标邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给李总发一封邮件，主题是“项目汇报”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"李总\", Content=\"项目汇报\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过Gmail给客户发一份合同，请附上附件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Content=\"请附上附件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Outlook给同事发一封工作安排邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Content=\"工作安排\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过网易邮箱给客户发一份报价单，内容是“详细报价如下”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Content=\"详细报价如下\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉邮箱给主管发一封请假申请，内容是“因病请假一天”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"钉钉邮箱\", Content=\"因病请假一天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在QQ邮箱里看看昨天收到的邮件，特别是发件人是老板的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Sender=\"老板\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下Gmail里的草稿箱，看看有没有未发送的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"草稿箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在Outlook中查看所有星标邮件，尤其是来自客户的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", Sender=\"客户\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看最近一周内收到的邮件，按时间排序"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(TimeRange=\"最近7天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在网易邮箱里查找发件人是财务部的邮件，内容包含“报销”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"网易邮箱\", Sender=\"财务部\", Content=\"报销\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给客户发一封正式邮件，内容是合作意向书"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"客户\", Content=\"合作意向书\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过Gmail发封邮件给陈教授，说明下周的会议安排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"陈教授\", Content=\"下周的会议安排\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Outlook给市场部发一封邮件，附上最新报告"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"市场部\", Content=\"附上最新报告\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过网易邮箱给供应商发个通知，说货品延迟了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"供应商\", Content=\"货品延迟了\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉邮箱给团队发个提醒，今天下班前完成任务"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"钉钉邮箱\", Contact=\"团队\", Content=\"今天下班前完成任务\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下我的收件箱，特别是昨天的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"收件箱\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看QQ邮箱里有没有来自李总的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Sender=\"李总\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在Gmail中搜索与‘项目’相关的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Content=\"项目\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "查看一下上周的星标邮件，有什么重要信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下最近一个月内收到的垃圾邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"垃圾邮件\", TimeRange=\"最近30天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用QQ邮箱给客户发一封邮件，附件是合同文件，请尽快确认。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Content=\"附件是合同文件，请尽快确认\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Outlook给李总发个邮件，说明一下项目进度情况。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"李总\", Content=\"说明一下项目进度情况\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请帮我查看一下Gmail里的收件箱，看看有没有重要的邮件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"收件箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我在Outlook里想找一下上周发来的邮件，帮忙筛选一下。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", TimeRange=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下QQ邮箱里的垃圾邮件，可能有误标的情况。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Folder=\"垃圾邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查看一下网易邮箱里所有未读的邮件，尽快处理。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"网易邮箱\", Folder=\"未读邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下最近三天内收到的邮件，尤其是来自客户的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(TimeRange=\"最近3天\", Sender=\"客户\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用网易邮箱给客户发一封邮件，附上合同草案。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"客户\", Content=\"附上合同草案\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过Gmail给李经理发封邮件，说明项目进展。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"李经理\", Content=\"说明项目进展\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给供应商发封邮件，附上报价单。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"供应商\", Content=\"附上报价单\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过Outlook给团队发邮件，提醒大家下周的项目汇报。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"团队\", Content=\"提醒大家下周的项目汇报\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Foxmail给合作伙伴发一封邮件，附上最新的合作方案。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Foxmail\", Contact=\"合作伙伴\", Content=\"附上最新的合作方案\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在QQ邮箱里查看昨天收到的邮件，特别是发件人是客户经理的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Sender=\"客户经理\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看Outlook里的草稿箱，有没有未发送的邮件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"草稿箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在Gmail中搜索一下关于项目讨论的邮件，按关键词‘计划’筛选。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Content=\"计划\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "检查一下163邮箱里的垃圾邮件，看看有没有误判的邮件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"163邮箱\", Folder=\"垃圾邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "在腾讯企业邮箱里查看最近一周的重要邮件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"腾讯企业邮箱\", TimeRange=\"最近7天\", Folder=\"重要邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用网易邮箱给客户发一封邮件，内容是关于合同的补充说明。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"客户\", Content=\"关于合同的补充说明\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我通过QQ邮箱给张老师发个附件，是课程安排表。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"张老师\", Content=\"课程安排表\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Outlook给团队成员发送一份周报，标题是“本周工作汇报”。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"团队成员\", Content=\"本周工作汇报\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用腾讯企业邮箱给领导发封邮件，内容是下周的工作计划。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"腾讯企业邮箱\", Contact=\"领导\", Content=\"下周的工作计划\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Gmail给同事发个邮件，附上会议纪要。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"同事\", Content=\"会议纪要\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下Outlook里的垃圾邮件，有些广告太多了。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"垃圾邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看QQ邮箱里有没有来自客户的邮件，特别是昨天的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Sender=\"客户\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我检查一下Gmail收件箱里的未读邮件，可能有很多重要信息。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"未读邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下钉钉邮箱里有没有来自李总的邮件，内容是关于项目的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"钉钉邮箱\", Sender=\"李总\", Content=\"项目\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看163邮箱里有没有上周收到的重要邮件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"163邮箱\", TimeRange=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用网易邮箱给客户发一封邮件，主题是合作方案讨论，内容附上附件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"客户\", Content=\"合作方案讨论，附件已上传\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给张经理发个邮件，内容是关于项目进度的汇报"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"张经理\", Content=\"项目进度汇报\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用Outlook给市场部发封邮件，说明产品更新的时间安排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"市场部\", Content=\"产品更新的时间安排\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我在Gmail里写一封邮件给客户，内容是感谢他们的支持"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"客户\", Content=\"感谢他们的支持\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用钉钉邮箱给同事发个通知，提醒他们提交报告"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"钉钉邮箱\", Contact=\"同事\", Content=\"提醒提交报告\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下Outlook里的收件箱，看看有没有重要邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"收件箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下QQ邮箱里的草稿箱，看看有没有未发送的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Folder=\"草稿箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看Gmail里是否有来自李总的邮件，内容是关于项目的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Sender=\"李总\", Content=\"项目\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请检查一下网易邮箱里的垃圾邮件，看看有没有误判的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"网易邮箱\", Folder=\"垃圾邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下昨天收到的星标邮件，可能有重要信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用网易邮箱给客户发一封正式邮件，内容是关于合同的细节。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"客户\", Content=\"关于合同的细节\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用Gmail给张教授发封邮件，说明论文修改后的情况。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"张教授\", Content=\"论文修改后的情况\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给销售团队发个邮件，通知他们下个月的促销活动。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"销售团队\", Content=\"下个月的促销活动\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "通过Outlook给李经理发封邮件，内容是关于产品报价的详细说明。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"李经理\", Content=\"产品报价的详细说明\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用腾讯企业邮箱给市场部发个邮件，介绍新产品功能。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"腾讯企业邮箱\", Contact=\"市场部\", Content=\"新产品功能\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看Outlook里昨天的收件箱有哪些邮件。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"收件箱\", TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查一下今天收到的草稿箱里的邮件，有些内容需要修改。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\", Folder=\"草稿箱\", TimeRange=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查看一下163邮箱中垃圾邮件的内容，看看有没有误判的。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"163邮箱\", Folder=\"垃圾邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要看一下上周的已读邮件，确保没有遗漏重要信息。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"已读邮件\", TimeRange=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请检查一下我的网易邮箱中星标邮件，特别是来自客户的那几封。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"网易邮箱\", Folder=\"星标邮件\", Sender=\"客户\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用QQ邮箱给客户发个邮件，主题是合同确认，正文写‘已收到，请查收’"
+            },
+            {
+                "role": "assistant",
+                "content": "主题是合同确认；正文是已收到，请查收，对吗？"
+            },
+            {
+                "role": "user",
+                "content": "完全正确，直接发送"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"客户\", Content=\"主题：合同确认；正文：已收到，请查收。\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看QQ邮箱里昨天的草稿箱，有没有遗漏的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要查看QQ邮箱中\"草稿箱\"内昨天的所有邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\",Folder=\"草稿箱\",TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我看看Gmail里今天有没有新邮件，特别是工作相关的"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要查看Gmail中今天收到的工作相关邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\",TimeRange=\"今天\",Content=\"工作\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚收到一封邮件，里面有附件，能帮我查看一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "请问是要查看Gmail中的某封邮件内容吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是那封带附件的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\",Content=\"附件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要发一封邮件给客户，用QQ邮箱，主题是项目汇报，正文写清楚"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想用QQ邮箱发送一封邮件给客户吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，内容要详细一点"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Content=\"主题：项目汇报；正文：项目进展顺利，请查收附件。\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想查看QQ邮箱里昨天的重要邮件，能帮我找一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看QQ邮箱中昨天的重要邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，重点看一下有没有客户的回复"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\",Folder=\"重要邮件\",TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我用QQ邮箱给客户发封邮件，主题是‘项目进度报告’，正文写‘详见附件’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Contact=\"客户\", Content=\"主题：项目进度报告；正文：详见附件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用Gmail给李经理发一封邮件，内容是‘下周会议安排’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Gmail\", Contact=\"李经理\", Content=\"下周会议安排\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要用Outlook给张总发个邮件，主题是‘项目更新’，内容是‘请查收附件’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Contact=\"张总\", Content=\"主题：项目更新；正文：请查收附件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "用网易邮箱给王主任发封邮件，内容是‘资料已发送’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"网易邮箱\", Contact=\"王主任\", Content=\"资料已发送\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要用163邮箱给客户发封邮件，主题是‘产品介绍’，内容是‘请查阅附件’"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"163邮箱\", Contact=\"客户\", Content=\"主题：产品介绍；正文：请查阅附件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下QQ邮箱里昨天的重要邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\",Folder=\"重要邮件\",TimeRange=\"昨天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要查看Gmail里的草稿箱，看看有没有未完成的邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\",Folder=\"草稿箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想看看Outlook里今天收到的垃圾邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\",Folder=\"垃圾邮件\",TimeRange=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我查一下网易邮箱里上周的未读邮件"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"网易邮箱\",Folder=\"未读邮件\",TimeRange=\"上周\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要查看126邮箱里的星标邮件，看看有没有重要的信息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"126邮箱\",Folder=\"星标邮件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚收到一封邮件，能帮我回复一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想回复收到的邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，用QQ邮箱，内容是“好的，我们会尽快处理”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Content=\"好的，我们会尽快处理\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要给客户发一封正式的邮件，能帮我写一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想发送一封正式邮件给客户吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，主题是“合作意向沟通”，内容包括感谢和后续安排"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"Outlook\", Content=\"主题：合作意向沟通；正文：感谢您的关注，我们期待与您进一步沟通合作事宜，并安排后续会议。\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我刚收到几封新邮件，能帮我看看有没有重要的吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看收到的重要邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，特别是收件箱里的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Gmail\", Folder=\"收件箱\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查一下上个月的邮件，能帮我找找吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查找上个月的邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，主要是工作相关的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"Outlook\", TimeRange=\"上月\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要给李经理发一封邮件，主题是项目进度汇报，能帮我写一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想通过QQ邮箱发送一封邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，内容是“项目第一阶段已完成，请查收附件”"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>SendEmail(AppName=\"QQ邮箱\", Content=\"主题：项目进度汇报；正文：项目第一阶段已完成，请查收附件\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要查看一下QQ邮箱里今天的重要邮件，能帮我找一下吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想查看QQ邮箱中今天的重要邮件吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，看看有没有遗漏的"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>CheckEmail(AppName=\"QQ邮箱\",Folder=\"重要邮件\",TimeRange=\"今天\")</tool>"
+            }
+        ],
+        "level": "manageEmail"
+    }
+]

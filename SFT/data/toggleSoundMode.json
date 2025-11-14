@@ -1,0 +1,2110 @@
+[
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启手机的振动模式，这样有消息就能提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=true)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭耳机的震动功能，我不需要这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=false)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开键盘的振动模式，方便输入"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=true)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "禁用鼠标震动，感觉不太实用"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=false)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启车载设备的震动提示，确保安全驾驶"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=true)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的勿扰模式，让我能正常接收消息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=false)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开耳机的静音模式，避免噪音干扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=true)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭音箱的勿扰模式，让音乐正常播放"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=false)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启平板的静音模式，开会时不要被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=true)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载系统的勿扰模式，方便接听电话"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=false)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的振动模式关掉，我现在开会不能有震动提醒。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把鼠标设置为静音模式，不要发出任何声音。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要关闭智能音箱的勿扰模式，让它可以接收通知。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机的振动模式开启，这样我就能知道有来电。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想把手机的勿扰模式打开，避免被打扰。"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把手机的震动模式关掉，这样就不会在开会的时候响了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要关闭静音模式，这样电话就能响了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把耳机的振动模式打开，这样有消息会提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的静音模式关掉，我要接电话"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭我的手机的勿扰模式，我需要接收通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的耳机的振动模式开启，这样有消息会提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请关闭手机的振动提醒，太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在是晚上，把手机的勿扰模式打开吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的静音模式关掉，我需要接收通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机总是震动，能不能关掉振动功能？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我需要把音箱的静音模式打开，现在很吵"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的振动提醒，太烦人了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启震动模式，这样有消息会更明显"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机总是响，能不能关掉振动？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开勿扰模式，晚上不要被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭静音模式，我要接收所有通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载系统的振动提醒，我开车的时候很烦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我打开手机的勿扰模式，现在太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "别让鼠标一直震动，我用着不舒服"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的智能音箱设置为静音模式，不要打扰我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的振动模式，我放在桌上会响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭打印机的振动提醒，我打印的时候不需要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启手机的勿扰模式，现在开会不能被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我的鼠标振动模式关掉，我不需要提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启手机的勿扰模式，我现在不想被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭打印机的振动提醒，我打印时不需要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭车载系统的振动提醒，我开车的时候很烦"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭打印机的振动提醒，我打印的时候不需要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的振动提醒，我现在不想被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机震动太频繁了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启手机的振动模式，这样有消息会更明显"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的勿扰模式打开，我要专注工作"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在是开会时间，帮我关闭静音模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开手机的振动模式，这样有消息会提醒我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭耳机的震动功能，我不要这种提醒方式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启键盘的振动提示，这样敲击时更有反馈"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的鼠标震动太频繁了，关掉它"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让车载系统的振动提醒也开启吧"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请打开手机的勿扰模式，现在不能被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭耳机的静音模式，我想听到声音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把键盘的勿扰模式关掉，这样能收到通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "让车载系统进入勿扰模式，避免打扰驾驶"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭打印机的静音模式，我要听到提示音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我关闭打印机的振动模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "静音模式开一下，我正在开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机的振动模式关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的勿扰模式打开，不要被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭耳机的振动提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "能不能让我手机的振动模式关一下，开会的时候太吵了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把鼠标设置成静音模式，不要有声音提示"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想要关闭手机的勿扰模式，现在有重要电话进来"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭手机的振动提醒，我现在在开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭所有设备的勿扰模式，我需要接收通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭振动模式，我现在在开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机震动太频繁了，把它关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启震动提醒，这样不会错过消息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在是会议时间，禁用振动"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我想让手机震动提醒，打开振动模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请把手机的勿扰模式打开，不要被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在要睡觉了，关闭静音模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "启用免打扰，工作时不要被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "今天有重要会议，开启勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "会议结束，关闭勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我关闭耳机的振动提醒，我现在在开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把打印机的勿扰模式打开，别让我被通知打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请关闭鼠标的声音提示，我现在在安静的环境里"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把打印机的静音模式打开，不要有声音"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭键盘的震动反馈，我现在在图书馆"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把打印机的勿扰模式开启，别让我被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭鼠标的声音震动，现在在办公室不能响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把打印机的静音模式打开，别让别人听见"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭振动模式，我不需要震动提醒"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启手机的振动功能，方便我收到消息"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不要震动，禁用一下"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要去开会了，开启振动模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的振动提醒关掉，免得响起来吵人"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "打开勿扰模式，别让消息打扰我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要任何通知，关闭静音模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启勿扰模式，避免被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我正在开会，启用免打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在不需要任何提示，关闭勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘振动太频繁了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把耳机的静音模式打开，我需要专注工作"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "请关闭耳机的震动提醒，我正在开会"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我开启打印机的勿扰模式，不要打扰我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭键盘的振动模式，我现在不需要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启打印机的勿扰模式，别让我被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "关闭打印机的振动提醒，我不需要"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "开启耳机的勿扰模式，我需要安静"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把手机的震动关掉，开会的时候太尴尬了"
+            },
+            {
+                "role": "assistant",
+                "content": "您确认是要关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，直接关掉就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上睡觉不想被消息打扰，帮我处理一下"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免夜间消息通知打扰吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天会议多，手机别震动了"
+            },
+            {
+                "role": "assistant",
+                "content": "您确认是要关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，直接关掉就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上睡觉不想被打扰，开启勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免夜间消息通知打扰吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我今天要出差，手机别震动了"
+            },
+            {
+                "role": "assistant",
+                "content": "您确认是要关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，直接关掉就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "明天早上不想被闹钟吵醒，开启勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免早晨闹钟打扰吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的耳机震动太厉害了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭耳机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，太烦人了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机震动太吵了，帮我关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，开会时不能响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的键盘有震动提醒，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭键盘的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，不要这么闹"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机通知太吵了，能开启勿扰模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不想被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我要睡觉了，把手机静音"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，不要吵我"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "音箱的通知铃声太响了，能静音吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启音箱的勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，不要响"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "手机振动模式太吵了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把我手机的震动关掉，开会的时候很尴尬"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，直接关掉就行"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把平板的振动模式打开"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启平板的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个平板"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "静音模式太烦人了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是现在用的这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上睡觉不想被消息打扰，帮我开一下静音模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免夜间消息通知打扰吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我的手机震动太频繁了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "会议时别让手机震动，帮我关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就在会议期间"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在不想被打扰，把手机静音吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不需要通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上睡觉时别让我被消息打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免夜间消息打扰吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的震动模式关了吧，开会的时候很尴尬"
+            },
+            {
+                "role": "assistant",
+                "content": "您确认是要关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，直接关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上睡觉不想被消息打扰，帮我开启勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免夜间消息通知吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把鼠标设置成静音模式吧，别响了"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭鼠标的振动提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就是这个无线鼠标"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在下雨了，帮我打开车载的勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启车载的勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样不会被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "最近睡眠质量差，能帮我开启手机的勿扰模式吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样就不会被打扰了"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在外面很吵，能帮我关闭手机的振动提醒吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，这样就不会被打扰"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把平板的振动关掉，开会时老是响"
+            },
+            {
+                "role": "assistant",
+                "content": "您确认是要关闭平板的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，直接关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上睡觉的时候别让我被消息打扰，开启静音吧"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免夜间消息通知吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个意思"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "把手机的振动模式打开，不然我听不到电话"
+            },
+            {
+                "role": "assistant",
+                "content": "您确认是要开启手机的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "现在很吵，帮我开启勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免外界干扰吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "帮我把音箱的振动关掉，现在有杂音"
+            },
+            {
+                "role": "assistant",
+                "content": "您确认是要关闭音箱的振动模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "晚上不想被打扰，开启勿扰模式"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启勿扰模式避免夜间消息通知吗？"
+            },
+            {
+                "role": "user",
+                "content": "对的，就是这个"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我现在在开会，能帮我把手机静音吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不要任何通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我耳机的振动提醒太烦人了，能关掉吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想关闭耳机的振动提醒吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，就关掉"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>VibrationModeOnOff(ActionType=False)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    },
+    {
+        "message": [
+            {
+                "role": "user",
+                "content": "我昨晚睡觉时手机一直震动，能帮我设置一下静音吗？"
+            },
+            {
+                "role": "assistant",
+                "content": "您是想开启手机的勿扰模式吗？"
+            },
+            {
+                "role": "user",
+                "content": "对，现在不要任何震动和通知"
+            },
+            {
+                "role": "assistant",
+                "content": "<tool>QuietModeOnOff(ActionType=True)</tool>"
+            }
+        ],
+        "level": "toggleSoundMode"
+    }
+]
